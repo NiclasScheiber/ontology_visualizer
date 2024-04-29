@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# SQL Schema Visualizer
+# Ontology Visualizer
 
 ![GitHub License MIT](https://img.shields.io/github/license/sqlhabit/sql_schema_visualizer?color=%2347A3F3)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/sqlhabit/sql_schema_visualizer?color=%2347A3F3)
