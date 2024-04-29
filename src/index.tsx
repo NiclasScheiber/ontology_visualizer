@@ -8,7 +8,7 @@ import "./index.css";
 
 const root = (document.getElementById("root") as HTMLElement);
 
-const basename = process.env.NODE_ENV === "production" ? "/sql_schema_visualizer" : "/";
+const basename = process.env.NODE_ENV === "production" ? "/ontology_visualizer" : "/";
 
 ReactDOM.createRoot(root).render(
   <React.StrictMode>
