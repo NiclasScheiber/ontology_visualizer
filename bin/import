@@ -70,14 +70,14 @@ const importTablePositions = async (databaseName, tables) => {
   await fs.writeFile(`src/config/databases/${databaseName}/tablePositions.json`, JSON.stringify(tablePositions, null, 2), "utf8");
 };
 
-const importTableConfigs = async (databaseName, tables) => {
+const importTableConfigs = async (databaseName, tables, tablesDescription) => {
   await fs.mkdir(`src/config/databases/${databaseName}/tables`);
 
   Object.keys(tables).forEach(async tableName => {
     const tableFile = `src/config/databases/${databaseName}/tables/${tableName}.json`;
     const tableConfig = {
       name: tableName,
-      description: "",
+      description: tablesDescription[tableName][0],
       schemaColor: "#91C4F2",
       columns: []
     };
@@ -85,11 +85,14 @@ const importTableConfigs = async (databaseName, tables) => {
     tables[tableName].forEach(row => {
       const columnName = row[0];
       const columnType = row[1];
+      const propertyDescription = row[2];
+      const is_array = row[3];
 
       tableConfig.columns.push({
         name: columnName,
-        description: "",
-        type: columnType
+        description: propertyDescription,
+        type: columnType,
+        array : is_array
       });
     });
 
@@ -146,6 +149,7 @@ const importConfigFiles = async ({ databaseName }) => {
 
   const tableData = await readTableData(databaseName);
   const tables = {};
+  const tablesDescription = {};
   const schemas = {};
 
   tableData.forEach(row => {
@@ -154,15 +158,21 @@ const importConfigFiles = async ({ databaseName }) => {
     const name = row.table_schema === "public" ? row.table_name : `${row.table_schema}.${row.table_name}`;
 
     if(tables[name]) {
-      tables[name].push([row.column_name, row.data_type]);
+      tables[name].push([row.column_name, row.data_type, row.property_description, row.is_array]); 
     } else {
-      tables[name] = [[row.column_name, row.data_type]];
+      tables[name] = [[row.column_name, row.data_type, row.property_description, row.is_array]];
+    }
+
+    if(tablesDescription[name]) {
+      tablesDescription[name].push([row.table_description]); 
+    } else {
+      tablesDescription[name] = [[row.table_description]];
     }
   });
 
   await importSchemaColors(databaseName, schemas);
   await importTablePositions(databaseName, tables);
-  await importTableConfigs(databaseName, tables);
+  await importTableConfigs(databaseName, tables, tablesDescription);
   await importEdgeConfigs(databaseName, tables);
   await importTablesIndexFile(databaseName, tables);
   await addDatabaseEntry(databaseName);

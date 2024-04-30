@@ -1,4 +1,4 @@
-"table_schema","table_name","column_name","data_type","ordinal_position"
+"table_schema","table_name","column_name","data_type","ordinal_position","table_description","property_description","is_array"
 "adjust","callbacks","id","bigint",1
 "adjust","callbacks","tracker","character varying",2
 "adjust","callbacks","created_at","timestamp without time zone",3
