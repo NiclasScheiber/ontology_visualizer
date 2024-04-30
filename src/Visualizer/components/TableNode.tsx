@@ -1,6 +1,6 @@
 import { useState, FC, useEffect } from "react";
 import { Handle, Position, NodeProps } from "reactflow";
-import { KeyIcon } from "../components";
+import { KeyIcon, ArrayIcon } from "../components";
 import { markdown } from "../helpers";
 
 import "@reactflow/node-resizer/dist/style.css";
