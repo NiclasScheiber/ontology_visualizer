@@ -5,7 +5,7 @@ export function ArrayIcon() {
         height="363" 
         xmlns="http://www.w3.org/2000/svg"  
         xmlSpace="preserve"
-        className="key-icon"
+        className="array-icon"
         viewBox="0 0 580 363"
         overflow="hidden">
             <g transform="translate(-1328 -1000)">
