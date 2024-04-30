@@ -69,7 +69,6 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
             <div className="column-name__inner">
               <div className="column-name__name">
                 {column.key && <ArrayIcon />}
-                {column.array && <ArrayIcon />}
                 {column.name}
               </div>
               <div className="column-name__type">
