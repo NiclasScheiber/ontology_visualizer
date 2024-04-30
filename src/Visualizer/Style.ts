@@ -7,3 +7,4 @@ import "./style/has-one-edge.scss";
 import "./style/has-many-edge.scss";
 import "./style/key-icon.css";
 import "./style/handle.css";
+import "./style/array-icon.css";
