@@ -6,6 +6,7 @@
       "name": "id",
       "description": "Unique identifier of an account.",
       "key": true,
+      "array": true,
       "type": "integer"
     },
     {
