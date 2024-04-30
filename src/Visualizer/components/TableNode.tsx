@@ -12,13 +12,13 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
 
   useEffect(() => {
     document.addEventListener("keydown", (e: KeyboardEvent) => {
-      if(e.code === "MetaLeft") {
+      if(e.code === "ShiftLeft" || e.code === "ShiftRight") {
         setDescriptionOnHoverActive(true)
       }
     }, false);
 
     document.addEventListener("keyup", (e: KeyboardEvent) => {
-      if(e.code === "MetaLeft") {
+      if(e.code === "ShiftLeft" || e.code === "ShiftRight") {
         setDescriptionOnHoverActive(false)
       }
     }, false);

@@ -24,7 +24,7 @@ export function InfoPopup(props: PopupProps) {
           <h2>Shortcuts</h2>
 
           <p>
-            <strong>CMD + hover</strong> over a table node or a column name to see the description.
+            <strong>SHIFT + hover</strong> over a table node or a column name to see the description.
           </p>
 
           <p>
