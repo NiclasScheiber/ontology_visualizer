@@ -1,0 +1,17 @@
+{
+  "name": "EmbeddedObject.Value",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "unit",
+      "description": "",
+      "type": "MeasurementUnitCode"
+    },
+    {
+      "name": "numericalValue",
+      "description": "",
+      "type": "double"
+    }
+  ]
+}

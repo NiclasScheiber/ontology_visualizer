@@ -1,0 +1,32 @@
+{
+  "name": "EmbeddedObject.BookingTimes",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "earliestAcceptanceTime",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "latestAcceptanceTime",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "latestArrivalTime",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "timeOfAvailability",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "totalTransitTime",
+      "description": "",
+      "type": "duration"
+    }
+  ]
+}

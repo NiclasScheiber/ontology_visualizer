@@ -1,0 +1,582 @@
+{
+  "EmbeddedObject.AWBUseIndicator": {
+    "x": 0,
+    "y": 0
+  },
+  "EmbeddedObject.AircraftPossibilityCode": {
+    "x": 300,
+    "y": 0
+  },
+  "EmbeddedObject.BasicRateClassCode": {
+    "x": 600,
+    "y": 0
+  },
+  "EmbeddedObject.ChargeCode": {
+    "x": 900,
+    "y": 0
+  },
+  "EmbeddedObject.ChargeIdentifier": {
+    "x": 1200,
+    "y": 0
+  },
+  "EmbeddedObject.CommodityCode": {
+    "x": 1500,
+    "y": 0
+  },
+  "EmbeddedObject.CurrencyCode": {
+    "x": 1800,
+    "y": 0
+  },
+  "EmbeddedObject.DangerousGoodsCode": {
+    "x": 2100,
+    "y": 0
+  },
+  "EmbeddedObject.DemurrageCode": {
+    "x": 2400,
+    "y": 0
+  },
+  "EmbeddedObject.DimensionsUnitCode": {
+    "x": 2700,
+    "y": 0
+  },
+  "EmbeddedObject.EntitlementCode": {
+    "x": 3000,
+    "y": 0
+  },
+  "EmbeddedObject.ExplosiveCompatibilityGroupCode": {
+    "x": 3300,
+    "y": 0
+  },
+  "EmbeddedObject.GoodsTypeCode": {
+    "x": 0,
+    "y": 450
+  },
+  "EmbeddedObject.GoodsTypeExtensionCode": {
+    "x": 300,
+    "y": 450
+  },
+  "EmbeddedObject.MeasurementUnitCode": {
+    "x": 600,
+    "y": 450
+  },
+  "EmbeddedObject.ModeCode": {
+    "x": 900,
+    "y": 450
+  },
+  "EmbeddedObject.MovementIndicator": {
+    "x": 1200,
+    "y": 450
+  },
+  "EmbeddedObject.OtherChargeCode": {
+    "x": 1500,
+    "y": 450
+  },
+  "EmbeddedObject.PackageMarkCode": {
+    "x": 1800,
+    "y": 450
+  },
+  "EmbeddedObject.PackagingDangerLevelCode": {
+    "x": 2100,
+    "y": 450
+  },
+  "EmbeddedObject.ParticipantIdentifier": {
+    "x": 2400,
+    "y": 450
+  },
+  "EmbeddedObject.PrepaidCollectIndicator": {
+    "x": 2700,
+    "y": 450
+  },
+  "EmbeddedObject.RaTypeCode": {
+    "x": 3000,
+    "y": 450
+  },
+  "EmbeddedObject.RadioactiveMaterialClassification": {
+    "x": 3300,
+    "y": 450
+  },
+  "EmbeddedObject.RateClassCode": {
+    "x": 0,
+    "y": 900
+  },
+  "EmbeddedObject.RatingsType": {
+    "x": 300,
+    "y": 900
+  },
+  "EmbeddedObject.RegulatedEntityCategoryCode": {
+    "x": 600,
+    "y": 900
+  },
+  "EmbeddedObject.ScreeningExemption": {
+    "x": 900,
+    "y": 900
+  },
+  "EmbeddedObject.ScreeningMethod": {
+    "x": 1200,
+    "y": 900
+  },
+  "EmbeddedObject.SecurityStatus": {
+    "x": 1500,
+    "y": 900
+  },
+  "EmbeddedObject.ServiceCode": {
+    "x": 1800,
+    "y": 900
+  },
+  "EmbeddedObject.ShipmentSecurityStatus": {
+    "x": 2100,
+    "y": 900
+  },
+  "EmbeddedObject.SignatoryRole": {
+    "x": 2400,
+    "y": 900
+  },
+  "EmbeddedObject.SignatureTypeCode": {
+    "x": 2700,
+    "y": 900
+  },
+  "EmbeddedObject.SpecialHandlingCode": {
+    "x": 3000,
+    "y": 900
+  },
+  "EmbeddedObject.StatusCode": {
+    "x": 3300,
+    "y": 900
+  },
+  "EmbeddedObject.TemperatureUnitCode": {
+    "x": 0,
+    "y": 1350
+  },
+  "EmbeddedObject.TransactionPurposeCode": {
+    "x": 300,
+    "y": 1350
+  },
+  "EmbeddedObject.TransportMeansServiceType": {
+    "x": 600,
+    "y": 1350
+  },
+  "EmbeddedObject.ULDChargeCode": {
+    "x": 900,
+    "y": 1350
+  },
+  "EmbeddedObject.ULDConditionCode": {
+    "x": 1200,
+    "y": 1350
+  },
+  "EmbeddedObject.ULDLoadingIndicator": {
+    "x": 1500,
+    "y": 1350
+  },
+  "EmbeddedObject.VolumeUnitCode": {
+    "x": 1800,
+    "y": 1350
+  },
+  "EmbeddedObject.WeightUnitCode": {
+    "x": 2100,
+    "y": 1350
+  },
+  "EmbeddedObject.ActionTimeType": {
+    "x": 2400,
+    "y": 1350
+  },
+  "EmbeddedObject.ActivitySequence": {
+    "x": 2700,
+    "y": 1350
+  },
+  "EmbeddedObject.Address": {
+    "x": 3000,
+    "y": 1350
+  },
+  "EmbeddedObject.CodeListElement": {
+    "x": 3300,
+    "y": 1350
+  },
+  "EmbeddedObject.Adjustments": {
+    "x": 0,
+    "y": 1800
+  },
+  "LogisticsObject.Answer": {
+    "x": 300,
+    "y": 1800
+  },
+  "LogisticsObject.Actor": {
+    "x": 600,
+    "y": 1800
+  },
+  "EmbeddedObject.Value": {
+    "x": 900,
+    "y": 1800
+  },
+  "LogisticsObject.Piece": {
+    "x": 1200,
+    "y": 1800
+  },
+  "LogisticsObject.Location": {
+    "x": 1500,
+    "y": 1800
+  },
+  "LogisticsObject.EpermitConsignment": {
+    "x": 1800,
+    "y": 1800
+  },
+  "LogisticsObject.Organization": {
+    "x": 2100,
+    "y": 1800
+  },
+  "LogisticsObject.IotDevice": {
+    "x": 2400,
+    "y": 1800
+  },
+  "LogisticsObject.BillingDetails": {
+    "x": 2700,
+    "y": 1800
+  },
+  "LogisticsObject.Booking": {
+    "x": 3000,
+    "y": 1800
+  },
+  "LogisticsObject.BookingOption": {
+    "x": 3300,
+    "y": 1800
+  },
+  "EmbeddedObject.BookingPreferences": {
+    "x": 0,
+    "y": 2250
+  },
+  "LogisticsObject.BookingRequest": {
+    "x": 300,
+    "y": 2250
+  },
+  "LogisticsObject.BookingShipment": {
+    "x": 600,
+    "y": 2250
+  },
+  "EmbeddedObject.BookingStatus": {
+    "x": 900,
+    "y": 2250
+  },
+  "EmbeddedObject.BookingTimes": {
+    "x": 1200,
+    "y": 2250
+  },
+  "LogisticsObject.Carrier": {
+    "x": 1500,
+    "y": 2250
+  },
+  "EmbeddedObject.CarrierProduct": {
+    "x": 1800,
+    "y": 2250
+  },
+  "LogisticsObject.Person": {
+    "x": 2100,
+    "y": 2250
+  },
+  "LogisticsObject.Check": {
+    "x": 2400,
+    "y": 2250
+  },
+  "LogisticsObject.CheckTemplate": {
+    "x": 2700,
+    "y": 2250
+  },
+  "EmbeddedObject.CheckTotalResult": {
+    "x": 3000,
+    "y": 2250
+  },
+  "EmbeddedObject.CO2Emissions": {
+    "x": 3300,
+    "y": 2250
+  },
+  "LogisticsObject.LoadingMaterial": {
+    "x": 0,
+    "y": 2700
+  },
+  "LogisticsObject.Composing": {
+    "x": 300,
+    "y": 2700
+  },
+  "EmbeddedObject.CompositionType": {
+    "x": 600,
+    "y": 2700
+  },
+  "LogisticsObject.Sensor": {
+    "x": 900,
+    "y": 2700
+  },
+  "LogisticsObject.PieceLiveAnimals": {
+    "x": 1200,
+    "y": 2700
+  },
+  "EmbeddedObject.ContactDetailType": {
+    "x": 1500,
+    "y": 2700
+  },
+  "EmbeddedObject.ContactDetail": {
+    "x": 1800,
+    "y": 2700
+  },
+  "EmbeddedObject.ContactRole": {
+    "x": 2100,
+    "y": 2700
+  },
+  "LogisticsObject.Item": {
+    "x": 2400,
+    "y": 2700
+  },
+  "LogisticsObject.DgProductRadioactive": {
+    "x": 2700,
+    "y": 2700
+  },
+  "LogisticsObject.Product": {
+    "x": 3000,
+    "y": 2700
+  },
+  "LogisticsObject.CustomsInformation": {
+    "x": 3300,
+    "y": 2700
+  },
+  "EmbeddedObject.CurrencyValue": {
+    "x": 0,
+    "y": 3150
+  },
+  "LogisticsObject.Waybill": {
+    "x": 300,
+    "y": 3150
+  },
+  "LogisticsObject.DgDeclaration": {
+    "x": 600,
+    "y": 3150
+  },
+  "EmbeddedObject.Dimensions": {
+    "x": 900,
+    "y": 3150
+  },
+  "EmbeddedObject.DirectionType": {
+    "x": 1200,
+    "y": 3150
+  },
+  "LogisticsObject.ExternalReference": {
+    "x": 1500,
+    "y": 3150
+  },
+  "LogisticsObject.LiveAnimalsEpermit": {
+    "x": 1800,
+    "y": 3150
+  },
+  "EmbeddedObject.EventTimeType": {
+    "x": 2100,
+    "y": 3150
+  },
+  "EmbeddedObject.ExecutionStatus": {
+    "x": 2400,
+    "y": 3150
+  },
+  "LogisticsObject.BookingOptionRequest": {
+    "x": 2700,
+    "y": 3150
+  },
+  "LogisticsObject.Price": {
+    "x": 3000,
+    "y": 3150
+  },
+  "LogisticsObject.ProductDg": {
+    "x": 3300,
+    "y": 3150
+  },
+  "EmbeddedObject.Geolocation": {
+    "x": 0,
+    "y": 3600
+  },
+  "LogisticsObject.UnitComposition": {
+    "x": 300,
+    "y": 3600
+  },
+  "LogisticsObject.Insurance": {
+    "x": 600,
+    "y": 3600
+  },
+  "LogisticsObject.Shipment": {
+    "x": 900,
+    "y": 3600
+  },
+  "EmbeddedObject.Party": {
+    "x": 1200,
+    "y": 3600
+  },
+  "LogisticsObject.DgRadioactiveIsotope": {
+    "x": 1500,
+    "y": 3600
+  },
+  "EmbeddedObject.LoadType": {
+    "x": 1800,
+    "y": 3600
+  },
+  "LogisticsObject.LoadingUnit": {
+    "x": 2100,
+    "y": 3600
+  },
+  "LogisticsObject.Loading": {
+    "x": 2400,
+    "y": 3600
+  },
+  "EmbeddedObject.LoadingType": {
+    "x": 2700,
+    "y": 3600
+  },
+  "EmbeddedObject.Measurement": {
+    "x": 3000,
+    "y": 3600
+  },
+  "EmbeddedObject.ModeQualifier": {
+    "x": 3300,
+    "y": 3600
+  },
+  "EmbeddedObject.MovementTimeType": {
+    "x": 0,
+    "y": 4050
+  },
+  "EmbeddedObject.MovementTime": {
+    "x": 300,
+    "y": 4050
+  },
+  "LogisticsObject.TransportMeans": {
+    "x": 600,
+    "y": 4050
+  },
+  "LogisticsObject.TransportMovement": {
+    "x": 900,
+    "y": 4050
+  },
+  "LogisticsObject.Company": {
+    "x": 1200,
+    "y": 4050
+  },
+  "EmbeddedObject.Characteristic": {
+    "x": 1500,
+    "y": 4050
+  },
+  "EmbeddedObject.OtherCharge": {
+    "x": 1800,
+    "y": 4050
+  },
+  "EmbeddedObject.OtherIdentifier": {
+    "x": 2100,
+    "y": 4050
+  },
+  "EmbeddedObject.RegulatedEntity": {
+    "x": 2400,
+    "y": 4050
+  },
+  "LogisticsObject.PackagingType": {
+    "x": 2700,
+    "y": 4050
+  },
+  "EmbeddedObject.PieceGroup": {
+    "x": 3000,
+    "y": 4050
+  },
+  "LogisticsObject.Question": {
+    "x": 3300,
+    "y": 4050
+  },
+  "EmbeddedObject.Ranges": {
+    "x": 0,
+    "y": 4500
+  },
+  "EmbeddedObject.Ratings": {
+    "x": 300,
+    "y": 4500
+  },
+  "EmbeddedObject.SecurityDeclaration": {
+    "x": 600,
+    "y": 4500
+  },
+  "EmbeddedObject.SensorType": {
+    "x": 900,
+    "y": 4500
+  },
+  "EmbeddedObject.EpermitSignature": {
+    "x": 1200,
+    "y": 4500
+  },
+  "EmbeddedObject.StationRemarks": {
+    "x": 1500,
+    "y": 4500
+  },
+  "EmbeddedObject.BookingOptionStatus": {
+    "x": 1800,
+    "y": 4500
+  },
+  "EmbeddedObject.Storing": {
+    "x": 2100,
+    "y": 4500
+  },
+  "EmbeddedObject.StoringType": {
+    "x": 2400,
+    "y": 4500
+  },
+  "EmbeddedObject.TemperatureInstructions": {
+    "x": 2700,
+    "y": 4500
+  },
+  "EmbeddedObject.VolumetricWeight": {
+    "x": 3000,
+    "y": 4500
+  },
+  "EmbeddedObject.TransportLegs": {
+    "x": 3300,
+    "y": 4500
+  },
+  "EmbeddedObject.UnitsPreference": {
+    "x": 0,
+    "y": 4950
+  },
+  "EmbeddedObject.WaybillLineItem": {
+    "x": 300,
+    "y": 4950
+  },
+  "EmbeddedObject.WaybillType": {
+    "x": 600,
+    "y": 4950
+  },
+  "EmbeddedObject.PieceDg": {
+    "x": 900,
+    "y": 4950
+  },
+  "EmbeddedObject.ItemDg": {
+    "x": 1200,
+    "y": 4950
+  },
+  "EmbeddedObject.LoosePiece": {
+    "x": 1500,
+    "y": 4950
+  },
+  "EmbeddedObject.NonHumanActor": {
+    "x": 1800,
+    "y": 4950
+  },
+  "EmbeddedObject.PublicAuthority": {
+    "x": 2100,
+    "y": 4950
+  },
+  "EmbeddedObject.Storage": {
+    "x": 2400,
+    "y": 4950
+  },
+  "EmbeddedObject.ULD": {
+    "x": 2700,
+    "y": 4950
+  },
+  "EmbeddedObject.ULDBasicPiece": {
+    "x": 3000,
+    "y": 4950
+  },
+  "EmbeddedObject.ULDSpecificPiece": {
+    "x": 3300,
+    "y": 4950
+  },
+  "EmbeddedObject.VolumePieceGroup": {
+    "x": 0,
+    "y": 5400
+  }
+}

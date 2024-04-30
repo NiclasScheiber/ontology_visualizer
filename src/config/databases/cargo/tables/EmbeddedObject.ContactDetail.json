@@ -1,0 +1,17 @@
+{
+  "name": "EmbeddedObject.ContactDetail",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "contactDetailType",
+      "description": "",
+      "type": "ContactDetailType"
+    },
+    {
+      "name": "textualValue",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

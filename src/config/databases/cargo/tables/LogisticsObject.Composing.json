@@ -1,0 +1,87 @@
+{
+  "name": "LogisticsObject.Composing",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "composedMaterials",
+      "description": "",
+      "type": "LoadingMaterial"
+    },
+    {
+      "name": "composedPieces",
+      "description": "",
+      "type": "Piece"
+    },
+    {
+      "name": "compositionType",
+      "description": "",
+      "type": "CompositionType"
+    },
+    {
+      "name": "loadingUnit",
+      "description": "",
+      "type": "LoadingUnit"
+    },
+    {
+      "name": "actionTimeType",
+      "description": "",
+      "type": "ActionTimeType"
+    },
+    {
+      "name": "contactDetails",
+      "description": "",
+      "type": "ContactDetail"
+    },
+    {
+      "name": "contactPersons",
+      "description": "",
+      "type": "Actor"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "",
+      "type": "OtherIdentifier"
+    },
+    {
+      "name": "performedAt",
+      "description": "",
+      "type": "Location"
+    },
+    {
+      "name": "servedActivity",
+      "description": "",
+      "type": "LogisticsActivity"
+    },
+    {
+      "name": "actionEndTime",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "actionStartTime",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

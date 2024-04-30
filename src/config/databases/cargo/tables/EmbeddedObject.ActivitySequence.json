@@ -1,0 +1,17 @@
+{
+  "name": "EmbeddedObject.ActivitySequence",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "activity",
+      "description": "",
+      "type": "LogisticsActivity"
+    },
+    {
+      "name": "sequenceNumber",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

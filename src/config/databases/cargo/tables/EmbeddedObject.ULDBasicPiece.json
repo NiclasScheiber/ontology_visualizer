@@ -1,0 +1,37 @@
+{
+  "name": "EmbeddedObject.ULDBasicPiece",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "dryIceWeight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "pieceGroupGrossWeight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "pieceGroupCount",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "pieceGroupId",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "uldLoadingIndicator",
+      "description": "",
+      "type": "ULDLoadingIndicator"
+    },
+    {
+      "name": "slac",
+      "description": "",
+      "type": "integer"
+    }
+  ]
+}

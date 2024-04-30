@@ -1,0 +1,57 @@
+{
+  "name": "EmbeddedObject.LoosePiece",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "pieceHeight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "pieceLength",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "pieceWeight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "pieceWidth",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "stackable",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "turnable",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "dryIceWeight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "pieceGroupGrossWeight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "pieceGroupCount",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "pieceGroupId",
+      "description": "",
+      "type": "integer"
+    }
+  ]
+}

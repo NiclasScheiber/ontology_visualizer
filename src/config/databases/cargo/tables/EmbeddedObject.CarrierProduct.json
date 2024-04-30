@@ -1,0 +1,22 @@
+{
+  "name": "EmbeddedObject.CarrierProduct",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "productCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "serviceLevelCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "productDescription",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

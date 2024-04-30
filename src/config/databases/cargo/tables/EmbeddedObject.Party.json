@@ -1,0 +1,22 @@
+{
+  "name": "EmbeddedObject.Party",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "otherIdentifiers",
+      "description": "",
+      "type": "OtherIdentifier"
+    },
+    {
+      "name": "partyDetails",
+      "description": "",
+      "type": "LogisticsAgent"
+    },
+    {
+      "name": "partyRole",
+      "description": "",
+      "type": "ParticipantIdentifier"
+    }
+  ]
+}

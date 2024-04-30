@@ -1,0 +1,72 @@
+{
+  "name": "LogisticsObject.BookingShipment",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "expectedCommodity",
+      "description": "",
+      "type": "CommodityCode"
+    },
+    {
+      "name": "expectedHScode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "forBookingOptionRequest",
+      "description": "",
+      "type": "BookingOptionRequest"
+    },
+    {
+      "name": "pieceGroups",
+      "description": "",
+      "type": "PieceGroup"
+    },
+    {
+      "name": "specialHandlingCodes",
+      "description": "",
+      "type": "SpecialHandlingCode"
+    },
+    {
+      "name": "temperatureInstructions",
+      "description": "",
+      "type": "TemperatureInstructions"
+    },
+    {
+      "name": "consolidationIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "specialServiceRequests",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "textualHandlingInstructions",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

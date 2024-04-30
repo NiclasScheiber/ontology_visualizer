@@ -1,0 +1,132 @@
+{
+  "name": "EmbeddedObject.ItemDg",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "dimensions",
+      "description": "",
+      "type": "Dimensions"
+    },
+    {
+      "name": "inPiece",
+      "description": "",
+      "type": "Piece"
+    },
+    {
+      "name": "itemQuantity",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "ofProduct",
+      "description": "",
+      "type": "Product"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "",
+      "type": "OtherIdentifier"
+    },
+    {
+      "name": "productionCountry",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "targetCountry",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "unitPrice",
+      "description": "",
+      "type": "CurrencyValue"
+    },
+    {
+      "name": "weight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "batchNumber",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "expiryDate",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "lotNumber",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "productionDate",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "quantityForUnitPrice",
+      "description": "",
+      "type": "double"
+    },
+    {
+      "name": "emergencyContact",
+      "description": "",
+      "type": "Person"
+    },
+    {
+      "name": "netWeightMeasure",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "reportableQuantity",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "supplementaryInfoPrefix",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "supplementaryInfoSuffix",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "",
+      "type": "IotDevice"
+    },
+    {
+      "name": "involvedInActions",
+      "description": "",
+      "type": "LogisticsAction"
+    }
+  ]
+}

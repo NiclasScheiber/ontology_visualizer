@@ -1,0 +1,42 @@
+{
+  "name": "LogisticsObject.PackagingType",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "appliedOnPieces",
+      "description": "",
+      "type": "Piece"
+    },
+    {
+      "name": "typeCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "description",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "EmbeddedObject.Address",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "addressCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "cityCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "country",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "postalCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "regionCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "postOfficeBox",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "streetAddressLines",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

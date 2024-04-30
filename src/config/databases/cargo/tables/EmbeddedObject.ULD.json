@@ -1,0 +1,122 @@
+{
+  "name": "EmbeddedObject.ULD",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "inUnitComposition",
+      "description": "",
+      "type": "UnitComposition"
+    },
+    {
+      "name": "tareWeight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "remarks",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "",
+      "type": "IotDevice"
+    },
+    {
+      "name": "involvedInActions",
+      "description": "",
+      "type": "LogisticsAction"
+    },
+    {
+      "name": "demurrageCode",
+      "description": "",
+      "type": "DemurrageCode"
+    },
+    {
+      "name": "loadingIndicator",
+      "description": "",
+      "type": "ULDLoadingIndicator"
+    },
+    {
+      "name": "odlnCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "ownerCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "serviceabilityCode",
+      "description": "",
+      "type": "ULDConditionCode"
+    },
+    {
+      "name": "uldTypeCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "ataDesignator",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "damageFlag",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "numberOfDoors",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "numberOfFittings",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "numberOfNets",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "numberOfStraps",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "sealNumber",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "uldSerialNumber",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

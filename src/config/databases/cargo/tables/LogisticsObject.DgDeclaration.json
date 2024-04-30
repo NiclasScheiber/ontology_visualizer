@@ -1,0 +1,57 @@
+{
+  "name": "LogisticsObject.DgDeclaration",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "issuedForPiece",
+      "description": "",
+      "type": "PieceDg"
+    },
+    {
+      "name": "aircraftLimitationInformation",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "complianceDeclarationText",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "exclusiveUseIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "handlingInformation",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "shipperDeclarationText",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

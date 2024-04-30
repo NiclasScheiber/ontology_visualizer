@@ -1,0 +1,137 @@
+{
+  "name": "LogisticsObject.ProductDg",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "describedObjects",
+      "description": "",
+      "type": "PhysicalLogisticsObject"
+    },
+    {
+      "name": "hsCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "manufacturer",
+      "description": "",
+      "type": "Organization"
+    },
+    {
+      "name": "otherCharacteristics",
+      "description": "",
+      "type": "Characteristic"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "",
+      "type": "OtherIdentifier"
+    },
+    {
+      "name": "commodityItemNumber",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "description",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "hsCommodityDescription",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "hsCommodityName",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "hsType",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "uniqueIdentifier",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "dgRadioactiveMaterial",
+      "description": "",
+      "type": "DgProductRadioactive"
+    },
+    {
+      "name": "explosiveCompatibilityGroupCode",
+      "description": "",
+      "type": "ExplosiveCompatibilityGroupCode"
+    },
+    {
+      "name": "packagingDangerLevelCode",
+      "description": "",
+      "type": "PackagingDangerLevelCode"
+    },
+    {
+      "name": "additionalHazardClassificationId",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "authorizationInformation",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "hazardClassificationId",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "packingInstructionNumber",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "properShippingName",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "specialProvisionId",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "technicalName",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "unNumber",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "name": "LogisticsObject.BookingOption",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "bookingTimes",
+      "description": "",
+      "type": "BookingTimes"
+    },
+    {
+      "name": "carrier",
+      "description": "",
+      "type": "Carrier"
+    },
+    {
+      "name": "carrierProduct",
+      "description": "",
+      "type": "CarrierProduct"
+    },
+    {
+      "name": "forBookingOptionRequest",
+      "description": "",
+      "type": "BookingOptionRequest"
+    },
+    {
+      "name": "forBookingRequest",
+      "description": "",
+      "type": "BookingRequest"
+    },
+    {
+      "name": "price",
+      "description": "",
+      "type": "Price"
+    },
+    {
+      "name": "stationRemarks",
+      "description": "",
+      "type": "StationRemarks"
+    },
+    {
+      "name": "statusBookingOption",
+      "description": "",
+      "type": "BookingOptionStatus"
+    },
+    {
+      "name": "transportLegs",
+      "description": "",
+      "type": "TransportLegs"
+    },
+    {
+      "name": "unitsPreference",
+      "description": "",
+      "type": "UnitsPreference"
+    },
+    {
+      "name": "additionalInformation",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "alternatives",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "offerValidFrom",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "offerValidTo",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "requestMatch",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

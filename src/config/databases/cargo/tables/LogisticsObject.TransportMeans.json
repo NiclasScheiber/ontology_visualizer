@@ -1,0 +1,77 @@
+{
+  "name": "LogisticsObject.TransportMeans",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "",
+      "type": "IotDevice"
+    },
+    {
+      "name": "involvedInActions",
+      "description": "",
+      "type": "LogisticsAction"
+    },
+    {
+      "name": "operatedTransportMovement",
+      "description": "",
+      "type": "TransportMovement"
+    },
+    {
+      "name": "transportOrganization",
+      "description": "",
+      "type": "Organization"
+    },
+    {
+      "name": "typicalCo2Coefficient",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "typicalFuelConsumption",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "vehicleType",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "vehicleModel",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "vehicleRegistration",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "vehicleSize",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

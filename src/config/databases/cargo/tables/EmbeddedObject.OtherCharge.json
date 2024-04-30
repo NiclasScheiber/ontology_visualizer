@@ -1,0 +1,27 @@
+{
+  "name": "EmbeddedObject.OtherCharge",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "chargePaymentType",
+      "description": "",
+      "type": "PrepaidCollectIndicator"
+    },
+    {
+      "name": "entitlement",
+      "description": "",
+      "type": "EntitlementCode"
+    },
+    {
+      "name": "otherChargeAmount",
+      "description": "",
+      "type": "CurrencyValue"
+    },
+    {
+      "name": "otherChargeCode",
+      "description": "",
+      "type": "OtherChargeCode"
+    }
+  ]
+}

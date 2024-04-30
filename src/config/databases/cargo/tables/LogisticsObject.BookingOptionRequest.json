@@ -1,0 +1,77 @@
+{
+  "name": "LogisticsObject.BookingOptionRequest",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "bookingOptions",
+      "description": "",
+      "type": "BookingOption"
+    },
+    {
+      "name": "bookingPreference",
+      "description": "",
+      "type": "BookingPreferences"
+    },
+    {
+      "name": "bookingShipmentDetails",
+      "description": "",
+      "type": "BookingShipment"
+    },
+    {
+      "name": "bookingToUpdate",
+      "description": "",
+      "type": "Booking"
+    },
+    {
+      "name": "carrierProduct",
+      "description": "",
+      "type": "CarrierProduct"
+    },
+    {
+      "name": "involvedParties",
+      "description": "",
+      "type": "Party"
+    },
+    {
+      "name": "timePreferences",
+      "description": "",
+      "type": "BookingTimes"
+    },
+    {
+      "name": "transportLegs",
+      "description": "",
+      "type": "TransportLegs"
+    },
+    {
+      "name": "unitsPreference",
+      "description": "",
+      "type": "UnitsPreference"
+    },
+    {
+      "name": "knownShipper",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

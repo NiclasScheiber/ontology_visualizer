@@ -1,0 +1,62 @@
+{
+  "name": "LogisticsObject.Organization",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "basedAtLocation",
+      "description": "",
+      "type": "Location"
+    },
+    {
+      "name": "contactPersons",
+      "description": "",
+      "type": "Actor"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "",
+      "type": "OtherIdentifier"
+    },
+    {
+      "name": "parentOrganization",
+      "description": "",
+      "type": "Organization"
+    },
+    {
+      "name": "subOrganization",
+      "description": "",
+      "type": "Organization"
+    },
+    {
+      "name": "name",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "shortName",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

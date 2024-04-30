@@ -1,0 +1,87 @@
+{
+  "name": "LogisticsObject.Check",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checkTotalResult",
+      "description": "",
+      "type": "CheckTotalResult"
+    },
+    {
+      "name": "checkedObject",
+      "description": "",
+      "type": "LogisticsObject"
+    },
+    {
+      "name": "checker",
+      "description": "",
+      "type": "Actor"
+    },
+    {
+      "name": "usedTemplate",
+      "description": "",
+      "type": "CheckTemplate"
+    },
+    {
+      "name": "actionTimeType",
+      "description": "",
+      "type": "ActionTimeType"
+    },
+    {
+      "name": "contactDetails",
+      "description": "",
+      "type": "ContactDetail"
+    },
+    {
+      "name": "contactPersons",
+      "description": "",
+      "type": "Actor"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "",
+      "type": "OtherIdentifier"
+    },
+    {
+      "name": "performedAt",
+      "description": "",
+      "type": "Location"
+    },
+    {
+      "name": "servedActivity",
+      "description": "",
+      "type": "LogisticsActivity"
+    },
+    {
+      "name": "actionEndTime",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "actionStartTime",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

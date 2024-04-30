@@ -1,0 +1,22 @@
+{
+  "name": "EmbeddedObject.Adjustments",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "correctionNumber",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "correctionSerialNumber",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "reasonsForAdjustments",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "EmbeddedObject.Geolocation",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "elevation",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "latitude",
+      "description": "",
+      "type": "double"
+    },
+    {
+      "name": "longitude",
+      "description": "",
+      "type": "double"
+    }
+  ]
+}

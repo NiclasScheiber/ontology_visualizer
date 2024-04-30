@@ -1,0 +1,47 @@
+{
+  "name": "LogisticsObject.BookingRequest",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "booking",
+      "description": "",
+      "type": "Booking"
+    },
+    {
+      "name": "forBookingOption",
+      "description": "",
+      "type": "BookingOption"
+    },
+    {
+      "name": "waybillNumber",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "waybillPrefix",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

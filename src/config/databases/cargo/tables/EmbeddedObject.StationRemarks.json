@@ -1,0 +1,17 @@
+{
+  "name": "EmbeddedObject.StationRemarks",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "station",
+      "description": "",
+      "type": "Location"
+    },
+    {
+      "name": "remarksText",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

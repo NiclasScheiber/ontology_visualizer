@@ -1,0 +1,62 @@
+{
+  "name": "EmbeddedObject.EpermitSignature",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "forEpermit",
+      "description": "",
+      "type": "LiveAnimalsEpermit"
+    },
+    {
+      "name": "signatoryCompany",
+      "description": "",
+      "type": "Company"
+    },
+    {
+      "name": "signatoryRole",
+      "description": "",
+      "type": "SignatoryRole"
+    },
+    {
+      "name": "signatureTypeCode",
+      "description": "",
+      "type": "SignatureTypeCode"
+    },
+    {
+      "name": "securityStampId",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "signatureDate",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "signatureStatement",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

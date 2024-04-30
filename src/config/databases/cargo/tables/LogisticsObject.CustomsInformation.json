@@ -1,0 +1,62 @@
+{
+  "name": "LogisticsObject.CustomsInformation",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "contentCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "country",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "issuedForPiece",
+      "description": "",
+      "type": "Piece"
+    },
+    {
+      "name": "issuedForShipment",
+      "description": "",
+      "type": "Shipment"
+    },
+    {
+      "name": "subjectCode",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "note",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "otherCustomsInformation",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

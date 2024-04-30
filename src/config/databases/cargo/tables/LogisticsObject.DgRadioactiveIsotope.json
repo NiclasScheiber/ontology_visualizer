@@ -1,0 +1,67 @@
+{
+  "name": "LogisticsObject.DgRadioactiveIsotope",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "contentOfDgProductRadioactive",
+      "description": "",
+      "type": "DgProductRadioactive"
+    },
+    {
+      "name": "physicalChemicalForm",
+      "description": "",
+      "type": "RadioactiveMaterialClassification"
+    },
+    {
+      "name": "activityLevelMeasure",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "criticalitySafetyIndexNumeric",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "isotopeId",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "isotopeName",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "lowDispersibleIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "specialFormIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

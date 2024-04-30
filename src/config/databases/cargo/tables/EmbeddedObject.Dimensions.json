@@ -1,0 +1,27 @@
+{
+  "name": "EmbeddedObject.Dimensions",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "height",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "length",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "volume",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "width",
+      "description": "",
+      "type": "Value"
+    }
+  ]
+}

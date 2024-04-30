@@ -1,0 +1,37 @@
+{
+  "name": "EmbeddedObject.ContactRole",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "code",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "codeDescription",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "codeLevel",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "codeListName",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "codeListReference",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "codeListVersion",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

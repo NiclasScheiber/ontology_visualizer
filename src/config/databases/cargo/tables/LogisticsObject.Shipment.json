@@ -1,0 +1,87 @@
+{
+  "name": "LogisticsObject.Shipment",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "customsInformation",
+      "description": "",
+      "type": "CustomsInformation"
+    },
+    {
+      "name": "incoterms",
+      "description": "",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "insurance",
+      "description": "",
+      "type": "Insurance"
+    },
+    {
+      "name": "involvedParties",
+      "description": "",
+      "type": "Party"
+    },
+    {
+      "name": "pieces",
+      "description": "",
+      "type": "Piece"
+    },
+    {
+      "name": "specialHandlingCodes",
+      "description": "",
+      "type": "SpecialHandlingCode"
+    },
+    {
+      "name": "totalDimensions",
+      "description": "",
+      "type": "Dimensions"
+    },
+    {
+      "name": "totalGrossWeight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "totalVolumetricWeight",
+      "description": "",
+      "type": "VolumetricWeight"
+    },
+    {
+      "name": "waybill",
+      "description": "",
+      "type": "Waybill"
+    },
+    {
+      "name": "goodsDescription",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "textualHandlingInstructions",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

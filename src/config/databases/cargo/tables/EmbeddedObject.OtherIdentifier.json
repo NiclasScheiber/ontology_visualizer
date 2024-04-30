@@ -1,0 +1,17 @@
+{
+  "name": "EmbeddedObject.OtherIdentifier",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "otherIdentifierType",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "textualValue",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

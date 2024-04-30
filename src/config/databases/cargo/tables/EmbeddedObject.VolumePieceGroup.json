@@ -1,0 +1,37 @@
+{
+  "name": "EmbeddedObject.VolumePieceGroup",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "dryIceWeight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "pieceGroupGrossWeight",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "pieceGroupCount",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "pieceGroupId",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "totalVolume",
+      "description": "",
+      "type": "Value"
+    },
+    {
+      "name": "stackable",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

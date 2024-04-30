@@ -1,0 +1,17 @@
+{
+  "name": "EmbeddedObject.Characteristic",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "characteristicType",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "textualValue",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

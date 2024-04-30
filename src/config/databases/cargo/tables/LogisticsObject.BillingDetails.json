@@ -1,0 +1,102 @@
+{
+  "name": "LogisticsObject.BillingDetails",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "adjustments",
+      "description": "",
+      "type": "Adjustments"
+    },
+    {
+      "name": "awbUseIndicator",
+      "description": "",
+      "type": "AWBUseIndicator"
+    },
+    {
+      "name": "detailedWaybill",
+      "description": "",
+      "type": "Waybill"
+    },
+    {
+      "name": "taxDueAgent",
+      "description": "",
+      "type": "CurrencyValue"
+    },
+    {
+      "name": "taxDueAirline",
+      "description": "",
+      "type": "CurrencyValue"
+    },
+    {
+      "name": "awbAcceptanceDate",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "awbDeliveryDate",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "awbExecutionDate",
+      "description": "",
+      "type": "dateTime"
+    },
+    {
+      "name": "commission",
+      "description": "",
+      "type": "double"
+    },
+    {
+      "name": "commissionIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "commissionPercentage",
+      "description": "",
+      "type": "double"
+    },
+    {
+      "name": "discount",
+      "description": "",
+      "type": "double"
+    },
+    {
+      "name": "exchangeRate",
+      "description": "",
+      "type": "double"
+    },
+    {
+      "name": "nbCorrections",
+      "description": "",
+      "type": "integer"
+    },
+    {
+      "name": "vatIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    }
+  ]
+}

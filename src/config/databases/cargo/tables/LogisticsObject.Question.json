@@ -1,0 +1,67 @@
+{
+  "name": "LogisticsObject.Question",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "answer",
+      "description": "",
+      "type": "Answer"
+    },
+    {
+      "name": "checkTemplate",
+      "description": "",
+      "type": "CheckTemplate"
+    },
+    {
+      "name": "answerOptionsText",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "answerOptionsValue",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "longText",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "questionNumber",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "questionSection",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "shortText",
+      "description": "",
+      "type": "string"
+    }
+  ]
+}

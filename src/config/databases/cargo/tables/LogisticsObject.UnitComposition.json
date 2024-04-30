@@ -1,0 +1,72 @@
+{
+  "name": "LogisticsObject.UnitComposition",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checkActions",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "contactDetails",
+      "description": "",
+      "type": "ContactDetail"
+    },
+    {
+      "name": "contactPersons",
+      "description": "",
+      "type": "Actor"
+    },
+    {
+      "name": "executionStatus",
+      "description": "",
+      "type": "ExecutionStatus"
+    },
+    {
+      "name": "servedServices",
+      "description": "",
+      "type": "LogisticsService"
+    },
+    {
+      "name": "checks",
+      "description": "",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "",
+      "type": "boolean"
+    },
+    {
+      "name": "compositionActions",
+      "description": "",
+      "type": "Composing"
+    },
+    {
+      "name": "loadingUnit",
+      "description": "",
+      "type": "LoadingUnit"
+    },
+    {
+      "name": "compositionIdentifier",
+      "description": "",
+      "type": "string"
+    },
+    {
+      "name": "slac",
+      "description": "",
+      "type": "integer"
+    }
+  ]
+}
