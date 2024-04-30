@@ -1,0 +1,77 @@
+{
+  "name": "General.TransportMeans",
+  "description": "Transport means details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice"
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in",
+      "type": "LogisticsAction"
+    },
+    {
+      "name": "operatedTransportMovement",
+      "description": "Transport Movement on which the Transport Means is used",
+      "type": "TransportMovement"
+    },
+    {
+      "name": "transportOrganization",
+      "description": "Company operating the transport means",
+      "type": "Organization"
+    },
+    {
+      "name": "typicalCo2Coefficient",
+      "description": "Required for some CO2 calculations",
+      "type": "Value"
+    },
+    {
+      "name": "typicalFuelConsumption",
+      "description": "Typical fuel comsumption (e.g. 2 L / 1 nm)",
+      "type": "Value"
+    },
+    {
+      "name": "vehicleType",
+      "description": "Vehicle or container type. Refer UNECE28; e.g. 4.. - Aircraft; type unknown.For Air refer to IATA Standard Schedules Information Manua in section ATA/IATA Aircraft Types",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "vehicleModel",
+      "description": "Model or make of the vehicle (e.g. A33-3)",
+      "type": "string"
+    },
+    {
+      "name": "vehicleRegistration",
+      "description": "Vehicle identification - e.g. aircraft registration number",
+      "type": "string"
+    },
+    {
+      "name": "vehicleSize",
+      "description": "Size of the vehicle - free text",
+      "type": "string"
+    }
+  ]
+}

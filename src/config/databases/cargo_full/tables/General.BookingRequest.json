@@ -1,0 +1,47 @@
+{
+  "name": "General.BookingRequest",
+  "description": "A party; usually the freight forwarder; creates the BookingRequest in order to confirm the booking to the Carrier",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "booking",
+      "description": "Reference to the Booking",
+      "type": "Booking"
+    },
+    {
+      "name": "forBookingOption",
+      "description": "Reference to the BookingOption the LogisticsObject is detailling",
+      "type": "BookingOption"
+    },
+    {
+      "name": "waybillNumber",
+      "description": "House or Master Waybill unique identifier",
+      "type": "string"
+    },
+    {
+      "name": "waybillPrefix",
+      "description": "Prefix used for the Waybill Number. Refer to IATA Airlines Codes",
+      "type": "string"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    }
+  ]
+}

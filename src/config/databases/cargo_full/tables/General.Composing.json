@@ -1,0 +1,87 @@
+{
+  "name": "General.Composing",
+  "description": "Action to describe build-up or break-down of LoadingUnits",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "composedMaterials",
+      "description": "References to the Materials being built-up or broken-down",
+      "type": "LoadingMaterial"
+    },
+    {
+      "name": "composedPieces",
+      "description": "References to the Pieces being built-up or broken-down",
+      "type": "Piece"
+    },
+    {
+      "name": "compositionType",
+      "description": "Enum stating whether the CompositionAction describes build-up or break-down",
+      "type": "CompositionType"
+    },
+    {
+      "name": "loadingUnit",
+      "description": "Reference to the LoadingUnit composed in the Unit Composition or referenced in Composing actions",
+      "type": "LoadingUnit"
+    },
+    {
+      "name": "actionTimeType",
+      "description": "Enum stating the type of the Action",
+      "type": "ActionTimeType"
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail"
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "Actor"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier"
+    },
+    {
+      "name": "performedAt",
+      "description": "Reference to the Location the Action was performed at",
+      "type": "Location"
+    },
+    {
+      "name": "servedActivity",
+      "description": "Reference to the Activity the Action was performed for",
+      "type": "LogisticsActivity"
+    },
+    {
+      "name": "actionEndTime",
+      "description": "DateTime holding the end time of the Action; Type is indicated through ActionType property",
+      "type": "dateTime"
+    },
+    {
+      "name": "actionStartTime",
+      "description": "DateTime holding the start time of the Action; Type is indicated through ActionType property",
+      "type": "dateTime"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    }
+  ]
+}

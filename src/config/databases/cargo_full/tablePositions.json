@@ -1,0 +1,610 @@
+{
+  "General.WeightUnitCode": {
+    "x": 0,
+    "y": 0
+  },
+  "General.VolumeUnitCode": {
+    "x": 300,
+    "y": 0
+  },
+  "General.ULDLoadingIndicator": {
+    "x": 600,
+    "y": 0
+  },
+  "General.ULDConditionCode": {
+    "x": 900,
+    "y": 0
+  },
+  "General.ULDChargeCode": {
+    "x": 1200,
+    "y": 0
+  },
+  "General.TransportMeansServiceType": {
+    "x": 1500,
+    "y": 0
+  },
+  "General.TransactionPurposeCode": {
+    "x": 1800,
+    "y": 0
+  },
+  "General.TemperatureUnitCode": {
+    "x": 2100,
+    "y": 0
+  },
+  "General.StatusCode": {
+    "x": 2400,
+    "y": 0
+  },
+  "General.SpecialHandlingCode": {
+    "x": 2700,
+    "y": 0
+  },
+  "General.SignatureTypeCode": {
+    "x": 3000,
+    "y": 0
+  },
+  "General.SignatoryRole": {
+    "x": 3300,
+    "y": 0
+  },
+  "General.ShipmentSecurityStatus": {
+    "x": 0,
+    "y": 450
+  },
+  "General.ServiceCode": {
+    "x": 300,
+    "y": 450
+  },
+  "General.SecurityStatus": {
+    "x": 600,
+    "y": 450
+  },
+  "General.ScreeningMethod": {
+    "x": 900,
+    "y": 450
+  },
+  "General.ScreeningExemption": {
+    "x": 1200,
+    "y": 450
+  },
+  "General.RegulatedEntityCategoryCode": {
+    "x": 1500,
+    "y": 450
+  },
+  "General.RaTypeCode": {
+    "x": 1800,
+    "y": 450
+  },
+  "General.RatingsType": {
+    "x": 2100,
+    "y": 450
+  },
+  "General.RateClassCode": {
+    "x": 2400,
+    "y": 450
+  },
+  "General.RadioactiveMaterialClassification": {
+    "x": 2700,
+    "y": 450
+  },
+  "General.PrepaidCollectIndicator": {
+    "x": 3000,
+    "y": 450
+  },
+  "General.ParticipantIdentifier": {
+    "x": 3300,
+    "y": 450
+  },
+  "General.PackagingDangerLevelCode": {
+    "x": 0,
+    "y": 900
+  },
+  "General.PackageMarkCode": {
+    "x": 300,
+    "y": 900
+  },
+  "General.OtherChargeCode": {
+    "x": 600,
+    "y": 900
+  },
+  "General.MovementIndicator": {
+    "x": 900,
+    "y": 900
+  },
+  "General.ModeCode": {
+    "x": 1200,
+    "y": 900
+  },
+  "General.MeasurementUnitCode": {
+    "x": 1500,
+    "y": 900
+  },
+  "General.GoodsTypeExtensionCode": {
+    "x": 1800,
+    "y": 900
+  },
+  "General.GoodsTypeCode": {
+    "x": 2100,
+    "y": 900
+  },
+  "General.ExplosiveCompatibilityGroupCode": {
+    "x": 2400,
+    "y": 900
+  },
+  "General.EntitlementCode": {
+    "x": 2700,
+    "y": 900
+  },
+  "General.DimensionsUnitCode": {
+    "x": 3000,
+    "y": 900
+  },
+  "General.DemurrageCode": {
+    "x": 3300,
+    "y": 900
+  },
+  "General.DangerousGoodsCode": {
+    "x": 0,
+    "y": 1350
+  },
+  "General.CurrencyCode": {
+    "x": 300,
+    "y": 1350
+  },
+  "General.CommodityCode": {
+    "x": 600,
+    "y": 1350
+  },
+  "General.ChargeIdentifier": {
+    "x": 900,
+    "y": 1350
+  },
+  "General.ChargeCode": {
+    "x": 1200,
+    "y": 1350
+  },
+  "General.BasicRateClassCode": {
+    "x": 1500,
+    "y": 1350
+  },
+  "General.AWBUseIndicator": {
+    "x": 1800,
+    "y": 1350
+  },
+  "General.AircraftPossibilityCode": {
+    "x": 2100,
+    "y": 1350
+  },
+  "General.WaybillType": {
+    "x": 2400,
+    "y": 1350
+  },
+  "General.WaybillLineItem": {
+    "x": 2700,
+    "y": 1350
+  },
+  "General.Waybill": {
+    "x": 3000,
+    "y": 1350
+  },
+  "General.VolumetricWeight": {
+    "x": 3300,
+    "y": 1350
+  },
+  "General.VolumePieceGroup": {
+    "x": 0,
+    "y": 1800
+  },
+  "General.Value": {
+    "x": 300,
+    "y": 1800
+  },
+  "General.UnitsPreference": {
+    "x": 600,
+    "y": 1800
+  },
+  "General.UnitComposition": {
+    "x": 900,
+    "y": 1800
+  },
+  "General.ULDSpecificPiece": {
+    "x": 1200,
+    "y": 1800
+  },
+  "General.ULDBasicPiece": {
+    "x": 1500,
+    "y": 1800
+  },
+  "General.ULD": {
+    "x": 1800,
+    "y": 1800
+  },
+  "General.TransportMovement": {
+    "x": 2100,
+    "y": 1800
+  },
+  "General.TransportMeans": {
+    "x": 2400,
+    "y": 1800
+  },
+  "General.TransportLegs": {
+    "x": 2700,
+    "y": 1800
+  },
+  "General.TemperatureInstructions": {
+    "x": 3000,
+    "y": 1800
+  },
+  "General.StoringType": {
+    "x": 3300,
+    "y": 1800
+  },
+  "General.Storing": {
+    "x": 0,
+    "y": 2250
+  },
+  "General.Storage": {
+    "x": 300,
+    "y": 2250
+  },
+  "General.StationRemarks": {
+    "x": 600,
+    "y": 2250
+  },
+  "General.Shipment": {
+    "x": 900,
+    "y": 2250
+  },
+  "General.SensorType": {
+    "x": 1200,
+    "y": 2250
+  },
+  "General.Sensor": {
+    "x": 1500,
+    "y": 2250
+  },
+  "General.SecurityDeclaration": {
+    "x": 1800,
+    "y": 2250
+  },
+  "General.RegulatedEntity": {
+    "x": 2100,
+    "y": 2250
+  },
+  "General.Ratings": {
+    "x": 2400,
+    "y": 2250
+  },
+  "General.Ranges": {
+    "x": 2700,
+    "y": 2250
+  },
+  "General.Question": {
+    "x": 3000,
+    "y": 2250
+  },
+  "General.PublicAuthority": {
+    "x": 3300,
+    "y": 2250
+  },
+  "General.ProductDg": {
+    "x": 0,
+    "y": 2700
+  },
+  "General.Product": {
+    "x": 300,
+    "y": 2700
+  },
+  "General.Price": {
+    "x": 600,
+    "y": 2700
+  },
+  "General.PieceLiveAnimals": {
+    "x": 900,
+    "y": 2700
+  },
+  "General.PieceGroup": {
+    "x": 1200,
+    "y": 2700
+  },
+  "General.PieceDg": {
+    "x": 1500,
+    "y": 2700
+  },
+  "General.Piece": {
+    "x": 1800,
+    "y": 2700
+  },
+  "General.PhysicalLogisticsObject": {
+    "x": 2100,
+    "y": 2700
+  },
+  "General.Person": {
+    "x": 2400,
+    "y": 2700
+  },
+  "General.Party": {
+    "x": 2700,
+    "y": 2700
+  },
+  "General.PackagingType": {
+    "x": 3000,
+    "y": 2700
+  },
+  "General.OtherIdentifier": {
+    "x": 3300,
+    "y": 2700
+  },
+  "General.OtherCharge": {
+    "x": 0,
+    "y": 3150
+  },
+  "General.Organization": {
+    "x": 300,
+    "y": 3150
+  },
+  "General.NonHumanActor": {
+    "x": 600,
+    "y": 3150
+  },
+  "General.MovementTimeType": {
+    "x": 900,
+    "y": 3150
+  },
+  "General.MovementTime": {
+    "x": 1200,
+    "y": 3150
+  },
+  "General.ModeQualifier": {
+    "x": 1500,
+    "y": 3150
+  },
+  "General.Measurement": {
+    "x": 1800,
+    "y": 3150
+  },
+  "General.LoosePiece": {
+    "x": 2100,
+    "y": 3150
+  },
+  "General.LogisticsService": {
+    "x": 2400,
+    "y": 3150
+  },
+  "General.LogisticsObject": {
+    "x": 2700,
+    "y": 3150
+  },
+  "General.LogisticsEvent": {
+    "x": 3000,
+    "y": 3150
+  },
+  "General.LogisticsAgent": {
+    "x": 3300,
+    "y": 3150
+  },
+  "General.LogisticsActivity": {
+    "x": 0,
+    "y": 3600
+  },
+  "General.LogisticsAction": {
+    "x": 300,
+    "y": 3600
+  },
+  "General.Location": {
+    "x": 600,
+    "y": 3600
+  },
+  "General.LoadType": {
+    "x": 900,
+    "y": 3600
+  },
+  "General.LoadingUnit": {
+    "x": 1200,
+    "y": 3600
+  },
+  "General.LoadingType": {
+    "x": 1500,
+    "y": 3600
+  },
+  "General.LoadingMaterial": {
+    "x": 1800,
+    "y": 3600
+  },
+  "General.Loading": {
+    "x": 2100,
+    "y": 3600
+  },
+  "General.LiveAnimalsEpermit": {
+    "x": 2400,
+    "y": 3600
+  },
+  "General.ItemDg": {
+    "x": 2700,
+    "y": 3600
+  },
+  "General.Item": {
+    "x": 3000,
+    "y": 3600
+  },
+  "General.IotDevice": {
+    "x": 3300,
+    "y": 3600
+  },
+  "General.Insurance": {
+    "x": 0,
+    "y": 4050
+  },
+  "General.Geolocation": {
+    "x": 300,
+    "y": 4050
+  },
+  "General.ExternalReference": {
+    "x": 600,
+    "y": 4050
+  },
+  "General.ExecutionStatus": {
+    "x": 900,
+    "y": 4050
+  },
+  "General.EventTimeType": {
+    "x": 1200,
+    "y": 4050
+  },
+  "General.EpermitSignature": {
+    "x": 1500,
+    "y": 4050
+  },
+  "General.EpermitConsignment": {
+    "x": 1800,
+    "y": 4050
+  },
+  "General.DirectionType": {
+    "x": 2100,
+    "y": 4050
+  },
+  "General.Dimensions": {
+    "x": 2400,
+    "y": 4050
+  },
+  "General.DgRadioactiveIsotope": {
+    "x": 2700,
+    "y": 4050
+  },
+  "General.DgProductRadioactive": {
+    "x": 3000,
+    "y": 4050
+  },
+  "General.DgDeclaration": {
+    "x": 3300,
+    "y": 4050
+  },
+  "General.CustomsInformation": {
+    "x": 0,
+    "y": 4500
+  },
+  "General.CurrencyValue": {
+    "x": 300,
+    "y": 4500
+  },
+  "General.ContactRole": {
+    "x": 600,
+    "y": 4500
+  },
+  "General.ContactDetailType": {
+    "x": 900,
+    "y": 4500
+  },
+  "General.ContactDetail": {
+    "x": 1200,
+    "y": 4500
+  },
+  "General.CompositionType": {
+    "x": 1500,
+    "y": 4500
+  },
+  "General.Composing": {
+    "x": 1800,
+    "y": 4500
+  },
+  "General.Company": {
+    "x": 2100,
+    "y": 4500
+  },
+  "General.CodeListElement": {
+    "x": 2400,
+    "y": 4500
+  },
+  "General.CO2Emissions": {
+    "x": 2700,
+    "y": 4500
+  },
+  "General.CheckTotalResult": {
+    "x": 3000,
+    "y": 4500
+  },
+  "General.CheckTemplate": {
+    "x": 3300,
+    "y": 4500
+  },
+  "General.Check": {
+    "x": 0,
+    "y": 4950
+  },
+  "General.Characteristic": {
+    "x": 300,
+    "y": 4950
+  },
+  "General.CarrierProduct": {
+    "x": 600,
+    "y": 4950
+  },
+  "General.Carrier": {
+    "x": 900,
+    "y": 4950
+  },
+  "General.BookingTimes": {
+    "x": 1200,
+    "y": 4950
+  },
+  "General.BookingStatus": {
+    "x": 1500,
+    "y": 4950
+  },
+  "General.BookingShipment": {
+    "x": 1800,
+    "y": 4950
+  },
+  "General.BookingRequest": {
+    "x": 2100,
+    "y": 4950
+  },
+  "General.BookingPreferences": {
+    "x": 2400,
+    "y": 4950
+  },
+  "General.BookingOptionStatus": {
+    "x": 2700,
+    "y": 4950
+  },
+  "General.BookingOptionRequest": {
+    "x": 3000,
+    "y": 4950
+  },
+  "General.BookingOption": {
+    "x": 3300,
+    "y": 4950
+  },
+  "General.Booking": {
+    "x": 0,
+    "y": 5400
+  },
+  "General.BillingDetails": {
+    "x": 300,
+    "y": 5400
+  },
+  "General.Answer": {
+    "x": 600,
+    "y": 5400
+  },
+  "General.Adjustments": {
+    "x": 900,
+    "y": 5400
+  },
+  "General.Address": {
+    "x": 1200,
+    "y": 5400
+  },
+  "General.Actor": {
+    "x": 1500,
+    "y": 5400
+  },
+  "General.ActivitySequence": {
+    "x": 1800,
+    "y": 5400
+  },
+  "General.ActionTimeType": {
+    "x": 2100,
+    "y": 5400
+  }
+}

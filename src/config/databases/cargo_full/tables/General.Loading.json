@@ -1,0 +1,97 @@
+{
+  "name": "General.Loading",
+  "description": "Action to describe onloading or offloading TransportMeans",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "loadedMaterials",
+      "description": "References to Materials onloaded or offloaded",
+      "type": "LoadingMaterial"
+    },
+    {
+      "name": "loadedPieces",
+      "description": "References to Pieces onloaded or offloaded",
+      "type": "Piece"
+    },
+    {
+      "name": "loadedUnits",
+      "description": "References to LoadingUnits onloaded or offloaded",
+      "type": "LoadingUnit"
+    },
+    {
+      "name": "loadingType",
+      "description": "Enum stating whether the LoadingAction describes onloading or offloading",
+      "type": "LoadingType"
+    },
+    {
+      "name": "onTransportMeans",
+      "description": "Reference to the TransportMeans that is being onloaded or offloaded",
+      "type": "TransportMeans"
+    },
+    {
+      "name": "loadingPositionIdentifier",
+      "description": "Short text stating the loading position in the TransportMeans",
+      "type": "string"
+    },
+    {
+      "name": "actionTimeType",
+      "description": "Enum stating the type of the Action",
+      "type": "ActionTimeType"
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail"
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "Actor"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier"
+    },
+    {
+      "name": "performedAt",
+      "description": "Reference to the Location the Action was performed at",
+      "type": "Location"
+    },
+    {
+      "name": "servedActivity",
+      "description": "Reference to the Activity the Action was performed for",
+      "type": "LogisticsActivity"
+    },
+    {
+      "name": "actionEndTime",
+      "description": "DateTime holding the end time of the Action; Type is indicated through ActionType property",
+      "type": "dateTime"
+    },
+    {
+      "name": "actionStartTime",
+      "description": "DateTime holding the start time of the Action; Type is indicated through ActionType property",
+      "type": "dateTime"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    }
+  ]
+}

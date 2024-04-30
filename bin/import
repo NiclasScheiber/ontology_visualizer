@@ -166,7 +166,7 @@ const importConfigFiles = async ({ databaseName }) => {
     if(tablesDescription[name]) {
       tablesDescription[name].push([row.table_description]); 
     } else {
-      tablesDescription[name] = [[row.table_description]];
+      tablesDescription[name] = ([row.table_description]);
     }
   });
 

@@ -1,0 +1,102 @@
+{
+  "name": "General.BookingOption",
+  "description": "Booking details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "bookingTimes",
+      "description": "Information about the Booking Times of a privded Booking Option",
+      "type": "BookingTimes"
+    },
+    {
+      "name": "carrier",
+      "description": "Reference to the operating carrier",
+      "type": "Carrier"
+    },
+    {
+      "name": "carrierProduct",
+      "description": "Reference to the Carrier product if known",
+      "type": "CarrierProduct"
+    },
+    {
+      "name": "forBookingOptionRequest",
+      "description": "Reference to the BookingOptionRequest the information of the LogisticsObject is detailling",
+      "type": "BookingOptionRequest"
+    },
+    {
+      "name": "forBookingRequest",
+      "description": "Reference to the Booking Request the of the Booking Option",
+      "type": "BookingRequest"
+    },
+    {
+      "name": "price",
+      "description": "Price of the Booking (if different from the offer)",
+      "type": "Price"
+    },
+    {
+      "name": "stationRemarks",
+      "description": "Remarks related to specific stations in the routing (e.g. Embargo in XXX)",
+      "type": "StationRemarks"
+    },
+    {
+      "name": "statusBookingOption",
+      "description": "Status of the Booking Option",
+      "type": "BookingOptionStatus"
+    },
+    {
+      "name": "transportLegs",
+      "description": "Reference to the Transport Legs of the proposed routing",
+      "type": "TransportLegs"
+    },
+    {
+      "name": "unitsPreference",
+      "description": "Reference to unit preferences of the request (e.g. kg or cm)",
+      "type": "UnitsPreference"
+    },
+    {
+      "name": "additionalInformation",
+      "description": "Additional infromation related to the Booking Option; e.g. sales details",
+      "type": "string"
+    },
+    {
+      "name": "alternatives",
+      "description": "Description of the alternatives proposed that do not match the Booking Option Request",
+      "type": "string"
+    },
+    {
+      "name": "offerValidFrom",
+      "description": "Date and time of beginning of offer validity",
+      "type": "dateTime"
+    },
+    {
+      "name": "offerValidTo",
+      "description": "Date and time of end of offer validity",
+      "type": "dateTime"
+    },
+    {
+      "name": "requestMatch",
+      "description": "Indicates if the Booking Option is a match to the Booking Option Request preferences",
+      "type": "boolean"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    }
+  ]
+}

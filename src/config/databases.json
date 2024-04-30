@@ -22,5 +22,9 @@
   "cargo": {
     "name": "cargo",
     "description": "Test dataset of the one record cargo ontology"
+  },
+  "cargo_full": {
+    "name": "cargo_full",
+    "description": ""
   }
 }

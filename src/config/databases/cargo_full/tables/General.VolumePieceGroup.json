@@ -1,0 +1,37 @@
+{
+  "name": "General.VolumePieceGroup",
+  "description": "VolumePieceGroup details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "dryIceWeight",
+      "description": "Weight of dry ice",
+      "type": "Value"
+    },
+    {
+      "name": "pieceGroupGrossWeight",
+      "description": "Total gross weight of the piece group",
+      "type": "Value"
+    },
+    {
+      "name": "pieceGroupCount",
+      "description": "Number of pieces in the piece group",
+      "type": "integer"
+    },
+    {
+      "name": "pieceGroupId",
+      "description": "Identifier of the piece group; increasing integers",
+      "type": "integer"
+    },
+    {
+      "name": "totalVolume",
+      "description": "Total volume fo the volume piece group",
+      "type": "Value"
+    },
+    {
+      "name": "stackable",
+      "description": "Stackable indicator for the pieces (boolean)",
+      "type": "boolean"
+    }
+  ]
+}

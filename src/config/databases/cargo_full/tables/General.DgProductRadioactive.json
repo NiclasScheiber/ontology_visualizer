@@ -1,0 +1,57 @@
+{
+  "name": "General.DgProductRadioactive",
+  "description": "Details of the radioactive products ",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "dgRaTypeCode",
+      "description": "The category of the package or all packed in one. Complete text to be transmitted: I-White; II-Yellow; III-Yellow instead of I; II; III",
+      "type": "RaTypeCode"
+    },
+    {
+      "name": "forProductDg",
+      "description": "Reference to the ProductDg this DgProductRadiosctive details",
+      "type": "ProductDg"
+    },
+    {
+      "name": "isotopes",
+      "description": "DgRadioactiveIsotope.",
+      "type": "DgRadioactiveIsotope"
+    },
+    {
+      "name": "fissileExceptionIndicator",
+      "description": "Indicates if Fissile is excepted",
+      "type": "boolean"
+    },
+    {
+      "name": "fissileExceptionReference",
+      "description": "Fissile exception reference; mandatory if Fissile Exception Indicator is true.",
+      "type": "string"
+    },
+    {
+      "name": "transportIndexNumeric",
+      "description": "Radioactive Transport-Index value of the package or all packed in one. Conditionally mandator and applies to categories II-Yellow and III-Yellow only; field only contains the value; if printed; TI must be added as a prefix to the value  to be printed in the Packing Instructions column",
+      "type": "integer"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    }
+  ]
+}

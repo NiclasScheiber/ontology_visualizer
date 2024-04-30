@@ -1,0 +1,52 @@
+{
+  "name": "General.LogisticsActivity",
+  "description": "Superclass: LogisticsActivity is a scheduled set of tasks that is executed as part of one or more Services",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checkActions",
+      "description": "References to CheckActions performed for the Activity",
+      "type": "Check"
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail"
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "Actor"
+    },
+    {
+      "name": "executionStatus",
+      "description": "Enum stating the status of the Activity",
+      "type": "ExecutionStatus"
+    },
+    {
+      "name": "servedServices",
+      "description": "Reference to Services this Activity is executed for",
+      "type": "LogisticsService"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    }
+  ]
+}

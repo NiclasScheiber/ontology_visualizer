@@ -1,0 +1,82 @@
+{
+  "name": "General.Person",
+  "description": "Person details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "associatedOrganization",
+      "description": "Reference to the Organization the Actor is associated with",
+      "type": "Organization"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail"
+    },
+    {
+      "name": "contactRole",
+      "description": "Contact type - e.g. Emergency contact; Customs contact; Customer contact",
+      "type": "ContactRole"
+    },
+    {
+      "name": "documents",
+      "description": "Linked documents to the person; e.g. driver's license; ID; etc.",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "department",
+      "description": "Department / Division / Unit",
+      "type": "string"
+    },
+    {
+      "name": "employeeId",
+      "description": "Employee ID",
+      "type": "string"
+    },
+    {
+      "name": "firstName",
+      "description": "First name / given name",
+      "type": "string"
+    },
+    {
+      "name": "jobTitle",
+      "description": "Job title / position",
+      "type": "string"
+    },
+    {
+      "name": "lastName",
+      "description": "Last name / family name / surname",
+      "type": "string"
+    },
+    {
+      "name": "middleName",
+      "description": "Middle name/ other name",
+      "type": "string"
+    },
+    {
+      "name": "salutation",
+      "description": "Salutation ",
+      "type": "string"
+    }
+  ]
+}

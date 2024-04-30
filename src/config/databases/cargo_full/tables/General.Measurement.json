@@ -1,0 +1,22 @@
+{
+  "name": "General.Measurement",
+  "description": "Measurements details for Sensors; either generic or geolocation measurements are recorded",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "measurementValue",
+      "description": "Information about all non-Geolocation values of the measurement",
+      "type": "Value"
+    },
+    {
+      "name": "recordedGeolocation",
+      "description": "Reference to the Geolocation recorded of the measurement",
+      "type": "Geolocation"
+    },
+    {
+      "name": "measurementTimestamp",
+      "description": "Timestamp for the measurement",
+      "type": "dateTime"
+    }
+  ]
+}

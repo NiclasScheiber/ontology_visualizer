@@ -1,0 +1,17 @@
+{
+  "name": "General.Value",
+  "description": "Unit of measurement details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "unit",
+      "description": "Unit of measurement as per MeasurementUnitCode codelist. If the code is not present; create an instance of MeasurementUnitCode based on UNECE Rec. 20 Rev. 17e-2021",
+      "type": "MeasurementUnitCode"
+    },
+    {
+      "name": "numericalValue",
+      "description": "Numerical value",
+      "type": "double"
+    }
+  ]
+}

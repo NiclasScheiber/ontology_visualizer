@@ -1,0 +1,27 @@
+{
+  "name": "General.PieceGroup",
+  "description": "PieceGroup details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "dryIceWeight",
+      "description": "Weight of dry ice",
+      "type": "Value"
+    },
+    {
+      "name": "pieceGroupGrossWeight",
+      "description": "Total gross weight of the piece group",
+      "type": "Value"
+    },
+    {
+      "name": "pieceGroupCount",
+      "description": "Number of pieces in the piece group",
+      "type": "integer"
+    },
+    {
+      "name": "pieceGroupId",
+      "description": "Identifier of the piece group; increasing integers",
+      "type": "integer"
+    }
+  ]
+}

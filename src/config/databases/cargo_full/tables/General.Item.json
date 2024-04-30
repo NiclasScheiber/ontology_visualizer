@@ -1,0 +1,107 @@
+{
+  "name": "General.Item",
+  "description": "Item details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "dimensions",
+      "description": "Dimensions details",
+      "type": "Dimensions"
+    },
+    {
+      "name": "inPiece",
+      "description": "Reference to the Piece this Item or Piece is contained in",
+      "type": "Piece"
+    },
+    {
+      "name": "itemQuantity",
+      "description": "Quantity of the item when applicable; with associated units of measure",
+      "type": "Value"
+    },
+    {
+      "name": "ofProduct",
+      "description": "Reference to the Product describing the Item",
+      "type": "Product"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier"
+    },
+    {
+      "name": "productionCountry",
+      "description": "Production country details. Refer ISO 3166-2",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "targetCountry",
+      "description": "Item target country. Refer ISO 3166-2",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "unitPrice",
+      "description": "Product price per unit in the base",
+      "type": "CurrencyValue"
+    },
+    {
+      "name": "weight",
+      "description": "Weight of the item",
+      "type": "Value"
+    },
+    {
+      "name": "batchNumber",
+      "description": "Production batch number / reference",
+      "type": "string"
+    },
+    {
+      "name": "expiryDate",
+      "description": "Product expiry date - e.g. for perishables goods or goods with programmed obsolescence",
+      "type": "dateTime"
+    },
+    {
+      "name": "lotNumber",
+      "description": "Production lot number / reference",
+      "type": "string"
+    },
+    {
+      "name": "productionDate",
+      "description": "Production date",
+      "type": "dateTime"
+    },
+    {
+      "name": "quantityForUnitPrice",
+      "description": "Product quantity for unit price - e.g. 12 (eggs for one USD 1)",
+      "type": "double"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice"
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in",
+      "type": "LogisticsAction"
+    }
+  ]
+}

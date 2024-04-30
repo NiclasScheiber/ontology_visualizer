@@ -1,0 +1,27 @@
+{
+  "name": "General.Dimensions",
+  "description": "Dimension details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "height",
+      "description": "Height",
+      "type": "Value"
+    },
+    {
+      "name": "length",
+      "description": "Length",
+      "type": "Value"
+    },
+    {
+      "name": "volume",
+      "description": "Volume",
+      "type": "Value"
+    },
+    {
+      "name": "width",
+      "description": "Width",
+      "type": "Value"
+    }
+  ]
+}

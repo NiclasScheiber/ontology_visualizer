@@ -1,0 +1,57 @@
+{
+  "name": "General.Answer",
+  "description": "Answer holds the answer to one Question and is provided by the executioner of the check",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "answerActor",
+      "description": "Reference to the Actor giving the Answer",
+      "type": "Actor"
+    },
+    {
+      "name": "answerValue",
+      "description": "Information about an answer Value of any kind of the Answer",
+      "type": "Value"
+    },
+    {
+      "name": "givenAtLocation",
+      "description": "Reference to the Location from which the Question was answered; relevant for split checks with documentary and physical elements",
+      "type": "Location"
+    },
+    {
+      "name": "involvedParties",
+      "description": "Information about other Parties involved depending on the context of use",
+      "type": "Party"
+    },
+    {
+      "name": "question",
+      "description": "Reference to the Question the Answer is for",
+      "type": "Question"
+    },
+    {
+      "name": "text",
+      "description": "Text for the Answer",
+      "type": "string"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    }
+  ]
+}

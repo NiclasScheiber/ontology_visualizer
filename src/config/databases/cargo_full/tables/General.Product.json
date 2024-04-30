@@ -1,0 +1,82 @@
+{
+  "name": "General.Product",
+  "description": "Product details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    },
+    {
+      "name": "describedObjects",
+      "description": "Reference to the Items or Pieces in which the product can be found.",
+      "type": "PhysicalLogisticsObject"
+    },
+    {
+      "name": "hsCode",
+      "description": "Harmonized Commodity code; refer to hsType used. 6 minimum digits are expected.",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "manufacturer",
+      "description": "Manufacturing company details and contacts",
+      "type": "Organization"
+    },
+    {
+      "name": "otherCharacteristics",
+      "description": "Charateristics of the product",
+      "type": "Characteristic"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier"
+    },
+    {
+      "name": "commodityItemNumber",
+      "description": "Indicates the specific commodity on which the rate class code is applied",
+      "type": "string"
+    },
+    {
+      "name": "description",
+      "description": "Natural language description if required",
+      "type": "string"
+    },
+    {
+      "name": "hsCommodityDescription",
+      "description": "Commodity description",
+      "type": "string"
+    },
+    {
+      "name": "hsCommodityName",
+      "description": "If no Code provided; name of commodity",
+      "type": "string"
+    },
+    {
+      "name": "hsType",
+      "description": "Reference identifying the type of standard code to be used for the Commodity Classification (Brussels Tariff Nomenclature; EU Harmonized System Code; UN Standard International Trade Classification). Mandatory if the commodity code is more than 6 digits",
+      "type": "string"
+    },
+    {
+      "name": "uniqueIdentifier",
+      "description": "Manufacturer's unique product identifier",
+      "type": "string"
+    }
+  ]
+}

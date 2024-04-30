@@ -1,0 +1,72 @@
+{
+  "name": "General.TransportLegs",
+  "description": "TransportLegs details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    },
+    {
+      "name": "arrivalLocation",
+      "description": "Reference to the arrival Location",
+      "type": "Location"
+    },
+    {
+      "name": "co2Emissions",
+      "description": "References to CO2Emissions",
+      "type": "CO2Emissions"
+    },
+    {
+      "name": "departureLocation",
+      "description": "Reference to the depature Location",
+      "type": "Location"
+    },
+    {
+      "name": "transportMeansServiceType",
+      "description": "Type of transport means service; e.g. Aircraftor Truck",
+      "type": "TransportMeansServiceType"
+    },
+    {
+      "name": "transportMeansType",
+      "description": "Type of transport means; e.g. 744; RFS",
+      "type": "CodeListElement"
+    },
+    {
+      "name": "arrivalDate",
+      "description": "Arrival date and time of the leg",
+      "type": "dateTime"
+    },
+    {
+      "name": "departureDate",
+      "description": "Departure date and time of the leg",
+      "type": "dateTime"
+    },
+    {
+      "name": "legNumber",
+      "description": "Leg number",
+      "type": "integer"
+    },
+    {
+      "name": "transportIdentifier",
+      "description": "Airline flight number; or rail/truck/maritime line id",
+      "type": "string"
+    }
+  ]
+}

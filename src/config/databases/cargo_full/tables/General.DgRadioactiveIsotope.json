@@ -1,0 +1,67 @@
+{
+  "name": "General.DgRadioactiveIsotope",
+  "description": "Details of the radioactive isotope contained in the product",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "contentOfDgProductRadioactive",
+      "description": "Reference to the DgProductRadioactive this Isotope is contained in",
+      "type": "DgProductRadioactive"
+    },
+    {
+      "name": "physicalChemicalForm",
+      "description": "A description of the physical and chemical form of the material.",
+      "type": "RadioactiveMaterialClassification"
+    },
+    {
+      "name": "activityLevelMeasure",
+      "description": "Numeric expression of the activity of a radioactive Item",
+      "type": "string"
+    },
+    {
+      "name": "criticalitySafetyIndexNumeric",
+      "description": "Applies to fissile material only; other than fissile excepted. A numeric value expressed to one decimal place preceded by the letters CSI.",
+      "type": "string"
+    },
+    {
+      "name": "isotopeId",
+      "description": "Id of each radionuclide or for mixtures of radionuclides.",
+      "type": "string"
+    },
+    {
+      "name": "isotopeName",
+      "description": "The name or symbol of each radionuclide or for mixtures of radionuclides; an appropriate general description; or a list of the most restrictive radionuclides. ",
+      "type": "string"
+    },
+    {
+      "name": "lowDispersibleIndicator",
+      "description": "A notation that the material is low dispersible radioactive material.",
+      "type": "boolean"
+    },
+    {
+      "name": "specialFormIndicator",
+      "description": "A notation that the material is special form",
+      "type": "boolean"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "General.DgDeclaration",
+  "description": "Dangerous goods declaration",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "issuedForPiece",
+      "description": "Reference to the Piece the document was issued for",
+      "type": "PieceDg"
+    },
+    {
+      "name": "aircraftLimitationInformation",
+      "description": "Contains the Special Handling Code related to the prescribed limitation. Hardcoded to PASSENGER AND CARGO AIRCRAFT or CARGO AIRCRAFT ONLY. This field is mandatory for air (Air) ",
+      "type": "string"
+    },
+    {
+      "name": "complianceDeclarationText",
+      "description": "Contains the warning message complying with the regulations text note. This field is mandatory for air (Air) ",
+      "type": "string"
+    },
+    {
+      "name": "exclusiveUseIndicator",
+      "description": "Indicates an exclusive use shipment",
+      "type": "boolean"
+    },
+    {
+      "name": "handlingInformation",
+      "description": "Free text. This may include items such as Control temperature for substances stabilized by temperature control; name and telephone number of a responsible person for infectious substances. ",
+      "type": "string"
+    },
+    {
+      "name": "shipperDeclarationText",
+      "description": "Contains the shipper's declaration to comply with the regulations text note. Free text . This field is mandatory for air (Air)",
+      "type": "string"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check"
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent"
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean"
+    }
+  ]
+}
