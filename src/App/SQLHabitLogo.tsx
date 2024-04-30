@@ -1,6 +1,7 @@
+const logo = require('one-record.png');
 function SQLHabitLogo() {
   return (
-    <img src="one-record.png" alt="Girl in a jacket" width="101" height="50" /> 
+    <img src={String(logo)} alt="One Record" width="101" height="50" /> 
 
   );
 }
