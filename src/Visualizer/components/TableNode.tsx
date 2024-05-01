@@ -68,7 +68,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
             onMouseLeave={() => setSelectedColumn("")}
             onClick={() => {              
               window.requestAnimationFrame(() => {
-                reactFlow.fitView({ nodes: [{ id: "Generic."+column.type }]});
+                reactFlow.fitView({ nodes: [{ id: column.type }]});
               })
             }}
             >
