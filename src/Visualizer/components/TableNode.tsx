@@ -69,8 +69,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
             onClick={() => {              
               window.requestAnimationFrame(() => {
                 reactFlow.fitView({
-                  duration: 500,
-                  nodes: [{ id: '1' }]
+                  duration: 500
                 });
               })
             }}
