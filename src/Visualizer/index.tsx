@@ -68,7 +68,6 @@ const Flow: React.FC<FlowProps> = (props: FlowProps) => {
     const initialEdges = calculateEdges({ nodes, currentDatabase });
     setEdges(() => initialEdges);
 
-    console.log(initialEdges);
     const handleKeyboard = (e: KeyboardEvent) => {
       if (e.ctrlKey && e.key === "p") {
         const nodes = instance.getNodes();
