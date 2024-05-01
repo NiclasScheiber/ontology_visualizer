@@ -40,6 +40,18 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
         <div
           className={showDescription ? "table__description table__description--active" : "table__description"}
           dangerouslySetInnerHTML={{__html: markdown(data.description || "No description.") }} />
+            {"target" && <Handle
+              type="target"
+              position={Position.Right}
+              id={`${data.name}-table-right`}
+              className="right-handle source-handle"
+            />}
+            {"target" && <Handle
+              type="target"
+              position={Position.Left}
+              id={`${data.name}-table-left`}
+              className="left-handle target-handle"
+            />}
       </div>
 
       <div className="table__columns">

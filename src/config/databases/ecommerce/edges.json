@@ -70,6 +70,13 @@
     "relation": "hasOne"
   },
   {
+    "source": "carts",
+    "sourceKey": "id",
+    "target": "purchases",
+    "targetKey": "",
+    "relation": "hasOne"
+  },
+  {
     "source": "discount_codes",
     "sourceKey": "code",
     "target": "purchases",
