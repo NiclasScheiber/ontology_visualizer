@@ -79,6 +79,12 @@
   {
     "source": "users",
     "sourceKey": "id",
+    "target": "mobile_analytics.events",
+    "relation": "hasOne"
+  },
+  {
+    "source": "users",
+    "sourceKey": "id",
     "target": "users",
     "targetKey": "referrer_id",
     "relation": "hasMany",
