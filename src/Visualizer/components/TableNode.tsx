@@ -64,7 +64,13 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
                 setSelectedColumn(column.name)
               }
             }}
-            onMouseLeave={() => setSelectedColumn("")}>
+            onMouseLeave={() => setSelectedColumn("")}
+            onClick={() => {              
+              window.requestAnimationFrame(() => {
+                fitView({ nodes: [{ id: "Generic."+column.type }]});
+              })
+            }}
+            >
             {column.handleType && <Handle
               type={column.handleType}
               position={Position.Right}
