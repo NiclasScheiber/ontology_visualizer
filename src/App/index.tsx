@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <a
-        href="https://www.sqlhabit.com"
+        href="https://github.com/IATA-Cargo/ONE-Record"
         target="_blank"
         rel="noreferrer"
         className="App__logo">

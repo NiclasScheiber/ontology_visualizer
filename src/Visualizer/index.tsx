@@ -296,7 +296,8 @@ const Flow: React.FC<FlowProps> = (props: FlowProps) => {
         onEdgesChange={onEdgesChange}
         onInit={onInit}
         snapToGrid={true}
-        fitView
+        fitView={true}
+        minZoom={0.1}
         snapGrid={[16, 16]}
         nodeTypes={nodeTypes}
         onNodeMouseEnter={onNodeMouseEnter}
