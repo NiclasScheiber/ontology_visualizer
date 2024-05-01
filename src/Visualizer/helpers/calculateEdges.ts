@@ -22,7 +22,7 @@ export const calculateEdges = ({ nodes, currentDatabase }: CalculateEdgesOptions
       const targetPosition = edgeConfig.targetPosition || calculateTargetPosition(sourceNode.width as number, sourceNode!.position.x, targetNode.width as number, targetNode!.position.x);
 
       const sourceHandle = `${edgeConfig.sourceKey}-${sourcePosition}`;
-      const targetHandle;
+      const targetHandle = "";
       if(edgeConfig.targetKey == ""){
         targetHandle = `${edgeConfig!.target}-table-${targetPosition}`;
       } else {

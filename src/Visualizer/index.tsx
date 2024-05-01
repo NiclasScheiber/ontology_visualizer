@@ -209,7 +209,7 @@ const Flow: React.FC<FlowProps> = (props: FlowProps) => {
                     const targetPosition = edgeConfig!.targetPosition || calculateTargetPosition((incomingNode.width as number), incomingNode.position.x, (node.width as number), nodeChange.positionAbsolute!.x);
 
                     const sourceHandle = `${edgeConfig!.sourceKey}-${sourcePosition}`;
-                    const targetHandle;
+                    const targetHandle = "";
                     if(edgeConfig.targetKey == ""){
                       targetHandle = `${edgeConfig!.target}-table-${targetPosition}`;
                     } else {
