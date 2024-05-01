@@ -68,9 +68,8 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
             onMouseLeave={() => setSelectedColumn("")}
             onClick={() => {              
               window.requestAnimationFrame(() => {
-                const fitNodes: Node[] = [
-                  { id: 'Generic.booking', data: {}, position: { x: 5, y: 5 } }
-                ];
+                const fitNodes: Node = 
+                  { id: 'Generic.booking', data: {}, position: { x: 5, y: 5 } };
                 
                 const fitViewOptions: FitViewOptions = {
                   duration: 500,
