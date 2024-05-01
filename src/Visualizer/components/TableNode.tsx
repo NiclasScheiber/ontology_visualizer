@@ -70,7 +70,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
               window.requestAnimationFrame(() => {
                 reactFlow.fitView({
                   duration: 500,
-                  nodes: [{ id: 'Generic.Booking' }]
+                  nodes: [{ id: '1' }]
                 });
               })
             }}
