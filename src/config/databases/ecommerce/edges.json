@@ -85,7 +85,7 @@
   },
   {
     "source": "discount_codes",
-    "sourceKey": "code",
+    "sourceKey": "id",
     "target": "purchases",
     "targetKey": "",
     "relation": "hasOne"
