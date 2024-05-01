@@ -9,7 +9,8 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
   const [selectedColumn, setSelectedColumn] = useState("");
   const [showDescription, setshowDescription] = useState(false);
   const [descriptionOnHoverActive, setDescriptionOnHoverActive] = useState(false);
-
+  const { fitView } = useReactFlow();
+  
   useEffect(() => {
     document.addEventListener("keydown", (e: KeyboardEvent) => {
       if(e.code === "ShiftLeft" || e.code === "ShiftRight") {
