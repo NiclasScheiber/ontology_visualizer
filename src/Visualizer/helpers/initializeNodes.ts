@@ -51,6 +51,6 @@ export const initializeNodes = (databaseConfig: DatabaseConfig) => {
 
     tables.push(tableDefinition);
   });
-
+  console.log(tables);
   return tables;
 };

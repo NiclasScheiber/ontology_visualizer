@@ -87,7 +87,7 @@
     "source": "users",
     "sourceKey": "id",
     "target": "mobile_analytics.events",
-    "targetKey": "",
+    "targetKey": "category",
     "relation": "hasOne"
   },
   {
