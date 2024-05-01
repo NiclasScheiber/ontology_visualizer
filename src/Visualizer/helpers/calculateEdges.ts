@@ -25,7 +25,7 @@ export const calculateEdges = ({ nodes, currentDatabase }: CalculateEdgesOptions
       const targetHandle = edgeConfig.targetKey === ""? `${edgeConfig.target}-table-${targetPosition}` :`${edgeConfig.targetKey}-${targetPosition}`;
 
       initialEdges.push({
-        id: `${edgeConfig.source}.${edgeConfig.sourcekey}-${edgeConfig.target}.${edgeConfig.targetKey}`,
+        id: `${edgeConfig.source}.${edgeConfig.sourceKey}-${edgeConfig.target}.${edgeConfig.targetKey}`,
         source: edgeConfig.source,
         target: edgeConfig.target,
         sourceHandle,
