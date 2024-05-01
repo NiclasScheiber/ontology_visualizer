@@ -82,5 +82,12 @@
     "target": "purchases",
     "targetKey": "discount_code",
     "relation": "hasMany"
+  },
+  {
+    "source": "discount_codes",
+    "sourceKey": "code",
+    "target": "purchases",
+    "targetKey": "",
+    "relation": "hasOne"
   }
 ]
