@@ -73,7 +73,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
                 
                 const fitViewOptions: FitViewOptions = {
                   duration: 500,
-                  nodes: fitNodes
+                  nodes: {id: 'Generic.booking'}
                 };
 
                 reactFlowInstance.fitView(fitViewOptions);
