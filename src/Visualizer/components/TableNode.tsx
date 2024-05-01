@@ -1,5 +1,5 @@
 import { useState, FC, useEffect } from "react";
-import { Handle, Position, NodeProps, useReactFlow } from "reactflow";
+import { Handle, Position, NodeProps, useReactFlow, Node } from "reactflow";
 import { KeyIcon, ArrayIcon } from "../components";
 import { markdown } from "../helpers";
 
@@ -71,7 +71,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
                 const fitNodes: Node[] = [
                   { id: 'Generic.booking' }
                 ];
-                
+
                 reactFlowInstance.fitView({
                   duration: 500,
                   nodes: fitNodes
