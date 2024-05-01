@@ -9,7 +9,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
   const [selectedColumn, setSelectedColumn] = useState("");
   const [showDescription, setshowDescription] = useState(false);
   const [descriptionOnHoverActive, setDescriptionOnHoverActive] = useState(false);
-  const reactFlow = useReactFlow();
+  const reactFlowInstance = useReactFlow();
 
   useEffect(() => {
     document.addEventListener("keydown", (e: KeyboardEvent) => {
@@ -68,8 +68,9 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
             onMouseLeave={() => setSelectedColumn("")}
             onClick={() => {              
               window.requestAnimationFrame(() => {
-                reactFlow.fitView({
-                  duration: 500
+                reactFlowInstance.fitView({
+                  duration: 500,
+                  nodes: [{id: 'Generic.booking'}]
                 });
               })
             }}
