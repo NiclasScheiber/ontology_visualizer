@@ -240,12 +240,8 @@ const Flow: React.FC<FlowProps> = (props: FlowProps) => {
                     const targetPosition = edgeConfig!.targetPosition || calculateTargetPosition((node.width as number), nodeChange.positionAbsolute!.x, (targetNode.width as number), targetNode.position.x);
 
                     const sourceHandle = `${edgeConfig!.sourceKey}-${sourcePosition}`;
-                    if(edgeConfig.targetKey){
-                      const targetHandle = `${edgeConfig!.targetKey}-${targetPosition}`;
-                    } else {
-                      const targetHandle = `${edgeConfig!.target}-${targetPosition}`;
-                    }                      
-
+                    const targetHandle = `${edgeConfig!.targetKey}-${targetPosition}`;
+                    
                     ed.sourceHandle = sourceHandle;
                     ed.targetHandle = targetHandle;
                     ed.className = edgeClassName(edgeConfig, targetPosition);
