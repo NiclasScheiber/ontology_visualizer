@@ -1,1 +1,2088 @@
-[]
+[
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Waybill",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Waybill",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.BillingDetails",
+      "sourceKey": "detailedWaybill",
+      "target": "General.Waybill",
+      "targetKey": "billingDetails",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Waybill",
+      "sourceKey": "masterWaybill",
+      "target": "General.Waybill",
+      "targetKey": "houseWaybills",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Waybill",
+      "sourceKey": "houseWaybills",
+      "target": "General.Waybill",
+      "targetKey": "masterWaybill",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Booking",
+      "sourceKey": "issuedForWaybill",
+      "target": "General.Waybill",
+      "targetKey": "referredBookingOption",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Shipment",
+      "sourceKey": "waybill",
+      "target": "General.Waybill",
+      "targetKey": "shipment",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "servedActivity",
+      "target": "General.UnitComposition",
+      "targetKey": "checkActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.UnitComposition",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.UnitComposition",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.UnitComposition",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Composing",
+      "sourceKey": "servedActivity",
+      "target": "General.UnitComposition",
+      "targetKey": "compositionActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LoadingUnit",
+      "sourceKey": "inUnitComposition",
+      "target": "General.UnitComposition",
+      "targetKey": "loadingUnit",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.UnitComposition",
+      "sourceKey": "loadingUnit",
+      "target": "General.ULD",
+      "targetKey": "inUnitComposition",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.ULD",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.ULD",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.ULD",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.ULD",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "servedActivity",
+      "target": "General.TransportMovement",
+      "targetKey": "checkActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.TransportMovement",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.TransportMovement",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.TransportMovement",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.CO2Emissions",
+      "sourceKey": "calculationFor",
+      "target": "General.TransportMovement",
+      "targetKey": "co2Emissions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Loading",
+      "sourceKey": "servedActivity",
+      "target": "General.TransportMovement",
+      "targetKey": "loadingActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.TransportMeans",
+      "sourceKey": "operatedTransportMovement",
+      "target": "General.TransportMovement",
+      "targetKey": "operatingTransportMeans",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.TransportMeans",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.TransportMeans",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.TransportMeans",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.TransportMeans",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.TransportMovement",
+      "sourceKey": "operatingTransportMeans",
+      "target": "General.TransportMeans",
+      "targetKey": "operatedTransportMovement",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.TransportLegs",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.TransportLegs",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.CO2Emissions",
+      "sourceKey": "calculationFor",
+      "target": "General.TransportLegs",
+      "targetKey": "co2Emissions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.Storing",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Location",
+      "sourceKey": "onsiteActions",
+      "target": "General.Storing",
+      "targetKey": "performedAt",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsActivity",
+      "sourceKey": "checkActions",
+      "target": "General.Storing",
+      "targetKey": "servedActivity",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Storing",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Storing",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.PhysicalLogisticsObject",
+      "sourceKey": "involvedInActions",
+      "target": "General.Storing",
+      "targetKey": "storedObjects",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "servedActivity",
+      "target": "General.Storage",
+      "targetKey": "checkActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.Storage",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Storage",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Storage",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Storing",
+      "sourceKey": "servedActivity",
+      "target": "General.Storage",
+      "targetKey": "storingActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Shipment",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Shipment",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.CustomsInformation",
+      "sourceKey": "issuedForPiece",
+      "target": "General.Shipment",
+      "targetKey": "customsInformation",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Insurance",
+      "sourceKey": "insuredShipments",
+      "target": "General.Shipment",
+      "targetKey": "insurance",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "ofShipment",
+      "target": "General.Shipment",
+      "targetKey": "pieces",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Waybill",
+      "sourceKey": "shipment",
+      "target": "General.Shipment",
+      "targetKey": "waybill",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Sensor",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Sensor",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.Sensor",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.Sensor",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "connectedSensors",
+      "target": "General.Sensor",
+      "targetKey": "partOfIotDevice",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.SecurityDeclaration",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.SecurityDeclaration",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "customsInformation",
+      "target": "General.SecurityDeclaration",
+      "targetKey": "issuedForPiece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Ratings",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Ratings",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Price",
+      "sourceKey": "ratings",
+      "target": "General.Ratings",
+      "targetKey": "forPrices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Question",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Question",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Answer",
+      "sourceKey": "question",
+      "target": "General.Question",
+      "targetKey": "answer",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.CheckTemplate",
+      "sourceKey": "questions",
+      "target": "General.Question",
+      "targetKey": "checkTemplate",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.PublicAuthority",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.PublicAuthority",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.PublicAuthority",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "subOrganization",
+      "target": "General.PublicAuthority",
+      "targetKey": "parentOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "parentOrganization",
+      "target": "General.PublicAuthority",
+      "targetKey": "subOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.ProductDg",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.ProductDg",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.PhysicalLogisticsObject",
+      "sourceKey": "contentProducts",
+      "target": "General.ProductDg",
+      "targetKey": "describedObjects",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.DgProductRadioactive",
+      "sourceKey": "forProductDg",
+      "target": "General.ProductDg",
+      "targetKey": "dgRadioactiveMaterial",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Product",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Product",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.PhysicalLogisticsObject",
+      "sourceKey": "contentProducts",
+      "target": "General.Product",
+      "targetKey": "describedObjects",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Price",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Price",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.BookingOption",
+      "sourceKey": "forBookingRequest",
+      "target": "General.Price",
+      "targetKey": "forBookingOption",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Ratings",
+      "sourceKey": "forPrices",
+      "target": "General.Price",
+      "targetKey": "ratings",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Item",
+      "sourceKey": "inPiece",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "containedItems",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "inPiece",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "containedPieces",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Product",
+      "sourceKey": "describedObjects",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "contentProducts",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.CustomsInformation",
+      "sourceKey": "issuedForPiece",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "customsInformation",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "containedItems",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "inPiece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Shipment",
+      "sourceKey": "pieces",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "ofShipment",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.PackagingType",
+      "sourceKey": "appliedOnPieces",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "packagingType",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.SecurityDeclaration",
+      "sourceKey": "issuedForPiece",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "securityDeclarations",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.EpermitConsignment",
+      "sourceKey": "consignmentItems",
+      "target": "General.PieceLiveAnimals",
+      "targetKey": "associatedEpermit",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.PieceDg",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.PieceDg",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.PieceDg",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.PieceDg",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Item",
+      "sourceKey": "inPiece",
+      "target": "General.PieceDg",
+      "targetKey": "containedItems",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "inPiece",
+      "target": "General.PieceDg",
+      "targetKey": "containedPieces",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Product",
+      "sourceKey": "describedObjects",
+      "target": "General.PieceDg",
+      "targetKey": "contentProducts",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.CustomsInformation",
+      "sourceKey": "issuedForPiece",
+      "target": "General.PieceDg",
+      "targetKey": "customsInformation",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "containedItems",
+      "target": "General.PieceDg",
+      "targetKey": "inPiece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Shipment",
+      "sourceKey": "pieces",
+      "target": "General.PieceDg",
+      "targetKey": "ofShipment",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.PackagingType",
+      "sourceKey": "appliedOnPieces",
+      "target": "General.PieceDg",
+      "targetKey": "packagingType",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.SecurityDeclaration",
+      "sourceKey": "issuedForPiece",
+      "target": "General.PieceDg",
+      "targetKey": "securityDeclarations",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.DgDeclaration",
+      "sourceKey": "issuedForPiece",
+      "target": "General.PieceDg",
+      "targetKey": "dgDeclaration",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Piece",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Piece",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.Piece",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.Piece",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Item",
+      "sourceKey": "inPiece",
+      "target": "General.Piece",
+      "targetKey": "containedItems",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "inPiece",
+      "target": "General.Piece",
+      "targetKey": "containedPieces",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Product",
+      "sourceKey": "describedObjects",
+      "target": "General.Piece",
+      "targetKey": "contentProducts",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.CustomsInformation",
+      "sourceKey": "issuedForPiece",
+      "target": "General.Piece",
+      "targetKey": "customsInformation",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "containedItems",
+      "target": "General.Piece",
+      "targetKey": "inPiece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Shipment",
+      "sourceKey": "pieces",
+      "target": "General.Piece",
+      "targetKey": "ofShipment",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.PackagingType",
+      "sourceKey": "appliedOnPieces",
+      "target": "General.Piece",
+      "targetKey": "packagingType",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.SecurityDeclaration",
+      "sourceKey": "issuedForPiece",
+      "target": "General.Piece",
+      "targetKey": "securityDeclarations",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.PhysicalLogisticsObject",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.PhysicalLogisticsObject",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.PhysicalLogisticsObject",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.PhysicalLogisticsObject",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "contactPersons",
+      "target": "General.Person",
+      "targetKey": "associatedOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Person",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Person",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Person",
+      "targetKey": "documents",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.PackagingType",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.PackagingType",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "packagingType",
+      "target": "General.PackagingType",
+      "targetKey": "appliedOnPieces",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Organization",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Organization",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.Organization",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "subOrganization",
+      "target": "General.Organization",
+      "targetKey": "parentOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "parentOrganization",
+      "target": "General.Organization",
+      "targetKey": "subOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "contactPersons",
+      "target": "General.NonHumanActor",
+      "targetKey": "associatedOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.NonHumanActor",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.NonHumanActor",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.LogisticsService",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.LogisticsService",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.LogisticsService",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.LogisticsObject",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.LogisticsObject",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.LogisticsEvent",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.LogisticsAgent",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.LogisticsAgent",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "servedActivity",
+      "target": "General.LogisticsActivity",
+      "targetKey": "checkActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.LogisticsActivity",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.LogisticsActivity",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.LogisticsActivity",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.LogisticsAction",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Location",
+      "sourceKey": "onsiteActions",
+      "target": "General.LogisticsAction",
+      "targetKey": "performedAt",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsActivity",
+      "sourceKey": "checkActions",
+      "target": "General.LogisticsAction",
+      "targetKey": "servedActivity",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.LogisticsAction",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.LogisticsAction",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "performedAt",
+      "target": "General.Location",
+      "targetKey": "onsiteActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Location",
+      "sourceKey": "subLocations",
+      "target": "General.Location",
+      "targetKey": "subLocationOf",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Location",
+      "sourceKey": "subLocationOf",
+      "target": "General.Location",
+      "targetKey": "subLocations",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Location",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Location",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.Location",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.Location",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.UnitComposition",
+      "sourceKey": "loadingUnit",
+      "target": "General.LoadingUnit",
+      "targetKey": "inUnitComposition",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.LoadingUnit",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.LoadingUnit",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.LoadingUnit",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.LoadingUnit",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.LoadingMaterial",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.LoadingMaterial",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.LoadingMaterial",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.LoadingMaterial",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LoadingMaterial",
+      "sourceKey": "involvedInActions",
+      "target": "General.Loading",
+      "targetKey": "loadedMaterials",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "involvedInActions",
+      "target": "General.Loading",
+      "targetKey": "loadedPieces",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LoadingUnit",
+      "sourceKey": "involvedInActions",
+      "target": "General.Loading",
+      "targetKey": "loadedUnits",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.TransportMeans",
+      "sourceKey": "involvedInActions",
+      "target": "General.Loading",
+      "targetKey": "onTransportMeans",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.Loading",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Location",
+      "sourceKey": "onsiteActions",
+      "target": "General.Loading",
+      "targetKey": "performedAt",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsActivity",
+      "sourceKey": "checkActions",
+      "target": "General.Loading",
+      "targetKey": "servedActivity",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Loading",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Loading",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.EpermitConsignment",
+      "sourceKey": "epermit",
+      "target": "General.LiveAnimalsEpermit",
+      "targetKey": "consignments",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.EpermitSignature",
+      "sourceKey": "forEpermit",
+      "target": "General.LiveAnimalsEpermit",
+      "targetKey": "signatures",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.LiveAnimalsEpermit",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.LiveAnimalsEpermit",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "containedItems",
+      "target": "General.ItemDg",
+      "targetKey": "inPiece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Product",
+      "sourceKey": "describedObjects",
+      "target": "General.ItemDg",
+      "targetKey": "ofProduct",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.ItemDg",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.ItemDg",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.ItemDg",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.ItemDg",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "containedItems",
+      "target": "General.Item",
+      "targetKey": "inPiece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Product",
+      "sourceKey": "describedObjects",
+      "target": "General.Item",
+      "targetKey": "ofProduct",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Item",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Item",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.Item",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.Item",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.PhysicalLogisticsObject",
+      "sourceKey": "attachedIotDevices",
+      "target": "General.IotDevice",
+      "targetKey": "attachedToObject",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Sensor",
+      "sourceKey": "partOfIotDevice",
+      "target": "General.IotDevice",
+      "targetKey": "connectedSensors",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.IotDevice",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.IotDevice",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.IotDevice",
+      "sourceKey": "attachedToObject",
+      "target": "General.IotDevice",
+      "targetKey": "attachedIotDevices",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsAction",
+      "sourceKey": "composedMaterials",
+      "target": "General.IotDevice",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Shipment",
+      "sourceKey": "insurance",
+      "target": "General.Insurance",
+      "targetKey": "insuredShipments",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Insurance",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Insurance",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsObject",
+      "sourceKey": "documents",
+      "target": "General.ExternalReference",
+      "targetKey": "referenceForObjects",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.ExternalReference",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.ExternalReference",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LiveAnimalsEpermit",
+      "sourceKey": "signatures",
+      "target": "General.EpermitSignature",
+      "targetKey": "forEpermit",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.EpermitSignature",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.EpermitSignature",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.PieceLiveAnimals",
+      "sourceKey": "associatedEpermit",
+      "target": "General.EpermitConsignment",
+      "targetKey": "consignmentItems",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LiveAnimalsEpermit",
+      "sourceKey": "consignments",
+      "target": "General.EpermitConsignment",
+      "targetKey": "epermit",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.EpermitConsignment",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.EpermitConsignment",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.DgProductRadioactive",
+      "sourceKey": "isotopes",
+      "target": "General.DgRadioactiveIsotope",
+      "targetKey": "contentOfDgProductRadioactive",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.DgRadioactiveIsotope",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.DgRadioactiveIsotope",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ProductDg",
+      "sourceKey": "dgRadioactiveMaterial",
+      "target": "General.DgProductRadioactive",
+      "targetKey": "forProductDg",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.DgRadioactiveIsotope",
+      "sourceKey": "contentOfDgProductRadioactive",
+      "target": "General.DgProductRadioactive",
+      "targetKey": "isotopes",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.DgProductRadioactive",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.DgProductRadioactive",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.PieceDg",
+      "sourceKey": "customsInformation",
+      "target": "General.DgDeclaration",
+      "targetKey": "issuedForPiece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.DgDeclaration",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.DgDeclaration",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "customsInformation",
+      "target": "General.CustomsInformation",
+      "targetKey": "issuedForPiece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Shipment",
+      "sourceKey": "customsInformation",
+      "target": "General.CustomsInformation",
+      "targetKey": "issuedForShipment",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.CustomsInformation",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.CustomsInformation",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LoadingMaterial",
+      "sourceKey": "involvedInActions",
+      "target": "General.Composing",
+      "targetKey": "composedMaterials",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Piece",
+      "sourceKey": "involvedInActions",
+      "target": "General.Composing",
+      "targetKey": "composedPieces",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LoadingUnit",
+      "sourceKey": "inUnitComposition",
+      "target": "General.Composing",
+      "targetKey": "loadingUnit",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.Composing",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Location",
+      "sourceKey": "onsiteActions",
+      "target": "General.Composing",
+      "targetKey": "performedAt",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsActivity",
+      "sourceKey": "checkActions",
+      "target": "General.Composing",
+      "targetKey": "servedActivity",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Composing",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Composing",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Company",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Company",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.Company",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "subOrganization",
+      "target": "General.Company",
+      "targetKey": "parentOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "parentOrganization",
+      "target": "General.Company",
+      "targetKey": "subOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsObject",
+      "sourceKey": "co2Emissions",
+      "target": "General.CO2Emissions",
+      "targetKey": "calculationFor",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.CO2Emissions",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.CO2Emissions",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkTotalResult",
+      "target": "General.CheckTotalResult",
+      "targetKey": "resultOfCheck",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.CheckTotalResult",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.CheckTotalResult",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.CheckTemplate",
+      "targetKey": "legacyTemplate",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Question",
+      "sourceKey": "checkTemplate",
+      "target": "General.CheckTemplate",
+      "targetKey": "questions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "usedTemplate",
+      "target": "General.CheckTemplate",
+      "targetKey": "usedInCheck",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.CheckTemplate",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.CheckTemplate",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.CheckTotalResult",
+      "sourceKey": "resultOfCheck",
+      "target": "General.Check",
+      "targetKey": "checkTotalResult",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsObject",
+      "sourceKey": "checks",
+      "target": "General.Check",
+      "targetKey": "checkedObject",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.CheckTemplate",
+      "sourceKey": "usedInCheck",
+      "target": "General.Check",
+      "targetKey": "usedTemplate",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.Check",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Location",
+      "sourceKey": "onsiteActions",
+      "target": "General.Check",
+      "targetKey": "performedAt",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.LogisticsActivity",
+      "sourceKey": "checkActions",
+      "target": "General.Check",
+      "targetKey": "servedActivity",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Check",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Check",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Carrier",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Carrier",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.Carrier",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "subOrganization",
+      "target": "General.Carrier",
+      "targetKey": "parentOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "parentOrganization",
+      "target": "General.Carrier",
+      "targetKey": "subOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.BookingOptionRequest",
+      "sourceKey": "bookingOptions",
+      "target": "General.BookingShipment",
+      "targetKey": "forBookingOptionRequest",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.BookingShipment",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.BookingShipment",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Booking",
+      "sourceKey": "bookingRequest",
+      "target": "General.BookingRequest",
+      "targetKey": "booking",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.BookingOption",
+      "sourceKey": "forBookingRequest",
+      "target": "General.BookingRequest",
+      "targetKey": "forBookingOption",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.BookingRequest",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.BookingRequest",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.BookingOption",
+      "sourceKey": "forBookingOptionRequest",
+      "target": "General.BookingOptionRequest",
+      "targetKey": "bookingOptions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.BookingShipment",
+      "sourceKey": "forBookingOptionRequest",
+      "target": "General.BookingOptionRequest",
+      "targetKey": "bookingShipmentDetails",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Booking",
+      "sourceKey": "updateBookingOptionRequests",
+      "target": "General.BookingOptionRequest",
+      "targetKey": "bookingToUpdate",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.BookingOptionRequest",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.BookingOptionRequest",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.BookingOptionRequest",
+      "sourceKey": "bookingOptions",
+      "target": "General.BookingOption",
+      "targetKey": "forBookingOptionRequest",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.BookingRequest",
+      "sourceKey": "forBookingOption",
+      "target": "General.BookingOption",
+      "targetKey": "forBookingRequest",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Price",
+      "sourceKey": "forBookingOption",
+      "target": "General.BookingOption",
+      "targetKey": "price",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.BookingOption",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.BookingOption",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.BookingRequest",
+      "sourceKey": "booking",
+      "target": "General.Booking",
+      "targetKey": "bookingRequest",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Waybill",
+      "sourceKey": "referredBookingOption",
+      "target": "General.Booking",
+      "targetKey": "issuedForWaybill",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.BookingOptionRequest",
+      "sourceKey": "bookingToUpdate",
+      "target": "General.Booking",
+      "targetKey": "updateBookingOptionRequests",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Booking",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Booking",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Actor",
+      "sourceKey": "associatedOrganization",
+      "target": "General.Booking",
+      "targetKey": "contactPersons",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Waybill",
+      "sourceKey": "billingDetails",
+      "target": "General.BillingDetails",
+      "targetKey": "detailedWaybill",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.BillingDetails",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.BillingDetails",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Question",
+      "sourceKey": "answer",
+      "target": "General.Answer",
+      "targetKey": "question",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Answer",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Answer",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Organization",
+      "sourceKey": "contactPersons",
+      "target": "General.Actor",
+      "targetKey": "associatedOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.Check",
+      "sourceKey": "checkedObject",
+      "target": "General.Actor",
+      "targetKey": "checks",
+      "relation": "hasMany"
+    },
+    {
+      "source": "General.ExternalReference",
+      "sourceKey": "referenceForObjects",
+      "target": "General.Actor",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    }
+   ]
