@@ -6,7 +6,7 @@ import databases from "../../config/databases";
 export function DatabaseMenuPopup(props: DatabaseMenuPopupProps) {
   const databaseHref = ((databaseName: string) => {
     if(process.env.NODE_ENV === "production") {
-      return `/sql_schema_visualizer/databases/${databaseName}`
+      return `/ontology_visualizer/databases/${databaseName}`
     } else {
       return `/databases/${databaseName}`;
     }
