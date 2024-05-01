@@ -43,13 +43,13 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
             {"target" && <Handle
               type="target"
               position={Position.Right}
-              id={`${data.name}-table-right`}
+              id={`${data.schema ? `${data.schema}.${data.name}` : data.name}-table-right`}
               className="right-handle source-handle"
             />}
             {"target" && <Handle
               type="target"
               position={Position.Left}
-              id={`${data.name}-table-left`}
+              id={`${data.schema ? `${data.schema}.${data.name}` : data.name}-table-left`}
               className="left-handle target-handle"
             />}
       </div>
