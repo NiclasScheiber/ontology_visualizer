@@ -1,5 +1,5 @@
 import { useState, FC, useEffect } from "react";
-import { Handle, Position, NodeProps } from "reactflow";
+import { Handle, Position, NodeProps, useReactFlow } from "reactflow";
 import { KeyIcon, ArrayIcon } from "../components";
 import { markdown } from "../helpers";
 
@@ -9,8 +9,8 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
   const [selectedColumn, setSelectedColumn] = useState("");
   const [showDescription, setshowDescription] = useState(false);
   const [descriptionOnHoverActive, setDescriptionOnHoverActive] = useState(false);
-  const { fitView } = useReactFlow();
-  
+  const fitView = useReactFlow();
+
   useEffect(() => {
     document.addEventListener("keydown", (e: KeyboardEvent) => {
       if(e.code === "ShiftLeft" || e.code === "ShiftRight") {
