@@ -1,5 +1,5 @@
 import { useState, FC, useEffect } from "react";
-import { Handle, Position, NodeProps, useReactFlow, Node, FitViewOptions } from "reactflow";
+import { Handle, Position, NodeProps } from "reactflow";
 import { KeyIcon, ArrayIcon } from "../components";
 import { markdown } from "../helpers";
 
@@ -9,7 +9,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
   const [selectedColumn, setSelectedColumn] = useState("");
   const [showDescription, setshowDescription] = useState(false);
   const [descriptionOnHoverActive, setDescriptionOnHoverActive] = useState(false);
-  const reactFlowInstance = useReactFlow();
+  //const reactFlowInstance = useReactFlow();
 
   useEffect(() => {
     document.addEventListener("keydown", (e: KeyboardEvent) => {
