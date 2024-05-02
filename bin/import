@@ -86,13 +86,13 @@ const importTableConfigs = async (databaseName, tables, tablesDescription) => {
       const columnName = row[0];
       const columnType = row[1];
       const propertyDescription = row[2];
-      const is_array = row[3];
+      const isArray = (row[3] === 'true');
 
       tableConfig.columns.push({
         name: columnName,
         description: propertyDescription,
         type: columnType,
-        array : is_array
+        array : isArray
       });
     });
 
