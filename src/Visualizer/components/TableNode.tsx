@@ -66,19 +66,17 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
               }
             }}
             onMouseLeave={() => setSelectedColumn("")}
-            onClick={() => {              
-              window.requestAnimationFrame(() => {
-                const fitNodes: Node = 
-                  { id: 'Generic.booking', data: {}, position: { x: 5, y: 5 } };
+            /*onClick={() => {              
+              /*window.requestAnimationFrame(() => {
                 
-                const fitViewOptions: FitViewOptions = {
+               // const fitViewOptions: FitViewOptions = {
                   duration: 500,
                   nodes: {id: 'Generic.booking'}
                 };
 
-                reactFlowInstance.fitView(fitViewOptions);
+                //reactFlowInstance.fitView(fitViewOptions);
               })
-            }}
+            }}*/
             >
             {column.handleType && <Handle
               type={column.handleType}
