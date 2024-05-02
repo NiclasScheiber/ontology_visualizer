@@ -3,14 +3,14 @@
       "source": "Embedded.ActivitySequence",
       "sourceKey": "activity",
       "target": "Core.UnitComposition",
-      "targetKey": "Core.UnitComposition",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.ActivitySequence",
       "sourceKey": "activity",
       "target": "Core.TransportMovement",
-      "targetKey": "Core.TransportMovement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
