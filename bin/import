@@ -87,7 +87,7 @@ const importTableConfigs = async (databaseName, tables, tablesDescription) => {
       const columnType = row[1];
       const propertyDescription = row[2];
       const isArray = JSON.parse(row[3].toLowerCase());
-      const isCodelist = false
+      const isCodelist = JSON.parse(row[4].toLowerCase());
 
       tableConfig.columns.push({
         name: columnName,
@@ -160,7 +160,7 @@ const importConfigFiles = async ({ databaseName }) => {
     const name = row.table_schema === "public" ? row.table_name : `${row.table_schema}.${row.table_name}`;
 
     if(tables[name]) {
-      tables[name].push([row.column_name, row.data_type, row.property_description, row.is_array]); 
+      tables[name].push([row.column_name, row.data_type, row.property_description, row.is_array, row.is_codelist]); 
     } else {
       tables[name] = [[row.column_name, row.data_type, row.property_description, row.is_array, row.is_codelist]];
     }
