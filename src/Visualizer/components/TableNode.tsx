@@ -1,6 +1,6 @@
 import { useState, FC, useEffect } from "react";
 import { Handle, Position, NodeProps } from "reactflow";
-import { KeyIcon, ArrayIcon } from "../components";
+import { KeyIcon, ArrayIcon, CodelistIcon } from "../components";
 import { markdown } from "../helpers";
 
 import "@reactflow/node-resizer/dist/style.css";
@@ -96,6 +96,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
                 {column.key && <KeyIcon />}
                 {column.name}
                 {column.array && <ArrayIcon />}
+                {column.codelist && <CodelistIcon />}
               </div>
               <div className="column-name__type">
                 {column.type}

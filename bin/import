@@ -87,12 +87,14 @@ const importTableConfigs = async (databaseName, tables, tablesDescription) => {
       const columnType = row[1];
       const propertyDescription = row[2];
       const isArray = (row[3] === 'true');
+      const isCodelist = (row[4] === 'true');
 
       tableConfig.columns.push({
         name: columnName,
         description: propertyDescription,
         type: columnType,
-        array : isArray
+        array : isArray,
+        codelist : isCodelist
       });
     });
 
@@ -160,7 +162,7 @@ const importConfigFiles = async ({ databaseName }) => {
     if(tables[name]) {
       tables[name].push([row.column_name, row.data_type, row.property_description, row.is_array]); 
     } else {
-      tables[name] = [[row.column_name, row.data_type, row.property_description, row.is_array]];
+      tables[name] = [[row.column_name, row.data_type, row.property_description, row.is_array, row.is_codelist]];
     }
 
     if(tablesDescription[name]) {
