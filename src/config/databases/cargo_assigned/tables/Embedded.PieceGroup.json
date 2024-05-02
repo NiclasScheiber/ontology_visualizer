@@ -1,0 +1,35 @@
+{
+  "schema": "Embedded",
+  "name": "PieceGroup",
+  "description": "PieceGroup details",
+  "columns": [
+    {
+      "name": "dryIceWeight",
+      "description": "Weight of dry ice",
+      "type": "Value",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "pieceGroupGrossWeight",
+      "description": "Total gross weight of the piece group",
+      "type": "Value",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "pieceGroupCount",
+      "description": "Number of pieces in the piece group",
+      "type": "integer",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "pieceGroupId",
+      "description": "Identifier of the piece group; increasing integers",
+      "type": "integer",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}

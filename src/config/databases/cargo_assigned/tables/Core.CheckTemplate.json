@@ -1,0 +1,14 @@
+{
+  "schema": "Core",
+  "name": "CheckTemplate",
+  "description": "CheckTemplate is the body of a check; holding links to multiple Question LOs and is provided by the party in charge of the template that is used",
+  "columns": [
+    {
+      "name": "involvedParties",
+      "description": "",
+      "type": "Party",
+      "array": true,
+      "codelist": false
+    }
+  ]
+}

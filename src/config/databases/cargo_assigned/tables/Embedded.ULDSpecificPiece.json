@@ -1,0 +1,63 @@
+{
+  "schema": "Embedded",
+  "name": "ULDSpecificPiece",
+  "description": "ULDSpecificPiece details",
+  "columns": [
+    {
+      "name": "dryIceWeight",
+      "description": "Weight of dry ice",
+      "type": "Value",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "pieceGroupGrossWeight",
+      "description": "Total gross weight of the piece group",
+      "type": "Value",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "pieceGroupCount",
+      "description": "Number of pieces in the piece group",
+      "type": "integer",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "pieceGroupId",
+      "description": "Identifier of the piece group; increasing integers",
+      "type": "integer",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "uldContourCode",
+      "description": "Contour code as per IATA ULD Regulation",
+      "type": "CodeListElement",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "uldType",
+      "description": "Type of ULD as per IATA ULD Regulation",
+      "type": "CodeListElement",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "slac",
+      "description": "Shipper's Load And Count  ( total contained piece count as provided by shipper)",
+      "type": "integer",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "uldSerialNumber",
+      "description": "Serial number that allows to uniquely identify the ULD",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}

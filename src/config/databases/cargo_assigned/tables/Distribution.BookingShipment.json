@@ -1,0 +1,98 @@
+{
+  "schema": "Distribution",
+  "name": "BookingShipment",
+  "description": "Simplified shipment object that is to be used only for the distribution scope where only a subset of data is known priori to operational phase.",
+  "columns": [
+    {
+      "name": "expectedCommodity",
+      "description": "Expected commodity of the shipment as per Commodity Code list. Either this or expected HS code required",
+      "type": "CommodityCode",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "expectedHScode",
+      "description": "Expected commodity of the shipment as per HS code (at least 6 digits). Either this or expectedCommodityCode required",
+      "type": "CodeListElement",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "forBookingOptionRequest",
+      "description": "Reference to the BookingOptionRequest the information of the LogisticsObject is detailling",
+      "type": "BookingOptionRequest",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "pieceGroups",
+      "description": "Reference to the Piece groups of the shipment",
+      "type": "PieceGroup",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "specialHandlingCodes",
+      "description": "Three-letter special handling code (SPH)",
+      "type": "SpecialHandlingCode",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "temperatureInstructions",
+      "description": "Temperature instructions if a specific range",
+      "type": "TemperatureInstructions",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "consolidationIndicator",
+      "description": "Indication if the shipment is a consolidation",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "specialServiceRequests",
+      "description": "Special service requests",
+      "type": "string",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "textualHandlingInstructions",
+      "description": "Strings to provide free text handling instructions such as SSR and OSI",
+      "type": "string",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}

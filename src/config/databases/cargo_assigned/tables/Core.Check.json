@@ -1,0 +1,119 @@
+{
+  "schema": "Core",
+  "name": "Check",
+  "description": "Action to describe a check",
+  "columns": [
+    {
+      "name": "checkTotalResult",
+      "description": "Reference to the result of the Check",
+      "type": "CheckTotalResult",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "checkedObject",
+      "description": "Reference to the checked Object",
+      "type": "LogisticsObject",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "checker",
+      "description": "Reference to the Actor performing the Check",
+      "type": "Actor",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "usedTemplate",
+      "description": "Reference to the Template used in the Check",
+      "type": "CheckTemplate",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "actionTimeType",
+      "description": "Enum stating the type of the Action",
+      "type": "ActionTimeType",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "Actor",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "performedAt",
+      "description": "Reference to the Location the Action was performed at",
+      "type": "Location",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "servedActivity",
+      "description": "Reference to the Activity the Action was performed for",
+      "type": "LogisticsActivity",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "actionEndTime",
+      "description": "DateTime holding the end time of the Action",
+      "type": "dateTime",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "actionStartTime",
+      "description": "DateTime holding the start time of the Action",
+      "type": "dateTime",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}

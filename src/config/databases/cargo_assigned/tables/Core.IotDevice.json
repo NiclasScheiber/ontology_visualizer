@@ -1,0 +1,98 @@
+{
+  "schema": "Core",
+  "name": "IotDevice",
+  "description": "IoT Device details",
+  "columns": [
+    {
+      "name": "attachedToObject",
+      "description": "Reference to the PhysicalLogisticsObject the IotDevice is attached to",
+      "type": "PhysicalLogisticsObject",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "connectedSensors",
+      "description": "Reference to the sensors linked to the device",
+      "type": "Sensor",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "manufacturer",
+      "description": "Manufacturing company details and contacts",
+      "type": "Company",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "description",
+      "description": "Natural language description if required",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "deviceModel",
+      "description": "Commercial denomination of the device",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "name",
+      "description": "Human-understandable name of object depending on the context",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "serialNumber",
+      "description": "Serial number that allows to uniquely identify the object",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in",
+      "type": "LogisticsAction",
+      "array": true,
+      "codelist": false
+    }
+  ]
+}

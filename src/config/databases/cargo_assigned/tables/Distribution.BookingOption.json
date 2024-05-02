@@ -1,0 +1,140 @@
+{
+  "schema": "Distribution",
+  "name": "BookingOption",
+  "description": "Booking details",
+  "columns": [
+    {
+      "name": "bookingTimes",
+      "description": "Information about the Booking Times of a privded Booking Option",
+      "type": "BookingTimes",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "carrier",
+      "description": "Reference to the operating carrier",
+      "type": "Carrier",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "carrierProduct",
+      "description": "Reference to the Carrier product if known",
+      "type": "CarrierProduct",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "forBookingOptionRequest",
+      "description": "Reference to the BookingOptionRequest the information of the LogisticsObject is detailling",
+      "type": "BookingOptionRequest",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "forBookingRequest",
+      "description": "Reference to the Booking Request the of the Booking Option",
+      "type": "BookingRequest",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "price",
+      "description": "Price of the Booking (if different from the offer)",
+      "type": "Price",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "stationRemarks",
+      "description": "Remarks related to specific stations in the routing (e.g. Embargo in XXX)",
+      "type": "StationRemarks",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "statusBookingOption",
+      "description": "Status of the Booking Option",
+      "type": "BookingOptionStatus",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "transportLegs",
+      "description": "Reference to the Transport Legs of the proposed routing",
+      "type": "TransportLegs",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "unitsPreference",
+      "description": "Reference to unit preferences of the request (e.g. kg or cm)",
+      "type": "UnitsPreference",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "additionalInformation",
+      "description": "Additional infromation related to the Booking Option; e.g. sales details",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "alternatives",
+      "description": "Description of the alternatives proposed that do not match the Booking Option Request",
+      "type": "string",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "offerValidFrom",
+      "description": "Date and time of beginning of offer validity",
+      "type": "dateTime",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "offerValidTo",
+      "description": "Date and time of end of offer validity",
+      "type": "dateTime",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "requestMatch",
+      "description": "Indicates if the Booking Option is a match to the Booking Option Request preferences",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}

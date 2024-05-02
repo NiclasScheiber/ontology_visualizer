@@ -1,0 +1,175 @@
+{
+  "schema": "Core",
+  "name": "TransportMovement",
+  "description": "Activity to describe transports; replaces the TransportSegment in v1.1 and above",
+  "columns": [
+    {
+      "name": "checkActions",
+      "description": "References to CheckActions performed for the Activity",
+      "type": "Check",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "Actor",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "executionStatus",
+      "description": "Enum stating the status of the Activity",
+      "type": "ExecutionStatus",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "servedServices",
+      "description": "Reference to Services this Activity is executed for",
+      "type": "LogisticsService",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "arrivalLocation",
+      "description": "Reference to the arrival Location",
+      "type": "Location",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "co2Emissions",
+      "description": "References to CO2Emissions",
+      "type": "CO2Emissions",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "departureLocation",
+      "description": "Reference to the depature Location",
+      "type": "Location",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "distanceCalculated",
+      "description": "Information about the calculated distance",
+      "type": "Value",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "distanceMeasured",
+      "description": "Information about the measured distance",
+      "type": "Value",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "fuelAmountCalculated",
+      "description": "Information about the calculated fuel amount",
+      "type": "Value",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "fuelAmountMeasured",
+      "description": "Information about the measured fuel amount",
+      "type": "Value",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "loadingActions",
+      "description": "References to all actions of type Loading performed for the TransportMovement",
+      "type": "Loading",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "modeCode",
+      "description": "Mode of transport code; refer to UNECE Rec. 19 https://unece.org/fileadmin/DAM/cefact/recommendations/rec19/rec19_1cf19e.pdf",
+      "type": "ModeCode",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "modeQualifier",
+      "description": "Pre-Carriage; Main-Carriage or On-Carriage",
+      "type": "ModeQualifier",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "movementTimes",
+      "description": "Information about times related to the movement (milestone list to be defined)",
+      "type": "MovementTime",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "operatingTransportMeans",
+      "description": "Reference to the TransportMeans operating the TransportMovement",
+      "type": "TransportMeans",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "fuelType",
+      "description": "e.g. Kerosene; Diesel; SAF; Electricity [renewable]; Electricity [non-renewable]",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "seal",
+      "description": "Seal identifier",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "transportIdentifier",
+      "description": "Airline flight number; or rail/truck/maritime line id",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "Distribution",
+  "name": "BookingRequest",
+  "description": "A party; usually the freight forwarder; creates the BookingRequest in order to confirm the booking to the Carrier",
+  "columns": [
+    {
+      "name": "booking",
+      "description": "Reference to the Booking",
+      "type": "Booking",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "forBookingOption",
+      "description": "Reference to the BookingOption the LogisticsObject is detailling",
+      "type": "BookingOption",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "waybillNumber",
+      "description": "House or Master Waybill unique identifier",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "waybillPrefix",
+      "description": "Prefix used for the Waybill Number. Refer to IATA Airlines Codes",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}

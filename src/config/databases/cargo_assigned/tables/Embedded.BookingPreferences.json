@@ -1,0 +1,49 @@
+{
+  "schema": "Embedded",
+  "name": "BookingPreferences",
+  "description": "BookingPreferences details",
+  "columns": [
+    {
+      "name": "aircraftPossibilityCode",
+      "description": "Type of aircraft to be used if any specific requirements (e.g. Pure freighter; etc.)",
+      "type": "AircraftPossibilityCode",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "excludedViaPoints",
+      "description": "Locations of excluded Via Points",
+      "type": "Location",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "includedViaPoints",
+      "description": "Locations or stations to included in the routing",
+      "type": "Location",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "maxSegments",
+      "description": "Maximum number of segments for the transportation of the goods. 1 means direct flight",
+      "type": "integer",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "preferredTransportId",
+      "description": "When part of the Request it refers to the preferred Transport ID from the customer. When part of the BookingOption (offer or actual booking) it refers to the expected Transport ID or flight",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "priceReferenceId",
+      "description": "Reference to a price reference if existing (e.g. Allotment number; contract reference; etc.)",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}

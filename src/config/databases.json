@@ -26,5 +26,9 @@
   "cargo_full": {
     "name": "cargo_full",
     "description": ""
+  },
+  "cargo_assigned": {
+    "name": "cargo_assigned",
+    "description": ""
   }
 }

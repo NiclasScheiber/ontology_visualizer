@@ -1,0 +1,371 @@
+{
+  "schema": "LiveAnimals",
+  "name": "PieceLiveAnimals",
+  "description": "LiveAnimals subclass of Piece",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in",
+      "type": "LogisticsAction",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "containedItems",
+      "description": "Reference to the item(s) contained in the piece",
+      "type": "Item",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "containedPieces",
+      "description": "Details of contained piece(s)",
+      "type": "Piece",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "contentProductionCountry",
+      "description": "Goods production country; mandatory when there are no Items. Refer ISO 3166-2",
+      "type": "CodeListElement",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "contentProducts",
+      "description": "Reference to the Products describing the content of the Piece; mandatory if no data on Item level is used",
+      "type": "Product",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "customsInformation",
+      "description": "Customs details",
+      "type": "CustomsInformation",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "dimensions",
+      "description": "Dimensions details",
+      "type": "Dimensions",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "fulfillsUldTypeCode",
+      "description": "Text holding an ULD Type Code if the Piece fulfills it before UnitComposition",
+      "type": "CodeListElement",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "grossWeight",
+      "description": "Weight details",
+      "type": "Value",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "inPiece",
+      "description": "Reference to the Piece this Item or Piece is contained in",
+      "type": "Piece",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "involvedParties",
+      "description": "Information about other Parties involved depending on the context of use",
+      "type": "Party",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "loadType",
+      "description": "Load type of the shipment or piece (Bulk; ULD; Pallet; Loose)",
+      "type": "LoadType",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "ofShipment",
+      "description": "Reference to the Shipment the Piece is assigned to",
+      "type": "Shipment",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "packageMarkCoded",
+      "description": "Reference identifying how the package is marked. Field is hardcode to SSCC-18; UPC or Other",
+      "type": "PackageMarkCode",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "packagingType",
+      "description": "Packaging details ",
+      "type": "PackagingType",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "securityDeclarations",
+      "description": "Security details of the piece",
+      "type": "SecurityDeclaration",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "specialHandlingCodes",
+      "description": "Three-letter special handling code (SPH)",
+      "type": "SpecialHandlingCode",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "temperatureInstructions",
+      "description": "Temperature instructions if a specific range",
+      "type": "TemperatureInstructions",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "volumetricWeight",
+      "description": "Volumetric weight details",
+      "type": "VolumetricWeight",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "coload",
+      "description": "Coload indicator for the pieces (boolean)",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "goodsDescription",
+      "description": "Description of goods; for the BookingShipment the commodity list defined by Modernizing Cargo Distribution MCD working group can be used as a referential.",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "nvdForCarriage",
+      "description": "When no value is declared for Carriage; this field may be completed with the value TRUE otherwise FALSE",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "nvdForCustoms",
+      "description": "When no value is declared for Customs; this field may be completed with the value TRUE otherwise FALSE",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "packagedeIdentifier",
+      "description": "SSCC-18 code for the value of the package mark; company or bar code; free text; pallet code; etc.",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "shippingMarks",
+      "description": "Shipping marks",
+      "type": "string",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "slac",
+      "description": "Shipper's Load And Count  ( total contained piece count as provided by shipper)",
+      "type": "integer",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "stackable",
+      "description": "Stackable indicator for the pieces (boolean)",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "textualHandlingInstructions",
+      "description": "Strings to provide free text handling instructions such as SSR and OSI",
+      "type": "string",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "turnable",
+      "description": "Turnable indicator for the pieces (boolean)",
+      "type": "boolean",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "upid",
+      "description": "Unique Piece Identifier (UPID) of the piece. Refer IATA Recommended Practice 1689",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "associatedEpermit",
+      "description": "Reference to the permits associated with the Live Animals",
+      "type": "EpermitConsignment",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "exportTradeCountry",
+      "description": "Country of last re-export (box 12a). Refer ISO 3166-2",
+      "type": "CodeListElement",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "goodsTypeCode",
+      "description": "Appendix number of the convention (I; II or III) (box 1)",
+      "type": "GoodsTypeCode",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "goodsTypeExtensionCode",
+      "description": "Appendix number of the convention (I; II or III) (box 1)",
+      "type": "GoodsTypeExtensionCode",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "originReferencePermitTypeCode",
+      "description": "Document type code of origin reference permit or re-export reference Certificate (box 12/12a)",
+      "type": "CodeListElement",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "originTradeCountry",
+      "description": "country of origin (box 12). Refer ISO 3166-2",
+      "type": "CodeListElement",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "specimenTypeCode",
+      "description": "Description of specimens; CITES type code (box 9)",
+      "type": "CodeListElement",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "acquisitionDateTime",
+      "description": "Defined in Resolution Conf. 13.6 and is required for pre-Convention specimens (box 12b)",
+      "type": "dateTime",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "annualQuotaQuantity",
+      "description": "total number of specimens exported in the current calendar year and the current annuela quota for the species concerned (box 11a)",
+      "type": "integer",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "categoryCode",
+      "description": "Operations code ID. Refers to the number of the registered captive-breeding or artifical propagation operation (box 12b)",
+      "type": "string",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "originReferencePermitDateTime",
+      "description": "Issuing date for Origin reference permit or re-export reference Certificate (box 12)",
+      "type": "dateTime",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "originReferencePermitId",
+      "description": "identifier of Origin reference permit or re-export reference Certificate (box 12/12a)",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "quantityAnimals",
+      "description": "Quantity including units (box 11)",
+      "type": "integer",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "speciesCommonName",
+      "description": "Species common name (box 8)",
+      "type": "string",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "speciesScientificName",
+      "description": "Species scientific name (box 7)",
+      "type": "string",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "specimenDescription",
+      "description": "Description of specimens; including age and sex if LA (box 9)",
+      "type": "string",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}
