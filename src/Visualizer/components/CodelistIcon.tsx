@@ -6,6 +6,7 @@ export function CodelistIcon() {
         xmlns="http://www.w3.org/2000/svg" 
         xmlSpace="preserve" 
         viewBox="0 0 452 289"
+        class="array_icon"
         overflow="hidden">
             <g transform="translate(-872 -471)">
                 <path d="M874.5 505.5C874.5 487.827 889.051 473.5 907 473.5 924.949 473.5 939.5 487.827 939.5 505.5 939.5 523.173 924.949 537.5 907 537.5 889.051 537.5 874.5 523.173 874.5 505.5Z" stroke="#000000" strokeWidth="4.58333" strokeMiterlimit="8" fillRule="evenodd"/>
