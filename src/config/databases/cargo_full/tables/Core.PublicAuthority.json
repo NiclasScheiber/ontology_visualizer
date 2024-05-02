@@ -1,0 +1,73 @@
+{
+  "name": "Core.PublicAuthority",
+  "description": "PublicAuthorities are Organizations of the state on public interests",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": " such as customs",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " such as customs",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " such as customs",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " such as customs",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "basedAtLocation",
+      "description": " such as customs",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "contactPersons",
+      "description": " such as customs",
+      "type": "Actor",
+      "array": false
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": " such as customs",
+      "type": "OtherIdentifier",
+      "array": false
+    },
+    {
+      "name": "parentOrganization",
+      "description": " such as customs",
+      "type": "Organization",
+      "array": false
+    },
+    {
+      "name": "subOrganization",
+      "description": " such as customs",
+      "type": "Organization",
+      "array": false
+    },
+    {
+      "name": "name",
+      "description": " such as customs",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "shortName",
+      "description": " such as customs",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

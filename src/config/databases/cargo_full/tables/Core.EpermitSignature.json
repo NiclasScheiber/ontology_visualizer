@@ -1,0 +1,73 @@
+{
+  "name": "Core.EpermitSignature",
+  "description": "Signature details of the Epermit for Live Animals",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "forEpermit",
+      "description": "Reference to the LiveAnimalsEpermit this Signature applies to",
+      "type": "LiveAnimalsEpermit",
+      "array": false
+    },
+    {
+      "name": "signatoryCompany",
+      "description": "Signatory company name",
+      "type": "Company",
+      "array": false
+    },
+    {
+      "name": "signatoryRole",
+      "description": "Role of the signatory with regards to the ePermit: Applicant",
+      "type": "SignatoryRole",
+      "array": false
+    },
+    {
+      "name": "signatureTypeCode",
+      "description": "Code specifying a type of government action such as inspection",
+      "type": "SignatureTypeCode",
+      "array": false
+    },
+    {
+      "name": "securityStampId",
+      "description": "Security Stamp ID",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "signatureDate",
+      "description": "Date and time of the signature",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "signatureStatement",
+      "description": "Signatory signature authentication text",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

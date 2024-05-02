@@ -1,0 +1,91 @@
+{
+  "name": "Core.Location",
+  "description": "Location describes a physical location",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "address",
+      "description": " e.g. an airport",
+      "type": "Address",
+      "array": false
+    },
+    {
+      "name": "geolocation",
+      "description": " e.g. an airport",
+      "type": "Geolocation",
+      "array": false
+    },
+    {
+      "name": "locationCodes",
+      "description": " e.g. an airport",
+      "type": "CodeListElement",
+      "array": false
+    },
+    {
+      "name": "onsiteActions",
+      "description": " e.g. an airport",
+      "type": "LogisticsAction",
+      "array": false
+    },
+    {
+      "name": "subLocationOf",
+      "description": " e.g. an airport",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "subLocations",
+      "description": " e.g. an airport",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "locationName",
+      "description": " e.g. an airport",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "locationType",
+      "description": " e.g. an airport",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": " e.g. an airport",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " e.g. an airport",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " e.g. an airport",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " e.g. an airport",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": " e.g. an airport",
+      "type": "IotDevice",
+      "array": false
+    },
+    {
+      "name": "involvedInActions",
+      "description": " e.g. an airport",
+      "type": "LogisticsAction",
+      "array": false
+    }
+  ]
+}

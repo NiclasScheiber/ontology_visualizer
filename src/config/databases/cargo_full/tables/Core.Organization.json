@@ -1,0 +1,73 @@
+{
+  "name": "Core.Organization",
+  "description": "Superclass: Organizations represent a kind of Agent corresponding to social instititutions such as companies",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": " societies",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " societies",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " societies",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " societies",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "basedAtLocation",
+      "description": " societies",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "contactPersons",
+      "description": " societies",
+      "type": "Actor",
+      "array": false
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": " societies",
+      "type": "OtherIdentifier",
+      "array": false
+    },
+    {
+      "name": "parentOrganization",
+      "description": " societies",
+      "type": "Organization",
+      "array": false
+    },
+    {
+      "name": "subOrganization",
+      "description": " societies",
+      "type": "Organization",
+      "array": false
+    },
+    {
+      "name": "name",
+      "description": " societies",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "shortName",
+      "description": " societies",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

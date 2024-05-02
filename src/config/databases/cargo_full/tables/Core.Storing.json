@@ -1,0 +1,97 @@
+{
+  "name": "Core.Storing",
+  "description": "Action to describe store-in or store-out",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "actionTimeType",
+      "description": "Enum stating the type of the Action",
+      "type": "ActionTimeType",
+      "array": false
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
+      "array": false
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person",
+      "type": "Actor",
+      "array": false
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier",
+      "type": "OtherIdentifier",
+      "array": false
+    },
+    {
+      "name": "performedAt",
+      "description": "Reference to the Location the Action was performed at",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "servedActivity",
+      "description": "Reference to the Activity the Action was performed for",
+      "type": "LogisticsActivity",
+      "array": false
+    },
+    {
+      "name": "actionEndTime",
+      "description": "DateTime holding the end time of the Action",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "actionStartTime",
+      "description": "DateTime holding the start time of the Action",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "storedObjects",
+      "description": "Reference to the Objects being stored in or stored out",
+      "type": "PhysicalLogisticsObject",
+      "array": false
+    },
+    {
+      "name": "storingType",
+      "description": "Enum stating whether the StoringAction describes the store-in or the store-out",
+      "type": "StoringType",
+      "array": false
+    },
+    {
+      "name": "storagePlaceIdentifier",
+      "description": "Short text stating the exact place of storage",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

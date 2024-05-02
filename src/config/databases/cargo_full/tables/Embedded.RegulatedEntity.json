@@ -1,0 +1,31 @@
+{
+  "name": "Embedded.RegulatedEntity",
+  "description": "Regulated Entity",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "owningOrganization",
+      "description": "Reference to the Organization for which the RegulatedEntity information is valid",
+      "type": "Organization",
+      "array": false
+    },
+    {
+      "name": "regulatedEntityCategory",
+      "description": "Category code of the Regulated Entity",
+      "type": "RegulatedEntityCategoryCode",
+      "array": false
+    },
+    {
+      "name": "regulatedEntityExpiryDate",
+      "description": "Expiry date 4 digits month/year",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "regulatedEntityIdentifier",
+      "description": "Regulated entity identifier as per IATA e-CSD/CSD Resolution 65",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

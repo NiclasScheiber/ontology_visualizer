@@ -1,0 +1,37 @@
+{
+  "name": "Embedded.UnitsPreference",
+  "description": "UnitsPreference details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "currency",
+      "description": "Preferred unit for currency",
+      "type": "CurrencyCode",
+      "array": false
+    },
+    {
+      "name": "dimensionsUnit",
+      "description": "Preferred unit for measurement and dimensions",
+      "type": "DimensionsUnitCode",
+      "array": false
+    },
+    {
+      "name": "temperatureUnit",
+      "description": "Preferred unit for temperature",
+      "type": "TemperatureUnitCode",
+      "array": false
+    },
+    {
+      "name": "volumeUnit",
+      "description": "Preferred unit for volume",
+      "type": "VolumeUnitCode",
+      "array": false
+    },
+    {
+      "name": "weightUnit",
+      "description": "Preferred unit for weight",
+      "type": "WeightUnitCode",
+      "array": false
+    }
+  ]
+}

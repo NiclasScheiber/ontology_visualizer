@@ -1,0 +1,25 @@
+{
+  "name": "Embedded.Party",
+  "description": "Refers to a Company and its role in a specific context",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "otherIdentifiers",
+      "description": " e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+      "type": "OtherIdentifier",
+      "array": false
+    },
+    {
+      "name": "partyDetails",
+      "description": " e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+      "type": "LogisticsAgent",
+      "array": false
+    },
+    {
+      "name": "partyRole",
+      "description": " e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+      "type": "ParticipantIdentifier",
+      "array": false
+    }
+  ]
+}

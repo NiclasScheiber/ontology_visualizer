@@ -1,0 +1,19 @@
+{
+  "name": "Embedded.Characteristic",
+  "description": "Product additional details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "characteristicType",
+      "description": "Product characteristics code - e.g. CLR - Color. Not restricted to a list.",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "textualValue",
+      "description": "Textual value filled on use context (eg. characteristic colour",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

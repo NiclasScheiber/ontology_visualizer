@@ -1,0 +1,19 @@
+{
+  "name": "Embedded.Value",
+  "description": "Unit of measurement details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "unit",
+      "description": "Unit of measurement as per MeasurementUnitCode codelist. If the code is not present",
+      "type": "MeasurementUnitCode",
+      "array": false
+    },
+    {
+      "name": "numericalValue",
+      "description": "Numerical value",
+      "type": "double",
+      "array": false
+    }
+  ]
+}

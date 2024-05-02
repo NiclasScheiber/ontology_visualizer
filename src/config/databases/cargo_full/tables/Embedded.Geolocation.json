@@ -1,0 +1,25 @@
+{
+  "name": "Embedded.Geolocation",
+  "description": "Geolocation details - e.g. for drones",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "elevation",
+      "description": " automated vehicles",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "latitude",
+      "description": " automated vehicles",
+      "type": "double",
+      "array": false
+    },
+    {
+      "name": "longitude",
+      "description": " automated vehicles",
+      "type": "double",
+      "array": false
+    }
+  ]
+}

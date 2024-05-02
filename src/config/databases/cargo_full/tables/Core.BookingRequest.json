@@ -1,0 +1,55 @@
+{
+  "name": "Core.BookingRequest",
+  "description": "A party",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "booking",
+      "description": " usually the freight forwarder",
+      "type": "Booking",
+      "array": false
+    },
+    {
+      "name": "forBookingOption",
+      "description": " usually the freight forwarder",
+      "type": "BookingOption",
+      "array": false
+    },
+    {
+      "name": "waybillNumber",
+      "description": " usually the freight forwarder",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "waybillPrefix",
+      "description": " usually the freight forwarder",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": " usually the freight forwarder",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " usually the freight forwarder",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " usually the freight forwarder",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " usually the freight forwarder",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

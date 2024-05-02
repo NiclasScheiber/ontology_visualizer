@@ -1,0 +1,73 @@
+{
+  "name": "Core.LoadingMaterial",
+  "description": "LoadingMaterial describes transportable",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "otherIdentifiers",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "OtherIdentifier",
+      "array": false
+    },
+    {
+      "name": "description",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "materialModel",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "materialType",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "serialNumber",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "IotDevice",
+      "array": false
+    },
+    {
+      "name": "involvedInActions",
+      "description": " complementary non-Piece objects such as dry ice or nets",
+      "type": "LogisticsAction",
+      "array": false
+    }
+  ]
+}

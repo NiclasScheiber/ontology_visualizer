@@ -1,0 +1,31 @@
+{
+  "name": "Embedded.LogisticsObject",
+  "description": "Logistics Object parent class",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": " containing all common properties for logistics objects.",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " containing all common properties for logistics objects.",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " containing all common properties for logistics objects.",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " containing all common properties for logistics objects.",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

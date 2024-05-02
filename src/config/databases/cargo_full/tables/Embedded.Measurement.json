@@ -1,0 +1,25 @@
+{
+  "name": "Embedded.Measurement",
+  "description": "Measurements details for Sensors",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "measurementValue",
+      "description": " either generic or geolocation measurements are recorded",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "recordedGeolocation",
+      "description": " either generic or geolocation measurements are recorded",
+      "type": "Geolocation",
+      "array": false
+    },
+    {
+      "name": "measurementTimestamp",
+      "description": " either generic or geolocation measurements are recorded",
+      "type": "dateTime",
+      "array": false
+    }
+  ]
+}

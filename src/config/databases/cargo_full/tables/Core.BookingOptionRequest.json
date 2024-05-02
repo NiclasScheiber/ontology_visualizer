@@ -1,0 +1,91 @@
+{
+  "name": "Core.BookingOptionRequest",
+  "description": "Request object",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "bookingOptions",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "BookingOption",
+      "array": false
+    },
+    {
+      "name": "bookingPreference",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "BookingPreferences",
+      "array": false
+    },
+    {
+      "name": "bookingShipmentDetails",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "BookingShipment",
+      "array": false
+    },
+    {
+      "name": "bookingToUpdate",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "Booking",
+      "array": false
+    },
+    {
+      "name": "carrierProduct",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "CarrierProduct",
+      "array": false
+    },
+    {
+      "name": "involvedParties",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "Party",
+      "array": false
+    },
+    {
+      "name": "timePreferences",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "BookingTimes",
+      "array": false
+    },
+    {
+      "name": "transportLegs",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "TransportLegs",
+      "array": false
+    },
+    {
+      "name": "unitsPreference",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "UnitsPreference",
+      "array": false
+    },
+    {
+      "name": "knownShipper",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " refers to the Quote request or Booking request ",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

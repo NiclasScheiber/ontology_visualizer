@@ -1,0 +1,43 @@
+{
+  "name": "Embedded.CodeListElement",
+  "description": "Embedded object to transmit codes from non-RDF code lists in 1R in a semi-structured way. Code lists may be externally maintained codes (such as HS codes) or carrier-specific codes. If a code is present in RDF-form as Named Individual (like in the 1R core code lists ontology)",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "code",
+      "description": " it suffices to put in its IRI",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "codeDescription",
+      "description": " it suffices to put in its IRI",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "codeLevel",
+      "description": " it suffices to put in its IRI",
+      "type": "integer",
+      "array": false
+    },
+    {
+      "name": "codeListName",
+      "description": " it suffices to put in its IRI",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "codeListReference",
+      "description": " it suffices to put in its IRI",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "codeListVersion",
+      "description": " it suffices to put in its IRI",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

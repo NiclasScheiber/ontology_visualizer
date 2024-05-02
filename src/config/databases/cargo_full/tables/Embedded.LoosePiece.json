@@ -1,0 +1,67 @@
+{
+  "name": "Embedded.LoosePiece",
+  "description": "LoosePiece details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "pieceHeight",
+      "description": "Height of a single piece",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "pieceLength",
+      "description": "Length of a single piece",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "pieceWeight",
+      "description": "Weight of a single piece",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "pieceWidth",
+      "description": "Width of a single piece",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "stackable",
+      "description": "Stackable indicator for the pieces (boolean)",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "turnable",
+      "description": "Turnable indicator for the pieces (boolean)",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "dryIceWeight",
+      "description": "Weight of dry ice",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "pieceGroupGrossWeight",
+      "description": "Total gross weight of the piece group",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "pieceGroupCount",
+      "description": "Number of pieces in the piece group",
+      "type": "integer",
+      "array": false
+    },
+    {
+      "name": "pieceGroupId",
+      "description": "Identifier of the piece group",
+      "type": "integer",
+      "array": false
+    }
+  ]
+}

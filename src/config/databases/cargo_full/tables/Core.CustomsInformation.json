@@ -1,0 +1,85 @@
+{
+  "name": "Core.CustomsInformation",
+  "description": "Customs information details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "contentCode",
+      "description": "Customs",
+      "type": "CodeListElement",
+      "array": false
+    },
+    {
+      "name": "contentCode",
+      "description": "Customs",
+      "type": "CodeListElement",
+      "array": false
+    },
+    {
+      "name": "country",
+      "description": "Country details. Refer ISO 3166-2",
+      "type": "CodeListElement",
+      "array": false
+    },
+    {
+      "name": "issuedForPiece",
+      "description": "Reference to the Piece the document was issued for",
+      "type": "Piece",
+      "array": false
+    },
+    {
+      "name": "issuedForShipment",
+      "description": "Reference to the shipment the document was issued for",
+      "type": "Shipment",
+      "array": false
+    },
+    {
+      "name": "subjectCode",
+      "description": "Information Identifier. Code identifying a piece of information/entity e.g. IMP for import",
+      "type": "CodeListElement",
+      "array": false
+    },
+    {
+      "name": "subjectCode",
+      "description": "Information Identifier. Code identifying a piece of information/entity e.g. IMP for import",
+      "type": "CodeListElement",
+      "array": false
+    },
+    {
+      "name": "note",
+      "description": "Free text for customs remarks",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "otherCustomsInformation",
+      "description": "Supplementary Customs",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

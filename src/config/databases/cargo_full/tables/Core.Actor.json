@@ -1,0 +1,37 @@
+{
+  "name": "Core.Actor",
+  "description": "Superclass: Actors are Persons or entities acting like a single person",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "associatedOrganization",
+      "description": "Reference to the Organization the Actor is associated with",
+      "type": "Organization",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

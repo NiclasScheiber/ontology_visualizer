@@ -1,0 +1,85 @@
+{
+  "name": "Core.UnitComposition",
+  "description": "Activity to describe composition and decomposition of LoadingUnits",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checkActions",
+      "description": "References to CheckActions performed for the Activity",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
+      "array": false
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person",
+      "type": "Actor",
+      "array": false
+    },
+    {
+      "name": "executionStatus",
+      "description": "Enum stating the status of the Activity",
+      "type": "ExecutionStatus",
+      "array": false
+    },
+    {
+      "name": "servedServices",
+      "description": "Reference to Services this Activity is executed for",
+      "type": "LogisticsService",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "compositionActions",
+      "description": "References to all CompositionActions performed for the UnitComposition",
+      "type": "Composing",
+      "array": false
+    },
+    {
+      "name": "loadingUnit",
+      "description": "Reference to the LoadingUnit composed in the Unit Composition or referenced in Composing actions",
+      "type": "LoadingUnit",
+      "array": false
+    },
+    {
+      "name": "compositionIdentifier",
+      "description": "Short text holding the process number if necessary",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "slac",
+      "description": "Shipper's Load And Count  ( total contained piece count as provided by shipper)",
+      "type": "integer",
+      "array": false
+    }
+  ]
+}

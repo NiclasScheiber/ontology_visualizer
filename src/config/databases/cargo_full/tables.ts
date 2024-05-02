@@ -1,311 +1,307 @@
 import { TableConfig } from "../../../Visualizer/types";
 
-import generalWeightUnitCodeTable from "./tables/General.WeightUnitCode.json";
-import generalVolumeUnitCodeTable from "./tables/General.VolumeUnitCode.json";
-import generalULDLoadingIndicatorTable from "./tables/General.ULDLoadingIndicator.json";
-import generalULDConditionCodeTable from "./tables/General.ULDConditionCode.json";
-import generalULDChargeCodeTable from "./tables/General.ULDChargeCode.json";
-import generalTransportMeansServiceTypeTable from "./tables/General.TransportMeansServiceType.json";
-import generalTransactionPurposeCodeTable from "./tables/General.TransactionPurposeCode.json";
-import generalTemperatureUnitCodeTable from "./tables/General.TemperatureUnitCode.json";
-import generalStatusCodeTable from "./tables/General.StatusCode.json";
-import generalSpecialHandlingCodeTable from "./tables/General.SpecialHandlingCode.json";
-import generalSignatureTypeCodeTable from "./tables/General.SignatureTypeCode.json";
-import generalSignatoryRoleTable from "./tables/General.SignatoryRole.json";
-import generalShipmentSecurityStatusTable from "./tables/General.ShipmentSecurityStatus.json";
-import generalServiceCodeTable from "./tables/General.ServiceCode.json";
-import generalSecurityStatusTable from "./tables/General.SecurityStatus.json";
-import generalScreeningMethodTable from "./tables/General.ScreeningMethod.json";
-import generalScreeningExemptionTable from "./tables/General.ScreeningExemption.json";
-import generalRegulatedEntityCategoryCodeTable from "./tables/General.RegulatedEntityCategoryCode.json";
-import generalRaTypeCodeTable from "./tables/General.RaTypeCode.json";
-import generalRatingsTypeTable from "./tables/General.RatingsType.json";
-import generalRateClassCodeTable from "./tables/General.RateClassCode.json";
-import generalRadioactiveMaterialClassificationTable from "./tables/General.RadioactiveMaterialClassification.json";
-import generalPrepaidCollectIndicatorTable from "./tables/General.PrepaidCollectIndicator.json";
-import generalParticipantIdentifierTable from "./tables/General.ParticipantIdentifier.json";
-import generalPackagingDangerLevelCodeTable from "./tables/General.PackagingDangerLevelCode.json";
-import generalPackageMarkCodeTable from "./tables/General.PackageMarkCode.json";
-import generalOtherChargeCodeTable from "./tables/General.OtherChargeCode.json";
-import generalMovementIndicatorTable from "./tables/General.MovementIndicator.json";
-import generalModeCodeTable from "./tables/General.ModeCode.json";
-import generalMeasurementUnitCodeTable from "./tables/General.MeasurementUnitCode.json";
-import generalGoodsTypeExtensionCodeTable from "./tables/General.GoodsTypeExtensionCode.json";
-import generalGoodsTypeCodeTable from "./tables/General.GoodsTypeCode.json";
-import generalExplosiveCompatibilityGroupCodeTable from "./tables/General.ExplosiveCompatibilityGroupCode.json";
-import generalEntitlementCodeTable from "./tables/General.EntitlementCode.json";
-import generalDimensionsUnitCodeTable from "./tables/General.DimensionsUnitCode.json";
-import generalDemurrageCodeTable from "./tables/General.DemurrageCode.json";
-import generalDangerousGoodsCodeTable from "./tables/General.DangerousGoodsCode.json";
-import generalCurrencyCodeTable from "./tables/General.CurrencyCode.json";
-import generalCommodityCodeTable from "./tables/General.CommodityCode.json";
-import generalChargeIdentifierTable from "./tables/General.ChargeIdentifier.json";
-import generalChargeCodeTable from "./tables/General.ChargeCode.json";
-import generalBasicRateClassCodeTable from "./tables/General.BasicRateClassCode.json";
-import generalAWBUseIndicatorTable from "./tables/General.AWBUseIndicator.json";
-import generalAircraftPossibilityCodeTable from "./tables/General.AircraftPossibilityCode.json";
-import generalWaybillTypeTable from "./tables/General.WaybillType.json";
-import generalWaybillLineItemTable from "./tables/General.WaybillLineItem.json";
-import generalWaybillTable from "./tables/General.Waybill.json";
-import generalVolumetricWeightTable from "./tables/General.VolumetricWeight.json";
-import generalVolumePieceGroupTable from "./tables/General.VolumePieceGroup.json";
-import generalValueTable from "./tables/General.Value.json";
-import generalUnitsPreferenceTable from "./tables/General.UnitsPreference.json";
-import generalUnitCompositionTable from "./tables/General.UnitComposition.json";
-import generalULDSpecificPieceTable from "./tables/General.ULDSpecificPiece.json";
-import generalULDBasicPieceTable from "./tables/General.ULDBasicPiece.json";
-import generalULDTable from "./tables/General.ULD.json";
-import generalTransportMovementTable from "./tables/General.TransportMovement.json";
-import generalTransportMeansTable from "./tables/General.TransportMeans.json";
-import generalTransportLegsTable from "./tables/General.TransportLegs.json";
-import generalTemperatureInstructionsTable from "./tables/General.TemperatureInstructions.json";
-import generalStoringTypeTable from "./tables/General.StoringType.json";
-import generalStoringTable from "./tables/General.Storing.json";
-import generalStorageTable from "./tables/General.Storage.json";
-import generalStationRemarksTable from "./tables/General.StationRemarks.json";
-import generalShipmentTable from "./tables/General.Shipment.json";
-import generalSensorTypeTable from "./tables/General.SensorType.json";
-import generalSensorTable from "./tables/General.Sensor.json";
-import generalSecurityDeclarationTable from "./tables/General.SecurityDeclaration.json";
-import generalRegulatedEntityTable from "./tables/General.RegulatedEntity.json";
-import generalRatingsTable from "./tables/General.Ratings.json";
-import generalRangesTable from "./tables/General.Ranges.json";
-import generalQuestionTable from "./tables/General.Question.json";
-import generalPublicAuthorityTable from "./tables/General.PublicAuthority.json";
-import generalProductDgTable from "./tables/General.ProductDg.json";
-import generalProductTable from "./tables/General.Product.json";
-import generalPriceTable from "./tables/General.Price.json";
-import generalPieceLiveAnimalsTable from "./tables/General.PieceLiveAnimals.json";
-import generalPieceGroupTable from "./tables/General.PieceGroup.json";
-import generalPieceDgTable from "./tables/General.PieceDg.json";
-import generalPieceTable from "./tables/General.Piece.json";
-import generalPhysicalLogisticsObjectTable from "./tables/General.PhysicalLogisticsObject.json";
-import generalPersonTable from "./tables/General.Person.json";
-import generalPartyTable from "./tables/General.Party.json";
-import generalPackagingTypeTable from "./tables/General.PackagingType.json";
-import generalOtherIdentifierTable from "./tables/General.OtherIdentifier.json";
-import generalOtherChargeTable from "./tables/General.OtherCharge.json";
-import generalOrganizationTable from "./tables/General.Organization.json";
-import generalNonHumanActorTable from "./tables/General.NonHumanActor.json";
-import generalMovementTimeTypeTable from "./tables/General.MovementTimeType.json";
-import generalMovementTimeTable from "./tables/General.MovementTime.json";
-import generalModeQualifierTable from "./tables/General.ModeQualifier.json";
-import generalMeasurementTable from "./tables/General.Measurement.json";
-import generalLoosePieceTable from "./tables/General.LoosePiece.json";
-import generalLogisticsServiceTable from "./tables/General.LogisticsService.json";
-import generalLogisticsObjectTable from "./tables/General.LogisticsObject.json";
-import generalLogisticsEventTable from "./tables/General.LogisticsEvent.json";
-import generalLogisticsAgentTable from "./tables/General.LogisticsAgent.json";
-import generalLogisticsActivityTable from "./tables/General.LogisticsActivity.json";
-import generalLogisticsActionTable from "./tables/General.LogisticsAction.json";
-import generalLocationTable from "./tables/General.Location.json";
-import generalLoadTypeTable from "./tables/General.LoadType.json";
-import generalLoadingUnitTable from "./tables/General.LoadingUnit.json";
-import generalLoadingTypeTable from "./tables/General.LoadingType.json";
-import generalLoadingMaterialTable from "./tables/General.LoadingMaterial.json";
-import generalLoadingTable from "./tables/General.Loading.json";
-import generalLiveAnimalsEpermitTable from "./tables/General.LiveAnimalsEpermit.json";
-import generalItemDgTable from "./tables/General.ItemDg.json";
-import generalItemTable from "./tables/General.Item.json";
-import generalIotDeviceTable from "./tables/General.IotDevice.json";
-import generalInsuranceTable from "./tables/General.Insurance.json";
-import generalGeolocationTable from "./tables/General.Geolocation.json";
-import generalExternalReferenceTable from "./tables/General.ExternalReference.json";
-import generalExecutionStatusTable from "./tables/General.ExecutionStatus.json";
-import generalEventTimeTypeTable from "./tables/General.EventTimeType.json";
-import generalEpermitSignatureTable from "./tables/General.EpermitSignature.json";
-import generalEpermitConsignmentTable from "./tables/General.EpermitConsignment.json";
-import generalDirectionTypeTable from "./tables/General.DirectionType.json";
-import generalDimensionsTable from "./tables/General.Dimensions.json";
-import generalDgRadioactiveIsotopeTable from "./tables/General.DgRadioactiveIsotope.json";
-import generalDgProductRadioactiveTable from "./tables/General.DgProductRadioactive.json";
-import generalDgDeclarationTable from "./tables/General.DgDeclaration.json";
-import generalCustomsInformationTable from "./tables/General.CustomsInformation.json";
-import generalCurrencyValueTable from "./tables/General.CurrencyValue.json";
-import generalContactRoleTable from "./tables/General.ContactRole.json";
-import generalContactDetailTypeTable from "./tables/General.ContactDetailType.json";
-import generalContactDetailTable from "./tables/General.ContactDetail.json";
-import generalCompositionTypeTable from "./tables/General.CompositionType.json";
-import generalComposingTable from "./tables/General.Composing.json";
-import generalCompanyTable from "./tables/General.Company.json";
-import generalCodeListElementTable from "./tables/General.CodeListElement.json";
-import generalCO2EmissionsTable from "./tables/General.CO2Emissions.json";
-import generalCheckTotalResultTable from "./tables/General.CheckTotalResult.json";
-import generalCheckTemplateTable from "./tables/General.CheckTemplate.json";
-import generalCheckTable from "./tables/General.Check.json";
-import generalCharacteristicTable from "./tables/General.Characteristic.json";
-import generalCarrierProductTable from "./tables/General.CarrierProduct.json";
-import generalCarrierTable from "./tables/General.Carrier.json";
-import generalBookingTimesTable from "./tables/General.BookingTimes.json";
-import generalBookingStatusTable from "./tables/General.BookingStatus.json";
-import generalBookingShipmentTable from "./tables/General.BookingShipment.json";
-import generalBookingRequestTable from "./tables/General.BookingRequest.json";
-import generalBookingPreferencesTable from "./tables/General.BookingPreferences.json";
-import generalBookingOptionStatusTable from "./tables/General.BookingOptionStatus.json";
-import generalBookingOptionRequestTable from "./tables/General.BookingOptionRequest.json";
-import generalBookingOptionTable from "./tables/General.BookingOption.json";
-import generalBookingTable from "./tables/General.Booking.json";
-import generalBillingDetailsTable from "./tables/General.BillingDetails.json";
-import generalAnswerTable from "./tables/General.Answer.json";
-import generalAdjustmentsTable from "./tables/General.Adjustments.json";
-import generalAddressTable from "./tables/General.Address.json";
-import generalActorTable from "./tables/General.Actor.json";
-import generalActivitySequenceTable from "./tables/General.ActivitySequence.json";
-import generalActionTimeTypeTable from "./tables/General.ActionTimeType.json";
+import enumActionTimeTypeTable from "./tables/Enum.ActionTimeType.json";
+import coreLogisticsActivityTable from "./tables/Core.LogisticsActivity.json";
+import embeddedActivitySequenceTable from "./tables/Embedded.ActivitySequence.json";
+import embeddedAddressTable from "./tables/Embedded.Address.json";
+import embeddedCodeListElementTable from "./tables/Embedded.CodeListElement.json";
+import embeddedAdjustmentsTable from "./tables/Embedded.Adjustments.json";
+import AircraftPossibilityCodeTable from "./tables/.AircraftPossibilityCode.json";
+import coreAnswerTable from "./tables/Core.Answer.json";
+import coreActorTable from "./tables/Core.Actor.json";
+import embeddedValueTable from "./tables/Embedded.Value.json";
+import corePieceTable from "./tables/Core.Piece.json";
+import coreLocationTable from "./tables/Core.Location.json";
+import coreEpermitConsignmentTable from "./tables/Core.EpermitConsignment.json";
+import coreOrganizationTable from "./tables/Core.Organization.json";
+import coreIotDeviceTable from "./tables/Core.IotDevice.json";
+import corePhysicalLogisticsObjectTable from "./tables/Core.PhysicalLogisticsObject.json";
+import AWBUseIndicatorTable from "./tables/.AWBUseIndicator.json";
+import ChargeIdentifierTable from "./tables/.ChargeIdentifier.json";
+import coreBillingDetailsTable from "./tables/Core.BillingDetails.json";
+import coreBookingTable from "./tables/Core.Booking.json";
+import coreBookingOptionTable from "./tables/Core.BookingOption.json";
+import embeddedBookingPreferencesTable from "./tables/Embedded.BookingPreferences.json";
+import coreBookingRequestTable from "./tables/Core.BookingRequest.json";
+import coreBookingShipmentTable from "./tables/Core.BookingShipment.json";
+import enumBookingStatusTable from "./tables/Enum.BookingStatus.json";
+import embeddedBookingTimesTable from "./tables/Embedded.BookingTimes.json";
+import embeddedLogisticsObjectTable from "./tables/Embedded.LogisticsObject.json";
+import coreCarrierTable from "./tables/Core.Carrier.json";
+import ChargeCodeTable from "./tables/.ChargeCode.json";
+import embeddedCarrierProductTable from "./tables/Embedded.CarrierProduct.json";
+import corePersonTable from "./tables/Core.Person.json";
+import PrepaidCollectIndicatorTable from "./tables/.PrepaidCollectIndicator.json";
+import coreCheckTable from "./tables/Core.Check.json";
+import coreCheckTemplateTable from "./tables/Core.CheckTemplate.json";
+import coreLoadingMaterialTable from "./tables/Core.LoadingMaterial.json";
+import coreComposingTable from "./tables/Core.Composing.json";
+import enumCompositionTypeTable from "./tables/Enum.CompositionType.json";
+import coreSensorTable from "./tables/Core.Sensor.json";
+import corePieceLiveAnimalsTable from "./tables/Core.PieceLiveAnimals.json";
+import enumContactDetailTypeTable from "./tables/Enum.ContactDetailType.json";
+import embeddedContactDetailTable from "./tables/Embedded.ContactDetail.json";
+import enumContactRoleTable from "./tables/Enum.ContactRole.json";
+import coreItemTable from "./tables/Core.Item.json";
+import coreDgProductRadioactiveTable from "./tables/Core.DgProductRadioactive.json";
+import coreProductTable from "./tables/Core.Product.json";
+import CurrencyCodeTable from "./tables/.CurrencyCode.json";
+import coreCustomsInformationTable from "./tables/Core.CustomsInformation.json";
+import embeddedCurrencyValueTable from "./tables/Embedded.CurrencyValue.json";
+import DemurrageCodeTable from "./tables/.DemurrageCode.json";
+import coreWaybillTable from "./tables/Core.Waybill.json";
+import coreDgDeclarationTable from "./tables/Core.DgDeclaration.json";
+import RaTypeCodeTable from "./tables/.RaTypeCode.json";
+import embeddedDimensionsTable from "./tables/Embedded.Dimensions.json";
+import DimensionsUnitCodeTable from "./tables/.DimensionsUnitCode.json";
+import enumDirectionTypeTable from "./tables/Enum.DirectionType.json";
+import coreExternalReferenceTable from "./tables/Core.ExternalReference.json";
+import EntitlementCodeTable from "./tables/.EntitlementCode.json";
+import coreLiveAnimalsEpermitTable from "./tables/Core.LiveAnimalsEpermit.json";
+import enumEventTimeTypeTable from "./tables/Enum.EventTimeType.json";
+import embeddedLogisticsEventTable from "./tables/Embedded.LogisticsEvent.json";
+import enumExecutionStatusTable from "./tables/Enum.ExecutionStatus.json";
+import CommodityCodeTable from "./tables/.CommodityCode.json";
+import ExplosiveCompatibilityGroupCodeTable from "./tables/.ExplosiveCompatibilityGroupCode.json";
+import coreBookingOptionRequestTable from "./tables/Core.BookingOptionRequest.json";
+import corePriceTable from "./tables/Core.Price.json";
+import coreProductDgTable from "./tables/Core.ProductDg.json";
+import embeddedGeolocationTable from "./tables/Embedded.Geolocation.json";
+import GoodsTypeCodeTable from "./tables/.GoodsTypeCode.json";
+import GoodsTypeExtensionCodeTable from "./tables/.GoodsTypeExtensionCode.json";
+import ScreeningExemptionTable from "./tables/.ScreeningExemption.json";
+import coreUnitCompositionTable from "./tables/Core.UnitComposition.json";
+import coreInsuranceTable from "./tables/Core.Insurance.json";
+import coreShipmentTable from "./tables/Core.Shipment.json";
+import coreLogisticsActionTable from "./tables/Core.LogisticsAction.json";
+import embeddedPartyTable from "./tables/Embedded.Party.json";
+import coreDgRadioactiveIsotopeTable from "./tables/Core.DgRadioactiveIsotope.json";
+import enumLoadTypeTable from "./tables/Enum.LoadType.json";
+import coreLoadingUnitTable from "./tables/Core.LoadingUnit.json";
+import coreLoadingTable from "./tables/Core.Loading.json";
+import ULDLoadingIndicatorTable from "./tables/.ULDLoadingIndicator.json";
+import enumLoadingTypeTable from "./tables/Enum.LoadingType.json";
+import embeddedMeasurementTable from "./tables/Embedded.Measurement.json";
+import ModeCodeTable from "./tables/.ModeCode.json";
+import enumModeQualifierTable from "./tables/Enum.ModeQualifier.json";
+import MovementIndicatorTable from "./tables/.MovementIndicator.json";
+import enumMovementTimeTypeTable from "./tables/Enum.MovementTimeType.json";
+import embeddedMovementTimeTable from "./tables/Embedded.MovementTime.json";
+import coreTransportMeansTable from "./tables/Core.TransportMeans.json";
+import coreTransportMovementTable from "./tables/Core.TransportMovement.json";
+import coreCompanyTable from "./tables/Core.Company.json";
+import embeddedCharacteristicTable from "./tables/Embedded.Characteristic.json";
+import OtherChargeCodeTable from "./tables/.OtherChargeCode.json";
+import embeddedOtherChargeTable from "./tables/Embedded.OtherCharge.json";
+import embeddedOtherIdentifierTable from "./tables/Embedded.OtherIdentifier.json";
+import embeddedRegulatedEntityTable from "./tables/Embedded.RegulatedEntity.json";
+import PackageMarkCodeTable from "./tables/.PackageMarkCode.json";
+import PackagingDangerLevelCodeTable from "./tables/.PackagingDangerLevelCode.json";
+import corePackagingTypeTable from "./tables/Core.PackagingType.json";
+import coreLogisticsAgentTable from "./tables/Core.LogisticsAgent.json";
+import ParticipantIdentifierTable from "./tables/.ParticipantIdentifier.json";
+import RadioactiveMaterialClassificationTable from "./tables/.RadioactiveMaterialClassification.json";
+import embeddedPieceGroupTable from "./tables/Embedded.PieceGroup.json";
+import coreQuestionTable from "./tables/Core.Question.json";
+import embeddedRangesTable from "./tables/Embedded.Ranges.json";
+import RateClassCodeTable from "./tables/.RateClassCode.json";
+import BasicRateClassCodeTable from "./tables/.BasicRateClassCode.json";
+import coreRatingsTable from "./tables/Core.Ratings.json";
+import RegulatedEntityCategoryCodeTable from "./tables/.RegulatedEntityCategoryCode.json";
+import ScreeningMethodTable from "./tables/.ScreeningMethod.json";
+import coreSecurityDeclarationTable from "./tables/Core.SecurityDeclaration.json";
+import SecurityStatusTable from "./tables/.SecurityStatus.json";
+import enumSensorTypeTable from "./tables/Enum.SensorType.json";
+import coreLogisticsServiceTable from "./tables/Core.LogisticsService.json";
+import ServiceCodeTable from "./tables/.ServiceCode.json";
+import ULDConditionCodeTable from "./tables/.ULDConditionCode.json";
+import SignatoryRoleTable from "./tables/.SignatoryRole.json";
+import SignatureTypeCodeTable from "./tables/.SignatureTypeCode.json";
+import coreEpermitSignatureTable from "./tables/Core.EpermitSignature.json";
+import SpecialHandlingCodeTable from "./tables/.SpecialHandlingCode.json";
+import embeddedStationRemarksTable from "./tables/Embedded.StationRemarks.json";
+import enumBookingOptionStatusTable from "./tables/Enum.BookingOptionStatus.json";
+import coreStoringTable from "./tables/Core.Storing.json";
+import enumStoringTypeTable from "./tables/Enum.StoringType.json";
+import embeddedTemperatureInstructionsTable from "./tables/Embedded.TemperatureInstructions.json";
+import TemperatureUnitCodeTable from "./tables/.TemperatureUnitCode.json";
+import embeddedVolumetricWeightTable from "./tables/Embedded.VolumetricWeight.json";
+import TransactionPurposeCodeTable from "./tables/.TransactionPurposeCode.json";
+import coreTransportLegsTable from "./tables/Core.TransportLegs.json";
+import TransportMeansServiceTypeTable from "./tables/.TransportMeansServiceType.json";
+import MeasurementUnitCodeTable from "./tables/.MeasurementUnitCode.json";
+import embeddedUnitsPreferenceTable from "./tables/Embedded.UnitsPreference.json";
+import VolumeUnitCodeTable from "./tables/.VolumeUnitCode.json";
+import embeddedWaybillLineItemTable from "./tables/Embedded.WaybillLineItem.json";
+import enumWaybillTypeTable from "./tables/Enum.WaybillType.json";
+import WeightUnitCodeTable from "./tables/.WeightUnitCode.json";
+import corePieceDgTable from "./tables/Core.PieceDg.json";
+import coreItemDgTable from "./tables/Core.ItemDg.json";
+import embeddedLoosePieceTable from "./tables/Embedded.LoosePiece.json";
+import coreNonHumanActorTable from "./tables/Core.NonHumanActor.json";
+import corePublicAuthorityTable from "./tables/Core.PublicAuthority.json";
+import coreStorageTable from "./tables/Core.Storage.json";
+import coreULDTable from "./tables/Core.ULD.json";
+import embeddedULDBasicPieceTable from "./tables/Embedded.ULDBasicPiece.json";
+import embeddedULDSpecificPieceTable from "./tables/Embedded.ULDSpecificPiece.json";
+import embeddedVolumePieceGroupTable from "./tables/Embedded.VolumePieceGroup.json";
+import DangerousGoodsCodeTable from "./tables/.DangerousGoodsCode.json";
+import RatingsTypeTable from "./tables/.RatingsType.json";
+import ShipmentSecurityStatusTable from "./tables/.ShipmentSecurityStatus.json";
+import StatusCodeTable from "./tables/.StatusCode.json";
+import ULDChargeCodeTable from "./tables/.ULDChargeCode.json";
 
 const tables: TableConfig[] = [
-  generalWeightUnitCodeTable,
-  generalVolumeUnitCodeTable,
-  generalULDLoadingIndicatorTable,
-  generalULDConditionCodeTable,
-  generalULDChargeCodeTable,
-  generalTransportMeansServiceTypeTable,
-  generalTransactionPurposeCodeTable,
-  generalTemperatureUnitCodeTable,
-  generalStatusCodeTable,
-  generalSpecialHandlingCodeTable,
-  generalSignatureTypeCodeTable,
-  generalSignatoryRoleTable,
-  generalShipmentSecurityStatusTable,
-  generalServiceCodeTable,
-  generalSecurityStatusTable,
-  generalScreeningMethodTable,
-  generalScreeningExemptionTable,
-  generalRegulatedEntityCategoryCodeTable,
-  generalRaTypeCodeTable,
-  generalRatingsTypeTable,
-  generalRateClassCodeTable,
-  generalRadioactiveMaterialClassificationTable,
-  generalPrepaidCollectIndicatorTable,
-  generalParticipantIdentifierTable,
-  generalPackagingDangerLevelCodeTable,
-  generalPackageMarkCodeTable,
-  generalOtherChargeCodeTable,
-  generalMovementIndicatorTable,
-  generalModeCodeTable,
-  generalMeasurementUnitCodeTable,
-  generalGoodsTypeExtensionCodeTable,
-  generalGoodsTypeCodeTable,
-  generalExplosiveCompatibilityGroupCodeTable,
-  generalEntitlementCodeTable,
-  generalDimensionsUnitCodeTable,
-  generalDemurrageCodeTable,
-  generalDangerousGoodsCodeTable,
-  generalCurrencyCodeTable,
-  generalCommodityCodeTable,
-  generalChargeIdentifierTable,
-  generalChargeCodeTable,
-  generalBasicRateClassCodeTable,
-  generalAWBUseIndicatorTable,
-  generalAircraftPossibilityCodeTable,
-  generalWaybillTypeTable,
-  generalWaybillLineItemTable,
-  generalWaybillTable,
-  generalVolumetricWeightTable,
-  generalVolumePieceGroupTable,
-  generalValueTable,
-  generalUnitsPreferenceTable,
-  generalUnitCompositionTable,
-  generalULDSpecificPieceTable,
-  generalULDBasicPieceTable,
-  generalULDTable,
-  generalTransportMovementTable,
-  generalTransportMeansTable,
-  generalTransportLegsTable,
-  generalTemperatureInstructionsTable,
-  generalStoringTypeTable,
-  generalStoringTable,
-  generalStorageTable,
-  generalStationRemarksTable,
-  generalShipmentTable,
-  generalSensorTypeTable,
-  generalSensorTable,
-  generalSecurityDeclarationTable,
-  generalRegulatedEntityTable,
-  generalRatingsTable,
-  generalRangesTable,
-  generalQuestionTable,
-  generalPublicAuthorityTable,
-  generalProductDgTable,
-  generalProductTable,
-  generalPriceTable,
-  generalPieceLiveAnimalsTable,
-  generalPieceGroupTable,
-  generalPieceDgTable,
-  generalPieceTable,
-  generalPhysicalLogisticsObjectTable,
-  generalPersonTable,
-  generalPartyTable,
-  generalPackagingTypeTable,
-  generalOtherIdentifierTable,
-  generalOtherChargeTable,
-  generalOrganizationTable,
-  generalNonHumanActorTable,
-  generalMovementTimeTypeTable,
-  generalMovementTimeTable,
-  generalModeQualifierTable,
-  generalMeasurementTable,
-  generalLoosePieceTable,
-  generalLogisticsServiceTable,
-  generalLogisticsObjectTable,
-  generalLogisticsEventTable,
-  generalLogisticsAgentTable,
-  generalLogisticsActivityTable,
-  generalLogisticsActionTable,
-  generalLocationTable,
-  generalLoadTypeTable,
-  generalLoadingUnitTable,
-  generalLoadingTypeTable,
-  generalLoadingMaterialTable,
-  generalLoadingTable,
-  generalLiveAnimalsEpermitTable,
-  generalItemDgTable,
-  generalItemTable,
-  generalIotDeviceTable,
-  generalInsuranceTable,
-  generalGeolocationTable,
-  generalExternalReferenceTable,
-  generalExecutionStatusTable,
-  generalEventTimeTypeTable,
-  generalEpermitSignatureTable,
-  generalEpermitConsignmentTable,
-  generalDirectionTypeTable,
-  generalDimensionsTable,
-  generalDgRadioactiveIsotopeTable,
-  generalDgProductRadioactiveTable,
-  generalDgDeclarationTable,
-  generalCustomsInformationTable,
-  generalCurrencyValueTable,
-  generalContactRoleTable,
-  generalContactDetailTypeTable,
-  generalContactDetailTable,
-  generalCompositionTypeTable,
-  generalComposingTable,
-  generalCompanyTable,
-  generalCodeListElementTable,
-  generalCO2EmissionsTable,
-  generalCheckTotalResultTable,
-  generalCheckTemplateTable,
-  generalCheckTable,
-  generalCharacteristicTable,
-  generalCarrierProductTable,
-  generalCarrierTable,
-  generalBookingTimesTable,
-  generalBookingStatusTable,
-  generalBookingShipmentTable,
-  generalBookingRequestTable,
-  generalBookingPreferencesTable,
-  generalBookingOptionStatusTable,
-  generalBookingOptionRequestTable,
-  generalBookingOptionTable,
-  generalBookingTable,
-  generalBillingDetailsTable,
-  generalAnswerTable,
-  generalAdjustmentsTable,
-  generalAddressTable,
-  generalActorTable,
-  generalActivitySequenceTable,
-  generalActionTimeTypeTable
+  enumActionTimeTypeTable,
+  coreLogisticsActivityTable,
+  embeddedActivitySequenceTable,
+  embeddedAddressTable,
+  embeddedCodeListElementTable,
+  embeddedAdjustmentsTable,
+  AircraftPossibilityCodeTable,
+  coreAnswerTable,
+  coreActorTable,
+  embeddedValueTable,
+  corePieceTable,
+  coreLocationTable,
+  coreEpermitConsignmentTable,
+  coreOrganizationTable,
+  coreIotDeviceTable,
+  corePhysicalLogisticsObjectTable,
+  AWBUseIndicatorTable,
+  ChargeIdentifierTable,
+  coreBillingDetailsTable,
+  coreBookingTable,
+  coreBookingOptionTable,
+  embeddedBookingPreferencesTable,
+  coreBookingRequestTable,
+  coreBookingShipmentTable,
+  enumBookingStatusTable,
+  embeddedBookingTimesTable,
+  embeddedLogisticsObjectTable,
+  coreCarrierTable,
+  ChargeCodeTable,
+  embeddedCarrierProductTable,
+  corePersonTable,
+  PrepaidCollectIndicatorTable,
+  coreCheckTable,
+  coreCheckTemplateTable,
+  coreLoadingMaterialTable,
+  coreComposingTable,
+  enumCompositionTypeTable,
+  coreSensorTable,
+  corePieceLiveAnimalsTable,
+  enumContactDetailTypeTable,
+  embeddedContactDetailTable,
+  enumContactRoleTable,
+  coreItemTable,
+  coreDgProductRadioactiveTable,
+  coreProductTable,
+  CurrencyCodeTable,
+  coreCustomsInformationTable,
+  embeddedCurrencyValueTable,
+  DemurrageCodeTable,
+  coreWaybillTable,
+  coreDgDeclarationTable,
+  RaTypeCodeTable,
+  embeddedDimensionsTable,
+  DimensionsUnitCodeTable,
+  enumDirectionTypeTable,
+  coreExternalReferenceTable,
+  EntitlementCodeTable,
+  coreLiveAnimalsEpermitTable,
+  enumEventTimeTypeTable,
+  embeddedLogisticsEventTable,
+  enumExecutionStatusTable,
+  CommodityCodeTable,
+  ExplosiveCompatibilityGroupCodeTable,
+  coreBookingOptionRequestTable,
+  corePriceTable,
+  coreProductDgTable,
+  embeddedGeolocationTable,
+  GoodsTypeCodeTable,
+  GoodsTypeExtensionCodeTable,
+  ScreeningExemptionTable,
+  coreUnitCompositionTable,
+  coreInsuranceTable,
+  coreShipmentTable,
+  coreLogisticsActionTable,
+  embeddedPartyTable,
+  coreDgRadioactiveIsotopeTable,
+  enumLoadTypeTable,
+  coreLoadingUnitTable,
+  coreLoadingTable,
+  ULDLoadingIndicatorTable,
+  enumLoadingTypeTable,
+  embeddedMeasurementTable,
+  ModeCodeTable,
+  enumModeQualifierTable,
+  MovementIndicatorTable,
+  enumMovementTimeTypeTable,
+  embeddedMovementTimeTable,
+  coreTransportMeansTable,
+  coreTransportMovementTable,
+  coreCompanyTable,
+  embeddedCharacteristicTable,
+  OtherChargeCodeTable,
+  embeddedOtherChargeTable,
+  embeddedOtherIdentifierTable,
+  embeddedRegulatedEntityTable,
+  PackageMarkCodeTable,
+  PackagingDangerLevelCodeTable,
+  corePackagingTypeTable,
+  coreLogisticsAgentTable,
+  ParticipantIdentifierTable,
+  RadioactiveMaterialClassificationTable,
+  embeddedPieceGroupTable,
+  coreQuestionTable,
+  embeddedRangesTable,
+  RateClassCodeTable,
+  BasicRateClassCodeTable,
+  coreRatingsTable,
+  RegulatedEntityCategoryCodeTable,
+  ScreeningMethodTable,
+  coreSecurityDeclarationTable,
+  SecurityStatusTable,
+  enumSensorTypeTable,
+  coreLogisticsServiceTable,
+  ServiceCodeTable,
+  ULDConditionCodeTable,
+  SignatoryRoleTable,
+  SignatureTypeCodeTable,
+  coreEpermitSignatureTable,
+  SpecialHandlingCodeTable,
+  embeddedStationRemarksTable,
+  enumBookingOptionStatusTable,
+  coreStoringTable,
+  enumStoringTypeTable,
+  embeddedTemperatureInstructionsTable,
+  TemperatureUnitCodeTable,
+  embeddedVolumetricWeightTable,
+  TransactionPurposeCodeTable,
+  coreTransportLegsTable,
+  TransportMeansServiceTypeTable,
+  MeasurementUnitCodeTable,
+  embeddedUnitsPreferenceTable,
+  VolumeUnitCodeTable,
+  embeddedWaybillLineItemTable,
+  enumWaybillTypeTable,
+  WeightUnitCodeTable,
+  corePieceDgTable,
+  coreItemDgTable,
+  embeddedLoosePieceTable,
+  coreNonHumanActorTable,
+  corePublicAuthorityTable,
+  coreStorageTable,
+  coreULDTable,
+  embeddedULDBasicPieceTable,
+  embeddedULDSpecificPieceTable,
+  embeddedVolumePieceGroupTable,
+  DangerousGoodsCodeTable,
+  RatingsTypeTable,
+  ShipmentSecurityStatusTable,
+  StatusCodeTable,
+  ULDChargeCodeTable
 ];
 
 export default tables;

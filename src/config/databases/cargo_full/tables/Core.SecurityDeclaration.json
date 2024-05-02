@@ -1,0 +1,115 @@
+{
+  "name": "Core.SecurityDeclaration",
+  "description": "Security declaration details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "groundsForExemption",
+      "description": "Exemption code - e.g. BIOM- Bio-Medical Samples ",
+      "type": "ScreeningExemption",
+      "array": false
+    },
+    {
+      "name": "groundsForExemption",
+      "description": "Exemption code - e.g. BIOM- Bio-Medical Samples SMUS - small undersized shipments MAIL - mail BIOM - bio-medical samples DIPL - diplomatic bags or diplomatic mail LFSM - life-saving materials NUCL - nuclear materials TRNS - transfer or transshipment",
+      "type": "ScreeningExemption",
+      "array": false
+    },
+    {
+      "name": "issuedBy",
+      "description": "Name of person (or employee ID) who issued the security status",
+      "type": "Person",
+      "array": false
+    },
+    {
+      "name": "issuedForPiece",
+      "description": "Reference to the Piece the document was issued for",
+      "type": "Piece",
+      "array": false
+    },
+    {
+      "name": "otherRegulatedEntities",
+      "description": "Any other regulated entity that accepts custody of the cargo and accepts the security status originally issued",
+      "type": "RegulatedEntity",
+      "array": false
+    },
+    {
+      "name": "receivedFrom",
+      "description": "Regulated entity that tendered the consignment",
+      "type": "RegulatedEntity",
+      "array": false
+    },
+    {
+      "name": "regulatedEntityAcceptor",
+      "description": "Information about the accepting regulated entity of the Security Declaration",
+      "type": "RegulatedEntity",
+      "array": false
+    },
+    {
+      "name": "regulatedEntityIssuer",
+      "description": "Regulated entity issuing the Security Declaration",
+      "type": "RegulatedEntity",
+      "array": false
+    },
+    {
+      "name": "screeningMethods",
+      "description": "Screening methods which have been used to secure the cargo",
+      "type": "ScreeningMethod",
+      "array": false
+    },
+    {
+      "name": "screeningMethods",
+      "description": "Screening methods which have been used to secure the cargo PHS ‚Äì Physical Inspection and/or hand search VCK - Visual check XRY- X-ray equipment EDS - Explosive detection system EDD - Explosive detection dogsETD - Explosive trace detection equipment - particles or vapor CMD - Cargo metal detection AOM - Subjected to any other means: this entry should be followed by free text specifying what other mean was used to secure the cargo",
+      "type": "ScreeningMethod",
+      "array": false
+    },
+    {
+      "name": "securityStatus",
+      "description": "Security status indicator (CXML 1.13) - e.g. SPX- Cargo Secure for Passenger and All-Cargo Aircraft ",
+      "type": "SecurityStatus",
+      "array": false
+    },
+    {
+      "name": "additionalSecurityInformation",
+      "description": "Any additional information that may be required by an ICAO Member State",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "issuedOn",
+      "description": "Date and time when the security status was issued",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "otherScreeningMethods",
+      "description": "Other methods used to secure the cargo",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

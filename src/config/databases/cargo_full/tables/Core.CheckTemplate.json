@@ -1,0 +1,19 @@
+{
+  "name": "Core.CheckTemplate",
+  "description": "CheckTemplate is the body of a check",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "involvedParties",
+      "description": " holding links to multiple Question LOs and is provided by the party in charge of the template that is used",
+      "type": "Party",
+      "array": false
+    },
+    {
+      "name": "questions",
+      "description": " holding links to multiple Question LOs and is provided by the party in charge of the template that is used",
+      "type": "Question",
+      "array": false
+    }
+  ]
+}

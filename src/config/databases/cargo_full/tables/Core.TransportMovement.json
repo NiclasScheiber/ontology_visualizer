@@ -1,0 +1,151 @@
+{
+  "name": "Core.TransportMovement",
+  "description": "Activity to describe transports",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checkActions",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "contactDetails",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "ContactDetail",
+      "array": false
+    },
+    {
+      "name": "contactPersons",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "Actor",
+      "array": false
+    },
+    {
+      "name": "executionStatus",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "ExecutionStatus",
+      "array": false
+    },
+    {
+      "name": "servedServices",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "LogisticsService",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "arrivalLocation",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "co2Emissions",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "CO2Emissions",
+      "array": false
+    },
+    {
+      "name": "departureLocation",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "distanceCalculated",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "distanceMeasured",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "fuelAmountCalculated",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "fuelAmountMeasured",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "loadingActions",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "Loading",
+      "array": false
+    },
+    {
+      "name": "modeCode",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "ModeCode",
+      "array": false
+    },
+    {
+      "name": "modeQualifier",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "ModeQualifier",
+      "array": false
+    },
+    {
+      "name": "movementTimes",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "MovementTime",
+      "array": false
+    },
+    {
+      "name": "operatingTransportMeans",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "TransportMeans",
+      "array": false
+    },
+    {
+      "name": "fuelType",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "seal",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "transportIdentifier",
+      "description": " replaces the TransportSegment in v1.1 and above",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

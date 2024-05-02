@@ -1,0 +1,49 @@
+{
+  "name": "Core.PackagingType",
+  "description": "Packaging details ",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "appliedOnPieces",
+      "description": "Piece on which the Packaging type is applicable",
+      "type": "Piece",
+      "array": false
+    },
+    {
+      "name": "typeCode",
+      "description": "Packaging type identifier as per UNECE Rec 21 Annex V and VI e.g. 1A - Drum",
+      "type": "CodeListElement",
+      "array": false
+    },
+    {
+      "name": "description",
+      "description": "Natural language description if required",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

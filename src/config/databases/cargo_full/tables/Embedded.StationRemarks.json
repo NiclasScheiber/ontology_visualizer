@@ -1,0 +1,19 @@
+{
+  "name": "Embedded.StationRemarks",
+  "description": "StationRemarks details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "station",
+      "description": "Reference to the station (Airport)",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "remarksText",
+      "description": "Details of the remarks",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "name": "Core.BillingDetails",
+  "description": "In the context of CASS2. process",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "adjustments",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "Adjustments",
+      "array": false
+    },
+    {
+      "name": "awbUseIndicator",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "AWBUseIndicator",
+      "array": false
+    },
+    {
+      "name": "detailedWaybill",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "Waybill",
+      "array": false
+    },
+    {
+      "name": "taxDueAgent",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "CurrencyValue",
+      "array": false
+    },
+    {
+      "name": "taxDueAirline",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "CurrencyValue",
+      "array": false
+    },
+    {
+      "name": "awbAcceptanceDate",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "awbDeliveryDate",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "awbExecutionDate",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "commission",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "double",
+      "array": false
+    },
+    {
+      "name": "commissionIndicator",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "commissionPercentage",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "double",
+      "array": false
+    },
+    {
+      "name": "discount",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "double",
+      "array": false
+    },
+    {
+      "name": "exchangeRate",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "double",
+      "array": false
+    },
+    {
+      "name": "nbCorrections",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "integer",
+      "array": false
+    },
+    {
+      "name": "vatIndicator",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

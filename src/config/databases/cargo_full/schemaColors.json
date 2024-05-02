@@ -1,4 +1,7 @@
 {
-  "DEFAULT": "#91C4F2",
-  "General": "#91C4F2"
+  "DEFAULT": "#E6E6E6",
+  "Enum": "#E6E6E6",
+  "Core": "#1D31FA",
+  "Embedded": "#E6E6E6",
+  "": "#E6E6E6"
 }

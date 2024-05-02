@@ -1,0 +1,79 @@
+{
+  "name": "Core.Sensor",
+  "description": "Sensor details and measurements",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": " linked to Connected Devices",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " linked to Connected Devices",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " linked to Connected Devices",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " linked to Connected Devices",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": " linked to Connected Devices",
+      "type": "IotDevice",
+      "array": false
+    },
+    {
+      "name": "involvedInActions",
+      "description": " linked to Connected Devices",
+      "type": "LogisticsAction",
+      "array": false
+    },
+    {
+      "name": "measurements",
+      "description": " linked to Connected Devices",
+      "type": "Measurement",
+      "array": false
+    },
+    {
+      "name": "partOfIotDevice",
+      "description": " linked to Connected Devices",
+      "type": "IotDevice",
+      "array": false
+    },
+    {
+      "name": "sensorType",
+      "description": " linked to Connected Devices",
+      "type": "SensorType",
+      "array": false
+    },
+    {
+      "name": "description",
+      "description": " linked to Connected Devices",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "name",
+      "description": " linked to Connected Devices",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "serialNumber",
+      "description": " linked to Connected Devices",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

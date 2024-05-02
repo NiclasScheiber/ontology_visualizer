@@ -1,0 +1,43 @@
+{
+  "name": ".StatusCode",
+  "description": "",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "code",
+      "description": "Code or short version of a code",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "codeDescription",
+      "description": "Description or long version of the code",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "codeLevel",
+      "description": "Integer indicating the level of a code if a codelists is hierarchical",
+      "type": "integer",
+      "array": false
+    },
+    {
+      "name": "codeListName",
+      "description": "Official name of the code list without version number when direct reference is not possible",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "codeListReference",
+      "description": "URL to access the code list the code is taken from",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "codeListVersion",
+      "description": "Version of the code list",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

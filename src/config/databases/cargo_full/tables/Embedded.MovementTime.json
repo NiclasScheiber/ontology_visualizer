@@ -1,0 +1,31 @@
+{
+  "name": "Embedded.MovementTime",
+  "description": "Times refering to Transport Movements",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "direction",
+      "description": " used to describe specfic times such as Actual Departure time",
+      "type": "DirectionType",
+      "array": false
+    },
+    {
+      "name": "movementMilestone",
+      "description": " used to describe specfic times such as Actual Departure time",
+      "type": "MovementIndicator",
+      "array": false
+    },
+    {
+      "name": "movementTimeType",
+      "description": " used to describe specfic times such as Actual Departure time",
+      "type": "MovementTimeType",
+      "array": false
+    },
+    {
+      "name": "movementTimestamp",
+      "description": " used to describe specfic times such as Actual Departure time",
+      "type": "dateTime",
+      "array": false
+    }
+  ]
+}

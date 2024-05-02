@@ -1,0 +1,97 @@
+{
+  "name": "Core.Product",
+  "description": "Product details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "describedObjects",
+      "description": "Reference to the Items or Pieces in which the product can be found.",
+      "type": "PhysicalLogisticsObject",
+      "array": false
+    },
+    {
+      "name": "hsCode",
+      "description": "Harmonized Commodity code",
+      "type": "CodeListElement",
+      "array": false
+    },
+    {
+      "name": "manufacturer",
+      "description": "Manufacturing company details and contacts",
+      "type": "Organization",
+      "array": false
+    },
+    {
+      "name": "otherCharacteristics",
+      "description": "Charateristics of the product",
+      "type": "Characteristic",
+      "array": false
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier",
+      "type": "OtherIdentifier",
+      "array": false
+    },
+    {
+      "name": "commodityItemNumber",
+      "description": "Indicates the specific commodity on which the rate class code is applied",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "description",
+      "description": "Natural language description if required",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "hsCommodityDescription",
+      "description": "Commodity description",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "hsCommodityName",
+      "description": "If no Code provided",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "hsType",
+      "description": "Reference identifying the type of standard code to be used for the Commodity Classification (Brussels Tariff Nomenclature",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "uniqueIdentifier",
+      "description": "Manufacturer's unique product identifier",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

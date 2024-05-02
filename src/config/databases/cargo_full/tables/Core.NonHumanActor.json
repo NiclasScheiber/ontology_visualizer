@@ -1,0 +1,37 @@
+{
+  "name": "Core.NonHumanActor",
+  "description": "Non-human actors are actors which are not a person",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "associatedOrganization",
+      "description": " such as robots",
+      "type": "Organization",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": " such as robots",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": " such as robots",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": " such as robots",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": " such as robots",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

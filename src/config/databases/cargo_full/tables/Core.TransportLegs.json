@@ -1,0 +1,85 @@
+{
+  "name": "Core.TransportLegs",
+  "description": "TransportLegs details",
+  "schemaColor": "#91C4F2",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "arrivalLocation",
+      "description": "Reference to the arrival Location",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "co2Emissions",
+      "description": "References to CO2Emissions",
+      "type": "CO2Emissions",
+      "array": false
+    },
+    {
+      "name": "departureLocation",
+      "description": "Reference to the depature Location",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "transportMeansServiceType",
+      "description": "Type of transport means service",
+      "type": "TransportMeansServiceType",
+      "array": false
+    },
+    {
+      "name": "transportMeansType",
+      "description": "Type of transport means",
+      "type": "CodeListElement",
+      "array": false
+    },
+    {
+      "name": "arrivalDate",
+      "description": "Arrival date and time of the leg",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "departureDate",
+      "description": "Departure date and time of the leg",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "legNumber",
+      "description": "Leg number",
+      "type": "integer",
+      "array": false
+    },
+    {
+      "name": "transportIdentifier",
+      "description": "Airline flight number",
+      "type": "string",
+      "array": false
+    }
+  ]
+}
