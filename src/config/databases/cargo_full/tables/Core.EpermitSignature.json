@@ -1,73 +1,84 @@
 {
-  "name": "Core.EpermitSignature",
+  "schema": "Core",
+  "name": "EpermitSignature",
   "description": "Signature details of the Epermit for Live Animals",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "forEpermit",
       "description": "Reference to the LiveAnimalsEpermit this Signature applies to",
       "type": "LiveAnimalsEpermit",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "signatoryCompany",
       "description": "Signatory company name",
       "type": "Company",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "signatoryRole",
-      "description": "Role of the signatory with regards to the ePermit: Applicant",
+      "description": "Role of the signatory with regards to the ePermit: Applicant; Permit issuer; Issuing Authority or Examining authority",
       "type": "SignatoryRole",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "signatureTypeCode",
-      "description": "Code specifying a type of government action such as inspection",
+      "description": "Code specifying a type of government action such as inspection; detention; fumigation; security.",
       "type": "SignatureTypeCode",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "securityStampId",
       "description": "Security Stamp ID",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "signatureDate",
       "description": "Date and time of the signature",
       "type": "dateTime",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "signatureStatement",
       "description": "Signatory signature authentication text",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

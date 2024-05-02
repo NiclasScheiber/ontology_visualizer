@@ -1,43 +1,49 @@
 {
-  "name": "Embedded.VolumePieceGroup",
+  "schema": "Embedded",
+  "name": "VolumePieceGroup",
   "description": "VolumePieceGroup details",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "dryIceWeight",
       "description": "Weight of dry ice",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "pieceGroupGrossWeight",
       "description": "Total gross weight of the piece group",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "pieceGroupCount",
       "description": "Number of pieces in the piece group",
       "type": "integer",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "pieceGroupId",
-      "description": "Identifier of the piece group",
+      "description": "Identifier of the piece group; increasing integers",
       "type": "integer",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "totalVolume",
       "description": "Total volume fo the volume piece group",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "stackable",
       "description": "Stackable indicator for the pieces (boolean)",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

@@ -1,61 +1,70 @@
 {
-  "name": "Core.LoadingUnit",
+  "schema": "Core",
+  "name": "LoadingUnit",
   "description": "Common loading unit/container details",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "inUnitComposition",
       "description": "",
       "type": "UnitComposition",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "tareWeight",
       "description": "Tare weight of the empty ULD",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "remarks",
       "description": "Remarks or Supplement Information",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "attachedIotDevices",
       "description": "References to all connected IotDevices",
       "type": "IotDevice",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "involvedInActions",
       "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

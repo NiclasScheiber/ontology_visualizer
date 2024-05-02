@@ -1,79 +1,91 @@
 {
-  "name": "Core.Question",
+  "schema": "Core",
+  "name": "Question",
   "description": "Question holds one question and a link to an Answer The Question is provided by the party in charge of the template used",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "answer",
       "description": "Reference to the Answer to the Question",
       "type": "Answer",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checkTemplate",
       "description": "Reference to the CheckTemplate the Question is from",
       "type": "CheckTemplate",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "answerOptionsText",
       "description": "Text restrictions to the Answer",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "answerOptionsValue",
       "description": "Value restrictions to the answer",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "longText",
       "description": "Long text of the question",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "questionNumber",
       "description": "Number of the Question within the template (alphanumeric)",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "questionSection",
       "description": "Section of the CheckTemplate this Question is part of",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "shortText",
       "description": "Short text of the Question",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

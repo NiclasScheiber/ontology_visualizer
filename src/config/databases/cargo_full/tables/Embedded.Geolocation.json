@@ -1,25 +1,28 @@
 {
-  "name": "Embedded.Geolocation",
-  "description": "Geolocation details - e.g. for drones",
-  "schemaColor": "#91C4F2",
+  "schema": "Embedded",
+  "name": "Geolocation",
+  "description": "Geolocation details - e.g. for drones; automated vehicles",
   "columns": [
     {
       "name": "elevation",
-      "description": " automated vehicles",
+      "description": "Elevation from sea level - Change of data type to Value as of ontology v1.1",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "latitude",
-      "description": " automated vehicles",
+      "description": "Location latitude decimal",
       "type": "double",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "longitude",
-      "description": " automated vehicles",
+      "description": "Location longitude decimal",
       "type": "double",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

@@ -1,55 +1,63 @@
 {
-  "name": "Core.BookingRequest",
-  "description": "A party",
-  "schemaColor": "#91C4F2",
+  "schema": "Core",
+  "name": "BookingRequest",
+  "description": "A party; usually the freight forwarder; creates the BookingRequest in order to confirm the booking to the Carrier",
   "columns": [
     {
       "name": "booking",
-      "description": " usually the freight forwarder",
+      "description": "Reference to the Booking",
       "type": "Booking",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "forBookingOption",
-      "description": " usually the freight forwarder",
+      "description": "Reference to the BookingOption the LogisticsObject is detailling",
       "type": "BookingOption",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "waybillNumber",
-      "description": " usually the freight forwarder",
+      "description": "House or Master Waybill unique identifier",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "waybillPrefix",
-      "description": " usually the freight forwarder",
+      "description": "Prefix used for the Waybill Number. Refer to IATA Airlines Codes",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checks",
-      "description": " usually the freight forwarder",
+      "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
-      "description": " usually the freight forwarder",
+      "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
-      "description": " usually the freight forwarder",
+      "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
-      "description": " usually the freight forwarder",
+      "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

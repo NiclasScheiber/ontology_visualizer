@@ -1,19 +1,21 @@
 {
-  "name": "Core.CheckTemplate",
-  "description": "CheckTemplate is the body of a check",
-  "schemaColor": "#91C4F2",
+  "schema": "Core",
+  "name": "CheckTemplate",
+  "description": "CheckTemplate is the body of a check; holding links to multiple Question LOs and is provided by the party in charge of the template that is used",
   "columns": [
     {
       "name": "involvedParties",
-      "description": " holding links to multiple Question LOs and is provided by the party in charge of the template that is used",
+      "description": "",
       "type": "Party",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "questions",
-      "description": " holding links to multiple Question LOs and is provided by the party in charge of the template that is used",
+      "description": "",
       "type": "Question",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

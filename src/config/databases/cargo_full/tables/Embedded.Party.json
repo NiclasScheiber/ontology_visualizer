@@ -1,25 +1,28 @@
 {
-  "name": "Embedded.Party",
-  "description": "Refers to a Company and its role in a specific context",
-  "schemaColor": "#91C4F2",
+  "schema": "Embedded",
+  "name": "Party",
+  "description": "Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
   "columns": [
     {
       "name": "otherIdentifiers",
-      "description": " e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+      "description": "Details about any other identifier; depending on the context of use",
       "type": "OtherIdentifier",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "partyDetails",
-      "description": " e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+      "description": "Reference to the Agent described by the role of the Party",
       "type": "LogisticsAgent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "partyRole",
-      "description": " e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+      "description": "Role fo the Company in the context. Can refer to Code List 1.36 in the CXML Toolkit",
       "type": "ParticipantIdentifier",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

@@ -1,151 +1,175 @@
 {
-  "name": "Core.TransportMovement",
-  "description": "Activity to describe transports",
-  "schemaColor": "#91C4F2",
+  "schema": "Core",
+  "name": "TransportMovement",
+  "description": "Activity to describe transports; replaces the TransportSegment in v1.1 and above",
   "columns": [
     {
       "name": "checkActions",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "References to CheckActions performed for the Activity",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "contactDetails",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Information about contactDetails",
       "type": "ContactDetail",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "contactPersons",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "executionStatus",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Enum stating the status of the Activity",
       "type": "ExecutionStatus",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "servedServices",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Reference to Services this Activity is executed for",
       "type": "LogisticsService",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checks",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "arrivalLocation",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Reference to the arrival Location",
       "type": "Location",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "co2Emissions",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "References to CO2Emissions",
       "type": "CO2Emissions",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "departureLocation",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Reference to the depature Location",
       "type": "Location",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "distanceCalculated",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Information about the calculated distance",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "distanceMeasured",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Information about the measured distance",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "fuelAmountCalculated",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Information about the calculated fuel amount",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "fuelAmountMeasured",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Information about the measured fuel amount",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "loadingActions",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "References to all actions of type Loading performed for the TransportMovement",
       "type": "Loading",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "modeCode",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Mode of transport code; refer to UNECE Rec. 19 https://unece.org/fileadmin/DAM/cefact/recommendations/rec19/rec19_1cf19e.pdf",
       "type": "ModeCode",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "modeQualifier",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Pre-Carriage; Main-Carriage or On-Carriage",
       "type": "ModeQualifier",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "movementTimes",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Information about times related to the movement (milestone list to be defined)",
       "type": "MovementTime",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "operatingTransportMeans",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Reference to the TransportMeans operating the TransportMovement",
       "type": "TransportMeans",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "fuelType",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "e.g. Kerosene; Diesel; SAF; Electricity [renewable]; Electricity [non-renewable]",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "seal",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Seal identifier",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "transportIdentifier",
-      "description": " replaces the TransportSegment in v1.1 and above",
+      "description": "Airline flight number; or rail/truck/maritime line id",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

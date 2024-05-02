@@ -1,127 +1,147 @@
 {
-  "name": "Core.Item",
+  "schema": "Core",
+  "name": "Item",
   "description": "Item details",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "dimensions",
       "description": "Dimensions details",
       "type": "Dimensions",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "inPiece",
       "description": "Reference to the Piece this Item or Piece is contained in",
       "type": "Piece",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "itemQuantity",
-      "description": "Quantity of the item when applicable",
+      "description": "Quantity of the item when applicable; with associated units of measure",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "ofProduct",
       "description": "Reference to the Product describing the Item",
       "type": "Product",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "otherIdentifiers",
-      "description": "Details about any other identifier",
+      "description": "Details about any other identifier; depending on the context of use",
       "type": "OtherIdentifier",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "productionCountry",
       "description": "Production country details. Refer ISO 3166-2",
       "type": "CodeListElement",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "targetCountry",
       "description": "Item target country. Refer ISO 3166-2",
       "type": "CodeListElement",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "unitPrice",
       "description": "Product price per unit in the base",
       "type": "CurrencyValue",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "weight",
       "description": "Weight of the item",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "batchNumber",
       "description": "Production batch number / reference",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "expiryDate",
       "description": "Product expiry date - e.g. for perishables goods or goods with programmed obsolescence",
       "type": "dateTime",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "lotNumber",
       "description": "Production lot number / reference",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "productionDate",
       "description": "Production date",
       "type": "dateTime",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "quantityForUnitPrice",
       "description": "Product quantity for unit price - e.g. 12 (eggs for one USD 1)",
       "type": "double",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "attachedIotDevices",
       "description": "References to all connected IotDevices",
       "type": "IotDevice",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "involvedInActions",
       "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

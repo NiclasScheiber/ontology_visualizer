@@ -1,67 +1,77 @@
 {
-  "name": "Core.Answer",
+  "schema": "Core",
+  "name": "Answer",
   "description": "Answer holds the answer to one Question and is provided by the executioner of the check",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "answerActor",
       "description": "Reference to the Actor giving the Answer",
       "type": "Actor",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "answerValue",
       "description": "Information about an answer Value of any kind of the Answer",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "givenAtLocation",
-      "description": "Reference to the Location from which the Question was answered",
+      "description": "Reference to the Location from which the Question was answered; relevant for split checks with documentary and physical elements",
       "type": "Location",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "involvedParties",
       "description": "Information about other Parties involved depending on the context of use",
       "type": "Party",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "question",
       "description": "Reference to the Question the Answer is for",
       "type": "Question",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "text",
       "description": "Text for the Answer",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

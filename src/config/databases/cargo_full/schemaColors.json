@@ -1,7 +1,7 @@
 {
-  "DEFAULT": "#E6E6E6",
-  "Enum": "#E6E6E6",
+  "DEFAULT": "#91C4F2",
+  "Enum": "#91C4F2",
   "Core": "#1D31FA",
-  "Embedded": "#E6E6E6",
-  "": "#E6E6E6"
+  "Embedded": "#91C4F2",
+  "A": "#91C4F2"
 }

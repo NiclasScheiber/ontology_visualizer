@@ -1,49 +1,56 @@
 {
-  "name": "Core.PackagingType",
+  "schema": "Core",
+  "name": "PackagingType",
   "description": "Packaging details ",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "appliedOnPieces",
       "description": "Piece on which the Packaging type is applicable",
       "type": "Piece",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "typeCode",
-      "description": "Packaging type identifier as per UNECE Rec 21 Annex V and VI e.g. 1A - Drum",
+      "description": "Packaging type identifier as per UNECE Rec 21 Annex V and VI e.g. 1A - Drum; steel - Packaging material code. Identifies the Logistic Unit package type. UN Recommendation on Transport of Dangerous Goods; Model Regulations ",
       "type": "CodeListElement",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "description",
       "description": "Natural language description if required",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

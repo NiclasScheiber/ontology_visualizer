@@ -1,31 +1,35 @@
 {
-  "name": "Core.LogisticsAgent",
+  "schema": "Core",
+  "name": "LogisticsAgent",
   "description": "Superclass: LogisticsAgents describe acting entities in the logistics supply chain such as persons and organizations",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

@@ -1,73 +1,84 @@
 {
-  "name": "Core.Organization",
-  "description": "Superclass: Organizations represent a kind of Agent corresponding to social instititutions such as companies",
-  "schemaColor": "#91C4F2",
+  "schema": "Core",
+  "name": "Organization",
+  "description": "Superclass: Organizations represent a kind of Agent corresponding to social instititutions such as companies; societies; etc",
   "columns": [
     {
       "name": "checks",
-      "description": " societies",
+      "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
-      "description": " societies",
+      "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
-      "description": " societies",
+      "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
-      "description": " societies",
+      "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "basedAtLocation",
-      "description": " societies",
+      "description": "Reference to the Location where the Organization is based at or headquartered",
       "type": "Location",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "contactPersons",
-      "description": " societies",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "otherIdentifiers",
-      "description": " societies",
+      "description": "Details about any other identifier; depending on the context of use",
       "type": "OtherIdentifier",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "parentOrganization",
-      "description": " societies",
+      "description": "Reference to the parent Organization",
       "type": "Organization",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "subOrganization",
-      "description": " societies",
+      "description": "References to all sub-Organizations",
       "type": "Organization",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "name",
-      "description": " societies",
+      "description": "Human-understandable name of object depending on the context",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "shortName",
-      "description": " societies",
+      "description": "Short name of the Organization if any",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

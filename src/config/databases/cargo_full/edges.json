@@ -17,14 +17,14 @@
       "source": "Embedded.ActivitySequence",
       "sourceKey": "activity",
       "target": "Core.Storage",
-      "targetKey": "Core.Storage",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.ActivitySequence",
       "sourceKey": "activity",
       "target": "Core.LogisticsActivity",
-      "targetKey": "Core.LogisticsActivity",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -73,42 +73,42 @@
       "source": "Core.Actor",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Address",
       "sourceKey": "addressCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Address",
       "sourceKey": "cityCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Address",
       "sourceKey": "country",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Address",
       "sourceKey": "postalCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Address",
       "sourceKey": "regionCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -136,49 +136,49 @@
       "source": "Core.Answer",
       "sourceKey": "answerActor",
       "target": "Core.Person",
-      "targetKey": "Core.Person",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Answer",
       "sourceKey": "answerActor",
       "target": "Core.NonHumanActor",
-      "targetKey": "Core.NonHumanActor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Answer",
       "sourceKey": "answerActor",
       "target": "Core.Actor",
-      "targetKey": "Core.Actor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Answer",
       "sourceKey": "answerValue",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Answer",
       "sourceKey": "givenAtLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Answer",
       "sourceKey": "involvedParties",
       "target": "Embedded.Party",
-      "targetKey": "Embedded.Party",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Answer",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -206,35 +206,35 @@
       "source": "Core.BillingDetails",
       "sourceKey": "adjustments",
       "target": "Embedded.Adjustments",
-      "targetKey": "Embedded.Adjustments",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BillingDetails",
       "sourceKey": "taxDueAgent",
       "target": "Embedded.CurrencyValue",
-      "targetKey": "Embedded.CurrencyValue",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BillingDetails",
       "sourceKey": "taxDueAirline",
       "target": "Embedded.CurrencyValue",
-      "targetKey": "Embedded.CurrencyValue",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BillingDetails",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BillingDetails",
       "sourceKey": "awbUseIndicator",
-      "target": ".AWBUseIndicator",
-      "targetKey": ".AWBUseIndicator",
+      "target": "A.AWBUseIndicator",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -297,28 +297,28 @@
       "source": "Core.Booking",
       "sourceKey": "bookingStatus",
       "target": "Enum.BookingStatus",
-      "targetKey": "Enum.BookingStatus",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Booking",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Booking",
       "sourceKey": "activitySequences",
       "target": "Embedded.ActivitySequence",
-      "targetKey": "Embedded.ActivitySequence",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Booking",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -367,56 +367,56 @@
       "source": "Core.BookingOption",
       "sourceKey": "bookingTimes",
       "target": "Embedded.BookingTimes",
-      "targetKey": "Embedded.BookingTimes",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOption",
       "sourceKey": "carrier",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOption",
       "sourceKey": "carrierProduct",
       "target": "Embedded.CarrierProduct",
-      "targetKey": "Embedded.CarrierProduct",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOption",
       "sourceKey": "stationRemarks",
       "target": "Embedded.StationRemarks",
-      "targetKey": "Embedded.StationRemarks",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOption",
       "sourceKey": "statusBookingOption",
       "target": "Enum.BookingOptionStatus",
-      "targetKey": "Enum.BookingOptionStatus",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOption",
       "sourceKey": "transportLegs",
       "target": "Core.TransportLegs",
-      "targetKey": "Core.TransportLegs",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOption",
       "sourceKey": "unitsPreference",
       "target": "Embedded.UnitsPreference",
-      "targetKey": "Embedded.UnitsPreference",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOption",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -458,70 +458,70 @@
       "source": "Core.BookingOptionRequest",
       "sourceKey": "bookingPreference",
       "target": "Embedded.BookingPreferences",
-      "targetKey": "Embedded.BookingPreferences",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOptionRequest",
       "sourceKey": "carrierProduct",
       "target": "Embedded.CarrierProduct",
-      "targetKey": "Embedded.CarrierProduct",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOptionRequest",
       "sourceKey": "involvedParties",
       "target": "Embedded.Party",
-      "targetKey": "Embedded.Party",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOptionRequest",
       "sourceKey": "timePreferences",
       "target": "Embedded.BookingTimes",
-      "targetKey": "Embedded.BookingTimes",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOptionRequest",
       "sourceKey": "transportLegs",
       "target": "Core.TransportLegs",
-      "targetKey": "Core.TransportLegs",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOptionRequest",
       "sourceKey": "unitsPreference",
       "target": "Embedded.UnitsPreference",
-      "targetKey": "Embedded.UnitsPreference",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingOptionRequest",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.BookingPreferences",
       "sourceKey": "excludedViaPoints",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.BookingPreferences",
       "sourceKey": "includedViaPoints",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.BookingPreferences",
       "sourceKey": "aircraftPossibilityCode",
-      "target": ".AircraftPossibilityCode",
-      "targetKey": ".AircraftPossibilityCode",
+      "target": "A.AircraftPossibilityCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -563,7 +563,7 @@
       "source": "Core.BookingRequest",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -598,525 +598,525 @@
       "source": "Core.BookingShipment",
       "sourceKey": "pieceGroups",
       "target": "Embedded.LoosePiece",
-      "targetKey": "Embedded.LoosePiece",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingShipment",
       "sourceKey": "pieceGroups",
       "target": "Embedded.ULDBasicPiece",
-      "targetKey": "Embedded.ULDBasicPiece",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingShipment",
       "sourceKey": "pieceGroups",
       "target": "Embedded.ULDSpecificPiece",
-      "targetKey": "Embedded.ULDSpecificPiece",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingShipment",
       "sourceKey": "pieceGroups",
       "target": "Embedded.VolumePieceGroup",
-      "targetKey": "Embedded.VolumePieceGroup",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingShipment",
       "sourceKey": "expectedHScode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingShipment",
       "sourceKey": "pieceGroups",
       "target": "Embedded.PieceGroup",
-      "targetKey": "Embedded.PieceGroup",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingShipment",
       "sourceKey": "temperatureInstructions",
       "target": "Embedded.TemperatureInstructions",
-      "targetKey": "Embedded.TemperatureInstructions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingShipment",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingShipment",
       "sourceKey": "expectedCommodity",
-      "target": ".CommodityCode",
-      "targetKey": ".CommodityCode",
+      "target": "A.CommodityCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.BookingShipment",
       "sourceKey": "specialHandlingCodes",
-      "target": ".SpecialHandlingCode",
-      "targetKey": ".SpecialHandlingCode",
+      "target": "A.SpecialHandlingCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.LogisticsActivity",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Answer",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Actor",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Piece",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Location",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.EpermitConsignment",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Organization",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.IotDevice",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.PhysicalLogisticsObject",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.BillingDetails",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Booking",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.BookingOption",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.BookingRequest",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.BookingShipment",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Carrier",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Person",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Check",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.CheckTemplate",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.LoadingMaterial",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Composing",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Sensor",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.PieceLiveAnimals",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Item",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.DgProductRadioactive",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Product",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.CustomsInformation",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Waybill",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.DgDeclaration",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.ExternalReference",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.LiveAnimalsEpermit",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.BookingOptionRequest",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Price",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.ProductDg",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.UnitComposition",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Insurance",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Shipment",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.LogisticsAction",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.DgRadioactiveIsotope",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.LoadingUnit",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Loading",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.TransportMeans",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.TransportMovement",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Company",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.PackagingType",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.LogisticsAgent",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Question",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Ratings",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.SecurityDeclaration",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.LogisticsService",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.EpermitSignature",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Storing",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.TransportLegs",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.PieceDg",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.ItemDg",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.NonHumanActor",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.PublicAuthority",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.Storage",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Core.ULD",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
       "target": "Embedded.LogisticsObject",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "checks",
       "target": "Core.Check",
       "targetKey": "checkedObject",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "externalReferences",
       "target": "Core.ExternalReference",
       "targetKey": "referenceForObjects",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
-      "target": ".CheckTotalResult",
+      "target": "A.CheckTotalResult",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculationFor",
-      "target": ".CO2Emissions",
+      "target": "A.CO2Emissions",
       "targetKey": "co2Emissions",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "calculatedEmissions",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
-      "source": ".CO2Emissions",
+      "source": "A.CO2Emissions",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -1214,35 +1214,35 @@
       "source": "Core.Carrier",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Carrier",
       "sourceKey": "basedAtLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Carrier",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.CarrierProduct",
       "sourceKey": "productCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.CarrierProduct",
       "sourceKey": "serviceLevelCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -1822,14 +1822,14 @@
     {
       "source": "Core.Check",
       "sourceKey": "checkedObject",
-      "target": ".CheckTotalResult",
+      "target": "A.CheckTotalResult",
       "targetKey": "checks",
       "relation": "hasMany"
     },
     {
       "source": "Core.Check",
       "sourceKey": "checkedObject",
-      "target": ".CO2Emissions",
+      "target": "A.CO2Emissions",
       "targetKey": "checks",
       "relation": "hasMany"
     },
@@ -1837,20 +1837,20 @@
       "source": "Core.Check",
       "sourceKey": "checker",
       "target": "Core.Person",
-      "targetKey": "Core.Person",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Check",
       "sourceKey": "checker",
       "target": "Core.NonHumanActor",
-      "targetKey": "Core.NonHumanActor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Check",
       "sourceKey": "checkTotalResult",
-      "target": ".CheckTotalResult",
+      "target": "A.CheckTotalResult",
       "targetKey": "resultOfCheck",
       "relation": "hasMany"
     },
@@ -1858,35 +1858,35 @@
       "source": "Core.Check",
       "sourceKey": "checker",
       "target": "Core.Actor",
-      "targetKey": "Core.Actor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Check",
       "sourceKey": "actionTimeType",
       "target": "Enum.ActionTimeType",
-      "targetKey": "Enum.ActionTimeType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Check",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Check",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Check",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -1928,56 +1928,56 @@
       "source": "Core.CheckTemplate",
       "sourceKey": "involvedParties",
       "target": "Embedded.Party",
-      "targetKey": "Embedded.Party",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.CheckTemplate",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
-      "source": ".CheckTotalResult",
+      "source": "A.CheckTotalResult",
       "sourceKey": "resultOfCheck",
       "target": "Core.Check",
       "targetKey": "checkTotalResult",
       "relation": "hasMany"
     },
     {
-      "source": ".CheckTotalResult",
+      "source": "A.CheckTotalResult",
       "sourceKey": "checks",
       "target": "Core.Check",
       "targetKey": "checkedObject",
       "relation": "hasMany"
     },
     {
-      "source": ".CheckTotalResult",
+      "source": "A.CheckTotalResult",
       "sourceKey": "externalReferences",
       "target": "Core.ExternalReference",
       "targetKey": "referenceForObjects",
       "relation": "hasMany"
     },
     {
-      "source": ".CheckTotalResult",
+      "source": "A.CheckTotalResult",
       "sourceKey": "certifiedByActor",
       "target": "Core.Person",
-      "targetKey": "Core.Person",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
-      "source": ".CheckTotalResult",
+      "source": "A.CheckTotalResult",
       "sourceKey": "resultValue",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
-      "source": ".CheckTotalResult",
+      "source": "A.CheckTotalResult",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -2075,21 +2075,21 @@
       "source": "Core.Company",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Company",
       "sourceKey": "basedAtLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Company",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -2306,49 +2306,49 @@
       "source": "Core.Composing",
       "sourceKey": "compositionType",
       "target": "Enum.CompositionType",
-      "targetKey": "Enum.CompositionType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Composing",
       "sourceKey": "actionTimeType",
       "target": "Enum.ActionTimeType",
-      "targetKey": "Enum.ActionTimeType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Composing",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Composing",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Composing",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.ContactDetail",
       "sourceKey": "contactDetailType",
       "target": "Enum.ContactDetailType",
-      "targetKey": "Enum.ContactDetailType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.CurrencyValue",
       "sourceKey": "currencyUnit",
-      "target": ".CurrencyCode",
-      "targetKey": ".CurrencyCode",
+      "target": "A.CurrencyCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -2439,28 +2439,28 @@
       "source": "Core.CustomsInformation",
       "sourceKey": "contentCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.CustomsInformation",
       "sourceKey": "country",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.CustomsInformation",
       "sourceKey": "subjectCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.CustomsInformation",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -2502,7 +2502,7 @@
       "source": "Core.DgDeclaration",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -2537,14 +2537,14 @@
       "source": "Core.DgProductRadioactive",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.DgProductRadioactive",
       "sourceKey": "dgRaTypeCode",
-      "target": ".RaTypeCode",
-      "targetKey": ".RaTypeCode",
+      "target": "A.RaTypeCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -2572,42 +2572,42 @@
       "source": "Core.DgRadioactiveIsotope",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.DgRadioactiveIsotope",
       "sourceKey": "physicalChemicalForm",
-      "target": ".RadioactiveMaterialClassification",
-      "targetKey": ".RadioactiveMaterialClassification",
+      "target": "A.RadioactiveMaterialClassification",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Dimensions",
       "sourceKey": "height",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Dimensions",
       "sourceKey": "length",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Dimensions",
       "sourceKey": "volume",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Dimensions",
       "sourceKey": "width",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -2642,14 +2642,14 @@
       "source": "Core.EpermitConsignment",
       "sourceKey": "examiningQuantity",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.EpermitConsignment",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -2677,35 +2677,35 @@
       "source": "Core.EpermitSignature",
       "sourceKey": "signatoryCompany",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.EpermitSignature",
       "sourceKey": "signatoryCompany",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.EpermitSignature",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.EpermitSignature",
       "sourceKey": "signatoryRole",
-      "target": ".SignatoryRole",
-      "targetKey": ".SignatoryRole",
+      "target": "A.SignatoryRole",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.EpermitSignature",
       "sourceKey": "signatureTypeCode",
-      "target": ".SignatureTypeCode",
-      "targetKey": ".SignatureTypeCode",
+      "target": "A.SignatureTypeCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -3965,48 +3965,48 @@
       "source": "Core.ExternalReference",
       "sourceKey": "originator",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ExternalReference",
       "sourceKey": "referenceForObjects",
-      "target": ".CheckTotalResult",
+      "target": "A.CheckTotalResult",
       "targetKey": "documents",
       "relation": "hasMany"
     },
     {
       "source": "Core.ExternalReference",
       "sourceKey": "referenceForObjects",
-      "target": ".CheckTotalResult",
+      "target": "A.CheckTotalResult",
       "targetKey": "externalReferences",
       "relation": "hasMany"
     },
     {
       "source": "Core.ExternalReference",
       "sourceKey": "referenceForObjects",
-      "target": ".CheckTotalResult",
+      "target": "A.CheckTotalResult",
       "targetKey": "legacyTemplate",
       "relation": "hasMany"
     },
     {
       "source": "Core.ExternalReference",
       "sourceKey": "referenceForObjects",
-      "target": ".CO2Emissions",
+      "target": "A.CO2Emissions",
       "targetKey": "documents",
       "relation": "hasMany"
     },
     {
       "source": "Core.ExternalReference",
       "sourceKey": "referenceForObjects",
-      "target": ".CO2Emissions",
+      "target": "A.CO2Emissions",
       "targetKey": "externalReferences",
       "relation": "hasMany"
     },
     {
       "source": "Core.ExternalReference",
       "sourceKey": "referenceForObjects",
-      "target": ".CO2Emissions",
+      "target": "A.CO2Emissions",
       "targetKey": "legacyTemplate",
       "relation": "hasMany"
     },
@@ -4014,28 +4014,28 @@
       "source": "Core.ExternalReference",
       "sourceKey": "createdAtLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ExternalReference",
       "sourceKey": "originator",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ExternalReference",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Geolocation",
       "sourceKey": "elevation",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -4063,42 +4063,42 @@
       "source": "Core.Insurance",
       "sourceKey": "coveringOrganization",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Insurance",
       "sourceKey": "coveringOrganization",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Insurance",
       "sourceKey": "coveringOrganization",
       "target": "Core.PublicAuthority",
-      "targetKey": "Core.PublicAuthority",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Insurance",
       "sourceKey": "coveringOrganization",
       "target": "Core.Organization",
-      "targetKey": "Core.Organization",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Insurance",
       "sourceKey": "insuredAmount",
       "target": "Embedded.CurrencyValue",
-      "targetKey": "Embedded.CurrencyValue",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Insurance",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -4504,21 +4504,21 @@
       "source": "Core.IotDevice",
       "sourceKey": "manufacturer",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.IotDevice",
       "sourceKey": "manufacturer",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.IotDevice",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -4882,56 +4882,56 @@
       "source": "Core.Item",
       "sourceKey": "dimensions",
       "target": "Embedded.Dimensions",
-      "targetKey": "Embedded.Dimensions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Item",
       "sourceKey": "itemQuantity",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Item",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Item",
       "sourceKey": "productionCountry",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Item",
       "sourceKey": "targetCountry",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Item",
       "sourceKey": "unitPrice",
       "target": "Embedded.CurrencyValue",
-      "targetKey": "Embedded.CurrencyValue",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Item",
       "sourceKey": "weight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Item",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -5295,70 +5295,70 @@
       "source": "Core.ItemDg",
       "sourceKey": "dimensions",
       "target": "Embedded.Dimensions",
-      "targetKey": "Embedded.Dimensions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ItemDg",
       "sourceKey": "itemQuantity",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ItemDg",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ItemDg",
       "sourceKey": "productionCountry",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ItemDg",
       "sourceKey": "targetCountry",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ItemDg",
       "sourceKey": "unitPrice",
       "target": "Embedded.CurrencyValue",
-      "targetKey": "Embedded.CurrencyValue",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ItemDg",
       "sourceKey": "weight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ItemDg",
       "sourceKey": "emergencyContact",
       "target": "Core.Person",
-      "targetKey": "Core.Person",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ItemDg",
       "sourceKey": "netWeightMeasure",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ItemDg",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -5393,42 +5393,42 @@
       "source": "Core.LiveAnimalsEpermit",
       "sourceKey": "consignee",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LiveAnimalsEpermit",
       "sourceKey": "consignee",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LiveAnimalsEpermit",
       "sourceKey": "permitTypeCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LiveAnimalsEpermit",
       "sourceKey": "transportContractTypeCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LiveAnimalsEpermit",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LiveAnimalsEpermit",
       "sourceKey": "transactionPurposeCode",
-      "target": ".TransactionPurposeCode",
-      "targetKey": ".TransactionPurposeCode",
+      "target": "A.TransactionPurposeCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -5638,35 +5638,35 @@
       "source": "Core.Loading",
       "sourceKey": "loadingType",
       "target": "Enum.LoadingType",
-      "targetKey": "Enum.LoadingType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Loading",
       "sourceKey": "actionTimeType",
       "target": "Enum.ActionTimeType",
-      "targetKey": "Enum.ActionTimeType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Loading",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Loading",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Loading",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -5974,42 +5974,42 @@
       "source": "Core.LoadingMaterial",
       "sourceKey": "manufacturer",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LoadingMaterial",
       "sourceKey": "manufacturer",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LoadingMaterial",
       "sourceKey": "manufacturer",
       "target": "Core.PublicAuthority",
-      "targetKey": "Core.PublicAuthority",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LoadingMaterial",
       "sourceKey": "manufacturer",
       "target": "Core.Organization",
-      "targetKey": "Core.Organization",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LoadingMaterial",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LoadingMaterial",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -6324,14 +6324,14 @@
       "source": "Core.LoadingUnit",
       "sourceKey": "tareWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LoadingUnit",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -6688,28 +6688,28 @@
       "source": "Core.Location",
       "sourceKey": "address",
       "target": "Embedded.Address",
-      "targetKey": "Embedded.Address",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Location",
       "sourceKey": "geolocation",
       "target": "Embedded.Geolocation",
-      "targetKey": "Embedded.Geolocation",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Location",
       "sourceKey": "locationCodes",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Location",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -6870,28 +6870,28 @@
       "source": "Core.LogisticsAction",
       "sourceKey": "actionTimeType",
       "target": "Enum.ActionTimeType",
-      "targetKey": "Enum.ActionTimeType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LogisticsAction",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LogisticsAction",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LogisticsAction",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -6940,35 +6940,35 @@
       "source": "Core.LogisticsActivity",
       "sourceKey": "servedServices",
       "target": "Core.Booking",
-      "targetKey": "Core.Booking",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LogisticsActivity",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LogisticsActivity",
       "sourceKey": "executionStatus",
       "target": "Enum.ExecutionStatus",
-      "targetKey": "Enum.ExecutionStatus",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LogisticsActivity",
       "sourceKey": "servedServices",
       "target": "Core.LogisticsService",
-      "targetKey": "Core.LogisticsService",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LogisticsActivity",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -6989,7 +6989,7 @@
       "source": "Core.LogisticsAgent",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -7003,497 +7003,497 @@
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.LogisticsActivity",
-      "targetKey": "Core.LogisticsActivity",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Answer",
-      "targetKey": "Core.Answer",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Actor",
-      "targetKey": "Core.Actor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Piece",
-      "targetKey": "Core.Piece",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.EpermitConsignment",
-      "targetKey": "Core.EpermitConsignment",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Organization",
-      "targetKey": "Core.Organization",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.IotDevice",
-      "targetKey": "Core.IotDevice",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.PhysicalLogisticsObject",
-      "targetKey": "Core.PhysicalLogisticsObject",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.BillingDetails",
-      "targetKey": "Core.BillingDetails",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Booking",
-      "targetKey": "Core.Booking",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.BookingOption",
-      "targetKey": "Core.BookingOption",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.BookingRequest",
-      "targetKey": "Core.BookingRequest",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.BookingShipment",
-      "targetKey": "Core.BookingShipment",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Person",
-      "targetKey": "Core.Person",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Check",
-      "targetKey": "Core.Check",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.CheckTemplate",
-      "targetKey": "Core.CheckTemplate",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.LoadingMaterial",
-      "targetKey": "Core.LoadingMaterial",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Composing",
-      "targetKey": "Core.Composing",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Sensor",
-      "targetKey": "Core.Sensor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.PieceLiveAnimals",
-      "targetKey": "Core.PieceLiveAnimals",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Item",
-      "targetKey": "Core.Item",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.DgProductRadioactive",
-      "targetKey": "Core.DgProductRadioactive",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Product",
-      "targetKey": "Core.Product",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.CustomsInformation",
-      "targetKey": "Core.CustomsInformation",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Waybill",
-      "targetKey": "Core.Waybill",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.DgDeclaration",
-      "targetKey": "Core.DgDeclaration",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.ExternalReference",
-      "targetKey": "Core.ExternalReference",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.LiveAnimalsEpermit",
-      "targetKey": "Core.LiveAnimalsEpermit",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.BookingOptionRequest",
-      "targetKey": "Core.BookingOptionRequest",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Price",
-      "targetKey": "Core.Price",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.ProductDg",
-      "targetKey": "Core.ProductDg",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.UnitComposition",
-      "targetKey": "Core.UnitComposition",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Insurance",
-      "targetKey": "Core.Insurance",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Shipment",
-      "targetKey": "Core.Shipment",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.LogisticsAction",
-      "targetKey": "Core.LogisticsAction",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.DgRadioactiveIsotope",
-      "targetKey": "Core.DgRadioactiveIsotope",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.LoadingUnit",
-      "targetKey": "Core.LoadingUnit",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Loading",
-      "targetKey": "Core.Loading",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.TransportMeans",
-      "targetKey": "Core.TransportMeans",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.TransportMovement",
-      "targetKey": "Core.TransportMovement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.PackagingType",
-      "targetKey": "Core.PackagingType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.LogisticsAgent",
-      "targetKey": "Core.LogisticsAgent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Question",
-      "targetKey": "Core.Question",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Ratings",
-      "targetKey": "Core.Ratings",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.SecurityDeclaration",
-      "targetKey": "Core.SecurityDeclaration",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.LogisticsService",
-      "targetKey": "Core.LogisticsService",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.EpermitSignature",
-      "targetKey": "Core.EpermitSignature",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Storing",
-      "targetKey": "Core.Storing",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.TransportLegs",
-      "targetKey": "Core.TransportLegs",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.PieceDg",
-      "targetKey": "Core.PieceDg",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.ItemDg",
-      "targetKey": "Core.ItemDg",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.NonHumanActor",
-      "targetKey": "Core.NonHumanActor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.PublicAuthority",
-      "targetKey": "Core.PublicAuthority",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.Storage",
-      "targetKey": "Core.Storage",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Core.ULD",
-      "targetKey": "Core.ULD",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "recordingActor",
       "target": "Core.Person",
-      "targetKey": "Core.Person",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "recordingActor",
       "target": "Core.NonHumanActor",
-      "targetKey": "Core.NonHumanActor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "recordingOrganization",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "recordingOrganization",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "recordingOrganization",
       "target": "Core.PublicAuthority",
-      "targetKey": "Core.PublicAuthority",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
       "target": "Embedded.LogisticsObject",
-      "targetKey": "Embedded.LogisticsObject",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventTimeType",
       "target": "Enum.EventTimeType",
-      "targetKey": "Enum.EventTimeType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "recordingActor",
       "target": "Core.Actor",
-      "targetKey": "Core.Actor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "recordingOrganization",
       "target": "Core.Organization",
-      "targetKey": "Core.Organization",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
-      "target": ".CheckTotalResult",
-      "targetKey": ".CheckTotalResult",
+      "target": "A.CheckTotalResult",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LogisticsEvent",
       "sourceKey": "eventFor",
-      "target": ".CO2Emissions",
-      "targetKey": ".CO2Emissions",
+      "target": "A.CO2Emissions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -7514,7 +7514,7 @@
       "source": "Embedded.LogisticsObject",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -7556,98 +7556,98 @@
       "source": "Core.LogisticsService",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LogisticsService",
       "sourceKey": "activitySequences",
       "target": "Embedded.ActivitySequence",
-      "targetKey": "Embedded.ActivitySequence",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.LogisticsService",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LoosePiece",
       "sourceKey": "pieceHeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LoosePiece",
       "sourceKey": "pieceLength",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LoosePiece",
       "sourceKey": "pieceWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LoosePiece",
       "sourceKey": "pieceWidth",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LoosePiece",
       "sourceKey": "dryIceWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.LoosePiece",
       "sourceKey": "pieceGroupGrossWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Measurement",
       "sourceKey": "measurementValue",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Measurement",
       "sourceKey": "recordedGeolocation",
       "target": "Embedded.Geolocation",
-      "targetKey": "Embedded.Geolocation",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.MovementTime",
       "sourceKey": "direction",
       "target": "Enum.DirectionType",
-      "targetKey": "Enum.DirectionType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.MovementTime",
       "sourceKey": "movementTimeType",
       "target": "Enum.MovementTimeType",
-      "targetKey": "Enum.MovementTimeType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.MovementTime",
       "sourceKey": "movementMilestone",
-      "target": ".MovementIndicator",
-      "targetKey": ".MovementIndicator",
+      "target": "A.MovementIndicator",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -7696,7 +7696,7 @@
       "source": "Core.NonHumanActor",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -7794,49 +7794,49 @@
       "source": "Core.Organization",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Organization",
       "sourceKey": "basedAtLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Organization",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.OtherCharge",
       "sourceKey": "otherChargeAmount",
       "target": "Embedded.CurrencyValue",
-      "targetKey": "Embedded.CurrencyValue",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.OtherCharge",
       "sourceKey": "chargePaymentType",
-      "target": ".PrepaidCollectIndicator",
-      "targetKey": ".PrepaidCollectIndicator",
+      "target": "A.PrepaidCollectIndicator",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.OtherCharge",
       "sourceKey": "entitlement",
-      "target": ".EntitlementCode",
-      "targetKey": ".EntitlementCode",
+      "target": "A.EntitlementCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.OtherCharge",
       "sourceKey": "otherChargeCode",
-      "target": ".OtherChargeCode",
-      "targetKey": ".OtherChargeCode",
+      "target": "A.OtherChargeCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -7878,84 +7878,84 @@
       "source": "Core.PackagingType",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PackagingType",
       "sourceKey": "typeCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Party",
       "sourceKey": "partyDetails",
       "target": "Core.Actor",
-      "targetKey": "Core.Actor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Party",
       "sourceKey": "partyDetails",
       "target": "Core.Organization",
-      "targetKey": "Core.Organization",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Party",
       "sourceKey": "partyDetails",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Party",
       "sourceKey": "partyDetails",
       "target": "Core.Person",
-      "targetKey": "Core.Person",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Party",
       "sourceKey": "partyDetails",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Party",
       "sourceKey": "partyDetails",
       "target": "Core.NonHumanActor",
-      "targetKey": "Core.NonHumanActor",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Party",
       "sourceKey": "partyDetails",
       "target": "Core.PublicAuthority",
-      "targetKey": "Core.PublicAuthority",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Party",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Party",
       "sourceKey": "partyDetails",
       "target": "Core.LogisticsAgent",
-      "targetKey": "Core.LogisticsAgent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Party",
       "sourceKey": "partyRole",
-      "target": ".ParticipantIdentifier",
-      "targetKey": ".ParticipantIdentifier",
+      "target": "A.ParticipantIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -8011,21 +8011,21 @@
       "source": "Core.Person",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Person",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Person",
       "sourceKey": "contactRole",
       "target": "Enum.ContactRole",
-      "targetKey": "Enum.ContactRole",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -8333,7 +8333,7 @@
       "source": "Core.PhysicalLogisticsObject",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -8767,84 +8767,84 @@
       "source": "Core.Piece",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "contentProductionCountry",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "dimensions",
       "target": "Embedded.Dimensions",
-      "targetKey": "Embedded.Dimensions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "fulfillsUldTypeCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "grossWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "involvedParties",
       "target": "Embedded.Party",
-      "targetKey": "Embedded.Party",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "loadType",
       "target": "Enum.LoadType",
-      "targetKey": "Enum.LoadType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "volumetricWeight",
       "target": "Embedded.VolumetricWeight",
-      "targetKey": "Embedded.VolumetricWeight",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "temperatureInstructions",
       "target": "Embedded.TemperatureInstructions",
-      "targetKey": "Embedded.TemperatureInstructions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "packageMarkCoded",
-      "target": ".PackageMarkCode",
-      "targetKey": ".PackageMarkCode",
+      "target": "A.PackageMarkCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
       "sourceKey": "specialHandlingCodes",
-      "target": ".SpecialHandlingCode",
-      "targetKey": ".SpecialHandlingCode",
+      "target": "A.SpecialHandlingCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -9285,105 +9285,105 @@
       "source": "Core.PieceDg",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "contentProductionCountry",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "dimensions",
       "target": "Embedded.Dimensions",
-      "targetKey": "Embedded.Dimensions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "fulfillsUldTypeCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "grossWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "involvedParties",
       "target": "Embedded.Party",
-      "targetKey": "Embedded.Party",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "loadType",
       "target": "Enum.LoadType",
-      "targetKey": "Enum.LoadType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "volumetricWeight",
       "target": "Embedded.VolumetricWeight",
-      "targetKey": "Embedded.VolumetricWeight",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "overpackTypeCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "temperatureInstructions",
       "target": "Embedded.TemperatureInstructions",
-      "targetKey": "Embedded.TemperatureInstructions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "packageMarkCoded",
-      "target": ".PackageMarkCode",
-      "targetKey": ".PackageMarkCode",
+      "target": "A.PackageMarkCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceDg",
       "sourceKey": "specialHandlingCodes",
-      "target": ".SpecialHandlingCode",
-      "targetKey": ".SpecialHandlingCode",
+      "target": "A.SpecialHandlingCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.PieceGroup",
       "sourceKey": "dryIceWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.PieceGroup",
       "sourceKey": "pieceGroupGrossWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -9824,126 +9824,126 @@
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "contentProductionCountry",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "dimensions",
       "target": "Embedded.Dimensions",
-      "targetKey": "Embedded.Dimensions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "fulfillsUldTypeCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "grossWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "involvedParties",
       "target": "Embedded.Party",
-      "targetKey": "Embedded.Party",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "loadType",
       "target": "Enum.LoadType",
-      "targetKey": "Enum.LoadType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "volumetricWeight",
       "target": "Embedded.VolumetricWeight",
-      "targetKey": "Embedded.VolumetricWeight",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "exportTradeCountry",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "originReferencePermitTypeCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "originTradeCountry",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "specimenTypeCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "temperatureInstructions",
       "target": "Embedded.TemperatureInstructions",
-      "targetKey": "Embedded.TemperatureInstructions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "packageMarkCoded",
-      "target": ".PackageMarkCode",
-      "targetKey": ".PackageMarkCode",
+      "target": "A.PackageMarkCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "specialHandlingCodes",
-      "target": ".SpecialHandlingCode",
-      "targetKey": ".SpecialHandlingCode",
+      "target": "A.SpecialHandlingCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "goodsTypeCode",
-      "target": ".GoodsTypeCode",
-      "targetKey": ".GoodsTypeCode",
+      "target": "A.GoodsTypeCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PieceLiveAnimals",
       "sourceKey": "goodsTypeExtensionCode",
-      "target": ".GoodsTypeExtensionCode",
-      "targetKey": ".GoodsTypeExtensionCode",
+      "target": "A.GoodsTypeExtensionCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -9985,14 +9985,14 @@
       "source": "Core.Price",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Price",
       "sourceKey": "chargeCode",
-      "target": ".ChargeCode",
-      "targetKey": ".ChargeCode",
+      "target": "A.ChargeCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -10195,56 +10195,56 @@
       "source": "Core.Product",
       "sourceKey": "manufacturer",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Product",
       "sourceKey": "manufacturer",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Product",
       "sourceKey": "manufacturer",
       "target": "Core.PublicAuthority",
-      "targetKey": "Core.PublicAuthority",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Product",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Product",
       "sourceKey": "hsCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Product",
       "sourceKey": "manufacturer",
       "target": "Core.Organization",
-      "targetKey": "Core.Organization",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Product",
       "sourceKey": "otherCharacteristics",
       "target": "Embedded.Characteristic",
-      "targetKey": "Embedded.Characteristic",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Product",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -10454,70 +10454,70 @@
       "source": "Core.ProductDg",
       "sourceKey": "manufacturer",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ProductDg",
       "sourceKey": "manufacturer",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ProductDg",
       "sourceKey": "manufacturer",
       "target": "Core.PublicAuthority",
-      "targetKey": "Core.PublicAuthority",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ProductDg",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ProductDg",
       "sourceKey": "hsCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ProductDg",
       "sourceKey": "manufacturer",
       "target": "Core.Organization",
-      "targetKey": "Core.Organization",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ProductDg",
       "sourceKey": "otherCharacteristics",
       "target": "Embedded.Characteristic",
-      "targetKey": "Embedded.Characteristic",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ProductDg",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ProductDg",
       "sourceKey": "explosiveCompatibilityGroupCode",
-      "target": ".ExplosiveCompatibilityGroupCode",
-      "targetKey": ".ExplosiveCompatibilityGroupCode",
+      "target": "A.ExplosiveCompatibilityGroupCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ProductDg",
       "sourceKey": "packagingDangerLevelCode",
-      "target": ".PackagingDangerLevelCode",
-      "targetKey": ".PackagingDangerLevelCode",
+      "target": "A.PackagingDangerLevelCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -10615,21 +10615,21 @@
       "source": "Core.PublicAuthority",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PublicAuthority",
       "sourceKey": "basedAtLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.PublicAuthority",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -10664,21 +10664,21 @@
       "source": "Core.Question",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Ranges",
       "sourceKey": "uldRateClassType",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Ranges",
       "sourceKey": "rateClassCode",
-      "target": ".RateClassCode",
-      "targetKey": ".RateClassCode",
+      "target": "A.RateClassCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -10706,91 +10706,91 @@
       "source": "Core.Ratings",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Ratings",
       "sourceKey": "ranges",
       "target": "Embedded.Ranges",
-      "targetKey": "Embedded.Ranges",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Ratings",
       "sourceKey": "rcp",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Ratings",
       "sourceKey": "billingChargeIdentifier",
-      "target": ".ChargeIdentifier",
-      "targetKey": ".ChargeIdentifier",
+      "target": "A.ChargeIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Ratings",
       "sourceKey": "chargePaymentType",
-      "target": ".PrepaidCollectIndicator",
-      "targetKey": ".PrepaidCollectIndicator",
+      "target": "A.PrepaidCollectIndicator",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Ratings",
       "sourceKey": "chargeType",
-      "target": ".ChargeIdentifier",
-      "targetKey": ".ChargeIdentifier",
+      "target": "A.ChargeIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Ratings",
       "sourceKey": "entitlement",
-      "target": ".EntitlementCode",
-      "targetKey": ".EntitlementCode",
+      "target": "A.EntitlementCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Ratings",
       "sourceKey": "otherChargeCode",
-      "target": ".OtherChargeCode",
-      "targetKey": ".OtherChargeCode",
+      "target": "A.OtherChargeCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.RegulatedEntity",
       "sourceKey": "owningOrganization",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.RegulatedEntity",
       "sourceKey": "owningOrganization",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.RegulatedEntity",
       "sourceKey": "owningOrganization",
       "target": "Core.PublicAuthority",
-      "targetKey": "Core.PublicAuthority",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.RegulatedEntity",
       "sourceKey": "owningOrganization",
       "target": "Core.Organization",
-      "targetKey": "Core.Organization",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.RegulatedEntity",
       "sourceKey": "regulatedEntityCategory",
-      "target": ".RegulatedEntityCategoryCode",
-      "targetKey": ".RegulatedEntityCategoryCode",
+      "target": "A.RegulatedEntityCategoryCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -10874,63 +10874,63 @@
       "source": "Core.SecurityDeclaration",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.SecurityDeclaration",
       "sourceKey": "issuedBy",
       "target": "Core.Person",
-      "targetKey": "Core.Person",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.SecurityDeclaration",
       "sourceKey": "otherRegulatedEntities",
       "target": "Embedded.RegulatedEntity",
-      "targetKey": "Embedded.RegulatedEntity",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.SecurityDeclaration",
       "sourceKey": "receivedFrom",
       "target": "Embedded.RegulatedEntity",
-      "targetKey": "Embedded.RegulatedEntity",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.SecurityDeclaration",
       "sourceKey": "regulatedEntityAcceptor",
       "target": "Embedded.RegulatedEntity",
-      "targetKey": "Embedded.RegulatedEntity",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.SecurityDeclaration",
       "sourceKey": "regulatedEntityIssuer",
       "target": "Embedded.RegulatedEntity",
-      "targetKey": "Embedded.RegulatedEntity",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.SecurityDeclaration",
       "sourceKey": "groundsForExemption",
-      "target": ".ScreeningExemption",
-      "targetKey": ".ScreeningExemption",
+      "target": "A.ScreeningExemption",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.SecurityDeclaration",
       "sourceKey": "screeningMethods",
-      "target": ".ScreeningMethod",
-      "targetKey": ".ScreeningMethod",
+      "target": "A.ScreeningMethod",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.SecurityDeclaration",
       "sourceKey": "securityStatus",
-      "target": ".SecurityStatus",
-      "targetKey": ".SecurityStatus",
+      "target": "A.SecurityStatus",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -11245,21 +11245,21 @@
       "source": "Core.Sensor",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Sensor",
       "sourceKey": "measurements",
       "target": "Embedded.Measurement",
-      "targetKey": "Embedded.Measurement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Sensor",
       "sourceKey": "sensorType",
       "target": "Enum.SensorType",
-      "targetKey": "Enum.SensorType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -11329,56 +11329,56 @@
       "source": "Core.Shipment",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Shipment",
       "sourceKey": "incoterms",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Shipment",
       "sourceKey": "involvedParties",
       "target": "Embedded.Party",
-      "targetKey": "Embedded.Party",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Shipment",
       "sourceKey": "totalDimensions",
       "target": "Embedded.Dimensions",
-      "targetKey": "Embedded.Dimensions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Shipment",
       "sourceKey": "totalGrossWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Shipment",
       "sourceKey": "totalVolumetricWeight",
       "target": "Embedded.VolumetricWeight",
-      "targetKey": "Embedded.VolumetricWeight",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Shipment",
       "sourceKey": "specialHandlingCodes",
-      "target": ".SpecialHandlingCode",
-      "targetKey": ".SpecialHandlingCode",
+      "target": "A.SpecialHandlingCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.StationRemarks",
       "sourceKey": "station",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -11434,35 +11434,35 @@
       "source": "Core.Storage",
       "sourceKey": "servedServices",
       "target": "Core.Booking",
-      "targetKey": "Core.Booking",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Storage",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Storage",
       "sourceKey": "executionStatus",
       "target": "Enum.ExecutionStatus",
-      "targetKey": "Enum.ExecutionStatus",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Storage",
       "sourceKey": "servedServices",
       "target": "Core.LogisticsService",
-      "targetKey": "Core.LogisticsService",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Storage",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -11714,49 +11714,49 @@
       "source": "Core.Storing",
       "sourceKey": "actionTimeType",
       "target": "Enum.ActionTimeType",
-      "targetKey": "Enum.ActionTimeType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Storing",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Storing",
       "sourceKey": "otherIdentifiers",
       "target": "Embedded.OtherIdentifier",
-      "targetKey": "Embedded.OtherIdentifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Storing",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Storing",
       "sourceKey": "storingType",
       "target": "Enum.StoringType",
-      "targetKey": "Enum.StoringType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.TemperatureInstructions",
       "sourceKey": "maxTemperature",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.TemperatureInstructions",
       "sourceKey": "minTemperature",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -11777,20 +11777,20 @@
       "source": "Core.TransportLegs",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportLegs",
       "sourceKey": "arrivalLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportLegs",
       "sourceKey": "co2Emissions",
-      "target": ".CO2Emissions",
+      "target": "A.CO2Emissions",
       "targetKey": "calculationFor",
       "relation": "hasMany"
     },
@@ -11798,21 +11798,21 @@
       "source": "Core.TransportLegs",
       "sourceKey": "departureLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportLegs",
       "sourceKey": "transportMeansType",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportLegs",
       "sourceKey": "transportMeansServiceType",
-      "target": ".TransportMeansServiceType",
-      "targetKey": ".TransportMeansServiceType",
+      "target": "A.TransportMeansServiceType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -12127,56 +12127,56 @@
       "source": "Core.TransportMeans",
       "sourceKey": "transportOrganization",
       "target": "Core.Carrier",
-      "targetKey": "Core.Carrier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMeans",
       "sourceKey": "transportOrganization",
       "target": "Core.Company",
-      "targetKey": "Core.Company",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMeans",
       "sourceKey": "transportOrganization",
       "target": "Core.PublicAuthority",
-      "targetKey": "Core.PublicAuthority",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMeans",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMeans",
       "sourceKey": "transportOrganization",
       "target": "Core.Organization",
-      "targetKey": "Core.Organization",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMeans",
       "sourceKey": "typicalCo2Coefficient",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMeans",
       "sourceKey": "typicalFuelConsumption",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMeans",
       "sourceKey": "vehicleType",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -12239,48 +12239,48 @@
       "source": "Core.TransportMovement",
       "sourceKey": "servedServices",
       "target": "Core.Booking",
-      "targetKey": "Core.Booking",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "executionStatus",
       "target": "Enum.ExecutionStatus",
-      "targetKey": "Enum.ExecutionStatus",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "servedServices",
       "target": "Core.LogisticsService",
-      "targetKey": "Core.LogisticsService",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "arrivalLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "co2Emissions",
-      "target": ".CO2Emissions",
+      "target": "A.CO2Emissions",
       "targetKey": "calculationFor",
       "relation": "hasMany"
     },
@@ -12288,56 +12288,56 @@
       "source": "Core.TransportMovement",
       "sourceKey": "departureLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "distanceCalculated",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "distanceMeasured",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "fuelAmountCalculated",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "fuelAmountMeasured",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "modeQualifier",
       "target": "Enum.ModeQualifier",
-      "targetKey": "Enum.ModeQualifier",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "movementTimes",
       "target": "Embedded.MovementTime",
-      "targetKey": "Embedded.MovementTime",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.TransportMovement",
       "sourceKey": "modeCode",
-      "target": ".ModeCode",
-      "targetKey": ".ModeCode",
+      "target": "A.ModeCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -12652,105 +12652,105 @@
       "source": "Core.ULD",
       "sourceKey": "tareWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ULD",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ULD",
       "sourceKey": "odlnCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ULD",
       "sourceKey": "ownerCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ULD",
       "sourceKey": "uldTypeCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ULD",
       "sourceKey": "demurrageCode",
-      "target": ".DemurrageCode",
-      "targetKey": ".DemurrageCode",
+      "target": "A.DemurrageCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ULD",
       "sourceKey": "loadingIndicator",
-      "target": ".ULDLoadingIndicator",
-      "targetKey": ".ULDLoadingIndicator",
+      "target": "A.ULDLoadingIndicator",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.ULD",
       "sourceKey": "serviceabilityCode",
-      "target": ".ULDConditionCode",
-      "targetKey": ".ULDConditionCode",
+      "target": "A.ULDConditionCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.ULDBasicPiece",
       "sourceKey": "dryIceWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.ULDBasicPiece",
       "sourceKey": "pieceGroupGrossWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.ULDBasicPiece",
       "sourceKey": "uldLoadingIndicator",
-      "target": ".ULDLoadingIndicator",
-      "targetKey": ".ULDLoadingIndicator",
+      "target": "A.ULDLoadingIndicator",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.ULDSpecificPiece",
       "sourceKey": "dryIceWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.ULDSpecificPiece",
       "sourceKey": "pieceGroupGrossWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.ULDSpecificPiece",
       "sourceKey": "uldContourCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.ULDSpecificPiece",
       "sourceKey": "uldType",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -12834,105 +12834,105 @@
       "source": "Core.UnitComposition",
       "sourceKey": "servedServices",
       "target": "Core.Booking",
-      "targetKey": "Core.Booking",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.UnitComposition",
       "sourceKey": "contactDetails",
       "target": "Embedded.ContactDetail",
-      "targetKey": "Embedded.ContactDetail",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.UnitComposition",
       "sourceKey": "executionStatus",
       "target": "Enum.ExecutionStatus",
-      "targetKey": "Enum.ExecutionStatus",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.UnitComposition",
       "sourceKey": "servedServices",
       "target": "Core.LogisticsService",
-      "targetKey": "Core.LogisticsService",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.UnitComposition",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.UnitsPreference",
       "sourceKey": "currency",
-      "target": ".CurrencyCode",
-      "targetKey": ".CurrencyCode",
+      "target": "A.CurrencyCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.UnitsPreference",
       "sourceKey": "dimensionsUnit",
-      "target": ".DimensionsUnitCode",
-      "targetKey": ".DimensionsUnitCode",
+      "target": "A.DimensionsUnitCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.UnitsPreference",
       "sourceKey": "temperatureUnit",
-      "target": ".TemperatureUnitCode",
-      "targetKey": ".TemperatureUnitCode",
+      "target": "A.TemperatureUnitCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.UnitsPreference",
       "sourceKey": "volumeUnit",
-      "target": ".VolumeUnitCode",
-      "targetKey": ".VolumeUnitCode",
+      "target": "A.VolumeUnitCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.UnitsPreference",
       "sourceKey": "weightUnit",
-      "target": ".WeightUnitCode",
-      "targetKey": ".WeightUnitCode",
+      "target": "A.WeightUnitCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.Value",
       "sourceKey": "unit",
-      "target": ".MeasurementUnitCode",
-      "targetKey": ".MeasurementUnitCode",
+      "target": "A.MeasurementUnitCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.VolumePieceGroup",
       "sourceKey": "dryIceWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.VolumePieceGroup",
       "sourceKey": "pieceGroupGrossWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.VolumePieceGroup",
       "sourceKey": "totalVolume",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.VolumetricWeight",
       "sourceKey": "chargeableWeight",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -12988,217 +12988,217 @@
       "source": "Core.Waybill",
       "sourceKey": "events",
       "target": "Embedded.LogisticsEvent",
-      "targetKey": "Embedded.LogisticsEvent",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "arrivalLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "carrierDeclarationPlace",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "customsOriginCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "declaredValueForCarriage",
       "target": "Embedded.CurrencyValue",
-      "targetKey": "Embedded.CurrencyValue",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "declaredValueForCustoms",
       "target": "Embedded.CurrencyValue",
-      "targetKey": "Embedded.CurrencyValue",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "departureLocation",
       "target": "Core.Location",
-      "targetKey": "Core.Location",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "destinationCharges",
       "target": "Embedded.CurrencyValue",
-      "targetKey": "Embedded.CurrencyValue",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "involvedParties",
       "target": "Embedded.Party",
-      "targetKey": "Embedded.Party",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "otherCharges",
       "target": "Embedded.OtherCharge",
-      "targetKey": "Embedded.OtherCharge",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "waybillLineItems",
       "target": "Embedded.WaybillLineItem",
-      "targetKey": "Embedded.WaybillLineItem",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "waybillType",
       "target": "Enum.WaybillType",
-      "targetKey": "Enum.WaybillType",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "carrierChargeCode",
-      "target": ".ChargeCode",
-      "targetKey": ".ChargeCode",
+      "target": "A.ChargeCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "otherChargesIndicator",
-      "target": ".PrepaidCollectIndicator",
-      "targetKey": ".PrepaidCollectIndicator",
+      "target": "A.PrepaidCollectIndicator",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "serviceCode",
-      "target": ".ServiceCode",
-      "targetKey": ".ServiceCode",
+      "target": "A.ServiceCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",
       "sourceKey": "weightValuationIndicator",
-      "target": ".PrepaidCollectIndicator",
-      "targetKey": ".PrepaidCollectIndicator",
+      "target": "A.PrepaidCollectIndicator",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "chargeableWeightForRate",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "dimensionsForRate",
       "target": "Embedded.Dimensions",
-      "targetKey": "Embedded.Dimensions",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "grossWeightForRate",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "hsCodeForRate",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "productionCountryForRate",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "rateCharge",
       "target": "Embedded.CurrencyValue",
-      "targetKey": "Embedded.CurrencyValue",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "ratePercentage",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "rcp",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "uldOwnerCode",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "uldRateClassType",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "uldTareWeightForRate",
       "target": "Embedded.Value",
-      "targetKey": "Embedded.Value",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "uldType",
       "target": "Embedded.CodeListElement",
-      "targetKey": "Embedded.CodeListElement",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "volumetricWeightForRate",
       "target": "Embedded.VolumetricWeight",
-      "targetKey": "Embedded.VolumetricWeight",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "rateClassCode",
-      "target": ".RateClassCode",
-      "targetKey": ".RateClassCode",
+      "target": "A.RateClassCode",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
       "source": "Embedded.WaybillLineItem",
       "sourceKey": "rateClassCodeBasic",
-      "target": ".BasicRateClassCode",
-      "targetKey": ".BasicRateClassCode",
+      "target": "A.BasicRateClassCode",
+      "targetKey": "",
       "relation": "hasMany"
     }
    ]

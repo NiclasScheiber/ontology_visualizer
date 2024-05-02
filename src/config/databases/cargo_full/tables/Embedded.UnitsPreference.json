@@ -1,37 +1,42 @@
 {
-  "name": "Embedded.UnitsPreference",
+  "schema": "Embedded",
+  "name": "UnitsPreference",
   "description": "UnitsPreference details",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "currency",
       "description": "Preferred unit for currency",
       "type": "CurrencyCode",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "dimensionsUnit",
       "description": "Preferred unit for measurement and dimensions",
       "type": "DimensionsUnitCode",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "temperatureUnit",
       "description": "Preferred unit for temperature",
       "type": "TemperatureUnitCode",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "volumeUnit",
       "description": "Preferred unit for volume",
       "type": "VolumeUnitCode",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "weightUnit",
       "description": "Preferred unit for weight",
       "type": "WeightUnitCode",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

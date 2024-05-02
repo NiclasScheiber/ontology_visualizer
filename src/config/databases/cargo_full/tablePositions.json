@@ -23,7 +23,7 @@
     "x": 1500,
     "y": 0
   },
-  ".AircraftPossibilityCode": {
+  "A.AircraftPossibilityCode": {
     "x": 1800,
     "y": 0
   },
@@ -63,11 +63,11 @@
     "x": 900,
     "y": 450
   },
-  ".AWBUseIndicator": {
+  "A.AWBUseIndicator": {
     "x": 1200,
     "y": 450
   },
-  ".ChargeIdentifier": {
+  "A.ChargeIdentifier": {
     "x": 1500,
     "y": 450
   },
@@ -111,7 +111,7 @@
     "x": 900,
     "y": 900
   },
-  ".ChargeCode": {
+  "A.ChargeCode": {
     "x": 1200,
     "y": 900
   },
@@ -123,7 +123,7 @@
     "x": 1800,
     "y": 900
   },
-  ".PrepaidCollectIndicator": {
+  "A.PrepaidCollectIndicator": {
     "x": 2100,
     "y": 900
   },
@@ -179,7 +179,7 @@
     "x": 2400,
     "y": 1350
   },
-  ".CurrencyCode": {
+  "A.CurrencyCode": {
     "x": 2700,
     "y": 1350
   },
@@ -191,7 +191,7 @@
     "x": 3300,
     "y": 1350
   },
-  ".DemurrageCode": {
+  "A.DemurrageCode": {
     "x": 0,
     "y": 1800
   },
@@ -203,7 +203,7 @@
     "x": 600,
     "y": 1800
   },
-  ".RaTypeCode": {
+  "A.RaTypeCode": {
     "x": 900,
     "y": 1800
   },
@@ -211,7 +211,7 @@
     "x": 1200,
     "y": 1800
   },
-  ".DimensionsUnitCode": {
+  "A.DimensionsUnitCode": {
     "x": 1500,
     "y": 1800
   },
@@ -223,7 +223,7 @@
     "x": 2100,
     "y": 1800
   },
-  ".EntitlementCode": {
+  "A.EntitlementCode": {
     "x": 2400,
     "y": 1800
   },
@@ -243,11 +243,11 @@
     "x": 0,
     "y": 2250
   },
-  ".CommodityCode": {
+  "A.CommodityCode": {
     "x": 300,
     "y": 2250
   },
-  ".ExplosiveCompatibilityGroupCode": {
+  "A.ExplosiveCompatibilityGroupCode": {
     "x": 600,
     "y": 2250
   },
@@ -267,15 +267,15 @@
     "x": 1800,
     "y": 2250
   },
-  ".GoodsTypeCode": {
+  "A.GoodsTypeCode": {
     "x": 2100,
     "y": 2250
   },
-  ".GoodsTypeExtensionCode": {
+  "A.GoodsTypeExtensionCode": {
     "x": 2400,
     "y": 2250
   },
-  ".ScreeningExemption": {
+  "A.ScreeningExemption": {
     "x": 2700,
     "y": 2250
   },
@@ -315,7 +315,7 @@
     "x": 1800,
     "y": 2700
   },
-  ".ULDLoadingIndicator": {
+  "A.ULDLoadingIndicator": {
     "x": 2100,
     "y": 2700
   },
@@ -327,7 +327,7 @@
     "x": 2700,
     "y": 2700
   },
-  ".ModeCode": {
+  "A.ModeCode": {
     "x": 3000,
     "y": 2700
   },
@@ -335,7 +335,7 @@
     "x": 3300,
     "y": 2700
   },
-  ".MovementIndicator": {
+  "A.MovementIndicator": {
     "x": 0,
     "y": 3150
   },
@@ -363,7 +363,7 @@
     "x": 1800,
     "y": 3150
   },
-  ".OtherChargeCode": {
+  "A.OtherChargeCode": {
     "x": 2100,
     "y": 3150
   },
@@ -379,11 +379,11 @@
     "x": 3000,
     "y": 3150
   },
-  ".PackageMarkCode": {
+  "A.PackageMarkCode": {
     "x": 3300,
     "y": 3150
   },
-  ".PackagingDangerLevelCode": {
+  "A.PackagingDangerLevelCode": {
     "x": 0,
     "y": 3600
   },
@@ -395,11 +395,11 @@
     "x": 600,
     "y": 3600
   },
-  ".ParticipantIdentifier": {
+  "A.ParticipantIdentifier": {
     "x": 900,
     "y": 3600
   },
-  ".RadioactiveMaterialClassification": {
+  "A.RadioactiveMaterialClassification": {
     "x": 1200,
     "y": 3600
   },
@@ -415,11 +415,11 @@
     "x": 2100,
     "y": 3600
   },
-  ".RateClassCode": {
+  "A.RateClassCode": {
     "x": 2400,
     "y": 3600
   },
-  ".BasicRateClassCode": {
+  "A.BasicRateClassCode": {
     "x": 2700,
     "y": 3600
   },
@@ -427,11 +427,11 @@
     "x": 3000,
     "y": 3600
   },
-  ".RegulatedEntityCategoryCode": {
+  "A.RegulatedEntityCategoryCode": {
     "x": 3300,
     "y": 3600
   },
-  ".ScreeningMethod": {
+  "A.ScreeningMethod": {
     "x": 0,
     "y": 4050
   },
@@ -439,7 +439,7 @@
     "x": 300,
     "y": 4050
   },
-  ".SecurityStatus": {
+  "A.SecurityStatus": {
     "x": 600,
     "y": 4050
   },
@@ -451,19 +451,19 @@
     "x": 1200,
     "y": 4050
   },
-  ".ServiceCode": {
+  "A.ServiceCode": {
     "x": 1500,
     "y": 4050
   },
-  ".ULDConditionCode": {
+  "A.ULDConditionCode": {
     "x": 1800,
     "y": 4050
   },
-  ".SignatoryRole": {
+  "A.SignatoryRole": {
     "x": 2100,
     "y": 4050
   },
-  ".SignatureTypeCode": {
+  "A.SignatureTypeCode": {
     "x": 2400,
     "y": 4050
   },
@@ -471,7 +471,7 @@
     "x": 2700,
     "y": 4050
   },
-  ".SpecialHandlingCode": {
+  "A.SpecialHandlingCode": {
     "x": 3000,
     "y": 4050
   },
@@ -495,7 +495,7 @@
     "x": 900,
     "y": 4500
   },
-  ".TemperatureUnitCode": {
+  "A.TemperatureUnitCode": {
     "x": 1200,
     "y": 4500
   },
@@ -503,7 +503,7 @@
     "x": 1500,
     "y": 4500
   },
-  ".TransactionPurposeCode": {
+  "A.TransactionPurposeCode": {
     "x": 1800,
     "y": 4500
   },
@@ -511,11 +511,11 @@
     "x": 2100,
     "y": 4500
   },
-  ".TransportMeansServiceType": {
+  "A.TransportMeansServiceType": {
     "x": 2400,
     "y": 4500
   },
-  ".MeasurementUnitCode": {
+  "A.MeasurementUnitCode": {
     "x": 2700,
     "y": 4500
   },
@@ -523,7 +523,7 @@
     "x": 3000,
     "y": 4500
   },
-  ".VolumeUnitCode": {
+  "A.VolumeUnitCode": {
     "x": 3300,
     "y": 4500
   },
@@ -535,7 +535,7 @@
     "x": 300,
     "y": 4950
   },
-  ".WeightUnitCode": {
+  "A.WeightUnitCode": {
     "x": 600,
     "y": 4950
   },
@@ -579,23 +579,23 @@
     "x": 0,
     "y": 5400
   },
-  ".DangerousGoodsCode": {
+  "A.DangerousGoodsCode": {
     "x": 300,
     "y": 5400
   },
-  ".RatingsType": {
+  "A.RatingsType": {
     "x": 600,
     "y": 5400
   },
-  ".ShipmentSecurityStatus": {
+  "A.ShipmentSecurityStatus": {
     "x": 900,
     "y": 5400
   },
-  ".StatusCode": {
+  "A.StatusCode": {
     "x": 1200,
     "y": 5400
   },
-  ".ULDChargeCode": {
+  "A.ULDChargeCode": {
     "x": 1500,
     "y": 5400
   }

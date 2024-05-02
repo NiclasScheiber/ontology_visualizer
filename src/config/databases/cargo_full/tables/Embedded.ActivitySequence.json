@@ -1,19 +1,21 @@
 {
-  "name": "Embedded.ActivitySequence",
+  "schema": "Embedded",
+  "name": "ActivitySequence",
   "description": "Embedded object to create a sequence of Activities in the context of a Service",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "activity",
       "description": "Reference to the Activity that is performed as part of a Service",
       "type": "LogisticsActivity",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "sequenceNumber",
       "description": "Short text to detail sequence number (alphanumeric)",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

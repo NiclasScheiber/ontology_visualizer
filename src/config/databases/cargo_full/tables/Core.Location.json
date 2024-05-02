@@ -1,91 +1,105 @@
 {
-  "name": "Core.Location",
-  "description": "Location describes a physical location",
-  "schemaColor": "#91C4F2",
+  "schema": "Core",
+  "name": "Location",
+  "description": "Location describes a physical location; e.g. an airport; a warehouse or a truck deck",
   "columns": [
     {
       "name": "address",
-      "description": " e.g. an airport",
+      "description": "Address details",
       "type": "Address",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "geolocation",
-      "description": " e.g. an airport",
+      "description": "Geolocation details",
       "type": "Geolocation",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "locationCodes",
-      "description": " e.g. an airport",
+      "description": "Location code of airport; freight terminal; seaport; rail station. UN/LOCODE city code (5 letter) or IATA airport code (3 letter)",
       "type": "CodeListElement",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "onsiteActions",
-      "description": " e.g. an airport",
+      "description": "References to the Actions happening at the Location",
       "type": "LogisticsAction",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "subLocationOf",
-      "description": " e.g. an airport",
+      "description": "Reference to the Location this is a Sublocation of",
       "type": "Location",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "subLocations",
-      "description": " e.g. an airport",
+      "description": "References to Sublocations that describe the Location in more detail",
       "type": "Location",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "locationName",
-      "description": " e.g. an airport",
+      "description": "Full name of the location",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "locationType",
-      "description": " e.g. an airport",
+      "description": "Location type - e.g. Airport; Freight terminal; Rail station; Seaport; etc",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checks",
-      "description": " e.g. an airport",
+      "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
-      "description": " e.g. an airport",
+      "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
-      "description": " e.g. an airport",
+      "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
-      "description": " e.g. an airport",
+      "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "attachedIotDevices",
-      "description": " e.g. an airport",
+      "description": "References to all connected IotDevices",
       "type": "IotDevice",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "involvedInActions",
-      "description": " e.g. an airport",
+      "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

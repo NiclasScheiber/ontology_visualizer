@@ -1,103 +1,119 @@
 {
-  "name": "Core.Shipment",
+  "schema": "Core",
+  "name": "Shipment",
   "description": "Shipment details",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "customsInformation",
       "description": "Customs details",
       "type": "CustomsInformation",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "incoterms",
       "description": "Standard codes as defined by UNCEFACT and ICC that correspond to international rules for the interpretation of the most commonly used trade terms in different countries. UNECE recommendation n. 5 Incoterms 2.",
       "type": "CodeListElement",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "insurance",
       "description": "Insurance details",
       "type": "Insurance",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "involvedParties",
       "description": "Information about other Parties involved depending on the context of use",
       "type": "Party",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "pieces",
       "description": "References to the Pieces that are part of this Shipment",
       "type": "Piece",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "specialHandlingCodes",
       "description": "Three-letter special handling code (SPH)",
       "type": "SpecialHandlingCode",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "totalDimensions",
       "description": "Dimensions of the whole shipment",
       "type": "Dimensions",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "totalGrossWeight",
       "description": "Total gross weight of the whole shipment",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "totalVolumetricWeight",
       "description": "Volumetric weight of the whole shipment",
       "type": "VolumetricWeight",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "waybill",
       "description": "Reference to the Waybill of the shipment",
       "type": "Waybill",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "goodsDescription",
-      "description": "Description of goods",
+      "description": "Description of goods; for the BookingShipment the commodity list defined by Modernizing Cargo Distribution MCD working group can be used as a referential.",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "textualHandlingInstructions",
       "description": "Strings to provide free text handling instructions such as SSR and OSI",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

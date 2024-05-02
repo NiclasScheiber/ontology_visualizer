@@ -1,43 +1,49 @@
 {
-  "name": "Embedded.ULDBasicPiece",
+  "schema": "Embedded",
+  "name": "ULDBasicPiece",
   "description": "ULDBasicPiece details",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "dryIceWeight",
       "description": "Weight of dry ice",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "pieceGroupGrossWeight",
       "description": "Total gross weight of the piece group",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "pieceGroupCount",
       "description": "Number of pieces in the piece group",
       "type": "integer",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "pieceGroupId",
-      "description": "Identifier of the piece group",
+      "description": "Identifier of the piece group; increasing integers",
       "type": "integer",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "uldLoadingIndicator",
       "description": "Indicator related to ULD loading (e.g. Main deck only)",
       "type": "ULDLoadingIndicator",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "slac",
       "description": "Shipper's Load And Count  ( total contained piece count as provided by shipper)",
       "type": "integer",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

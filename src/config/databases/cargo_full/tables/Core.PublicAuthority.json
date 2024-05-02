@@ -1,73 +1,84 @@
 {
-  "name": "Core.PublicAuthority",
-  "description": "PublicAuthorities are Organizations of the state on public interests",
-  "schemaColor": "#91C4F2",
+  "schema": "Core",
+  "name": "PublicAuthority",
+  "description": "PublicAuthorities are Organizations of the state on public interests; such as customs",
   "columns": [
     {
       "name": "checks",
-      "description": " such as customs",
+      "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
-      "description": " such as customs",
+      "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
-      "description": " such as customs",
+      "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
-      "description": " such as customs",
+      "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "basedAtLocation",
-      "description": " such as customs",
+      "description": "Reference to the Location where the Organization is based at or headquartered",
       "type": "Location",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "contactPersons",
-      "description": " such as customs",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "otherIdentifiers",
-      "description": " such as customs",
+      "description": "Details about any other identifier; depending on the context of use",
       "type": "OtherIdentifier",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "parentOrganization",
-      "description": " such as customs",
+      "description": "Reference to the parent Organization",
       "type": "Organization",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "subOrganization",
-      "description": " such as customs",
+      "description": "References to all sub-Organizations",
       "type": "Organization",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "name",
-      "description": " such as customs",
+      "description": "Human-understandable name of object depending on the context",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "shortName",
-      "description": " such as customs",
+      "description": "Short name of the Organization if any",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

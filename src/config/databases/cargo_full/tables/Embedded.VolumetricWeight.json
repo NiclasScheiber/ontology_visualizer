@@ -1,19 +1,21 @@
 {
-  "name": "Embedded.VolumetricWeight",
+  "schema": "Embedded",
+  "name": "VolumetricWeight",
   "description": "Volumetric weight details",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "chargeableWeight",
       "description": "Chargeable weight",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "conversionFactor",
       "description": "Volume to weight conversion factor",
       "type": "double",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

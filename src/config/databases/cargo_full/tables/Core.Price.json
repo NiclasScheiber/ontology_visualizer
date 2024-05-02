@@ -1,55 +1,63 @@
 {
-  "name": "Core.Price",
+  "schema": "Core",
+  "name": "Price",
   "description": "Price associated to the offer/booking",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "chargeCode",
-      "description": "Charge code",
+      "description": "Charge code; refer to CargoXML Code List 1.1",
       "type": "ChargeCode",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "forBookingOption",
       "description": "Reference to the BookingOption the LogisticsObject is detailling",
       "type": "BookingOption",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "ratings",
       "description": "Rating used for pricing",
       "type": "Ratings",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "grandTotal",
       "description": "Total price",
       "type": "double",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

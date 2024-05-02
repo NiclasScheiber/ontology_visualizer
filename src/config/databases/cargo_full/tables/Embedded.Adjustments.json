@@ -1,25 +1,28 @@
 {
-  "name": "Embedded.Adjustments",
+  "schema": "Embedded",
+  "name": "Adjustments",
   "description": "Adjustments in the context of CASS records",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "correctionNumber",
       "description": "Number of the adjustment",
       "type": "integer",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "correctionSerialNumber",
       "description": "Serial Number of the correction",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "reasonsForAdjustments",
       "description": "A free text for user to include a reason for correction",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

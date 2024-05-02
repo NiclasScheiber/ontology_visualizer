@@ -6,7 +6,7 @@ import embeddedActivitySequenceTable from "./tables/Embedded.ActivitySequence.js
 import embeddedAddressTable from "./tables/Embedded.Address.json";
 import embeddedCodeListElementTable from "./tables/Embedded.CodeListElement.json";
 import embeddedAdjustmentsTable from "./tables/Embedded.Adjustments.json";
-import AircraftPossibilityCodeTable from "./tables/.AircraftPossibilityCode.json";
+import aAircraftPossibilityCodeTable from "./tables/A.AircraftPossibilityCode.json";
 import coreAnswerTable from "./tables/Core.Answer.json";
 import coreActorTable from "./tables/Core.Actor.json";
 import embeddedValueTable from "./tables/Embedded.Value.json";
@@ -16,8 +16,8 @@ import coreEpermitConsignmentTable from "./tables/Core.EpermitConsignment.json";
 import coreOrganizationTable from "./tables/Core.Organization.json";
 import coreIotDeviceTable from "./tables/Core.IotDevice.json";
 import corePhysicalLogisticsObjectTable from "./tables/Core.PhysicalLogisticsObject.json";
-import AWBUseIndicatorTable from "./tables/.AWBUseIndicator.json";
-import ChargeIdentifierTable from "./tables/.ChargeIdentifier.json";
+import aAWBUseIndicatorTable from "./tables/A.AWBUseIndicator.json";
+import aChargeIdentifierTable from "./tables/A.ChargeIdentifier.json";
 import coreBillingDetailsTable from "./tables/Core.BillingDetails.json";
 import coreBookingTable from "./tables/Core.Booking.json";
 import coreBookingOptionTable from "./tables/Core.BookingOption.json";
@@ -28,10 +28,10 @@ import enumBookingStatusTable from "./tables/Enum.BookingStatus.json";
 import embeddedBookingTimesTable from "./tables/Embedded.BookingTimes.json";
 import embeddedLogisticsObjectTable from "./tables/Embedded.LogisticsObject.json";
 import coreCarrierTable from "./tables/Core.Carrier.json";
-import ChargeCodeTable from "./tables/.ChargeCode.json";
+import aChargeCodeTable from "./tables/A.ChargeCode.json";
 import embeddedCarrierProductTable from "./tables/Embedded.CarrierProduct.json";
 import corePersonTable from "./tables/Core.Person.json";
-import PrepaidCollectIndicatorTable from "./tables/.PrepaidCollectIndicator.json";
+import aPrepaidCollectIndicatorTable from "./tables/A.PrepaidCollectIndicator.json";
 import coreCheckTable from "./tables/Core.Check.json";
 import coreCheckTemplateTable from "./tables/Core.CheckTemplate.json";
 import coreLoadingMaterialTable from "./tables/Core.LoadingMaterial.json";
@@ -45,31 +45,31 @@ import enumContactRoleTable from "./tables/Enum.ContactRole.json";
 import coreItemTable from "./tables/Core.Item.json";
 import coreDgProductRadioactiveTable from "./tables/Core.DgProductRadioactive.json";
 import coreProductTable from "./tables/Core.Product.json";
-import CurrencyCodeTable from "./tables/.CurrencyCode.json";
+import aCurrencyCodeTable from "./tables/A.CurrencyCode.json";
 import coreCustomsInformationTable from "./tables/Core.CustomsInformation.json";
 import embeddedCurrencyValueTable from "./tables/Embedded.CurrencyValue.json";
-import DemurrageCodeTable from "./tables/.DemurrageCode.json";
+import aDemurrageCodeTable from "./tables/A.DemurrageCode.json";
 import coreWaybillTable from "./tables/Core.Waybill.json";
 import coreDgDeclarationTable from "./tables/Core.DgDeclaration.json";
-import RaTypeCodeTable from "./tables/.RaTypeCode.json";
+import aRaTypeCodeTable from "./tables/A.RaTypeCode.json";
 import embeddedDimensionsTable from "./tables/Embedded.Dimensions.json";
-import DimensionsUnitCodeTable from "./tables/.DimensionsUnitCode.json";
+import aDimensionsUnitCodeTable from "./tables/A.DimensionsUnitCode.json";
 import enumDirectionTypeTable from "./tables/Enum.DirectionType.json";
 import coreExternalReferenceTable from "./tables/Core.ExternalReference.json";
-import EntitlementCodeTable from "./tables/.EntitlementCode.json";
+import aEntitlementCodeTable from "./tables/A.EntitlementCode.json";
 import coreLiveAnimalsEpermitTable from "./tables/Core.LiveAnimalsEpermit.json";
 import enumEventTimeTypeTable from "./tables/Enum.EventTimeType.json";
 import embeddedLogisticsEventTable from "./tables/Embedded.LogisticsEvent.json";
 import enumExecutionStatusTable from "./tables/Enum.ExecutionStatus.json";
-import CommodityCodeTable from "./tables/.CommodityCode.json";
-import ExplosiveCompatibilityGroupCodeTable from "./tables/.ExplosiveCompatibilityGroupCode.json";
+import aCommodityCodeTable from "./tables/A.CommodityCode.json";
+import aExplosiveCompatibilityGroupCodeTable from "./tables/A.ExplosiveCompatibilityGroupCode.json";
 import coreBookingOptionRequestTable from "./tables/Core.BookingOptionRequest.json";
 import corePriceTable from "./tables/Core.Price.json";
 import coreProductDgTable from "./tables/Core.ProductDg.json";
 import embeddedGeolocationTable from "./tables/Embedded.Geolocation.json";
-import GoodsTypeCodeTable from "./tables/.GoodsTypeCode.json";
-import GoodsTypeExtensionCodeTable from "./tables/.GoodsTypeExtensionCode.json";
-import ScreeningExemptionTable from "./tables/.ScreeningExemption.json";
+import aGoodsTypeCodeTable from "./tables/A.GoodsTypeCode.json";
+import aGoodsTypeExtensionCodeTable from "./tables/A.GoodsTypeExtensionCode.json";
+import aScreeningExemptionTable from "./tables/A.ScreeningExemption.json";
 import coreUnitCompositionTable from "./tables/Core.UnitComposition.json";
 import coreInsuranceTable from "./tables/Core.Insurance.json";
 import coreShipmentTable from "./tables/Core.Shipment.json";
@@ -79,62 +79,62 @@ import coreDgRadioactiveIsotopeTable from "./tables/Core.DgRadioactiveIsotope.js
 import enumLoadTypeTable from "./tables/Enum.LoadType.json";
 import coreLoadingUnitTable from "./tables/Core.LoadingUnit.json";
 import coreLoadingTable from "./tables/Core.Loading.json";
-import ULDLoadingIndicatorTable from "./tables/.ULDLoadingIndicator.json";
+import aULDLoadingIndicatorTable from "./tables/A.ULDLoadingIndicator.json";
 import enumLoadingTypeTable from "./tables/Enum.LoadingType.json";
 import embeddedMeasurementTable from "./tables/Embedded.Measurement.json";
-import ModeCodeTable from "./tables/.ModeCode.json";
+import aModeCodeTable from "./tables/A.ModeCode.json";
 import enumModeQualifierTable from "./tables/Enum.ModeQualifier.json";
-import MovementIndicatorTable from "./tables/.MovementIndicator.json";
+import aMovementIndicatorTable from "./tables/A.MovementIndicator.json";
 import enumMovementTimeTypeTable from "./tables/Enum.MovementTimeType.json";
 import embeddedMovementTimeTable from "./tables/Embedded.MovementTime.json";
 import coreTransportMeansTable from "./tables/Core.TransportMeans.json";
 import coreTransportMovementTable from "./tables/Core.TransportMovement.json";
 import coreCompanyTable from "./tables/Core.Company.json";
 import embeddedCharacteristicTable from "./tables/Embedded.Characteristic.json";
-import OtherChargeCodeTable from "./tables/.OtherChargeCode.json";
+import aOtherChargeCodeTable from "./tables/A.OtherChargeCode.json";
 import embeddedOtherChargeTable from "./tables/Embedded.OtherCharge.json";
 import embeddedOtherIdentifierTable from "./tables/Embedded.OtherIdentifier.json";
 import embeddedRegulatedEntityTable from "./tables/Embedded.RegulatedEntity.json";
-import PackageMarkCodeTable from "./tables/.PackageMarkCode.json";
-import PackagingDangerLevelCodeTable from "./tables/.PackagingDangerLevelCode.json";
+import aPackageMarkCodeTable from "./tables/A.PackageMarkCode.json";
+import aPackagingDangerLevelCodeTable from "./tables/A.PackagingDangerLevelCode.json";
 import corePackagingTypeTable from "./tables/Core.PackagingType.json";
 import coreLogisticsAgentTable from "./tables/Core.LogisticsAgent.json";
-import ParticipantIdentifierTable from "./tables/.ParticipantIdentifier.json";
-import RadioactiveMaterialClassificationTable from "./tables/.RadioactiveMaterialClassification.json";
+import aParticipantIdentifierTable from "./tables/A.ParticipantIdentifier.json";
+import aRadioactiveMaterialClassificationTable from "./tables/A.RadioactiveMaterialClassification.json";
 import embeddedPieceGroupTable from "./tables/Embedded.PieceGroup.json";
 import coreQuestionTable from "./tables/Core.Question.json";
 import embeddedRangesTable from "./tables/Embedded.Ranges.json";
-import RateClassCodeTable from "./tables/.RateClassCode.json";
-import BasicRateClassCodeTable from "./tables/.BasicRateClassCode.json";
+import aRateClassCodeTable from "./tables/A.RateClassCode.json";
+import aBasicRateClassCodeTable from "./tables/A.BasicRateClassCode.json";
 import coreRatingsTable from "./tables/Core.Ratings.json";
-import RegulatedEntityCategoryCodeTable from "./tables/.RegulatedEntityCategoryCode.json";
-import ScreeningMethodTable from "./tables/.ScreeningMethod.json";
+import aRegulatedEntityCategoryCodeTable from "./tables/A.RegulatedEntityCategoryCode.json";
+import aScreeningMethodTable from "./tables/A.ScreeningMethod.json";
 import coreSecurityDeclarationTable from "./tables/Core.SecurityDeclaration.json";
-import SecurityStatusTable from "./tables/.SecurityStatus.json";
+import aSecurityStatusTable from "./tables/A.SecurityStatus.json";
 import enumSensorTypeTable from "./tables/Enum.SensorType.json";
 import coreLogisticsServiceTable from "./tables/Core.LogisticsService.json";
-import ServiceCodeTable from "./tables/.ServiceCode.json";
-import ULDConditionCodeTable from "./tables/.ULDConditionCode.json";
-import SignatoryRoleTable from "./tables/.SignatoryRole.json";
-import SignatureTypeCodeTable from "./tables/.SignatureTypeCode.json";
+import aServiceCodeTable from "./tables/A.ServiceCode.json";
+import aULDConditionCodeTable from "./tables/A.ULDConditionCode.json";
+import aSignatoryRoleTable from "./tables/A.SignatoryRole.json";
+import aSignatureTypeCodeTable from "./tables/A.SignatureTypeCode.json";
 import coreEpermitSignatureTable from "./tables/Core.EpermitSignature.json";
-import SpecialHandlingCodeTable from "./tables/.SpecialHandlingCode.json";
+import aSpecialHandlingCodeTable from "./tables/A.SpecialHandlingCode.json";
 import embeddedStationRemarksTable from "./tables/Embedded.StationRemarks.json";
 import enumBookingOptionStatusTable from "./tables/Enum.BookingOptionStatus.json";
 import coreStoringTable from "./tables/Core.Storing.json";
 import enumStoringTypeTable from "./tables/Enum.StoringType.json";
 import embeddedTemperatureInstructionsTable from "./tables/Embedded.TemperatureInstructions.json";
-import TemperatureUnitCodeTable from "./tables/.TemperatureUnitCode.json";
+import aTemperatureUnitCodeTable from "./tables/A.TemperatureUnitCode.json";
 import embeddedVolumetricWeightTable from "./tables/Embedded.VolumetricWeight.json";
-import TransactionPurposeCodeTable from "./tables/.TransactionPurposeCode.json";
+import aTransactionPurposeCodeTable from "./tables/A.TransactionPurposeCode.json";
 import coreTransportLegsTable from "./tables/Core.TransportLegs.json";
-import TransportMeansServiceTypeTable from "./tables/.TransportMeansServiceType.json";
-import MeasurementUnitCodeTable from "./tables/.MeasurementUnitCode.json";
+import aTransportMeansServiceTypeTable from "./tables/A.TransportMeansServiceType.json";
+import aMeasurementUnitCodeTable from "./tables/A.MeasurementUnitCode.json";
 import embeddedUnitsPreferenceTable from "./tables/Embedded.UnitsPreference.json";
-import VolumeUnitCodeTable from "./tables/.VolumeUnitCode.json";
+import aVolumeUnitCodeTable from "./tables/A.VolumeUnitCode.json";
 import embeddedWaybillLineItemTable from "./tables/Embedded.WaybillLineItem.json";
 import enumWaybillTypeTable from "./tables/Enum.WaybillType.json";
-import WeightUnitCodeTable from "./tables/.WeightUnitCode.json";
+import aWeightUnitCodeTable from "./tables/A.WeightUnitCode.json";
 import corePieceDgTable from "./tables/Core.PieceDg.json";
 import coreItemDgTable from "./tables/Core.ItemDg.json";
 import embeddedLoosePieceTable from "./tables/Embedded.LoosePiece.json";
@@ -145,11 +145,11 @@ import coreULDTable from "./tables/Core.ULD.json";
 import embeddedULDBasicPieceTable from "./tables/Embedded.ULDBasicPiece.json";
 import embeddedULDSpecificPieceTable from "./tables/Embedded.ULDSpecificPiece.json";
 import embeddedVolumePieceGroupTable from "./tables/Embedded.VolumePieceGroup.json";
-import DangerousGoodsCodeTable from "./tables/.DangerousGoodsCode.json";
-import RatingsTypeTable from "./tables/.RatingsType.json";
-import ShipmentSecurityStatusTable from "./tables/.ShipmentSecurityStatus.json";
-import StatusCodeTable from "./tables/.StatusCode.json";
-import ULDChargeCodeTable from "./tables/.ULDChargeCode.json";
+import aDangerousGoodsCodeTable from "./tables/A.DangerousGoodsCode.json";
+import aRatingsTypeTable from "./tables/A.RatingsType.json";
+import aShipmentSecurityStatusTable from "./tables/A.ShipmentSecurityStatus.json";
+import aStatusCodeTable from "./tables/A.StatusCode.json";
+import aULDChargeCodeTable from "./tables/A.ULDChargeCode.json";
 
 const tables: TableConfig[] = [
   enumActionTimeTypeTable,
@@ -158,7 +158,7 @@ const tables: TableConfig[] = [
   embeddedAddressTable,
   embeddedCodeListElementTable,
   embeddedAdjustmentsTable,
-  AircraftPossibilityCodeTable,
+  aAircraftPossibilityCodeTable,
   coreAnswerTable,
   coreActorTable,
   embeddedValueTable,
@@ -168,8 +168,8 @@ const tables: TableConfig[] = [
   coreOrganizationTable,
   coreIotDeviceTable,
   corePhysicalLogisticsObjectTable,
-  AWBUseIndicatorTable,
-  ChargeIdentifierTable,
+  aAWBUseIndicatorTable,
+  aChargeIdentifierTable,
   coreBillingDetailsTable,
   coreBookingTable,
   coreBookingOptionTable,
@@ -180,10 +180,10 @@ const tables: TableConfig[] = [
   embeddedBookingTimesTable,
   embeddedLogisticsObjectTable,
   coreCarrierTable,
-  ChargeCodeTable,
+  aChargeCodeTable,
   embeddedCarrierProductTable,
   corePersonTable,
-  PrepaidCollectIndicatorTable,
+  aPrepaidCollectIndicatorTable,
   coreCheckTable,
   coreCheckTemplateTable,
   coreLoadingMaterialTable,
@@ -197,31 +197,31 @@ const tables: TableConfig[] = [
   coreItemTable,
   coreDgProductRadioactiveTable,
   coreProductTable,
-  CurrencyCodeTable,
+  aCurrencyCodeTable,
   coreCustomsInformationTable,
   embeddedCurrencyValueTable,
-  DemurrageCodeTable,
+  aDemurrageCodeTable,
   coreWaybillTable,
   coreDgDeclarationTable,
-  RaTypeCodeTable,
+  aRaTypeCodeTable,
   embeddedDimensionsTable,
-  DimensionsUnitCodeTable,
+  aDimensionsUnitCodeTable,
   enumDirectionTypeTable,
   coreExternalReferenceTable,
-  EntitlementCodeTable,
+  aEntitlementCodeTable,
   coreLiveAnimalsEpermitTable,
   enumEventTimeTypeTable,
   embeddedLogisticsEventTable,
   enumExecutionStatusTable,
-  CommodityCodeTable,
-  ExplosiveCompatibilityGroupCodeTable,
+  aCommodityCodeTable,
+  aExplosiveCompatibilityGroupCodeTable,
   coreBookingOptionRequestTable,
   corePriceTable,
   coreProductDgTable,
   embeddedGeolocationTable,
-  GoodsTypeCodeTable,
-  GoodsTypeExtensionCodeTable,
-  ScreeningExemptionTable,
+  aGoodsTypeCodeTable,
+  aGoodsTypeExtensionCodeTable,
+  aScreeningExemptionTable,
   coreUnitCompositionTable,
   coreInsuranceTable,
   coreShipmentTable,
@@ -231,62 +231,62 @@ const tables: TableConfig[] = [
   enumLoadTypeTable,
   coreLoadingUnitTable,
   coreLoadingTable,
-  ULDLoadingIndicatorTable,
+  aULDLoadingIndicatorTable,
   enumLoadingTypeTable,
   embeddedMeasurementTable,
-  ModeCodeTable,
+  aModeCodeTable,
   enumModeQualifierTable,
-  MovementIndicatorTable,
+  aMovementIndicatorTable,
   enumMovementTimeTypeTable,
   embeddedMovementTimeTable,
   coreTransportMeansTable,
   coreTransportMovementTable,
   coreCompanyTable,
   embeddedCharacteristicTable,
-  OtherChargeCodeTable,
+  aOtherChargeCodeTable,
   embeddedOtherChargeTable,
   embeddedOtherIdentifierTable,
   embeddedRegulatedEntityTable,
-  PackageMarkCodeTable,
-  PackagingDangerLevelCodeTable,
+  aPackageMarkCodeTable,
+  aPackagingDangerLevelCodeTable,
   corePackagingTypeTable,
   coreLogisticsAgentTable,
-  ParticipantIdentifierTable,
-  RadioactiveMaterialClassificationTable,
+  aParticipantIdentifierTable,
+  aRadioactiveMaterialClassificationTable,
   embeddedPieceGroupTable,
   coreQuestionTable,
   embeddedRangesTable,
-  RateClassCodeTable,
-  BasicRateClassCodeTable,
+  aRateClassCodeTable,
+  aBasicRateClassCodeTable,
   coreRatingsTable,
-  RegulatedEntityCategoryCodeTable,
-  ScreeningMethodTable,
+  aRegulatedEntityCategoryCodeTable,
+  aScreeningMethodTable,
   coreSecurityDeclarationTable,
-  SecurityStatusTable,
+  aSecurityStatusTable,
   enumSensorTypeTable,
   coreLogisticsServiceTable,
-  ServiceCodeTable,
-  ULDConditionCodeTable,
-  SignatoryRoleTable,
-  SignatureTypeCodeTable,
+  aServiceCodeTable,
+  aULDConditionCodeTable,
+  aSignatoryRoleTable,
+  aSignatureTypeCodeTable,
   coreEpermitSignatureTable,
-  SpecialHandlingCodeTable,
+  aSpecialHandlingCodeTable,
   embeddedStationRemarksTable,
   enumBookingOptionStatusTable,
   coreStoringTable,
   enumStoringTypeTable,
   embeddedTemperatureInstructionsTable,
-  TemperatureUnitCodeTable,
+  aTemperatureUnitCodeTable,
   embeddedVolumetricWeightTable,
-  TransactionPurposeCodeTable,
+  aTransactionPurposeCodeTable,
   coreTransportLegsTable,
-  TransportMeansServiceTypeTable,
-  MeasurementUnitCodeTable,
+  aTransportMeansServiceTypeTable,
+  aMeasurementUnitCodeTable,
   embeddedUnitsPreferenceTable,
-  VolumeUnitCodeTable,
+  aVolumeUnitCodeTable,
   embeddedWaybillLineItemTable,
   enumWaybillTypeTable,
-  WeightUnitCodeTable,
+  aWeightUnitCodeTable,
   corePieceDgTable,
   coreItemDgTable,
   embeddedLoosePieceTable,
@@ -297,11 +297,11 @@ const tables: TableConfig[] = [
   embeddedULDBasicPieceTable,
   embeddedULDSpecificPieceTable,
   embeddedVolumePieceGroupTable,
-  DangerousGoodsCodeTable,
-  RatingsTypeTable,
-  ShipmentSecurityStatusTable,
-  StatusCodeTable,
-  ULDChargeCodeTable
+  aDangerousGoodsCodeTable,
+  aRatingsTypeTable,
+  aShipmentSecurityStatusTable,
+  aStatusCodeTable,
+  aULDChargeCodeTable
 ];
 
 export default tables;

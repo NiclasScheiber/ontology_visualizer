@@ -1,19 +1,21 @@
 {
-  "name": "Embedded.CurrencyValue",
+  "schema": "Embedded",
+  "name": "CurrencyValue",
   "description": "Embedded object to transmit currencies",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "currencyUnit",
       "description": "Information about the currency used in a CurrencyValue. Create an instance of CurrencyCode based on ISO 4217",
       "type": "CurrencyCode",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "numericalValue",
       "description": "Numerical value",
       "type": "double",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

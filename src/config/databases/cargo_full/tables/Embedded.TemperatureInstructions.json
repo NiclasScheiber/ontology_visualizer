@@ -1,19 +1,21 @@
 {
-  "name": "Embedded.TemperatureInstructions",
+  "schema": "Embedded",
+  "name": "TemperatureInstructions",
   "description": "TemperatureInstructions details",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "maxTemperature",
       "description": "Maximum temperature of the range",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "minTemperature",
       "description": "Minimum temperature of the range",
       "type": "Value",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

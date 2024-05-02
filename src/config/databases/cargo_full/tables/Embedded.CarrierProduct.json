@@ -1,25 +1,28 @@
 {
-  "name": "Embedded.CarrierProduct",
+  "schema": "Embedded",
+  "name": "CarrierProduct",
   "description": "Carrier product details",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "productCode",
       "description": "Carrier's product code",
       "type": "CodeListElement",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "serviceLevelCode",
       "description": "Service level code",
       "type": "CodeListElement",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "productDescription",
       "description": "Carrier's product description",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

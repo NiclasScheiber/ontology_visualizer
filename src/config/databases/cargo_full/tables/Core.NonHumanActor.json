@@ -1,37 +1,42 @@
 {
-  "name": "Core.NonHumanActor",
-  "description": "Non-human actors are actors which are not a person",
-  "schemaColor": "#91C4F2",
+  "schema": "Core",
+  "name": "NonHumanActor",
+  "description": "Non-human actors are actors which are not a person; such as robots",
   "columns": [
     {
       "name": "associatedOrganization",
-      "description": " such as robots",
+      "description": "Reference to the Organization the Actor is associated with",
       "type": "Organization",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checks",
-      "description": " such as robots",
+      "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
-      "description": " such as robots",
+      "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
-      "description": " such as robots",
+      "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
-      "description": " such as robots",
+      "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

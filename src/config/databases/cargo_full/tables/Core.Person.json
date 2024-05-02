@@ -1,97 +1,112 @@
 {
-  "name": "Core.Person",
+  "schema": "Core",
+  "name": "Person",
   "description": "Person details",
-  "schemaColor": "#91C4F2",
   "columns": [
     {
       "name": "associatedOrganization",
       "description": "Reference to the Organization the Actor is associated with",
       "type": "Organization",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "contactDetails",
       "description": "Information about contactDetails",
       "type": "ContactDetail",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "contactRole",
-      "description": "Contact type - e.g. Emergency contact",
+      "description": "Contact type - e.g. Emergency contact; Customs contact; Customer contact",
       "type": "ContactRole",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "documents",
-      "description": "Linked documents to the person",
+      "description": "Linked documents to the person; e.g. driver's license; ID; etc.",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "department",
       "description": "Department / Division / Unit",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "employeeId",
       "description": "Employee ID",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "firstName",
       "description": "First name / given name",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "jobTitle",
       "description": "Job title / position",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "lastName",
       "description": "Last name / family name / surname",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "middleName",
       "description": "Middle name/ other name",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "salutation",
       "description": "Salutation ",
       "type": "string",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }

@@ -1,91 +1,105 @@
 {
-  "name": "Core.BookingOptionRequest",
-  "description": "Request object",
-  "schemaColor": "#91C4F2",
+  "schema": "Core",
+  "name": "BookingOptionRequest",
+  "description": "Request object; refers to the Quote request or Booking request ",
   "columns": [
     {
       "name": "bookingOptions",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Reference to all Booking Options",
       "type": "BookingOption",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "bookingPreference",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Reference to the Booking preferences",
       "type": "BookingPreferences",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "bookingShipmentDetails",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Reference to the BookingShipment if required",
       "type": "BookingShipment",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "bookingToUpdate",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Reference to the Booking to update",
       "type": "Booking",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "carrierProduct",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Reference to the Carrier product if known",
       "type": "CarrierProduct",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "involvedParties",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Information about other Parties involved depending on the context of use",
       "type": "Party",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "timePreferences",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Schedule preferences of the request",
       "type": "BookingTimes",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "transportLegs",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Reference to the Transport Legs of the proposed routing",
       "type": "TransportLegs",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "unitsPreference",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Reference to unit preferences of the request (e.g. kg or cm)",
       "type": "UnitsPreference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "knownShipper",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Indication if shipper is a Known Shipper as per TSA grant",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "checks",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Events object",
       "type": "LogisticsEvent",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": false
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
-      "description": " refers to the Quote request or Booking request ",
+      "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": true,
+      "codelist": false
     }
   ]
 }
