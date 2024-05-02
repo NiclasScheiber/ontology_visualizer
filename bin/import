@@ -76,9 +76,9 @@ const importTableConfigs = async (databaseName, tables, tablesDescription) => {
   Object.keys(tables).forEach(async tableName => {
     const tableFile = `src/config/databases/${databaseName}/tables/${tableName}.json`;
     const tableConfig = {
+      schema: tablesDescription[tableName][1],
       name: tableName,
       description: tablesDescription[tableName][0],
-      schemaColor: "#91C4F2",
       columns: []
     };
 
@@ -166,9 +166,9 @@ const importConfigFiles = async ({ databaseName }) => {
     }
 
     if(tablesDescription[name]) {
-      tablesDescription[name].push([row.table_description]); 
+      tablesDescription[name].push([row.table_description, row.table_schema]); 
     } else {
-      tablesDescription[name] = ([row.table_description]);
+      tablesDescription[name] = ([row.table_description, row.table_schema]); 
     }
   });
 
