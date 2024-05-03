@@ -1,0 +1,21 @@
+{
+  "schema": "Embedded",
+  "name": "_CurrencyValue",
+  "description": "Embedded object to transmit currencies",
+  "columns": [
+    {
+      "name": "_currencyUnit",
+      "description": "Information about the currency used in a CurrencyValue. Create an instance of CurrencyCode based on ISO 4217",
+      "type": "ccodes_CurrencyCode",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_numericalValue",
+      "description": "Numerical value",
+      "type": "xsd_double",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

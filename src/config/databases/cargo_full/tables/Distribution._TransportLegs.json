@@ -1,0 +1,98 @@
+{
+  "schema": "Distribution",
+  "name": "_TransportLegs",
+  "description": "TransportLegs details",
+  "columns": [
+    {
+      "name": "_co2Emissions",
+      "description": "References to CO2Emissions",
+      "type": "_CO2Emissions",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_arrivalLocation",
+      "description": "Reference to the arrival Location",
+      "type": "_Location",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_departureLocation",
+      "description": "Reference to the depature Location",
+      "type": "_Location",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_transportMeansServiceType",
+      "description": "Type of transport means service; e.g. Aircraftor Truck",
+      "type": "ccodes_TransportMeansServiceType",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_transportMeansType",
+      "description": "Type of transport means; e.g. 744; RFS",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_arrivalDate",
+      "description": "Arrival date and time of the leg",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_departureDate",
+      "description": "Departure date and time of the leg",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_legNumber",
+      "description": "Leg number",
+      "type": "xsd_integer",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_transportIdentifier",
+      "description": "Airline flight number; or rail/truck/maritime line id",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

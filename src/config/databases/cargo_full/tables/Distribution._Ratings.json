@@ -1,0 +1,126 @@
+{
+  "schema": "Distribution",
+  "name": "_Ratings",
+  "description": "Ratings details",
+  "columns": [
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_billingChargeIdentifier",
+      "description": "Billing charge identifiers to be used for CASS. Refer to CargoXML Code List 1.33",
+      "type": "ccodes_ChargeIdentifier",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_chargePaymentType",
+      "description": "Indicates if charge is prepaid or collect (P; C)",
+      "type": "ccodes_PrepaidCollectIndicator",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_chargeType",
+      "description": "Charge type related to amount total as per bullet points 2/21 - data elements 24A - 3B  from AWB",
+      "type": "ccodes_ChargeIdentifier",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_entitlement",
+      "description": "Entitlement code to define if charges are Due carrier (C) or Due agent (A). Refer to CXML Code List 1.3",
+      "type": "ccodes_EntitlementCode",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_forPrices",
+      "description": "Reference to the Prices based on this Ratings",
+      "type": "_Price",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_otherChargeCode",
+      "description": "Refer to CargoXML Code List 1.2 for Other Charges",
+      "type": "ccodes_OtherChargeCode",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_rcp",
+      "description": "IATA 3-letter city code of the rate combination point as defined in TACT",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_ranges",
+      "description": "Reference to the ranges",
+      "type": "_Ranges",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_chargeDescription",
+      "description": "Description of the charge e.g. Airfreight; fuel; etc.",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_priceReferenceId",
+      "description": "Reference to a price reference if existing (e.g. Allotment number; contract reference; etc.)",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_priceSpecification",
+      "description": "Specification of the price e.g. Street; Group; Spot; etc.",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_quantity",
+      "description": "Quantity for the charge if applicable",
+      "type": "xsd_double",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_subTotal",
+      "description": "Subtotal of the charge",
+      "type": "xsd_double",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

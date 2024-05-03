@@ -1,0 +1,49 @@
+{
+  "schema": "CodeList",
+  "name": "ccodes_ScreeningExemption",
+  "description": "",
+  "columns": [
+    {
+      "name": "_code",
+      "description": "Code or short version of a code; for example CH for Switzerland when referring to the UN/LOCODE code list",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "_codeDescription",
+      "description": "Description or long version of the code; for example Switzerland for Switzerland when referring to the UN/LOCODE code list",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "_codeLevel",
+      "description": "Integer indicating the level of a code if a codelists is hierarchical; for example HS-Codes",
+      "type": "xsd_integer",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "_codeListName",
+      "description": "Official name of the code list without version number when direct reference is not possible; for example UN/LOCODE when referring to the UN/LOCODE code list",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "_codeListReference",
+      "description": "URL to access the code list the code is taken from; for example https://unece.org/trade/cefact/unlocode-code-list-country-and-territory for UN/LOCODE.",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "_codeListVersion",
+      "description": "Version of the code list; for example 223-1 for UN/LOCODE. Used if the property codeListName is used or the version is not apparent from the resource referred to in property codeListReference.",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}

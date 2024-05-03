@@ -1,0 +1,35 @@
+{
+  "schema": "Embedded",
+  "name": "_MovementTime",
+  "description": "Times refering to Transport Movements; used to describe specfic times such as Actual Departure time; etc.",
+  "columns": [
+    {
+      "name": "_direction",
+      "description": "Direction to indicate if it's Inbound or Outbound",
+      "type": "_DirectionType",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_movementMilestone",
+      "description": "The milestone list still needs to be defined; it includes elements from CXML Code List 1.92 but is not limited to those values; e.g. block-on and block-off times might be added as a comparison to wheels off and touchdown.",
+      "type": "ccodes_MovementIndicator",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_movementTimeType",
+      "description": "The type of time can be Actual; Estimated ot Scheduled",
+      "type": "_MovementTimeType",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_movementTimestamp",
+      "description": "Timestamp (date and time) of the movement time. If the movement time is recorded asynchronously; the timestamp should reflect the actual time; not when the data was created.",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "Common",
+  "name": "_CheckTotalResult",
+  "description": "Result of a Check",
+  "columns": [
+    {
+      "name": "_resultOfCheck",
+      "description": "",
+      "type": "_Check",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_certifiedByActor",
+      "description": "Reference to the Actor certifying the result of the Check if required",
+      "type": "_Person",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_resultValue",
+      "description": "Information about a result Value of any kind of the Check",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_checkRemark",
+      "description": "Free text remarks to the check result",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_passed",
+      "description": "Boolean indicating whether the Check was passed",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

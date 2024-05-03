@@ -7,13 +7,15 @@
       "name": "activity",
       "description": "Reference to the Activity that is performed as part of a Service",
       "type": "LogisticsActivity",
-      "array": false
+      "array": false,
+      "codelist": false
     },
     {
       "name": "sequenceNumber",
       "description": "Short text to detail sequence number (alphanumeric)",
       "type": "string",
-      "array": false
+      "array": false,
+      "codelist": false
     }
   ]
 }

@@ -1,0 +1,63 @@
+{
+  "schema": "Distribution",
+  "name": "_BookingRequest",
+  "description": "A party; usually the freight forwarder; creates the BookingRequest in order to confirm the booking to the Carrier",
+  "columns": [
+    {
+      "name": "_booking",
+      "description": "Reference to the Booking",
+      "type": "_Booking",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_forBookingOption",
+      "description": "Reference to the BookingOption the LogisticsObject is detailling",
+      "type": "_BookingOption",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_waybillNumber",
+      "description": "House or Master Waybill unique identifier",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_waybillPrefix",
+      "description": "Prefix used for the Waybill Number. Refer to IATA Airlines Codes",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

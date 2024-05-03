@@ -1,0 +1,56 @@
+{
+  "schema": "Core",
+  "name": "_Insurance",
+  "description": "Insurance details",
+  "columns": [
+    {
+      "name": "_coveringOrganization",
+      "description": "Party covering the insurance ",
+      "type": "_Organization",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_insuredAmount",
+      "description": "Insured amount - amount covered by the insurance policy",
+      "type": "_CurrencyValue",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_insuredShipments",
+      "description": "Reference to the shipments insured",
+      "type": "_Shipment",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

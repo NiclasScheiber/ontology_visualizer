@@ -1,0 +1,28 @@
+{
+  "schema": "Embedded",
+  "name": "_CarrierProduct",
+  "description": "Carrier product details",
+  "columns": [
+    {
+      "name": "_productCode",
+      "description": "Carrier's product code",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_serviceLevelCode",
+      "description": "Service level code",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_productDescription",
+      "description": "Carrier's product description",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "DG",
+  "name": "_DgDeclaration",
+  "description": "Dangerous goods declaration",
+  "columns": [
+    {
+      "name": "_issuedForPiece",
+      "description": "Reference to the Piece the document was issued for",
+      "type": "_PieceDg",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_aircraftLimitationInformation",
+      "description": "Contains the Special Handling Code related to the prescribed limitation. Hardcoded to PASSENGER AND CARGO AIRCRAFT or CARGO AIRCRAFT ONLY. This field is mandatory for air (Air) ",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_complianceDeclarationText",
+      "description": "Contains the warning message complying with the regulations text note. This field is mandatory for air (Air) ",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_exclusiveUseIndicator",
+      "description": "Indicates an exclusive use shipment",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_handlingInformation",
+      "description": "Free text. This may include items such as Control temperature for substances stabilized by temperature control; name and telephone number of a responsible person for infectious substances. ",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_shipperDeclarationText",
+      "description": "Contains the shipper's declaration to comply with the regulations text note. Free text . This field is mandatory for air (Air)",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

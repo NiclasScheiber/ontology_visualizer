@@ -1,0 +1,28 @@
+{
+  "schema": "Embedded",
+  "name": "_Party",
+  "description": "Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+  "columns": [
+    {
+      "name": "_partyDetails",
+      "description": "Reference to the Agent described by the role of the Party",
+      "type": "_LogisticsAgent",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_partyRole",
+      "description": "Role fo the Company in the context. Can refer to Code List 1.36 in the CXML Toolkit",
+      "type": "ccodes_ParticipantIdentifier",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "_OtherIdentifier",
+      "array": true,
+      "codelist": true
+    }
+  ]
+}

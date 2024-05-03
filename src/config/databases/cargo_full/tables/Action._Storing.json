@@ -1,0 +1,112 @@
+{
+  "schema": "Action",
+  "name": "_Storing",
+  "description": "Action to describe store-in or store-out",
+  "columns": [
+    {
+      "name": "_performedAt",
+      "description": "Reference to the Location the Action was performed at",
+      "type": "_Location",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_actionTimeType",
+      "description": "Enum stating the type of the Action",
+      "type": "_ActionTimeType",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_servedActivity",
+      "description": "Reference to the Activity the Action was performed for",
+      "type": "_LogisticsActivity",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_storedObjects",
+      "description": "Reference to the Objects being stored in or stored out",
+      "type": "_PhysicalLogisticsObject",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_storingType",
+      "description": "Enum stating whether the StoringAction describes the store-in or the store-out",
+      "type": "_StoringType",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_contactDetails",
+      "description": "Information about contactDetails",
+      "type": "_ContactDetail",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "_Actor",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "_OtherIdentifier",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_actionEndTime",
+      "description": "DateTime holding the end time of the Action",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_actionStartTime",
+      "description": "DateTime holding the start time of the Action",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_storagePlaceIdentifier",
+      "description": "Short text stating the exact place of storage",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

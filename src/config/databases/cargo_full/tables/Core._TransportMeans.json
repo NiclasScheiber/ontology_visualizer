@@ -1,0 +1,105 @@
+{
+  "schema": "Core",
+  "name": "_TransportMeans",
+  "description": "Transport means details",
+  "columns": [
+    {
+      "name": "_operatedTransportMovement",
+      "description": "Transport Movement on which the Transport Means is used",
+      "type": "_TransportMovement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "_IotDevice",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_transportOrganization",
+      "description": "Company operating the transport means",
+      "type": "_Organization",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_typicalCo2Coefficient",
+      "description": "Required for some CO2 calculations",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_typicalFuelConsumption",
+      "description": "Typical fuel comsumption (e.g. 2 L / 1 nm)",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_vehicleType",
+      "description": "Vehicle or container type. Refer UNECE28; e.g. 4.. - Aircraft; type unknown.For Air refer to IATA Standard Schedules Information Manua in section ATA/IATA Aircraft Types",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_involvedInActions",
+      "description": "References to the Actions the object is involved in",
+      "type": "_LogisticsAction",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_vehicleModel",
+      "description": "Model or make of the vehicle (e.g. A33-3)",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_vehicleRegistration",
+      "description": "Vehicle identification - e.g. aircraft registration number",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_vehicleSize",
+      "description": "Size of the vehicle - free text",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

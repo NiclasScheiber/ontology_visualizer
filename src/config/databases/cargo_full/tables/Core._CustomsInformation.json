@@ -1,0 +1,84 @@
+{
+  "schema": "Core",
+  "name": "_CustomsInformation",
+  "description": "Customs information details",
+  "columns": [
+    {
+      "name": "_issuedForPiece",
+      "description": "Reference to the Piece the document was issued for",
+      "type": "_Piece",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_issuedForShipment",
+      "description": "Reference to the shipment the document was issued for",
+      "type": "_Shipment",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_contentCode",
+      "description": "Customs; Security and Regulatory Control Information Identifier. Coded indicator qualifying Customs related information: Item Number I; Exemption Legend L; System Downtime Reference S; Unique Consignment Reference Number U; Movement Reference Number M . Refers to Code List 1.1. Condition: At least one of the three elements (Country Code; Information Identifier or Customs; Security and Regulatory Control Information Identifier) must be completed",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_country",
+      "description": "Country details. Refer ISO 3166-2",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_subjectCode",
+      "description": "Information Identifier. Code identifying a piece of information/entity e.g. IMP for import; EXP for export; AGT for Agent; ISS for The Regulated Agent Issuing the Security Status for a Consignment etc. Condition: At least one of the three elements (Country Code; Information Identifier or Customs; Security and Regulatory Control Information Identifier) must be completed",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_note",
+      "description": "Free text for customs remarks; not used in OCI Composition Rules Table",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_otherCustomsInformation",
+      "description": "Supplementary Customs; Security and Regulatory Control Information",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

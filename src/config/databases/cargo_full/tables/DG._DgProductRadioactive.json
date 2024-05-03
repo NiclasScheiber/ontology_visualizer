@@ -1,0 +1,77 @@
+{
+  "schema": "DG",
+  "name": "_DgProductRadioactive",
+  "description": "Details of the radioactive products ",
+  "columns": [
+    {
+      "name": "_forProductDg",
+      "description": "Reference to the ProductDg this DgProductRadiosctive details",
+      "type": "_ProductDg",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_dgRaTypeCode",
+      "description": "The category of the package or all packed in one. Complete text to be transmitted: I-White; II-Yellow; III-Yellow instead of I; II; III",
+      "type": "ccodes_RaTypeCode",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_isotopes",
+      "description": "DgRadioactiveIsotope.",
+      "type": "_DgRadioactiveIsotope",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_fissileExceptionIndicator",
+      "description": "Indicates if Fissile is excepted",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_fissileExceptionReference",
+      "description": "Fissile exception reference; mandatory if Fissile Exception Indicator is true.",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_transportIndexNumeric",
+      "description": "Radioactive Transport-Index value of the package or all packed in one. Conditionally mandator and applies to categories II-Yellow and III-Yellow only",
+      "type": "xsd_integer",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

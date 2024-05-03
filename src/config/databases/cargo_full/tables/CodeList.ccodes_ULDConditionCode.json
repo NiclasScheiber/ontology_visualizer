@@ -1,0 +1,21 @@
+{
+  "schema": "CodeList",
+  "name": "ccodes_ULDConditionCode",
+  "description": "",
+  "columns": [
+    {
+      "name": "_code",
+      "description": "Code or short version of a code; for example CH for Switzerland when referring to the UN/LOCODE code list",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "_codeDescription",
+      "description": "Description or long version of the code; for example Switzerland for Switzerland when referring to the UN/LOCODE code list",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": false
+    }
+  ]
+}

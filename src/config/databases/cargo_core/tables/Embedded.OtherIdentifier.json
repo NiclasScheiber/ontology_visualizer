@@ -7,13 +7,15 @@
       "name": "otherIdentifierType",
       "description": "Identifier type or description",
       "type": "string",
-      "array": false
+      "array": false,
+      "codelist": false
     },
     {
       "name": "textualValue",
       "description": "Textual value filled on use context (eg. characteristic colour; contactDetail mail adress; etc.)",
       "type": "string",
-      "array": false
+      "array": false,
+      "codelist": false
     }
   ]
 }

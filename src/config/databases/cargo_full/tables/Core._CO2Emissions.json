@@ -1,0 +1,63 @@
+{
+  "schema": "Core",
+  "name": "_CO2Emissions",
+  "description": "CO2 Calculation",
+  "columns": [
+    {
+      "name": "_calculatedEmissions",
+      "description": "CO2 emissions calculated",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_calculationFor",
+      "description": "Reference to the TransportMovement or TransportLegs the CO2Emissions have been calculated for",
+      "type": "_LogisticsObject",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_methodName",
+      "description": "Name of the CO2 calculation method",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_methodVersion",
+      "description": "Version used for the calculation",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

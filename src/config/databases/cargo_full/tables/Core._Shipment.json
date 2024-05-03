@@ -1,0 +1,112 @@
+{
+  "schema": "Core",
+  "name": "_Shipment",
+  "description": "Shipment details",
+  "columns": [
+    {
+      "name": "_insurance",
+      "description": "Insurance details",
+      "type": "_Insurance",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_waybill",
+      "description": "Reference to the Waybill of the shipment",
+      "type": "_Waybill",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_customsInformation",
+      "description": "Customs details",
+      "type": "_CustomsInformation",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_incoterms",
+      "description": "Standard codes as defined by UNCEFACT and ICC that correspond to international rules for the interpretation of the most commonly used trade terms in different countries. UNECE recommendation n. 5 Incoterms 2.",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_pieces",
+      "description": "References to the Pieces that are part of this Shipment",
+      "type": "_Piece",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_totalGrossWeight",
+      "description": "Total gross weight of the whole shipment",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_totalVolumetricWeight",
+      "description": "Volumetric weight of the whole shipment",
+      "type": "_VolumetricWeight",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_involvedParties",
+      "description": "Information about other Parties involved depending on the context of use",
+      "type": "_Party",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_totalDimensions",
+      "description": "Dimensions of the whole shipment",
+      "type": "_Dimensions",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_goodsDescription",
+      "description": "Description of goods; for the BookingShipment the commodity list defined by Modernizing Cargo Distribution MCD working group can be used as a referential.",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_textualHandlingInstructions",
+      "description": "Strings to provide free text handling instructions such as SSR and OSI",
+      "type": "xsd_string",
+      "array": true,
+      "codelist": true
+    }
+  ]
+}

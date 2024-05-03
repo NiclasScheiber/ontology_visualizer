@@ -1,0 +1,154 @@
+{
+  "schema": "Embedded",
+  "name": "_WaybillLineItem",
+  "description": "Information from AWB Rate Description section as per bullet point 18 - data elements 22A - 22Z from AWB",
+  "columns": [
+    {
+      "name": "_chargeableWeightForRate",
+      "description": "Chargeable weight for which the rate description details apply",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_dimensionsForRate",
+      "description": "Information about the Dimensions used for the rate descbribed by the Line Item",
+      "type": "_Dimensions",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_grossWeightForRate",
+      "description": "Gross weight for which the rate description details apply",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_hsCodeForRate",
+      "description": "Harmonized Commodity code; refer to hsType used. 6 minimum digits are expected.",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_productionCountryForRate",
+      "description": "Production country for the rate described by this Line Item. Refer ISO 3166-2",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_rateCharge",
+      "description": "TACT Rate for rate description details",
+      "type": "_CurrencyValue",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_rateClassCode",
+      "description": "Rate class code e.g. Q. Refer to CXML Code List 1.4 Rate Class Codes",
+      "type": "ccodes_RateClassCode",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_rateClassCodeBasic",
+      "description": "Rate Surcharge/Reduction - Basic Rate Class Code",
+      "type": "ccodes_BasicRateClassCode",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_ratePercentage",
+      "description": "Rate Surcharge/Reduction - Percebtage of  red. / surcharge",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_rcp",
+      "description": "IATA 3-letter city code of the rate combination point as defined in TACT",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_uldOwnerCode",
+      "description": "Information about the ULD owner code described in a ULD specific piece or used for a rate in a Line Item",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_uldRateClassType",
+      "description": "ULD Rate information - ULD Rate Class Type",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_uldTareWeightForRate",
+      "description": "Information about the ULD tare weight used for the rate descbribed by the Line Item",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_uldType",
+      "description": "Type of ULD as per IATA ULD Regulation",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_volumetricWeightForRate",
+      "description": "Volumetric weight used for the rate described by this line item",
+      "type": "_VolumetricWeight",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_commodityItemNumberForRate",
+      "description": "Indicates the specific commodity on which the rate class code is applied",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_goodsDescriptionForRate",
+      "description": "Goods description used in the rate described by the Line Item",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_lineItemNumber",
+      "description": "Number of the line item",
+      "type": "xsd_integer",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_pieceCountForRate",
+      "description": "Number of pieces for which the rate description details apply",
+      "type": "xsd_integer",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_slacForRate",
+      "description": "Slac used for the rate described by the Line item",
+      "type": "xsd_integer",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_uldSerialNumber",
+      "description": "Serial number that allows to uniquely identify the ULD",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}
