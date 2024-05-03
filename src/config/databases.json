@@ -1,7 +1,7 @@
 {
   "cargo_core": {
-    "name": "cargo_core",
-    "description": "Prototype of the core classes of the ONE Record Data Model"
+    "name": "ONE Record Core Datamodel",
+    "description": "Prototype visualization of the core classes of the ONE Record Data Model 3.0.0"
   },
   "bindle": {
     "name": "Bindle dataset",
