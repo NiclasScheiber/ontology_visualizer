@@ -1,0 +1,11 @@
+{
+  "DEFAULT": "#91C4F2",
+  "Embedded": "#C1C7C9",
+  "Core": "#91C4F2",
+  "Abstract": "#CBAACB",
+  "Service": "#FFD791",
+  "Common": "#CBAACB",
+  "Activity": "#83CBB7",
+  "Event": "#F6BDD1",
+  "Action": "#839AF1"
+}

@@ -1,0 +1,126 @@
+{
+  "Abstract.Actor": {
+    "x": -1264,
+    "y": 880
+  },
+  "Abstract.Organization": {
+    "x": -1264,
+    "y": 1088
+  },
+  "Action.Composing": {
+    "x": -544,
+    "y": 512
+  },
+  "Action.Loading": {
+    "x": 432,
+    "y": 512
+  },
+  "Activity.TransportMovement": {
+    "x": 752,
+    "y": 112
+  },
+  "Activity.UnitComposition": {
+    "x": -240,
+    "y": 128
+  },
+  "Common.ExternalReference": {
+    "x": -1264,
+    "y": 1456
+  },
+  "Common.Location": {
+    "x": -1552,
+    "y": 1200
+  },
+  "Common.NonHumanActor": {
+    "x": -1552,
+    "y": 512
+  },
+  "Common.Person": {
+    "x": -1552,
+    "y": 704
+  },
+  "Common.PublicAuthority": {
+    "x": -1264,
+    "y": 512
+  },
+  "Core.Item": {
+    "x": -704,
+    "y": 1136
+  },
+  "Core.Piece": {
+    "x": 64,
+    "y": 1136
+  },
+  "Core.Product": {
+    "x": -368,
+    "y": 1536
+  },
+  "Core.Shipment": {
+    "x": 1536,
+    "y": 1264
+  },
+  "Core.TransportMeans": {
+    "x": 1088,
+    "y": 320
+  },
+  "Core.ULD": {
+    "x": 64,
+    "y": 320
+  },
+  "Core.Waybill": {
+    "x": 1536,
+    "y": -128
+  },
+  "Embedded.ActivitySequence": {
+    "x": 304,
+    "y": -128
+  },
+  "Embedded.Address": {
+    "x": 1264,
+    "y": 1760
+  },
+  "Embedded.Characteristic": {
+    "x": -624,
+    "y": 1904
+  },
+  "Embedded.CodeListElement": {
+    "x": -1536,
+    "y": -96
+  },
+  "Embedded.ContactDetail": {
+    "x": 992,
+    "y": 1760
+  },
+  "Embedded.CurrencyValue": {
+    "x": 544,
+    "y": 1760
+  },
+  "Embedded.Dimensions": {
+    "x": 752,
+    "y": 1904
+  },
+  "Embedded.OtherIdentifier": {
+    "x": 560,
+    "y": 1904
+  },
+  "Embedded.Party": {
+    "x": 752,
+    "y": 1760
+  },
+  "Embedded.Value": {
+    "x": 1488,
+    "y": 1760
+  },
+  "Embedded.WaybillLineItem": {
+    "x": 1904,
+    "y": -128
+  },
+  "Event.LogisticsEvent": {
+    "x": -1328,
+    "y": -96
+  },
+  "Service.Booking": {
+    "x": 1088,
+    "y": -272
+  }
+}

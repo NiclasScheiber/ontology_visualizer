@@ -1,0 +1,31 @@
+{
+  "schema": "Embedded",
+  "name": "Dimensions",
+  "description": "Dimension details",
+  "columns": [
+    {
+      "name": "height",
+      "description": "Height",
+      "type": "",
+      "array": false
+    },
+    {
+      "name": "length",
+      "description": "Length",
+      "type": "",
+      "array": false
+    },
+    {
+      "name": "volume",
+      "description": "Volume",
+      "type": "",
+      "array": false
+    },
+    {
+      "name": "width",
+      "description": "Width",
+      "type": "",
+      "array": false
+    }
+  ]
+}

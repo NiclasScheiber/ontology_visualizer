@@ -1,4 +1,8 @@
 {
+  "cargo_core": {
+    "name": "cargo_core",
+    "description": "Prototype of the core classes of the ONE Record Data Model"
+  },
   "bindle": {
     "name": "Bindle dataset",
     "description": "This data warehouse belongs to a fictional startup named **Bindle**. Bindle is a web and mobile app for reading books, it has subscription business model. The SQL Habit Course is based on Bindle's story. :book:\n\nBindle's data warehouse contains everything needed to run a modern Internet company – web and mobile analytics, marketing data, AB-test data, etc."

@@ -1,0 +1,282 @@
+[
+    {
+      "source": "Embedded.ActivitySequence",
+      "sourceKey": "activity",
+      "target": "Activity.UnitComposition",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ActivitySequence",
+      "sourceKey": "activity",
+      "target": "Activity.TransportMovement",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Service.Booking",
+      "sourceKey": "issuedForWaybill",
+      "target": "Core.Waybill",
+      "targetKey": "referredBookingOption",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Service.Booking",
+      "sourceKey": "activitySequences",
+      "target": "Embedded.ActivitySequence",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Action.Composing",
+      "sourceKey": "servedActivity",
+      "target": "Activity.UnitComposition",
+      "targetKey": "checkActions",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Action.Composing",
+      "sourceKey": "servedActivity",
+      "target": "Activity.UnitComposition",
+      "targetKey": "compositionActions",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Action.Composing",
+      "sourceKey": "servedActivity",
+      "target": "Activity.UnitComposition",
+      "targetKey": "loadingActions",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Action.Composing",
+      "sourceKey": "servedActivity",
+      "target": "Activity.TransportMovement",
+      "targetKey": "loadingActions",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Action.Composing",
+      "sourceKey": "composedPieces",
+      "target": "Core.Piece",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Item",
+      "sourceKey": "inPiece",
+      "target": "Core.Piece",
+      "targetKey": "containedItems",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Item",
+      "sourceKey": "ofProduct",
+      "target": "Core.Product",
+      "targetKey": "describedObjects",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Action.Loading",
+      "sourceKey": "loadedUnits",
+      "target": "Core.ULD",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Action.Loading",
+      "sourceKey": "servedActivity",
+      "target": "Activity.TransportMovement",
+      "targetKey": "loadingActions",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Action.Loading",
+      "sourceKey": "loadedUnits",
+      "target": "Core.ULD",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Action.Loading",
+      "sourceKey": "loadedPieces",
+      "target": "Core.Piece",
+      "targetKey": "involvedInActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "involvedInActions",
+      "target": "Action.Composing",
+      "targetKey": "composedPieces",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "involvedInActions",
+      "target": "Action.Loading",
+      "targetKey": "loadedPieces",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "containedItems",
+      "target": "Core.Item",
+      "targetKey": "inPiece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "containedPieces",
+      "target": "Core.Piece",
+      "targetKey": "inPiece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "contentProducts",
+      "target": "Core.Product",
+      "targetKey": "describedObjects",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "inPiece",
+      "target": "Core.Piece",
+      "targetKey": "containedPieces",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "ofShipment",
+      "target": "Core.Shipment",
+      "targetKey": "pieces",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Product",
+      "sourceKey": "describedObjects",
+      "target": "Core.Piece",
+      "targetKey": "contentProducts",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Product",
+      "sourceKey": "describedObjects",
+      "target": "Core.Item",
+      "targetKey": "ofProduct",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Product",
+      "sourceKey": "otherCharacteristics",
+      "target": "Embedded.Characteristic",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "pieces",
+      "target": "Core.Piece",
+      "targetKey": "ofShipment",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "waybill",
+      "target": "Core.Waybill",
+      "targetKey": "shipment",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.TransportMeans",
+      "sourceKey": "operatedTransportMovement",
+      "target": "Activity.TransportMovement",
+      "targetKey": "operatingTransportMeans",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "operatingTransportMeans",
+      "target": "Core.TransportMeans",
+      "targetKey": "operatedTransportMovement",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "servedServices",
+      "target": "Service.Booking",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.ULD",
+      "sourceKey": "involvedInActions",
+      "target": "Action.Loading",
+      "targetKey": "loadedUnits",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.ULD",
+      "sourceKey": "inUnitComposition",
+      "target": "Activity.UnitComposition",
+      "targetKey": "loadingUnit",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.UnitComposition",
+      "sourceKey": "loadingUnit",
+      "target": "Core.ULD",
+      "targetKey": "inUnitComposition",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.UnitComposition",
+      "sourceKey": "compositionActions",
+      "target": "Action.Composing",
+      "targetKey": "servedActivity",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Activity.UnitComposition",
+      "sourceKey": "servedServices",
+      "target": "Service.Booking",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "houseWaybills",
+      "target": "Core.Waybill",
+      "targetKey": "masterWaybill",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "masterWaybill",
+      "target": "Core.Waybill",
+      "targetKey": "houseWaybills",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "referredBookingOption",
+      "target": "Service.Booking",
+      "targetKey": "issuedForWaybill",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "shipment",
+      "target": "Core.Shipment",
+      "targetKey": "waybill",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "waybillLineItems",
+      "target": "Embedded.WaybillLineItem",
+      "targetKey": "",
+      "relation": "hasMany"
+    }
+   ]
