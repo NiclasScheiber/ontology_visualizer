@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const fs = require("fs").promises;
-var os = require('os');
 
 const SCHEMA_COLORS_TEMPLATE_FILE = "src/config/schemaColors.json.template";
 const TABLES_INDEX_FILE_TEMPLATE = "src/config/tables.ts.template";
@@ -23,7 +22,7 @@ const adjustDataTypeName = (rawName) => {
 const readTableData = async (databaseName) => {
   const schema = await fs.readFile(`${databaseName}.csv`, "utf8");
 
-  const schemaData = schema.replaceAll('"', '').trim().split(os.EOL).map(row => row.split(","));
+  const schemaData = schema.replaceAll('"', '').trim().split(/\r\n|\r|\n/).map(row => row.split(","));
   const [headers] = schemaData.splice(0, 1);
 
   const data = schemaData.map(row => {
