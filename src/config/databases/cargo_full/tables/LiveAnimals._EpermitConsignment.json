@@ -1,0 +1,63 @@
+{
+  "schema": "LiveAnimals",
+  "name": "_EpermitConsignment",
+  "description": "Details of the pieces (Live animals) of the permit and specific information such as quantity measured and used to date quota",
+  "columns": [
+    {
+      "name": "_consignmentItems",
+      "description": "Reference to te pieces (Live Animals) of the permit",
+      "type": "_PieceLiveAnimals",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_epermit",
+      "description": "Reference to the Epermit of the consignment",
+      "type": "_LiveAnimalsEpermit",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_examiningQuantity",
+      "description": "Quatity measured by the examining authority (box 14)",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_usedToDateQuotaQuantity",
+      "description": "total number of specimens exported in the current calendar year and the current annuela quota for the species concerned (box 11a)",
+      "type": "xsd_integer",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

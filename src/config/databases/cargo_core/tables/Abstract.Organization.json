@@ -7,67 +7,78 @@
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": true
+      "array": true,
+      "codelist": false
     },
     {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
-      "array": true
+      "array": true,
+      "codelist": false
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": true
+      "array": true,
+      "codelist": false
     },
     {
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
-      "array": false
+      "array": false,
+      "codelist": false
     },
     {
       "name": "basedAtLocation",
       "description": "Reference to the Location where the Organization is based at or headquartered",
       "type": "Location",
-      "array": false
+      "array": false,
+      "codelist": false
     },
     {
       "name": "contactPersons",
       "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "array": true
+      "array": true,
+      "codelist": false
     },
     {
       "name": "otherIdentifiers",
       "description": "Details about any other identifier; depending on the context of use",
       "type": "OtherIdentifier",
-      "array": true
+      "array": true,
+      "codelist": false
     },
     {
       "name": "parentOrganization",
       "description": "Reference to the parent Organization",
       "type": "Organization",
-      "array": false
+      "array": false,
+      "codelist": false
     },
     {
       "name": "subOrganization",
       "description": "References to all sub-Organizations",
       "type": "Organization",
-      "array": true
+      "array": true,
+      "codelist": false
     },
     {
       "name": "name",
       "description": "Human-understandable name of object depending on the context",
       "type": "string",
-      "array": false
+      "array": false,
+      "codelist": false
     },
     {
       "name": "shortName",
       "description": "Short name of the Organization if any",
       "type": "string",
-      "array": false
+      "array": false,
+      "codelist": false
     }
   ]
 }

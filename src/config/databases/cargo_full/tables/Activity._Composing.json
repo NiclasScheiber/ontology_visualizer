@@ -1,0 +1,119 @@
+{
+  "schema": "Activity",
+  "name": "_Composing",
+  "description": "Action to describe build-up or break-down of LoadingUnits",
+  "columns": [
+    {
+      "name": "_loadingUnit",
+      "description": "Reference to the LoadingUnit composed in the Unit Composition or referenced in Composing actions",
+      "type": "_LoadingUnit",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_performedAt",
+      "description": "Reference to the Location the Action was performed at",
+      "type": "_Location",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_composedMaterials",
+      "description": "References to the Materials being built-up or broken-down",
+      "type": "_LoadingMaterial",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_composedPieces",
+      "description": "References to the Pieces being built-up or broken-down",
+      "type": "_Piece",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_compositionType",
+      "description": "Enum stating whether the CompositionAction describes build-up or break-down",
+      "type": "_CompositionType",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_actionTimeType",
+      "description": "Enum stating the type of the Action",
+      "type": "_ActionTimeType",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_servedActivity",
+      "description": "Reference to the Activity the Action was performed for",
+      "type": "_LogisticsActivity",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_contactDetails",
+      "description": "Information about contactDetails",
+      "type": "_ContactDetail",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "_Actor",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "_OtherIdentifier",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_actionEndTime",
+      "description": "DateTime holding the end time of the Action",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_actionStartTime",
+      "description": "DateTime holding the start time of the Action",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

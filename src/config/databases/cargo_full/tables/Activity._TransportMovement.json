@@ -1,0 +1,175 @@
+{
+  "schema": "Activity",
+  "name": "_TransportMovement",
+  "description": "Activity to describe transports; replaces the TransportSegment in v1.1 and above",
+  "columns": [
+    {
+      "name": "_operatingTransportMeans",
+      "description": "Reference to the TransportMeans operating the TransportMovement",
+      "type": "_TransportMeans",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checkActions",
+      "description": "References to CheckActions performed for the Activity",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_executionStatus",
+      "description": "Enum stating the status of the Activity",
+      "type": "_ExecutionStatus",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_arrivalLocation",
+      "description": "Reference to the arrival Location",
+      "type": "_Location",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_co2Emissions",
+      "description": "References to CO2Emissions",
+      "type": "_CO2Emissions",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_departureLocation",
+      "description": "Reference to the depature Location",
+      "type": "_Location",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_distanceCalculated",
+      "description": "Information about the calculated distance",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_distanceMeasured",
+      "description": "Information about the measured distance",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_fuelAmountCalculated",
+      "description": "Information about the calculated fuel amount",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_fuelAmountMeasured",
+      "description": "Information about the measured fuel amount",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_loadingActions",
+      "description": "References to all actions of type Loading performed for the TransportMovement",
+      "type": "_Loading",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_modeCode",
+      "description": "Mode of transport code; refer to UNECE Rec. 19 https://unece.org/fileadmin/DAM/cefact/recommendations/rec19/rec19_1cf19e.pdf",
+      "type": "ccodes_ModeCode",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_modeQualifier",
+      "description": "Pre-Carriage; Main-Carriage or On-Carriage",
+      "type": "_ModeQualifier",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_contactDetails",
+      "description": "Information about contactDetails",
+      "type": "_ContactDetail",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "_Actor",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_servedServices",
+      "description": "Reference to Services this Activity is executed for",
+      "type": "_LogisticsService",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_movementTimes",
+      "description": "Information about times related to the movement (milestone list to be defined)",
+      "type": "_MovementTime",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_fuelType",
+      "description": "e.g. Kerosene; Diesel; SAF; Electricity [renewable]; Electricity [non-renewable]",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_seal",
+      "description": "Seal identifier",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_transportIdentifier",
+      "description": "Airline flight number; or rail/truck/maritime line id",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "Core",
+  "name": "_Product",
+  "description": "Product details",
+  "columns": [
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_hsCode",
+      "description": "Harmonized Commodity code; refer to hsType used. 6 minimum digits are expected.",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_manufacturer",
+      "description": "Manufacturing company details and contacts",
+      "type": "_Organization",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_describedObjects",
+      "description": "Reference to the Items or Pieces in which the product can be found.",
+      "type": "_PhysicalLogisticsObject",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_otherCharacteristics",
+      "description": "Charateristics of the product",
+      "type": "_Characteristic",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "_OtherIdentifier",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_commodityItemNumber",
+      "description": "Indicates the specific commodity on which the rate class code is applied",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_description",
+      "description": "Natural language description if required",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_hsCommodityDescription",
+      "description": "Commodity description",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_hsCommodityName",
+      "description": "If no Code provided; name of commodity",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_hsType",
+      "description": "Reference identifying the type of standard code to be used for the Commodity Classification (Brussels Tariff Nomenclature; EU Harmonized System Code; UN Standard International Trade Classification). Mandatory if the commodity code is more than 6 digits",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_uniqueIdentifier",
+      "description": "Manufacturer's unique product identifier",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "schema": "Distribution",
+  "name": "_BookingOption",
+  "description": "Booking details",
+  "columns": [
+    {
+      "name": "_forBookingOptionRequest",
+      "description": "Reference to the BookingOptionRequest the information of the LogisticsObject is detailling",
+      "type": "_BookingOptionRequest",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_forBookingRequest",
+      "description": "Reference to the Booking Request the of the Booking Option",
+      "type": "_BookingRequest",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_price",
+      "description": "Price of the Booking (if different from the offer)",
+      "type": "_Price",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_bookingTimes",
+      "description": "Information about the Booking Times of a privded Booking Option",
+      "type": "_BookingTimes",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_carrier",
+      "description": "Reference to the operating carrier",
+      "type": "_Carrier",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_carrierProduct",
+      "description": "Reference to the Carrier product if known",
+      "type": "_CarrierProduct",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_statusBookingOption",
+      "description": "Status of the Booking Option",
+      "type": "_BookingOptionStatus",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_unitsPreference",
+      "description": "Reference to unit preferences of the request (e.g. kg or cm)",
+      "type": "_UnitsPreference",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_stationRemarks",
+      "description": "Remarks related to specific stations in the routing (e.g. Embargo in XXX)",
+      "type": "_StationRemarks",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_transportLegs",
+      "description": "Reference to the Transport Legs of the proposed routing",
+      "type": "_TransportLegs",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_additionalInformation",
+      "description": "Additional infromation related to the Booking Option; e.g. sales details",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_offerValidFrom",
+      "description": "Date and time of beginning of offer validity",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_offerValidTo",
+      "description": "Date and time of end of offer validity",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_requestMatch",
+      "description": "Indicates if the Booking Option is a match to the Booking Option Request preferences",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_alternatives",
+      "description": "Description of the alternatives proposed that do not match the Booking Option Request",
+      "type": "xsd_string",
+      "array": true,
+      "codelist": true
+    }
+  ]
+}

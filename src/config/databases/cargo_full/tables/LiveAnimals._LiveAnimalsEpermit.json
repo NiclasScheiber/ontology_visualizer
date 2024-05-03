@@ -1,0 +1,133 @@
+{
+  "schema": "LiveAnimals",
+  "name": "_LiveAnimalsEpermit",
+  "description": "Epermit for Live Animals details",
+  "columns": [
+    {
+      "name": "_consignee",
+      "description": "Reference to the Organization that fulfills the role of the consignee; for a LiveAnimalsEpermit it has to include complete name and address (box 3)",
+      "type": "_Company",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_consignments",
+      "description": "Reference to the pieces and properties linked to the Permit (box 7 to 12)",
+      "type": "_EpermitConsignment",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_permitTypeCode",
+      "description": "Code specifying the document name. (box 1)",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_signatures",
+      "description": "List of all the signatures of the Epermit (applicant box 4; issuing authority box 6; issuer box 13 and examining authority box 14)",
+      "type": "_EpermitSignature",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_transactionPurposeCode",
+      "description": "Code indicating the purpose of the transaction (box 5a)",
+      "type": "ccodes_TransactionPurposeCode",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_transportContractTypeCode",
+      "description": "Code specifying the transport document name (box 15)",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_copyIndicator",
+      "description": "Indicates if the permit is a copy (true) or an original (false) (box 1)",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_epermitNumber",
+      "description": "The original number is a unique number allocated to each document by the relevant Management Authority. (box 1)",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_permitTypeOtherDescription",
+      "description": "Description if TypeCode is Other (box 1)",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_specialConditions",
+      "description": "Special conditions (box 5)",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_transactionPurpose",
+      "description": "Purpose of the transaction in free text (box 5a)",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_transportContractId",
+      "description": "Reference to the Air Waybill or other transport contract document (box 15)",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_validFrom",
+      "description": "Validity start date based on usage context",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_validUntil",
+      "description": "Validity end date (date of expiry) based on usage context",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

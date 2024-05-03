@@ -1,0 +1,308 @@
+{
+  "schema": "DG",
+  "name": "_PieceDg",
+  "description": "Dangerous Goods subtype of Piece",
+  "columns": [
+    {
+      "name": "_inPiece",
+      "description": "Reference to the Piece this Item or Piece is contained in",
+      "type": "_Piece",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_ofShipment",
+      "description": "Reference to the Shipment the Piece is assigned to",
+      "type": "_Shipment",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_packagingType",
+      "description": "Packaging details ",
+      "type": "_PackagingType",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_dgDeclaration",
+      "description": "Reference to the Dangerous Goods declaration",
+      "type": "_DgDeclaration",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "_Check",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "_ExternalReference",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "_IotDevice",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_containedItems",
+      "description": "Reference to the item(s) contained in the piece",
+      "type": "_Item",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_containedPieces",
+      "description": "Details of contained piece(s)",
+      "type": "_Piece",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_contentProductionCountry",
+      "description": "Goods production country; mandatory when there are no Items. Refer ISO 3166-2",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_contentProducts",
+      "description": "Reference to the Products describing the content of the Piece; mandatory if no data on Item level is used",
+      "type": "_Product",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_customsInformation",
+      "description": "Customs details",
+      "type": "_CustomsInformation",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_dimensions",
+      "description": "Dimensions details",
+      "type": "_Dimensions",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_fulfillsUldTypeCode",
+      "description": "Text holding an ULD Type Code if the Piece fulfills it before UnitComposition",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_grossWeight",
+      "description": "Weight details",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_loadType",
+      "description": "Load type of the shipment or piece (Bulk; ULD; Pallet; Loose)",
+      "type": "_LoadType",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_packageMarkCoded",
+      "description": "Reference identifying how the package is marked. Field is hardcode to SSCC-18; UPC or Other",
+      "type": "ccodes_PackageMarkCode",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_securityDeclarations",
+      "description": "Security details of the piece",
+      "type": "_SecurityDeclaration",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_temperatureInstructions",
+      "description": "Temperature instructions if a specific range",
+      "type": "_TemperatureInstructions",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_volumetricWeight",
+      "description": "Volumetric weight details",
+      "type": "_VolumetricWeight",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_overpackTypeCode",
+      "description": "Identifies the Logistic Unit package type. UN Recommendation on Transport of Dangerous Goods; Model Regulations ",
+      "type": "_CodeListElement",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_events",
+      "description": "Events object",
+      "type": "_LogisticsEvent",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_involvedInActions",
+      "description": "References to the Actions the object is involved in",
+      "type": "_LogisticsAction",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_involvedParties",
+      "description": "Information about other Parties involved depending on the context of use",
+      "type": "_Party",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "_OtherIdentifier",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_specialHandlingCodes",
+      "description": "Three-letter special handling code (SPH)",
+      "type": "ccodes_SpecialHandlingCode",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_coload",
+      "description": "Coload indicator for the pieces (boolean)",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_goodsDescription",
+      "description": "Description of goods; for the BookingShipment the commodity list defined by Modernizing Cargo Distribution MCD working group can be used as a referential.",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_nvdForCarriage",
+      "description": "When no value is declared for Carriage; this field may be completed with the value TRUE otherwise FALSE",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_nvdForCustoms",
+      "description": "When no value is declared for Customs; this field may be completed with the value TRUE otherwise FALSE",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_packagedeIdentifier",
+      "description": "SSCC-18 code for the value of the package mark; company or bar code; free text; pallet code; etc.",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_slac",
+      "description": "Shipper's Load And Count  ( total contained piece count as provided by shipper)",
+      "type": "xsd_integer",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_stackable",
+      "description": "Stackable indicator for the pieces (boolean)",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_turnable",
+      "description": "Turnable indicator for the pieces (boolean)",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_upid",
+      "description": "Unique Piece Identifier (UPID) of the piece. Refer IATA Recommended Practice 1689",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_allPackedInOneIndicator",
+      "description": "A statement identifying that the dangerous goods listed above are all contained in the same outer packaging. Takes the form All packed in one aaaa (description of packaging type) x nn (number of packages). Applies to air transport only. (Air) ",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_overpackCriticalitySafetyIndexNumeric",
+      "description": "Applies to fissile material only; other than fissile excepted. A numeric value expressed to one decimal place preceded by the letters CSI. ",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_overpackIndicator",
+      "description": "Overpack indicator ",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_overpackT1",
+      "description": "A single number assigned to a package; overpack or freight container to provide control over radiation exposure. ",
+      "type": "xsd_boolean",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_qValueNumeric",
+      "description": "Most instances of all packed in one will require the addition of the Q value which  1. Applies to air transport only. (Air)  ",
+      "type": "xsd_double",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_shippingMarks",
+      "description": "Shipping marks",
+      "type": "xsd_string",
+      "array": true,
+      "codelist": true
+    },
+    {
+      "name": "_textualHandlingInstructions",
+      "description": "Strings to provide free text handling instructions such as SSR and OSI",
+      "type": "xsd_string",
+      "array": true,
+      "codelist": true
+    }
+  ]
+}

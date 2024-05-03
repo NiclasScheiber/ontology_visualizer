@@ -1,0 +1,21 @@
+{
+  "schema": "Embedded",
+  "name": "_ActivitySequence",
+  "description": "Embedded object to create a sequence of Activities in the context of a Service",
+  "columns": [
+    {
+      "name": "_activity",
+      "description": "Reference to the Activity that is performed as part of a Service",
+      "type": "_LogisticsActivity",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_sequenceNumber",
+      "description": "Short text to detail sequence number (alphanumeric)",
+      "type": "xsd_string",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

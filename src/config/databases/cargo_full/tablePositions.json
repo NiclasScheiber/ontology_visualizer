@@ -1,602 +1,598 @@
 {
-  "Enum.ActionTimeType": {
+  "Enum._ActionTimeType": {
     "x": 0,
     "y": 0
   },
-  "Core.LogisticsActivity": {
+  "Embedded._ActivitySequence": {
     "x": 300,
     "y": 0
   },
-  "Embedded.ActivitySequence": {
+  "Abstract._Actor": {
     "x": 600,
     "y": 0
   },
-  "Embedded.Address": {
+  "Embedded._Address": {
     "x": 900,
     "y": 0
   },
-  "Embedded.CodeListElement": {
+  "Embedded._Adjustments": {
     "x": 1200,
     "y": 0
   },
-  "Embedded.Adjustments": {
+  "Common._Answer": {
     "x": 1500,
     "y": 0
   },
-  "A.AircraftPossibilityCode": {
+  "BillingSettlement._BillingDetails": {
     "x": 1800,
     "y": 0
   },
-  "Core.Answer": {
+  "Service._Booking": {
     "x": 2100,
     "y": 0
   },
-  "Core.Actor": {
+  "Distribution._BookingOption": {
     "x": 2400,
     "y": 0
   },
-  "Embedded.Value": {
+  "Distribution._BookingOptionRequest": {
     "x": 2700,
     "y": 0
   },
-  "Core.Piece": {
+  "Enum._BookingOptionStatus": {
     "x": 3000,
     "y": 0
   },
-  "Core.Location": {
+  "Embedded._BookingPreferences": {
     "x": 3300,
     "y": 0
   },
-  "Core.EpermitConsignment": {
+  "Distribution._BookingRequest": {
     "x": 0,
     "y": 450
   },
-  "Core.Organization": {
+  "Distribution._BookingShipment": {
     "x": 300,
     "y": 450
   },
-  "Core.IotDevice": {
+  "Enum._BookingStatus": {
     "x": 600,
     "y": 450
   },
-  "Core.PhysicalLogisticsObject": {
+  "Embedded._BookingTimes": {
     "x": 900,
     "y": 450
   },
-  "A.AWBUseIndicator": {
+  "Core._CO2Emissions": {
     "x": 1200,
     "y": 450
   },
-  "A.ChargeIdentifier": {
+  "Common._Carrier": {
     "x": 1500,
     "y": 450
   },
-  "Core.BillingDetails": {
+  "Embedded._CarrierProduct": {
     "x": 1800,
     "y": 450
   },
-  "Core.Booking": {
+  "Embedded._Characteristic": {
     "x": 2100,
     "y": 450
   },
-  "Core.BookingOption": {
+  "Action._Check": {
     "x": 2400,
     "y": 450
   },
-  "Embedded.BookingPreferences": {
+  "Common._CheckTemplate": {
     "x": 2700,
     "y": 450
   },
-  "Core.BookingRequest": {
+  "Common._CheckTotalResult": {
     "x": 3000,
     "y": 450
   },
-  "Core.BookingShipment": {
+  "Embedded._CodeListElement": {
     "x": 3300,
     "y": 450
   },
-  "Enum.BookingStatus": {
+  "Common._Company": {
     "x": 0,
     "y": 900
   },
-  "Embedded.BookingTimes": {
+  "Activity._Composing": {
     "x": 300,
     "y": 900
   },
-  "Embedded.LogisticsObject": {
+  "Enum._CompositionType": {
     "x": 600,
     "y": 900
   },
-  "Core.Carrier": {
+  "Embedded._ContactDetail": {
     "x": 900,
     "y": 900
   },
-  "A.ChargeCode": {
+  "Enum._ContactDetailType": {
     "x": 1200,
     "y": 900
   },
-  "Embedded.CarrierProduct": {
+  "Enum._ContactRole": {
     "x": 1500,
     "y": 900
   },
-  "Core.Person": {
+  "Embedded._CurrencyValue": {
     "x": 1800,
     "y": 900
   },
-  "A.PrepaidCollectIndicator": {
+  "Core._CustomsInformation": {
     "x": 2100,
     "y": 900
   },
-  "Core.Check": {
+  "DG._DgDeclaration": {
     "x": 2400,
     "y": 900
   },
-  "Core.CheckTemplate": {
+  "DG._DgProductRadioactive": {
     "x": 2700,
     "y": 900
   },
-  "Core.LoadingMaterial": {
+  "DG._DgRadioactiveIsotope": {
     "x": 3000,
     "y": 900
   },
-  "Core.Composing": {
+  "Embedded._Dimensions": {
     "x": 3300,
     "y": 900
   },
-  "Enum.CompositionType": {
+  "Enum._DirectionType": {
     "x": 0,
     "y": 1350
   },
-  "Core.Sensor": {
+  "LiveAnimals._EpermitConsignment": {
     "x": 300,
     "y": 1350
   },
-  "Core.PieceLiveAnimals": {
+  "LiveAnimals._EpermitSignature": {
     "x": 600,
     "y": 1350
   },
-  "Enum.ContactDetailType": {
+  "Enum._EventTimeType": {
     "x": 900,
     "y": 1350
   },
-  "Embedded.ContactDetail": {
+  "Enum._ExecutionStatus": {
     "x": 1200,
     "y": 1350
   },
-  "Enum.ContactRole": {
+  "Common._ExternalReference": {
     "x": 1500,
     "y": 1350
   },
-  "Core.Item": {
+  "Embedded._Geolocation": {
     "x": 1800,
     "y": 1350
   },
-  "Core.DgProductRadioactive": {
+  "Core._Insurance": {
     "x": 2100,
     "y": 1350
   },
-  "Core.Product": {
+  "Common._IotDevice": {
     "x": 2400,
     "y": 1350
   },
-  "A.CurrencyCode": {
+  "Core._Item": {
     "x": 2700,
     "y": 1350
   },
-  "Core.CustomsInformation": {
+  "DG._ItemDg": {
     "x": 3000,
     "y": 1350
   },
-  "Embedded.CurrencyValue": {
+  "LiveAnimals._LiveAnimalsEpermit": {
     "x": 3300,
     "y": 1350
   },
-  "A.DemurrageCode": {
+  "Enum._LoadType": {
     "x": 0,
     "y": 1800
   },
-  "Core.Waybill": {
+  "Action._Loading": {
     "x": 300,
     "y": 1800
   },
-  "Core.DgDeclaration": {
+  "Common._LoadingMaterial": {
     "x": 600,
     "y": 1800
   },
-  "A.RaTypeCode": {
+  "Enum._LoadingType": {
     "x": 900,
     "y": 1800
   },
-  "Embedded.Dimensions": {
+  "Core._LoadingUnit": {
     "x": 1200,
     "y": 1800
   },
-  "A.DimensionsUnitCode": {
+  "Common._Location": {
     "x": 1500,
     "y": 1800
   },
-  "Enum.DirectionType": {
+  "Abstract._LogisticsAction": {
     "x": 1800,
     "y": 1800
   },
-  "Core.ExternalReference": {
+  "Abstract._LogisticsActivity": {
     "x": 2100,
     "y": 1800
   },
-  "A.EntitlementCode": {
+  "Abstract._LogisticsAgent": {
     "x": 2400,
     "y": 1800
   },
-  "Core.LiveAnimalsEpermit": {
+  "Event._LogisticsEvent": {
     "x": 2700,
     "y": 1800
   },
-  "Enum.EventTimeType": {
+  "Abstract._LogisticsObject": {
     "x": 3000,
     "y": 1800
   },
-  "Embedded.LogisticsEvent": {
+  "Abstract._LogisticsService": {
     "x": 3300,
     "y": 1800
   },
-  "Enum.ExecutionStatus": {
+  "Embedded._LoosePiece": {
     "x": 0,
     "y": 2250
   },
-  "A.CommodityCode": {
+  "Embedded._Measurement": {
     "x": 300,
     "y": 2250
   },
-  "A.ExplosiveCompatibilityGroupCode": {
+  "Enum._ModeQualifier": {
     "x": 600,
     "y": 2250
   },
-  "Core.BookingOptionRequest": {
+  "Embedded._MovementTime": {
     "x": 900,
     "y": 2250
   },
-  "Core.Price": {
+  "Enum._MovementTimeType": {
     "x": 1200,
     "y": 2250
   },
-  "Core.ProductDg": {
+  "Common._NonHumanActor": {
     "x": 1500,
     "y": 2250
   },
-  "Embedded.Geolocation": {
+  "Abstract._Organization": {
     "x": 1800,
     "y": 2250
   },
-  "A.GoodsTypeCode": {
+  "Embedded._OtherCharge": {
     "x": 2100,
     "y": 2250
   },
-  "A.GoodsTypeExtensionCode": {
+  "Embedded._OtherIdentifier": {
     "x": 2400,
     "y": 2250
   },
-  "A.ScreeningExemption": {
+  "Core._PackagingType": {
     "x": 2700,
     "y": 2250
   },
-  "Core.UnitComposition": {
+  "Embedded._Party": {
     "x": 3000,
     "y": 2250
   },
-  "Core.Insurance": {
+  "Common._Person": {
     "x": 3300,
     "y": 2250
   },
-  "Core.Shipment": {
+  "Abstract._PhysicalLogisticsObject": {
     "x": 0,
     "y": 2700
   },
-  "Core.LogisticsAction": {
+  "Core._Piece": {
     "x": 300,
     "y": 2700
   },
-  "Embedded.Party": {
+  "DG._PieceDg": {
     "x": 600,
     "y": 2700
   },
-  "Core.DgRadioactiveIsotope": {
+  "Embedded._PieceGroup": {
     "x": 900,
     "y": 2700
   },
-  "Enum.LoadType": {
+  "LiveAnimals._PieceLiveAnimals": {
     "x": 1200,
     "y": 2700
   },
-  "Core.LoadingUnit": {
+  "Distribution._Price": {
     "x": 1500,
     "y": 2700
   },
-  "Core.Loading": {
+  "Core._Product": {
     "x": 1800,
     "y": 2700
   },
-  "A.ULDLoadingIndicator": {
+  "DG._ProductDg": {
     "x": 2100,
     "y": 2700
   },
-  "Enum.LoadingType": {
+  "Common._PublicAuthority": {
     "x": 2400,
     "y": 2700
   },
-  "Embedded.Measurement": {
+  "Common._Question": {
     "x": 2700,
     "y": 2700
   },
-  "A.ModeCode": {
+  "Embedded._Ranges": {
     "x": 3000,
     "y": 2700
   },
-  "Enum.ModeQualifier": {
+  "Distribution._Ratings": {
     "x": 3300,
     "y": 2700
   },
-  "A.MovementIndicator": {
+  "Embedded._RegulatedEntity": {
     "x": 0,
     "y": 3150
   },
-  "Enum.MovementTimeType": {
+  "Core._SecurityDeclaration": {
     "x": 300,
     "y": 3150
   },
-  "Embedded.MovementTime": {
+  "Common._Sensor": {
     "x": 600,
     "y": 3150
   },
-  "Core.TransportMeans": {
+  "Enum._SensorType": {
     "x": 900,
     "y": 3150
   },
-  "Core.TransportMovement": {
+  "Core._Shipment": {
     "x": 1200,
     "y": 3150
   },
-  "Core.Company": {
+  "Embedded._StationRemarks": {
     "x": 1500,
     "y": 3150
   },
-  "Embedded.Characteristic": {
+  "Activity._Storage": {
     "x": 1800,
     "y": 3150
   },
-  "A.OtherChargeCode": {
+  "Action._Storing": {
     "x": 2100,
     "y": 3150
   },
-  "Embedded.OtherCharge": {
+  "Enum._StoringType": {
     "x": 2400,
     "y": 3150
   },
-  "Embedded.OtherIdentifier": {
+  "Embedded._TemperatureInstructions": {
     "x": 2700,
     "y": 3150
   },
-  "Embedded.RegulatedEntity": {
+  "Distribution._TransportLegs": {
     "x": 3000,
     "y": 3150
   },
-  "A.PackageMarkCode": {
+  "Core._TransportMeans": {
     "x": 3300,
     "y": 3150
   },
-  "A.PackagingDangerLevelCode": {
+  "Activity._TransportMovement": {
     "x": 0,
     "y": 3600
   },
-  "Core.PackagingType": {
+  "Core._ULD": {
     "x": 300,
     "y": 3600
   },
-  "Core.LogisticsAgent": {
+  "Embedded._ULDBasicPiece": {
     "x": 600,
     "y": 3600
   },
-  "A.ParticipantIdentifier": {
+  "Embedded._ULDSpecificPiece": {
     "x": 900,
     "y": 3600
   },
-  "A.RadioactiveMaterialClassification": {
+  "Activity._UnitComposition": {
     "x": 1200,
     "y": 3600
   },
-  "Embedded.PieceGroup": {
+  "Embedded._UnitsPreference": {
     "x": 1500,
     "y": 3600
   },
-  "Core.Question": {
+  "Embedded._Value": {
     "x": 1800,
     "y": 3600
   },
-  "Embedded.Ranges": {
+  "Embedded._VolumePieceGroup": {
     "x": 2100,
     "y": 3600
   },
-  "A.RateClassCode": {
+  "Embedded._VolumetricWeight": {
     "x": 2400,
     "y": 3600
   },
-  "A.BasicRateClassCode": {
+  "Core._Waybill": {
     "x": 2700,
     "y": 3600
   },
-  "Core.Ratings": {
+  "Embedded._WaybillLineItem": {
     "x": 3000,
     "y": 3600
   },
-  "A.RegulatedEntityCategoryCode": {
+  "Enum._WaybillType": {
     "x": 3300,
     "y": 3600
   },
-  "A.ScreeningMethod": {
+  "CodeList.ccodes_AWBUseIndicator": {
     "x": 0,
     "y": 4050
   },
-  "Core.SecurityDeclaration": {
+  "CodeList.ccodes_AircraftPossibilityCode": {
     "x": 300,
     "y": 4050
   },
-  "A.SecurityStatus": {
+  "CodeList.ccodes_BasicRateClassCode": {
     "x": 600,
     "y": 4050
   },
-  "Enum.SensorType": {
+  "CodeList.ccodes_ChargeCode": {
     "x": 900,
     "y": 4050
   },
-  "Core.LogisticsService": {
+  "CodeList.ccodes_ChargeIdentifier": {
     "x": 1200,
     "y": 4050
   },
-  "A.ServiceCode": {
+  "CodeList.ccodes_CommodityCode": {
     "x": 1500,
     "y": 4050
   },
-  "A.ULDConditionCode": {
+  "CodeList.ccodes_CurrencyCode": {
     "x": 1800,
     "y": 4050
   },
-  "A.SignatoryRole": {
+  "CodeList.ccodes_DangerousGoodsCode": {
     "x": 2100,
     "y": 4050
   },
-  "A.SignatureTypeCode": {
+  "CodeList.ccodes_DemurrageCode": {
     "x": 2400,
     "y": 4050
   },
-  "Core.EpermitSignature": {
+  "CodeList.ccodes_DimensionsUnitCode": {
     "x": 2700,
     "y": 4050
   },
-  "A.SpecialHandlingCode": {
+  "CodeList.ccodes_EntitlementCode": {
     "x": 3000,
     "y": 4050
   },
-  "Embedded.StationRemarks": {
+  "CodeList.ccodes_ExplosiveCompatibilityGroupCode": {
     "x": 3300,
     "y": 4050
   },
-  "Enum.BookingOptionStatus": {
+  "CodeList.ccodes_GoodsTypeCode": {
     "x": 0,
     "y": 4500
   },
-  "Core.Storing": {
+  "CodeList.ccodes_GoodsTypeExtensionCode": {
     "x": 300,
     "y": 4500
   },
-  "Enum.StoringType": {
+  "CodeList.ccodes_MeasurementUnitCode": {
     "x": 600,
     "y": 4500
   },
-  "Embedded.TemperatureInstructions": {
+  "CodeList.ccodes_ModeCode": {
     "x": 900,
     "y": 4500
   },
-  "A.TemperatureUnitCode": {
+  "CodeList.ccodes_MovementIndicator": {
     "x": 1200,
     "y": 4500
   },
-  "Embedded.VolumetricWeight": {
+  "CodeList.ccodes_OtherChargeCode": {
     "x": 1500,
     "y": 4500
   },
-  "A.TransactionPurposeCode": {
+  "CodeList.ccodes_PackageMarkCode": {
     "x": 1800,
     "y": 4500
   },
-  "Core.TransportLegs": {
+  "CodeList.ccodes_PackagingDangerLevelCode": {
     "x": 2100,
     "y": 4500
   },
-  "A.TransportMeansServiceType": {
+  "CodeList.ccodes_ParticipantIdentifier": {
     "x": 2400,
     "y": 4500
   },
-  "A.MeasurementUnitCode": {
+  "CodeList.ccodes_PrepaidCollectIndicator": {
     "x": 2700,
     "y": 4500
   },
-  "Embedded.UnitsPreference": {
+  "CodeList.ccodes_RaTypeCode": {
     "x": 3000,
     "y": 4500
   },
-  "A.VolumeUnitCode": {
+  "CodeList.ccodes_RadioactiveMaterialClassification": {
     "x": 3300,
     "y": 4500
   },
-  "Embedded.WaybillLineItem": {
+  "CodeList.ccodes_RateClassCode": {
     "x": 0,
     "y": 4950
   },
-  "Enum.WaybillType": {
+  "CodeList.ccodes_RatingsType": {
     "x": 300,
     "y": 4950
   },
-  "A.WeightUnitCode": {
+  "CodeList.ccodes_RegulatedEntityCategoryCode": {
     "x": 600,
     "y": 4950
   },
-  "Core.PieceDg": {
+  "CodeList.ccodes_ScreeningExemption": {
     "x": 900,
     "y": 4950
   },
-  "Core.ItemDg": {
+  "CodeList.ccodes_ScreeningMethod": {
     "x": 1200,
     "y": 4950
   },
-  "Embedded.LoosePiece": {
+  "CodeList.ccodes_SecurityStatus": {
     "x": 1500,
     "y": 4950
   },
-  "Core.NonHumanActor": {
+  "CodeList.ccodes_ServiceCode": {
     "x": 1800,
     "y": 4950
   },
-  "Core.PublicAuthority": {
+  "CodeList.ccodes_ShipmentSecurityStatus": {
     "x": 2100,
     "y": 4950
   },
-  "Core.Storage": {
+  "CodeList.ccodes_SignatoryRole": {
     "x": 2400,
     "y": 4950
   },
-  "Core.ULD": {
+  "CodeList.ccodes_SignatureTypeCode": {
     "x": 2700,
     "y": 4950
   },
-  "Embedded.ULDBasicPiece": {
+  "CodeList.ccodes_SpecialHandlingCode": {
     "x": 3000,
     "y": 4950
   },
-  "Embedded.ULDSpecificPiece": {
+  "CodeList.ccodes_StatusCode": {
     "x": 3300,
     "y": 4950
   },
-  "Embedded.VolumePieceGroup": {
+  "CodeList.ccodes_TemperatureUnitCode": {
     "x": 0,
     "y": 5400
   },
-  "A.DangerousGoodsCode": {
+  "CodeList.ccodes_TransactionPurposeCode": {
     "x": 300,
     "y": 5400
   },
-  "A.RatingsType": {
+  "CodeList.ccodes_TransportMeansServiceType": {
     "x": 600,
     "y": 5400
   },
-  "A.ShipmentSecurityStatus": {
+  "CodeList.ccodes_ULDChargeCode": {
     "x": 900,
     "y": 5400
   },
-  "A.StatusCode": {
+  "CodeList.ccodes_ULDConditionCode": {
     "x": 1200,
-    "y": 5400
-  },
-  "A.ULDChargeCode": {
-    "x": 1500,
     "y": 5400
   }
 }

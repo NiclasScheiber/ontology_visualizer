@@ -6,26 +6,30 @@
     {
       "name": "height",
       "description": "Height",
-      "type": "",
-      "array": false
+      "type": "Value",
+      "array": false,
+      "codelist": false
     },
     {
       "name": "length",
       "description": "Length",
-      "type": "",
-      "array": false
+      "type": "Value",
+      "array": false,
+      "codelist": false
     },
     {
       "name": "volume",
       "description": "Volume",
-      "type": "",
-      "array": false
+      "type": "Value",
+      "array": false,
+      "codelist": false
     },
     {
       "name": "width",
       "description": "Width",
-      "type": "",
-      "array": false
+      "type": "Value",
+      "array": false,
+      "codelist": false
     }
   ]
 }

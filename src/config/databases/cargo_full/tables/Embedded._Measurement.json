@@ -1,0 +1,28 @@
+{
+  "schema": "Embedded",
+  "name": "_Measurement",
+  "description": "Measurements details for Sensors; either generic or geolocation measurements are recorded",
+  "columns": [
+    {
+      "name": "_measurementValue",
+      "description": "Information about all non-Geolocation values of the measurement",
+      "type": "_Value",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_recordedGeolocation",
+      "description": "Reference to the Geolocation recorded of the measurement",
+      "type": "_Geolocation",
+      "array": false,
+      "codelist": true
+    },
+    {
+      "name": "_measurementTimestamp",
+      "description": "Timestamp for the measurement",
+      "type": "xsd_dateTime",
+      "array": false,
+      "codelist": true
+    }
+  ]
+}

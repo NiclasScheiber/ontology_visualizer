@@ -7,13 +7,15 @@
       "name": "currencyUnit",
       "description": "Information about the currency used in a CurrencyValue. Create an instance of CurrencyCode based on ISO 4217",
       "type": "CurrencyCode",
-      "array": false
+      "array": false,
+      "codelist": true
     },
     {
       "name": "numericalValue",
       "description": "Numerical value",
       "type": "double",
-      "array": false
+      "array": false,
+      "codelist": false
     }
   ]
 }
