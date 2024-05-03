@@ -1,0 +1,25 @@
+{
+  "schema": "Embedded",
+  "name": "Adjustments",
+  "description": "Adjustments in the context of CASS records",
+  "columns": [
+    {
+      "name": "correctionNumber",
+      "description": "Number of the adjustment",
+      "type": "integer",
+      "array": false
+    },
+    {
+      "name": "correctionSerialNumber",
+      "description": "Serial Number of the correction",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "reasonsForAdjustments",
+      "description": "A free text for user to include a reason for correction",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

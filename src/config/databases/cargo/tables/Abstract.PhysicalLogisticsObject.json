@@ -1,0 +1,43 @@
+{
+  "schema": "Abstract",
+  "name": "PhysicalLogisticsObject",
+  "description": "Superclass: PhysicalLogisticObjects represent the digital twin of an object in the logistics suppy chain that physically exist",
+  "columns": [
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice",
+      "array": true
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in",
+      "type": "LogisticsAction",
+      "array": true
+    }
+  ]
+}

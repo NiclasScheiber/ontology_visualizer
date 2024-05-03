@@ -1,0 +1,67 @@
+{
+  "schema": "DG",
+  "name": "DgProductRadioactive",
+  "description": "Details of the radioactive products ",
+  "columns": [
+    {
+      "name": "dgRaTypeCode",
+      "description": "The category of the package or all packed in one. Complete text to be transmitted: I-White; II-Yellow; III-Yellow instead of I; II; III",
+      "type": "RaTypeCode",
+      "array": false
+    },
+    {
+      "name": "forProductDg",
+      "description": "Reference to the ProductDg this DgProductRadiosctive details",
+      "type": "ProductDg",
+      "array": false
+    },
+    {
+      "name": "isotopes",
+      "description": "DgRadioactiveIsotope.",
+      "type": "DgRadioactiveIsotope",
+      "array": true
+    },
+    {
+      "name": "fissileExceptionIndicator",
+      "description": "Indicates if Fissile is excepted",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "fissileExceptionReference",
+      "description": "Fissile exception reference; mandatory if Fissile Exception Indicator is true.",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "transportIndexNumeric",
+      "description": "Radioactive Transport-Index value of the package or all packed in one. Conditionally mandator and applies to categories II-Yellow and III-Yellow only",
+      "type": "integer",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

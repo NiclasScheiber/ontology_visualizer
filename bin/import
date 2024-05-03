@@ -87,14 +87,14 @@ const importTableConfigs = async (databaseName, tables, tablesDescription) => {
       const columnType = row[1];
       const propertyDescription = row[2];
       const isArray = JSON.parse(row[3].toLowerCase());
-      const isCodelist = JSON.parse(row[4].toLowerCase());
+      // const isCodelist = JSON.parse(row[4].toLowerCase());
 
       tableConfig.columns.push({
         name: columnName,
         description: propertyDescription,
         type: columnType,
         array : isArray,
-        codelist : isCodelist
+        // codelist : isCodelist
       });
     });
 

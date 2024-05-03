@@ -1,0 +1,61 @@
+{
+  "schema": "Abstract",
+  "name": "LogisticsActivity",
+  "description": "Superclass: LogisticsActivity is a scheduled set of tasks that is executed as part of one or more Services",
+  "columns": [
+    {
+      "name": "checkActions",
+      "description": "References to CheckActions performed for the Activity",
+      "type": "Check",
+      "array": true
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
+      "array": true
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "Actor",
+      "array": true
+    },
+    {
+      "name": "executionStatus",
+      "description": "Enum stating the status of the Activity",
+      "type": "ExecutionStatus",
+      "array": false
+    },
+    {
+      "name": "servedServices",
+      "description": "Reference to Services this Activity is executed for",
+      "type": "LogisticsService",
+      "array": true
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

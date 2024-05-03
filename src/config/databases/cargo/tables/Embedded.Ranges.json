@@ -1,0 +1,37 @@
+{
+  "schema": "Embedded",
+  "name": "Ranges",
+  "description": "Ranges details",
+  "columns": [
+    {
+      "name": "rateClassCode",
+      "description": "Rate class code e.g. Q. Refer to CXML Code List 1.4 Rate Class Codes",
+      "type": "RateClassCode",
+      "array": false
+    },
+    {
+      "name": "uldRateClassType",
+      "description": "ULD Rate information - ULD Rate Class Type",
+      "type": "CodeListElement",
+      "array": false
+    },
+    {
+      "name": "maximumQuantity",
+      "description": "Maximum quantity",
+      "type": "double",
+      "array": false
+    },
+    {
+      "name": "minimumQuantity",
+      "description": "Minimum quantity",
+      "type": "double",
+      "array": false
+    },
+    {
+      "name": "unitBasis",
+      "description": "Specific commodity code linked to commodity",
+      "type": "string",
+      "array": false
+    }
+  ]
+}

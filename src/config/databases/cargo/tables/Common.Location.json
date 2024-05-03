@@ -1,0 +1,91 @@
+{
+  "schema": "Common",
+  "name": "Location",
+  "description": "Location describes a physical location; e.g. an airport; a warehouse or a truck deck",
+  "columns": [
+    {
+      "name": "address",
+      "description": "Address details",
+      "type": "Address",
+      "array": false
+    },
+    {
+      "name": "geolocation",
+      "description": "Geolocation details",
+      "type": "Geolocation",
+      "array": false
+    },
+    {
+      "name": "locationCodes",
+      "description": "Location code of airport; freight terminal; seaport; rail station. UN/LOCODE city code (5 letter) or IATA airport code (3 letter)",
+      "type": "CodeListElement",
+      "array": true
+    },
+    {
+      "name": "onsiteActions",
+      "description": "References to the Actions happening at the Location",
+      "type": "LogisticsAction",
+      "array": true
+    },
+    {
+      "name": "subLocationOf",
+      "description": "Reference to the Location this is a Sublocation of",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "subLocations",
+      "description": "References to Sublocations that describe the Location in more detail",
+      "type": "Location",
+      "array": true
+    },
+    {
+      "name": "locationName",
+      "description": "Full name of the location",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "locationType",
+      "description": "Location type - e.g. Airport; Freight terminal; Rail station; Seaport; etc",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice",
+      "array": true
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in",
+      "type": "LogisticsAction",
+      "array": true
+    }
+  ]
+}

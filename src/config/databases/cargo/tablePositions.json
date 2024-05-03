@@ -1,582 +1,362 @@
 {
-  "EmbeddedObject.AWBUseIndicator": {
+  "Abstract.Actor": {
+    "x": 1264,
+    "y": -1680
+  },
+  "Abstract.LogisticsAction": {
+    "x": 1264,
+    "y": -2080
+  },
+  "Abstract.LogisticsActivity": {
+    "x": 1568,
+    "y": -2080
+  },
+  "Abstract.LogisticsAgent": {
+    "x": 1872,
+    "y": -1680
+  },
+  "Abstract.LogisticsService": {
+    "x": 1568,
+    "y": -1680
+  },
+  "Abstract.Organization": {
+    "x": 2160,
+    "y": -2080
+  },
+  "Abstract.PhysicalLogisticsObject": {
+    "x": 1872,
+    "y": -2080
+  },
+  "BillingSettlement.BillingDetails": {
+    "x": 1248,
+    "y": 928
+  },
+  "Common.Carrier": {
+    "x": -1072,
+    "y": 0
+  },
+  "Common.Company": {
+    "x": -1072,
+    "y": 1040
+  },
+  "Common.Location": {
+    "x": -1072,
+    "y": -464
+  },
+  "Common.NonHumanActor": {
+    "x": -1072,
+    "y": 1856
+  },
+  "Common.Person": {
+    "x": -1072,
+    "y": 560
+  },
+  "Common.PublicAuthority": {
+    "x": -1072,
+    "y": 1472
+  },
+  "Core.Answer": {
+    "x": 2976,
+    "y": 2288
+  },
+  "Core.Check": {
+    "x": 2672,
+    "y": 1792
+  },
+  "Core.CheckTemplate": {
+    "x": 2976,
+    "y": 1792
+  },
+  "Core.Composing": {
+    "x": -304,
+    "y": -608
+  },
+  "Core.CustomsInformation": {
+    "x": 352,
+    "y": 480
+  },
+  "Core.ExternalReference": {
+    "x": -1072,
+    "y": 2080
+  },
+  "Core.Insurance": {
+    "x": 640,
+    "y": 224
+  },
+  "Core.IotDevice": {
+    "x": 2352,
+    "y": 1792
+  },
+  "Core.Item": {
+    "x": -304,
+    "y": 80
+  },
+  "Core.Loading": {
+    "x": 0,
+    "y": -608
+  },
+  "Core.LoadingMaterial": {
+    "x": -1392,
+    "y": 2080
+  },
+  "Core.LoadingUnit": {
+    "x": -624,
+    "y": -1840
+  },
+  "Core.PackagingType": {
+    "x": 352,
+    "y": 832
+  },
+  "Core.Piece": {
     "x": 0,
     "y": 0
   },
-  "EmbeddedObject.AircraftPossibilityCode": {
-    "x": 300,
+  "Core.Product": {
+    "x": -624,
     "y": 0
   },
-  "EmbeddedObject.BasicRateClassCode": {
-    "x": 600,
+  "Core.Question": {
+    "x": 2976,
+    "y": 1888
+  },
+  "Core.SecurityDeclaration": {
+    "x": 640,
+    "y": 480
+  },
+  "Core.Sensor": {
+    "x": 2352,
+    "y": 2224
+  },
+  "Core.Shipment": {
+    "x": 352,
     "y": 0
   },
-  "EmbeddedObject.ChargeCode": {
-    "x": 900,
-    "y": 0
+  "Core.Storage": {
+    "x": -624,
+    "y": -1360
   },
-  "EmbeddedObject.ChargeIdentifier": {
-    "x": 1200,
-    "y": 0
+  "Core.Storing": {
+    "x": -624,
+    "y": -608
   },
-  "EmbeddedObject.CommodityCode": {
-    "x": 1500,
-    "y": 0
-  },
-  "EmbeddedObject.CurrencyCode": {
-    "x": 1800,
-    "y": 0
-  },
-  "EmbeddedObject.DangerousGoodsCode": {
-    "x": 2100,
-    "y": 0
-  },
-  "EmbeddedObject.DemurrageCode": {
-    "x": 2400,
-    "y": 0
-  },
-  "EmbeddedObject.DimensionsUnitCode": {
-    "x": 2700,
-    "y": 0
-  },
-  "EmbeddedObject.EntitlementCode": {
-    "x": 3000,
-    "y": 0
-  },
-  "EmbeddedObject.ExplosiveCompatibilityGroupCode": {
-    "x": 3300,
-    "y": 0
-  },
-  "EmbeddedObject.GoodsTypeCode": {
+  "Core.TransportMeans": {
     "x": 0,
-    "y": 450
+    "y": -1824
   },
-  "EmbeddedObject.GoodsTypeExtensionCode": {
-    "x": 300,
-    "y": 450
-  },
-  "EmbeddedObject.MeasurementUnitCode": {
-    "x": 600,
-    "y": 450
-  },
-  "EmbeddedObject.ModeCode": {
-    "x": 900,
-    "y": 450
-  },
-  "EmbeddedObject.MovementIndicator": {
-    "x": 1200,
-    "y": 450
-  },
-  "EmbeddedObject.OtherChargeCode": {
-    "x": 1500,
-    "y": 450
-  },
-  "EmbeddedObject.PackageMarkCode": {
-    "x": 1800,
-    "y": 450
-  },
-  "EmbeddedObject.PackagingDangerLevelCode": {
-    "x": 2100,
-    "y": 450
-  },
-  "EmbeddedObject.ParticipantIdentifier": {
-    "x": 2400,
-    "y": 450
-  },
-  "EmbeddedObject.PrepaidCollectIndicator": {
-    "x": 2700,
-    "y": 450
-  },
-  "EmbeddedObject.RaTypeCode": {
-    "x": 3000,
-    "y": 450
-  },
-  "EmbeddedObject.RadioactiveMaterialClassification": {
-    "x": 3300,
-    "y": 450
-  },
-  "EmbeddedObject.RateClassCode": {
+  "Core.TransportMovement": {
     "x": 0,
-    "y": 900
+    "y": -1360
   },
-  "EmbeddedObject.RatingsType": {
-    "x": 300,
-    "y": 900
+  "Core.ULD": {
+    "x": -304,
+    "y": -2064
   },
-  "EmbeddedObject.RegulatedEntityCategoryCode": {
-    "x": 600,
-    "y": 900
+  "Core.UnitComposition": {
+    "x": -304,
+    "y": -1360
   },
-  "EmbeddedObject.ScreeningExemption": {
-    "x": 900,
-    "y": 900
+  "Core.Waybill": {
+    "x": 912,
+    "y": -160
   },
-  "EmbeddedObject.ScreeningMethod": {
-    "x": 1200,
-    "y": 900
+  "DG.DgDeclaration": {
+    "x": -288,
+    "y": 2016
   },
-  "EmbeddedObject.SecurityStatus": {
-    "x": 1500,
-    "y": 900
+  "DG.DgProductRadioactive": {
+    "x": -752,
+    "y": 1424
   },
-  "EmbeddedObject.ServiceCode": {
-    "x": 1800,
-    "y": 900
+  "DG.DgRadioactiveIsotope": {
+    "x": -752,
+    "y": 1776
   },
-  "EmbeddedObject.ShipmentSecurityStatus": {
-    "x": 2100,
-    "y": 900
+  "DG.ItemDg": {
+    "x": -288,
+    "y": 1088
   },
-  "EmbeddedObject.SignatoryRole": {
-    "x": 2400,
-    "y": 900
-  },
-  "EmbeddedObject.SignatureTypeCode": {
-    "x": 2700,
-    "y": 900
-  },
-  "EmbeddedObject.SpecialHandlingCode": {
-    "x": 3000,
-    "y": 900
-  },
-  "EmbeddedObject.StatusCode": {
-    "x": 3300,
-    "y": 900
-  },
-  "EmbeddedObject.TemperatureUnitCode": {
+  "DG.PieceDg": {
     "x": 0,
-    "y": 1350
-  },
-  "EmbeddedObject.TransactionPurposeCode": {
-    "x": 300,
-    "y": 1350
-  },
-  "EmbeddedObject.TransportMeansServiceType": {
-    "x": 600,
-    "y": 1350
-  },
-  "EmbeddedObject.ULDChargeCode": {
-    "x": 900,
-    "y": 1350
-  },
-  "EmbeddedObject.ULDConditionCode": {
-    "x": 1200,
-    "y": 1350
-  },
-  "EmbeddedObject.ULDLoadingIndicator": {
-    "x": 1500,
-    "y": 1350
-  },
-  "EmbeddedObject.VolumeUnitCode": {
-    "x": 1800,
-    "y": 1350
-  },
-  "EmbeddedObject.WeightUnitCode": {
-    "x": 2100,
-    "y": 1350
-  },
-  "EmbeddedObject.ActionTimeType": {
-    "x": 2400,
-    "y": 1350
-  },
-  "EmbeddedObject.ActivitySequence": {
-    "x": 2700,
-    "y": 1350
-  },
-  "EmbeddedObject.Address": {
-    "x": 3000,
-    "y": 1350
-  },
-  "EmbeddedObject.CodeListElement": {
-    "x": 3300,
-    "y": 1350
-  },
-  "EmbeddedObject.Adjustments": {
-    "x": 0,
-    "y": 1800
-  },
-  "LogisticsObject.Answer": {
-    "x": 300,
-    "y": 1800
-  },
-  "LogisticsObject.Actor": {
-    "x": 600,
-    "y": 1800
-  },
-  "EmbeddedObject.Value": {
-    "x": 900,
-    "y": 1800
-  },
-  "LogisticsObject.Piece": {
-    "x": 1200,
-    "y": 1800
-  },
-  "LogisticsObject.Location": {
-    "x": 1500,
-    "y": 1800
-  },
-  "LogisticsObject.EpermitConsignment": {
-    "x": 1800,
-    "y": 1800
-  },
-  "LogisticsObject.Organization": {
-    "x": 2100,
-    "y": 1800
-  },
-  "LogisticsObject.IotDevice": {
-    "x": 2400,
-    "y": 1800
-  },
-  "LogisticsObject.BillingDetails": {
-    "x": 2700,
-    "y": 1800
-  },
-  "LogisticsObject.Booking": {
-    "x": 3000,
-    "y": 1800
-  },
-  "LogisticsObject.BookingOption": {
-    "x": 3300,
-    "y": 1800
-  },
-  "EmbeddedObject.BookingPreferences": {
-    "x": 0,
-    "y": 2250
-  },
-  "LogisticsObject.BookingRequest": {
-    "x": 300,
-    "y": 2250
-  },
-  "LogisticsObject.BookingShipment": {
-    "x": 600,
-    "y": 2250
-  },
-  "EmbeddedObject.BookingStatus": {
-    "x": 900,
-    "y": 2250
-  },
-  "EmbeddedObject.BookingTimes": {
-    "x": 1200,
-    "y": 2250
-  },
-  "LogisticsObject.Carrier": {
-    "x": 1500,
-    "y": 2250
-  },
-  "EmbeddedObject.CarrierProduct": {
-    "x": 1800,
-    "y": 2250
-  },
-  "LogisticsObject.Person": {
-    "x": 2100,
-    "y": 2250
-  },
-  "LogisticsObject.Check": {
-    "x": 2400,
-    "y": 2250
-  },
-  "LogisticsObject.CheckTemplate": {
-    "x": 2700,
-    "y": 2250
-  },
-  "EmbeddedObject.CheckTotalResult": {
-    "x": 3000,
-    "y": 2250
-  },
-  "EmbeddedObject.CO2Emissions": {
-    "x": 3300,
-    "y": 2250
-  },
-  "LogisticsObject.LoadingMaterial": {
-    "x": 0,
-    "y": 2700
-  },
-  "LogisticsObject.Composing": {
-    "x": 300,
-    "y": 2700
-  },
-  "EmbeddedObject.CompositionType": {
-    "x": 600,
-    "y": 2700
-  },
-  "LogisticsObject.Sensor": {
-    "x": 900,
-    "y": 2700
-  },
-  "LogisticsObject.PieceLiveAnimals": {
-    "x": 1200,
-    "y": 2700
-  },
-  "EmbeddedObject.ContactDetailType": {
-    "x": 1500,
-    "y": 2700
-  },
-  "EmbeddedObject.ContactDetail": {
-    "x": 1800,
-    "y": 2700
-  },
-  "EmbeddedObject.ContactRole": {
-    "x": 2100,
-    "y": 2700
-  },
-  "LogisticsObject.Item": {
-    "x": 2400,
-    "y": 2700
-  },
-  "LogisticsObject.DgProductRadioactive": {
-    "x": 2700,
-    "y": 2700
-  },
-  "LogisticsObject.Product": {
-    "x": 3000,
-    "y": 2700
-  },
-  "LogisticsObject.CustomsInformation": {
-    "x": 3300,
-    "y": 2700
-  },
-  "EmbeddedObject.CurrencyValue": {
-    "x": 0,
-    "y": 3150
+    "y": 1088
   },
-  "LogisticsObject.Waybill": {
-    "x": 300,
-    "y": 3150
+  "DG.ProductDg": {
+    "x": -752,
+    "y": 608
   },
-  "LogisticsObject.DgDeclaration": {
-    "x": 600,
-    "y": 3150
+  "Distribution.Booking": {
+    "x": 880,
+    "y": -1360
   },
-  "EmbeddedObject.Dimensions": {
-    "x": 900,
-    "y": 3150
+  "Distribution.BookingOption": {
+    "x": 1248,
+    "y": -560
   },
-  "EmbeddedObject.DirectionType": {
-    "x": 1200,
-    "y": 3150
+  "Distribution.BookingOptionRequest": {
+    "x": 1248,
+    "y": 48
   },
-  "LogisticsObject.ExternalReference": {
-    "x": 1500,
-    "y": 3150
+  "Distribution.BookingRequest": {
+    "x": 1248,
+    "y": -848
   },
-  "LogisticsObject.LiveAnimalsEpermit": {
-    "x": 1800,
-    "y": 3150
+  "Distribution.BookingShipment": {
+    "x": 1248,
+    "y": 512
   },
-  "EmbeddedObject.EventTimeType": {
-    "x": 2100,
-    "y": 3150
+  "Distribution.Price": {
+    "x": 1600,
+    "y": -560
   },
-  "EmbeddedObject.ExecutionStatus": {
-    "x": 2400,
-    "y": 3150
+  "Distribution.Ratings": {
+    "x": 1904,
+    "y": -560
   },
-  "LogisticsObject.BookingOptionRequest": {
-    "x": 2700,
-    "y": 3150
+  "Distribution.TransportLegs": {
+    "x": 1616,
+    "y": 272
   },
-  "LogisticsObject.Price": {
-    "x": 3000,
-    "y": 3150
+  "Embedded.ActivitySequence": {
+    "x": 496,
+    "y": -1360
   },
-  "LogisticsObject.ProductDg": {
-    "x": 3300,
-    "y": 3150
+  "Embedded.Address": {
+    "x": 1888,
+    "y": 2464
   },
-  "EmbeddedObject.Geolocation": {
-    "x": 0,
-    "y": 3600
+  "Embedded.Adjustments": {
+    "x": 1568,
+    "y": 2576
   },
-  "LogisticsObject.UnitComposition": {
-    "x": 300,
-    "y": 3600
+  "Embedded.BookingPreferences": {
+    "x": 1872,
+    "y": 1968
   },
-  "LogisticsObject.Insurance": {
-    "x": 600,
-    "y": 3600
+  "Embedded.BookingTimes": {
+    "x": 1568,
+    "y": 2208
   },
-  "LogisticsObject.Shipment": {
-    "x": 900,
-    "y": 3600
+  "Embedded.CarrierProduct": {
+    "x": 1872,
+    "y": 1808
   },
-  "EmbeddedObject.Party": {
-    "x": 1200,
-    "y": 3600
+  "Embedded.Characteristic": {
+    "x": 1248,
+    "y": 2320
   },
-  "LogisticsObject.DgRadioactiveIsotope": {
-    "x": 1500,
-    "y": 3600
+  "Embedded.CodeListElement": {
+    "x": -1072,
+    "y": -976
   },
-  "EmbeddedObject.LoadType": {
-    "x": 1800,
-    "y": 3600
+  "Embedded.ContactDetail": {
+    "x": 1568,
+    "y": 1968
   },
-  "LogisticsObject.LoadingUnit": {
-    "x": 2100,
-    "y": 3600
+  "Embedded.CurrencyValue": {
+    "x": 1888,
+    "y": 2208
   },
-  "LogisticsObject.Loading": {
-    "x": 2400,
-    "y": 3600
+  "Embedded.Dimensions": {
+    "x": 1568,
+    "y": 1808
   },
-  "EmbeddedObject.LoadingType": {
-    "x": 2700,
-    "y": 3600
+  "Embedded.Geolocation": {
+    "x": 1248,
+    "y": 1808
   },
-  "EmbeddedObject.Measurement": {
-    "x": 3000,
-    "y": 3600
+  "Embedded.LogisticsEvent": {
+    "x": -1072,
+    "y": -1360
   },
-  "EmbeddedObject.ModeQualifier": {
-    "x": 3300,
-    "y": 3600
+  "Embedded.LogisticsObject": {
+    "x": 2176,
+    "y": -1680
   },
-  "EmbeddedObject.MovementTimeType": {
-    "x": 0,
-    "y": 4050
-  },
-  "EmbeddedObject.MovementTime": {
+  "Embedded.LoosePiece": {
     "x": 300,
     "y": 4050
   },
-  "LogisticsObject.TransportMeans": {
-    "x": 600,
-    "y": 4050
+  "Embedded.Measurement": {
+    "x": 1248,
+    "y": 2160
   },
-  "LogisticsObject.TransportMovement": {
-    "x": 900,
-    "y": 4050
+  "Embedded.MovementTime": {
+    "x": 1248,
+    "y": 1968
   },
-  "LogisticsObject.Company": {
-    "x": 1200,
-    "y": 4050
+  "Embedded.OtherCharge": {
+    "x": 1248,
+    "y": 2448
   },
-  "EmbeddedObject.Characteristic": {
-    "x": 1500,
-    "y": 4050
+  "Embedded.OtherIdentifier": {
+    "x": 1568,
+    "y": 2080
   },
-  "EmbeddedObject.OtherCharge": {
-    "x": 1800,
-    "y": 4050
+  "Embedded.Party": {
+    "x": 1568,
+    "y": 2416
   },
-  "EmbeddedObject.OtherIdentifier": {
-    "x": 2100,
-    "y": 4050
+  "Embedded.PieceGroup": {
+    "x": 1568,
+    "y": 2720
   },
-  "EmbeddedObject.RegulatedEntity": {
-    "x": 2400,
-    "y": 4050
+  "Embedded.Ranges": {
+    "x": 1264,
+    "y": 2672
   },
-  "LogisticsObject.PackagingType": {
-    "x": 2700,
-    "y": 4050
+  "Embedded.RegulatedEntity": {
+    "x": 1888,
+    "y": 2720
   },
-  "EmbeddedObject.PieceGroup": {
-    "x": 3000,
-    "y": 4050
-  },
-  "LogisticsObject.Question": {
-    "x": 3300,
-    "y": 4050
-  },
-  "EmbeddedObject.Ranges": {
-    "x": 0,
-    "y": 4500
-  },
-  "EmbeddedObject.Ratings": {
+  "Embedded.StationRemarks": {
     "x": 300,
-    "y": 4500
+    "y": 3600
   },
-  "EmbeddedObject.SecurityDeclaration": {
-    "x": 600,
-    "y": 4500
-  },
-  "EmbeddedObject.SensorType": {
+  "Embedded.TemperatureInstructions": {
     "x": 900,
-    "y": 4500
+    "y": 3600
   },
-  "EmbeddedObject.EpermitSignature": {
-    "x": 1200,
-    "y": 4500
-  },
-  "EmbeddedObject.StationRemarks": {
-    "x": 1500,
-    "y": 4500
-  },
-  "EmbeddedObject.BookingOptionStatus": {
+  "Embedded.ULDBasicPiece": {
     "x": 1800,
-    "y": 4500
+    "y": 4050
   },
-  "EmbeddedObject.Storing": {
+  "Embedded.ULDSpecificPiece": {
     "x": 2100,
-    "y": 4500
+    "y": 4050
   },
-  "EmbeddedObject.StoringType": {
-    "x": 2400,
-    "y": 4500
-  },
-  "EmbeddedObject.TemperatureInstructions": {
-    "x": 2700,
-    "y": 4500
-  },
-  "EmbeddedObject.VolumetricWeight": {
-    "x": 3000,
-    "y": 4500
-  },
-  "EmbeddedObject.TransportLegs": {
-    "x": 3300,
-    "y": 4500
-  },
-  "EmbeddedObject.UnitsPreference": {
-    "x": 0,
-    "y": 4950
-  },
-  "EmbeddedObject.WaybillLineItem": {
-    "x": 300,
-    "y": 4950
-  },
-  "EmbeddedObject.WaybillType": {
-    "x": 600,
-    "y": 4950
-  },
-  "EmbeddedObject.PieceDg": {
-    "x": 900,
-    "y": 4950
-  },
-  "EmbeddedObject.ItemDg": {
-    "x": 1200,
-    "y": 4950
-  },
-  "EmbeddedObject.LoosePiece": {
-    "x": 1500,
-    "y": 4950
-  },
-  "EmbeddedObject.NonHumanActor": {
+  "Embedded.UnitsPreference": {
     "x": 1800,
-    "y": 4950
+    "y": 3600
   },
-  "EmbeddedObject.PublicAuthority": {
-    "x": 2100,
-    "y": 4950
+  "Embedded.Value": {
+    "x": 1888,
+    "y": 2336
   },
-  "EmbeddedObject.Storage": {
+  "Embedded.VolumePieceGroup": {
     "x": 2400,
-    "y": 4950
+    "y": 4050
   },
-  "EmbeddedObject.ULD": {
-    "x": 2700,
-    "y": 4950
+  "Embedded.VolumetricWeight": {
+    "x": 1200,
+    "y": 3600
   },
-  "EmbeddedObject.ULDBasicPiece": {
-    "x": 3000,
-    "y": 4950
+  "Embedded.WaybillLineItem": {
+    "x": 2100,
+    "y": 3600
   },
-  "EmbeddedObject.ULDSpecificPiece": {
-    "x": 3300,
-    "y": 4950
+  "LiveAnimals.EpermitConsignment": {
+    "x": 720,
+    "y": 1088
   },
-  "EmbeddedObject.VolumePieceGroup": {
-    "x": 0,
-    "y": 5400
+  "LiveAnimals.EpermitSignature": {
+    "x": 720,
+    "y": 1984
+  },
+  "LiveAnimals.LiveAnimalsEpermit": {
+    "x": 720,
+    "y": 1376
+  },
+  "LiveAnimals.PieceLiveAnimals": {
+    "x": 352,
+    "y": 1088
   }
 }

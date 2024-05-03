@@ -19,16 +19,16 @@
     "name": "Live dataset",
     "description": "The **Live** dataset contains data of a meditation mobile app with subscription business model. :iphone:\n\nThe data is updated **daily**. You can run queries to calculate metrics for the past 24h, week, month, etc. and build dashboards as if you were actually working for that company. :bar_chart:"
   },
-  "cargo": {
-    "name": "cargo",
-    "description": "Test dataset of the one record cargo ontology"
-  },
   "cargo_full": {
     "name": "cargo_full",
     "description": ""
   },
   "cargo_assigned": {
     "name": "cargo_assigned",
+    "description": ""
+  },
+  "cargo": {
+    "name": "cargo",
     "description": ""
   }
 }

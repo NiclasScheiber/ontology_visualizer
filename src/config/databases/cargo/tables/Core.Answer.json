@@ -1,0 +1,67 @@
+{
+  "schema": "Core",
+  "name": "Answer",
+  "description": "Answer holds the answer to one Question and is provided by the executioner of the check",
+  "columns": [
+    {
+      "name": "answerActor",
+      "description": "Reference to the Actor giving the Answer",
+      "type": "Actor",
+      "array": false
+    },
+    {
+      "name": "answerValue",
+      "description": "Information about an answer Value of any kind of the Answer",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "givenAtLocation",
+      "description": "Reference to the Location from which the Question was answered; relevant for split checks with documentary and physical elements",
+      "type": "Location",
+      "array": false
+    },
+    {
+      "name": "involvedParties",
+      "description": "Information about other Parties involved depending on the context of use",
+      "type": "Party",
+      "array": true
+    },
+    {
+      "name": "question",
+      "description": "Reference to the Question the Answer is for",
+      "type": "Question",
+      "array": false
+    },
+    {
+      "name": "text",
+      "description": "Text for the Answer",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

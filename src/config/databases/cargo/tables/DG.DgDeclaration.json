@@ -1,0 +1,67 @@
+{
+  "schema": "DG",
+  "name": "DgDeclaration",
+  "description": "Dangerous goods declaration",
+  "columns": [
+    {
+      "name": "issuedForPiece",
+      "description": "Reference to the Piece the document was issued for",
+      "type": "PieceDg",
+      "array": false
+    },
+    {
+      "name": "aircraftLimitationInformation",
+      "description": "Contains the Special Handling Code related to the prescribed limitation. Hardcoded to PASSENGER AND CARGO AIRCRAFT or CARGO AIRCRAFT ONLY. This field is mandatory for air (Air) ",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "complianceDeclarationText",
+      "description": "Contains the warning message complying with the regulations text note. This field is mandatory for air (Air) ",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "exclusiveUseIndicator",
+      "description": "Indicates an exclusive use shipment",
+      "type": "boolean",
+      "array": false
+    },
+    {
+      "name": "handlingInformation",
+      "description": "Free text. This may include items such as Control temperature for substances stabilized by temperature control; name and telephone number of a responsible person for infectious substances. ",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "shipperDeclarationText",
+      "description": "Contains the shipper's declaration to comply with the regulations text note. Free text . This field is mandatory for air (Air)",
+      "type": "string",
+      "array": false
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "array": true
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "array": true
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "array": true
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "array": false
+    }
+  ]
+}

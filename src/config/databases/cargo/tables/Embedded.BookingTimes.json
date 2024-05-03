@@ -1,0 +1,37 @@
+{
+  "schema": "Embedded",
+  "name": "BookingTimes",
+  "description": "Previsouly called Schedule. This object refers to times used for the Booking Option Request (preferences part of the request) or the Booking Option (times sur as LAT where there is a commitment from the carrier)",
+  "columns": [
+    {
+      "name": "earliestAcceptanceTime",
+      "description": "Earliest acceptance date time (requested or proposed)",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "latestAcceptanceTime",
+      "description": "Latest Acceptance time as per CargoIQ definition (requested; proposed or actual)",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "latestArrivalTime",
+      "description": "Latest arrival time at destination",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "timeOfAvailability",
+      "description": "Time of availability of the shipment as per CargoIQ definition",
+      "type": "dateTime",
+      "array": false
+    },
+    {
+      "name": "totalTransitTime",
+      "description": "Total transit time as per CargoIQ definition; expressed as a duration",
+      "type": "duration",
+      "array": false
+    }
+  ]
+}

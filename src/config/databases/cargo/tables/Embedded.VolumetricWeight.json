@@ -1,0 +1,19 @@
+{
+  "schema": "Embedded",
+  "name": "VolumetricWeight",
+  "description": "Volumetric weight details",
+  "columns": [
+    {
+      "name": "chargeableWeight",
+      "description": "Chargeable weight",
+      "type": "Value",
+      "array": false
+    },
+    {
+      "name": "conversionFactor",
+      "description": "Volume to weight conversion factor",
+      "type": "double",
+      "array": false
+    }
+  ]
+}
