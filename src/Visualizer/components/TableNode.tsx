@@ -36,7 +36,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
           }
         }}
         onMouseLeave={() => setshowDescription(false)}>
-        {data.schema ? `${data.schema}.${data.name}` : data.name}
+        data.name
 
         <div
           className={showDescription ? "table__description table__description--active" : "table__description"}
