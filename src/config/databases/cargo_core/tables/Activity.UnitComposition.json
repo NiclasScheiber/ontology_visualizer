@@ -13,12 +13,14 @@
       "name": "contactDetails",
       "description": "Information about contactDetails",
       "type": "ContactDetail",
+      "schemaType" : "Embedded",
       "array": true
     },
     {
       "name": "contactPersons",
       "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
+      "schemaType" : "Abstract",
       "array": true
     },
     {
@@ -43,12 +45,14 @@
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
+      "schemaType": "Event",
       "array": true
     },
     {
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
+      "schemaType": "Common",
       "array": true
     },
     {

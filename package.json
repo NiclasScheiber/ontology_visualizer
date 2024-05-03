@@ -4,7 +4,7 @@
   "homepage": "https://aloccid-iata.github.io/ontology_visualizer/",
   "private": false,
   "dependencies": {
-    "@reactflow/node-resizer": "^1.2.1",
+    "@reactflow/node-resizer": "^2.2.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
@@ -22,7 +22,7 @@
     "react-is": "^18.2.0",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
-    "reactflow": "^11.4.1",
+    "reactflow": "^11.11.3",
     "twemoji": "^14.0.2",
     "typescript": "^4.9.4",
     "web-vitals": "^3.1.0",

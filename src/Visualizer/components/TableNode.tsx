@@ -1,5 +1,5 @@
 import { useState, FC, useEffect } from "react";
-import { Handle, Position, NodeProps } from "reactflow";
+import { Handle, Position, NodeProps, FitViewOptions, useReactFlow } from "reactflow";
 import { KeyIcon, ArrayIcon, CodelistIcon } from "../components";
 import { markdown } from "../helpers";
 
@@ -9,7 +9,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
   const [selectedColumn, setSelectedColumn] = useState("");
   const [showDescription, setshowDescription] = useState(false);
   const [descriptionOnHoverActive, setDescriptionOnHoverActive] = useState(false);
-  //const reactFlowInstance = useReactFlow();
+  const reactFlowInstance = useReactFlow();
 
   useEffect(() => {
     document.addEventListener("keydown", (e: KeyboardEvent) => {
@@ -66,17 +66,6 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
               }
             }}
             onMouseLeave={() => setSelectedColumn("")}
-            /*onClick={() => {              
-              /*window.requestAnimationFrame(() => {
-                
-               // const fitViewOptions: FitViewOptions = {
-                  duration: 500,
-                  nodes: {id: 'Generic.booking'}
-                };
-
-                //reactFlowInstance.fitView(fitViewOptions);
-              })
-            }}*/
             >
             {column.handleType && <Handle
               type={column.handleType}
@@ -98,7 +87,19 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
                 {column.array && <ArrayIcon />}
                 {column.codelist && <CodelistIcon />}
               </div>
-              <div className="column-name__type">
+              <div className="column-name__type" 
+              onClick={() => {              
+                window.requestAnimationFrame(() => {
+                  
+                  const fitViewOptions: FitViewOptions = {
+                    duration: 500,
+                    nodes: [{ id: column.schemaType+'.'+column.type }]
+                  };
+  
+                  reactFlowInstance.fitView(fitViewOptions);
+                })
+              }}
+              >
                 {column.type}
               </div>
 

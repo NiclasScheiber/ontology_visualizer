@@ -20,6 +20,10 @@
     color: #BBB;
   }
 
+  &__type:hover {
+    color:rgb(12, 81, 230);
+  }
+
   &__description {
     display: none;
     position: absolute;

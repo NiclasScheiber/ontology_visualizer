@@ -85,6 +85,7 @@ const importTableConfigs = async (databaseName, tables, tablesDescription) => {
     tables[tableName].forEach(row => {
       const columnName = row[0];
       const columnType = row[1];
+      const columnSchemaType = row[5];
       const propertyDescription = row[2];
       const isArray = ((row[3]) ? JSON.parse(row[3].toLowerCase()) : false );
       const isCodelist =  ((row[4]) ? JSON.parse(row[4].toLowerCase()) : false );
@@ -93,6 +94,7 @@ const importTableConfigs = async (databaseName, tables, tablesDescription) => {
         name: columnName,
         description: propertyDescription,
         type: columnType,
+        schemaType: columnSchemaType,
         array : isArray,
         codelist : isCodelist
       });
@@ -160,9 +162,9 @@ const importConfigFiles = async ({ databaseName }) => {
     const name = row.table_schema === "public" ? row.table_name : `${row.table_schema}.${row.table_name}`;
 
     if(tables[name]) {
-      tables[name].push([row.column_name, row.data_type, row.property_description, row.is_array, row.is_codelist]); 
+      tables[name].push([row.column_name, row.data_type, row.property_description, row.is_array, row.is_codelist, row.schema_type]); 
     } else {
-      tables[name] = [[row.column_name, row.data_type, row.property_description, row.is_array, row.is_codelist]];
+      tables[name] = [[row.column_name, row.data_type, row.property_description, row.is_array, row.is_codelist, row.schema_type]];
     }
 
     if(tablesDescription[name]) {
