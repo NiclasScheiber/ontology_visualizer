@@ -1,0 +1,124 @@
+{
+  "schema": "Common",
+  "name": "IotDevice",
+  "description": "IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details",
+  "columns": [
+    {
+      "name": "attachedToObject",
+      "description": "Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to",
+      "type": "PhysicalLogisticsObject",
+      "schemaType": "Abstract",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Piece Location IotDevice LoadingMaterial Sensor PieceLiveAnimals Item LoadingUnit TransportMeans PieceDg ItemDg ULD"
+    },
+    {
+      "name": "connectedSensors",
+      "description": "Reference to the sensors linked to the device",
+      "type": "Sensor",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "manufacturer",
+      "description": "Manufacturing company details and contacts",
+      "type": "Company",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Carrier"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "description",
+      "description": "Natural language description if required",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "deviceModel",
+      "description": "Commercial denomination of the device",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "name",
+      "description": "Human-understandable name of object depending on the context",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "serialNumber",
+      "description": "Serial number that allows to uniquely identify the object",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "type": "LogisticsAction",
+      "schemaType": "Abstract",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Check Composing Loading Storing"
+    }
+  ]
+}

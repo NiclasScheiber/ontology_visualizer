@@ -1,0 +1,331 @@
+{
+  "schema": "Core",
+  "name": "Piece",
+  "description": "Individual piece or virtual grouping of pieces - Individual piece or virtual grouping of pieces",
+  "columns": [
+    {
+      "name": "inPiece",
+      "description": "Reference to the Piece this Item or Piece is contained in - Reference to the Piece this Item or Piece is contained in",
+      "type": "Piece",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "PieceLiveAnimals PieceDg"
+    },
+    {
+      "name": "ofShipment",
+      "description": "Reference to the Shipment the Piece is assigned to",
+      "type": "Shipment",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "packagingType",
+      "description": "Packaging details ",
+      "type": "PackagingType",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "containedItems",
+      "description": "Reference to the item(s) contained in the piece",
+      "type": "Item",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "ItemDg"
+    },
+    {
+      "name": "containedPieces",
+      "description": "Details of contained piece(s) - Details of contained piece(s)",
+      "type": "Piece",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "PieceLiveAnimals PieceDg"
+    },
+    {
+      "name": "contentProductionCountry",
+      "description": "Goods production country; mandatory when there are no Items. Refer ISO 3166-2",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contentProducts",
+      "description": "Reference to the Products describing the content of the Piece; mandatory if no data on Item level is used",
+      "type": "Product",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "ProductDg"
+    },
+    {
+      "name": "customsInformation",
+      "description": "Customs details",
+      "type": "CustomsInformation",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "dimensions",
+      "description": "Dimensions details",
+      "type": "Dimensions",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "fulfillsUldTypeCode",
+      "description": "Text holding an ULD Type Code if the Piece fulfills it before UnitComposition",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "grossWeight",
+      "description": "Weight details",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "loadType",
+      "description": "Load type of the shipment or piece (Bulk; ULD; Pallet; Loose) - Load type of the shipment or piece (Bulk; ULD; Pallet; Loose)",
+      "type": "LoadType",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "LoadType"
+    },
+    {
+      "name": "packageMarkCoded",
+      "description": "Reference identifying how the package is marked. Field is hardcode to SSCC-18; UPC or Other",
+      "type": "PackageMarkCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "securityDeclarations",
+      "description": "Security details of the piece",
+      "type": "SecurityDeclaration",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "temperatureInstructions",
+      "description": "Temperature instructions if a specific range",
+      "type": "TemperatureInstructions",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "volumetricWeight",
+      "description": "Volumetric weight details",
+      "type": "VolumetricWeight",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "type": "LogisticsAction",
+      "schemaType": "Abstract",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Check Composing Loading Storing"
+    },
+    {
+      "name": "involvedParties",
+      "description": "Information about other Parties involved depending on the context of use",
+      "type": "Party",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "specialHandlingCodes",
+      "description": "Three-letter special handling code (SPH)",
+      "type": "SpecialHandlingCode",
+      "schemaType": "CodeList",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "coload",
+      "description": "Coload indicator for the pieces (boolean)",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "goodsDescription",
+      "description": "Description of goods; for the BookingShipment the commodity list defined by Modernizing Cargo Distribution MCD working group can be used as a referential.",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "nvdForCarriage",
+      "description": "When no value is declared for Carriage; this field may be completed with the value TRUE otherwise FALSE",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "nvdForCustoms",
+      "description": "When no value is declared for Customs; this field may be completed with the value TRUE otherwise FALSE",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "packagedeIdentifier",
+      "description": "SSCC-18 code for the value of the package mark; company or bar code; free text; pallet code; etc.",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "slac",
+      "description": "Shipper's Load And Count  ( total contained piece count as provided by shipper)",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "stackable",
+      "description": "Stackable indicator for the pieces (boolean)",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "turnable",
+      "description": "Turnable indicator for the pieces (boolean)",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "upid",
+      "description": "Unique Piece Identifier (UPID) of the piece. Refer IATA Recommended Practice 1689",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "shippingMarks",
+      "description": "Shipping marks",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "textualHandlingInstructions",
+      "description": "Strings to provide free text handling instructions such as SSR and OSI",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

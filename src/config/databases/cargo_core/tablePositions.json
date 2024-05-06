@@ -29,11 +29,11 @@
   },
   "Common.Location": {
     "x": -1552,
-    "y": 1488
+    "y": 1200
   },
   "Common.Person": {
     "x": -1552,
-    "y": 880
+    "y": 704
   },
   "Core.Item": {
     "x": -704,
@@ -48,7 +48,7 @@
     "y": 1536
   },
   "Core.Shipment": {
-    "x": 1584,
+    "x": 1536,
     "y": 1264
   },
   "Core.TransportMeans": {
@@ -68,8 +68,8 @@
     "y": -128
   },
   "Embedded.Address": {
-    "x": -1216,
-    "y": 288
+    "x": 1264,
+    "y": 1760
   },
   "Embedded.Characteristic": {
     "x": -624,
@@ -80,35 +80,35 @@
     "y": -96
   },
   "Embedded.ContactDetail": {
-    "x": -1536,
-    "y": 544
+    "x": 992,
+    "y": 1760
   },
   "Embedded.CurrencyValue": {
-    "x": -1536,
-    "y": 288
+    "x": 544,
+    "y": 1760
   },
   "Embedded.Dimensions": {
-    "x": -1120,
-    "y": 656
+    "x": 752,
+    "y": 1904
   },
   "Embedded.OtherIdentifier": {
-    "x": -1536,
-    "y": 656
+    "x": 560,
+    "y": 1904
   },
   "Embedded.Party": {
-    "x": -1536,
-    "y": 400
+    "x": 752,
+    "y": 1760
   },
   "Embedded.Value": {
-    "x": -1200,
-    "y": 544
+    "x": 1488,
+    "y": 1760
   },
   "Embedded.WaybillLineItem": {
     "x": 1952,
     "y": -128
   },
   "Event.LogisticsEvent": {
-    "x": -1264,
+    "x": -1328,
     "y": -96
   },
   "Service.Booking": {

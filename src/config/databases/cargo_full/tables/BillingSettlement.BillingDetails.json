@@ -1,0 +1,178 @@
+{
+  "schema": "BillingSettlement",
+  "name": "BillingDetails",
+  "description": "In the context of CASS2. process; BillingDetails object is used to integrate specific Billing and Settlement data requirements",
+  "columns": [
+    {
+      "name": "detailedWaybill",
+      "description": "Reference to the Waybill",
+      "type": "Waybill",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "awbUseIndicator",
+      "description": "It must either contain the values of R for Revenue AWB; V for Void AWB or S for Service AWB.",
+      "type": "AWBUseIndicator",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "taxDueAgent",
+      "description": "Tax due Agent (VAT/GST on Commission). Total VAT/TAX amount payable by airline to agent",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "taxDueAirline",
+      "description": "Tax due Airline (as per AWB; or VAT/GST as per invoice). Total VAT/TAX amount payable by agent to airline",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "adjustments",
+      "description": "Information about Adjustments performed on the BillingDetails",
+      "type": "Adjustments",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "awbAcceptanceDate",
+      "description": "The Date AWB Acceptance should be the same as the Date AWB Delivery. (beginning of the process)",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "awbDeliveryDate",
+      "description": "The Date AWB Delivery is also used as the AWB Execution date which will determine which billing period it will be processed and billed in.",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "awbExecutionDate",
+      "description": "The AWB execution date determines which billing period the document will be processed and billed in.",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "commission",
+      "description": "The commission amount in favour of the Cargo Agent/Associate; applicable for the shipment concerned",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "commissionIndicator",
+      "description": "Indicates if commission is applied. Boolean",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "commissionPercentage",
+      "description": "The commission percentage in favour of the Cargo Agent/Associate; applicable for the shipment concerned",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "discount",
+      "description": "This is used as a discount to the ‚Äúofficial‚Äù transportation charge on AWB to arrive at actual selling price",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "exchangeRate",
+      "description": "The Rate at which the Air Waybill Amount has been multiplied to arrive at the amount of settlement.",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "nbCorrections",
+      "description": "Number of corrections to CASS records",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "vatIndicator",
+      "description": "Indicate if subject to VAT (boolean)",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

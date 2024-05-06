@@ -1,0 +1,25 @@
+{
+  "schema": "Embedded",
+  "name": "TemperatureInstructions",
+  "description": "TemperatureInstructions details",
+  "columns": [
+    {
+      "name": "maxTemperature",
+      "description": "Maximum temperature of the range",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "minTemperature",
+      "description": "Minimum temperature of the range",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

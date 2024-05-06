@@ -1,0 +1,43 @@
+{
+  "schema": "Embedded",
+  "name": "RegulatedEntity",
+  "description": "Regulated Entity - Regulated Entity - Regulated Entity",
+  "columns": [
+    {
+      "name": "owningOrganization",
+      "description": "Reference to the Organization for which the RegulatedEntity information is valid - Reference to the Organization for which the RegulatedEntity information is valid - Reference to the Organization for which the RegulatedEntity information is valid",
+      "type": "Organization",
+      "schemaType": "Abstract",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Carrier Company PublicAuthority"
+    },
+    {
+      "name": "regulatedEntityCategory",
+      "description": "Category code of the Regulated Entity",
+      "type": "RegulatedEntityCategoryCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "regulatedEntityExpiryDate",
+      "description": "Expiry date 4 digits month/year",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "regulatedEntityIdentifier",
+      "description": "Regulated entity identifier as per IATA e-CSD/CSD Resolution 65",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

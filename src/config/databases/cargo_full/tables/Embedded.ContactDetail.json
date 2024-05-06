@@ -1,0 +1,25 @@
+{
+  "schema": "Embedded",
+  "name": "ContactDetail",
+  "description": "Contact details",
+  "columns": [
+    {
+      "name": "contactDetailType",
+      "description": "Type of the contact details; e.g. Phone number; Mail address",
+      "type": "ContactDetailType",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "textualValue",
+      "description": "Textual value filled on use context (eg. characteristic colour; contactDetail mail adress; etc.)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

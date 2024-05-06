@@ -1,0 +1,169 @@
+{
+  "schema": "Action",
+  "name": "Loading",
+  "description": "Action to describe onloading or offloading TransportMeans",
+  "columns": [
+    {
+      "name": "onTransportMeans",
+      "description": "Reference to the TransportMeans that is being onloaded or offloaded",
+      "type": "TransportMeans",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "performedAt",
+      "description": "Reference to the Location the Action was performed at",
+      "type": "Location",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "loadedMaterials",
+      "description": "References to Materials onloaded or offloaded",
+      "type": "LoadingMaterial",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "loadedPieces",
+      "description": "References to Pieces onloaded or offloaded - References to Pieces onloaded or offloaded",
+      "type": "Piece",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "PieceLiveAnimals PieceDg"
+    },
+    {
+      "name": "loadedUnits",
+      "description": "References to LoadingUnits onloaded or offloaded",
+      "type": "LoadingUnit",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "ULD"
+    },
+    {
+      "name": "loadingType",
+      "description": "Enum stating whether the LoadingAction describes onloading or offloading - Enum stating whether the LoadingAction describes onloading or offloading",
+      "type": "LoadingType",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "LoadingType"
+    },
+    {
+      "name": "actionTimeType",
+      "description": "Enum stating the type of the Action - Enum stating the type of the Action",
+      "type": "ActionTimeType",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "ActionTimeType"
+    },
+    {
+      "name": "servedActivity",
+      "description": "Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for",
+      "type": "LogisticsActivity",
+      "schemaType": "Abstract",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "UnitComposition TransportMovement Storage"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "loadingPositionIdentifier",
+      "description": "Short text stating the loading position in the TransportMeans",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "Actor",
+      "schemaType": "Abstract",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Person NonHumanActor"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "actionEndTime",
+      "description": "DateTime holding the end time of the Action",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "actionStartTime",
+      "description": "DateTime holding the start time of the Action",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

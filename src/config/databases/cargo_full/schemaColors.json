@@ -1,17 +1,13 @@
 {
   "DEFAULT": "#91C4F2",
-  "Enum": "#91C4F2",
-  "Embedded": "#91C4F2",
-  "Abstract": "#91C4F2",
-  "Common": "#91C4F2",
-  "BillingSettlement": "#91C4F2",
-  "Service": "#91C4F2",
-  "Distribution": "#91C4F2",
+  "Embedded": "#C1C7C9",
   "Core": "#91C4F2",
-  "Action": "#91C4F2",
-  "Activity": "#91C4F2",
-  "DG": "#91C4F2",
-  "LiveAnimals": "#91C4F2",
-  "Event": "#91C4F2",
-  "CodeList": "#91C4F2"
+  "Abstract": "#F6BDD1",
+  "Service": "#FFD791",
+  "Common": "#CBAACB",
+  "Activity": "#83CBB7",
+  "Event": "#F6BDD1",
+  "Action": "#839AF1",
+  "BillingSettlement": "#FFD791",
+  "Distribution": "#FFD791"
 }

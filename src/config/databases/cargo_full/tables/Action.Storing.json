@@ -1,0 +1,142 @@
+{
+  "schema": "Action",
+  "name": "Storing",
+  "description": "Action to describe store-in or store-out",
+  "columns": [
+    {
+      "name": "performedAt",
+      "description": "Reference to the Location the Action was performed at",
+      "type": "Location",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "actionTimeType",
+      "description": "Enum stating the type of the Action - Enum stating the type of the Action",
+      "type": "ActionTimeType",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "ActionTimeType"
+    },
+    {
+      "name": "servedActivity",
+      "description": "Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for",
+      "type": "LogisticsActivity",
+      "schemaType": "Abstract",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "UnitComposition TransportMovement Storage"
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "storedObjects",
+      "description": "Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out",
+      "type": "PhysicalLogisticsObject",
+      "schemaType": "Abstract",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Piece Location IotDevice LoadingMaterial Sensor PieceLiveAnimals Item LoadingUnit TransportMeans PieceDg ItemDg ULD"
+    },
+    {
+      "name": "storingType",
+      "description": "Enum stating whether the StoringAction describes the store-in or the store-out - Enum stating whether the StoringAction describes the store-in or the store-out",
+      "type": "StoringType",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "StoringType"
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "Actor",
+      "schemaType": "Abstract",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Person NonHumanActor"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "actionEndTime",
+      "description": "DateTime holding the end time of the Action",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "actionStartTime",
+      "description": "DateTime holding the start time of the Action",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "storagePlaceIdentifier",
+      "description": "Short text stating the exact place of storage",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}
