@@ -1,19 +1,13 @@
 {
   "schema": "Embedded",
   "name": "Party",
-  "description": "Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+  "description": "Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
   "columns": [
     {
-      "name": "otherIdentifiers",
-      "description": "Details about any other identifier; depending on the context of use",
-      "type": "OtherIdentifier",
-      "array": true,
-      "codelist": false
-    },
-    {
       "name": "partyDetails",
-      "description": "Reference to the Agent described by the role of the Party",
+      "description": "Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party",
       "type": "LogisticsAgent",
+      "schemaType": "Abstract",
       "array": false,
       "codelist": false
     },
@@ -21,8 +15,17 @@
       "name": "partyRole",
       "description": "Role fo the Company in the context. Can refer to Code List 1.36 in the CXML Toolkit",
       "type": "ParticipantIdentifier",
+      "schemaType": "CodeList",
       "array": false,
-      "codelist": true
+      "codelist": false
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false
     }
   ]
 }

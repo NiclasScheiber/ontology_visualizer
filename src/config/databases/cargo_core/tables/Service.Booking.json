@@ -7,20 +7,23 @@
       "name": "bookingRequest",
       "description": "Reference to the Booking Request",
       "type": "BookingRequest",
+      "schemaType": "Distribution",
       "array": false,
       "codelist": false
-    },
-    {
-      "name": "bookingStatus",
-      "description": "Status of the Booking",
-      "type": "BookingStatus",
-      "array": false,
-      "codelist": true
     },
     {
       "name": "issuedForWaybill",
       "description": "Reference to the Waybill object",
       "type": "Waybill",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "bookingStatus",
+      "description": "Status of the Booking - Status of the Booking",
+      "type": "BookingStatus",
+      "schemaType": "Enum",
       "array": false,
       "codelist": false
     },
@@ -28,34 +31,15 @@
       "name": "updateBookingOptionRequests",
       "description": "References to BookingOptionRequests that request to update the Booking",
       "type": "BookingOptionRequest",
+      "schemaType": "Distribution",
       "array": true,
-      "codelist": false
-    },
-    {
-      "name": "waybillNumber",
-      "description": "House or Master Waybill unique identifier",
-      "type": "string",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "waybillPrefix",
-      "description": "Prefix used for the Waybill Number. Refer to IATA Airlines Codes",
-      "type": "string",
-      "array": false,
       "codelist": false
     },
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "events",
-      "description": "Events object",
-      "type": "LogisticsEvent",
+      "schemaType": "Action",
       "array": true,
       "codelist": false
     },
@@ -63,6 +47,31 @@
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "waybillNumber",
+      "description": "House or Master Waybill unique identifier",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "waybillPrefix",
+      "description": "Prefix used for the Waybill Number. Refer to IATA Airlines Codes",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
       "array": true,
       "codelist": false
     },
@@ -70,6 +79,7 @@
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -77,6 +87,7 @@
       "name": "activitySequences",
       "description": "Information about the Activities that are part of the Service and their sequence",
       "type": "ActivitySequence",
+      "schemaType": "Embedded",
       "array": true,
       "codelist": false
     },
@@ -84,13 +95,15 @@
       "name": "contactDetails",
       "description": "Information about contactDetails",
       "type": "ContactDetail",
+      "schemaType": "Embedded",
       "array": true,
       "codelist": false
     },
     {
       "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
+      "schemaType": "Abstract",
       "array": true,
       "codelist": false
     }

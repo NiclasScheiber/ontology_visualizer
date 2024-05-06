@@ -1,26 +1,13 @@
 {
   "schema": "Core",
   "name": "Item",
-  "description": "Item details",
+  "description": "Item details - Item details",
   "columns": [
     {
-      "name": "dimensions",
-      "description": "Dimensions details",
-      "type": "Dimensions",
-      "array": false,
-      "codelist": false
-    },
-    {
       "name": "inPiece",
-      "description": "Reference to the Piece this Item or Piece is contained in",
+      "description": "Reference to the Piece this Item or Piece is contained in - Reference to the Piece this Item or Piece is contained in",
       "type": "Piece",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "itemQuantity",
-      "description": "Quantity of the item when applicable; with associated units of measure",
-      "type": "Value",
+      "schemaType": "Core",
       "array": false,
       "codelist": false
     },
@@ -28,20 +15,31 @@
       "name": "ofProduct",
       "description": "Reference to the Product describing the Item",
       "type": "Product",
+      "schemaType": "Core",
       "array": false,
       "codelist": false
     },
     {
-      "name": "otherIdentifiers",
-      "description": "Details about any other identifier; depending on the context of use",
-      "type": "OtherIdentifier",
-      "array": true,
+      "name": "dimensions",
+      "description": "Dimensions details",
+      "type": "Dimensions",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "itemQuantity",
+      "description": "Quantity of the item when applicable; with associated units of measure",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
       "codelist": false
     },
     {
       "name": "productionCountry",
       "description": "Production country details. Refer ISO 3166-2",
       "type": "CodeListElement",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -49,6 +47,7 @@
       "name": "targetCountry",
       "description": "Item target country. Refer ISO 3166-2",
       "type": "CodeListElement",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -56,6 +55,7 @@
       "name": "unitPrice",
       "description": "Product price per unit in the base",
       "type": "CurrencyValue",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -63,41 +63,7 @@
       "name": "weight",
       "description": "Weight of the item",
       "type": "Value",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "batchNumber",
-      "description": "Production batch number / reference",
-      "type": "string",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "expiryDate",
-      "description": "Product expiry date - e.g. for perishables goods or goods with programmed obsolescence",
-      "type": "dateTime",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "lotNumber",
-      "description": "Production lot number / reference",
-      "type": "string",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "productionDate",
-      "description": "Production date",
-      "type": "dateTime",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "quantityForUnitPrice",
-      "description": "Product quantity for unit price - e.g. 12 (eggs for one USD 1)",
-      "type": "double",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -105,13 +71,7 @@
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "events",
-      "description": "Events object",
-      "type": "LogisticsEvent",
+      "schemaType": "Action",
       "array": true,
       "codelist": false
     },
@@ -119,6 +79,71 @@
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "batchNumber",
+      "description": "Production batch number / reference",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "expiryDate",
+      "description": "Product expiry date - e.g. for perishables goods or goods with programmed obsolescence",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "lotNumber",
+      "description": "Production lot number / reference",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "productionDate",
+      "description": "Production date",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "quantityForUnitPrice",
+      "description": "Product quantity for unit price - e.g. 12 (eggs for one USD 1)",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
       "array": true,
       "codelist": false
     },
@@ -126,20 +151,15 @@
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
     {
-      "name": "attachedIotDevices",
-      "description": "References to all connected IotDevices",
-      "type": "IotDevice",
-      "array": true,
-      "codelist": false
-    },
-    {
       "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in",
+      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
       "type": "LogisticsAction",
+      "schemaType": "Abstract",
       "array": true,
       "codelist": false
     }

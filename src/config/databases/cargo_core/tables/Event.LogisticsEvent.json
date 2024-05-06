@@ -7,13 +7,15 @@
       "name": "eventCode",
       "description": "Movement or milestone code. Can hold a named individual of the StatusCode core code list (corresponding to cXML code list 1.18); but can also be referring to different code lists.",
       "type": "CodeListElement",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
     {
       "name": "eventFor",
-      "description": "Refers to the URI of the linked object(s)",
+      "description": "Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s)",
       "type": "LogisticsObject",
+      "schemaType": "Abstract",
       "array": false,
       "codelist": false
     },
@@ -21,41 +23,47 @@
       "name": "eventLocation",
       "description": "Location of event",
       "type": "Location",
+      "schemaType": "Common",
       "array": false,
       "codelist": false
     },
     {
       "name": "eventTimeType",
-      "description": "Indicates type of event e.g.  Scheduled; Estimated; Actual",
+      "description": "Indicates type of event e.g.  Scheduled; Estimated; Actual - Indicates type of event e.g.  Scheduled; Estimated; Actual",
       "type": "EventTimeType",
+      "schemaType": "Enum",
       "array": false,
-      "codelist": true
-    },
-    {
-      "name": "externalReferences",
-      "description": "References to all associated ExternalReferences",
-      "type": "ExternalReference",
-      "array": true,
       "codelist": false
     },
     {
       "name": "recordingActor",
-      "description": "Reference to the Actor recording the LogisticsEvent",
+      "description": "Reference to the Actor recording the LogisticsEvent - Reference to the Actor recording the LogisticsEvent",
       "type": "Actor",
+      "schemaType": "Abstract",
       "array": false,
       "codelist": false
     },
     {
       "name": "recordingOrganization",
-      "description": "Organization recording the LogisticsEvent",
+      "description": "Organization recording the LogisticsEvent - Organization recording the LogisticsEvent - Organization recording the LogisticsEvent",
       "type": "Organization",
+      "schemaType": "Abstract",
       "array": false,
+      "codelist": false
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
       "codelist": false
     },
     {
       "name": "creationDate",
       "description": "DateTime at which the LogisticsEvent was posted",
       "type": "dateTime",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -63,6 +71,7 @@
       "name": "eventDate",
       "description": "Date and time of the event",
       "type": "dateTime",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -70,6 +79,7 @@
       "name": "eventName",
       "description": "If no EventCode provided; event name - e.g. Security clearance",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -77,6 +87,7 @@
       "name": "partialEventIndicator",
       "description": "Boolean indicating that the LogisticsEvent is only applicable for parts of the LogisticObject it was recorded for; for example for some Pieces of a Shipment",
       "type": "boolean",
+      "schemaType": "",
       "array": false,
       "codelist": false
     }

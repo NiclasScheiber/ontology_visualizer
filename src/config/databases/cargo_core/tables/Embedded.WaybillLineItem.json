@@ -7,6 +7,7 @@
       "name": "chargeableWeightForRate",
       "description": "Chargeable weight for which the rate description details apply",
       "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -14,6 +15,7 @@
       "name": "dimensionsForRate",
       "description": "Information about the Dimensions used for the rate descbribed by the Line Item",
       "type": "Dimensions",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -21,6 +23,7 @@
       "name": "grossWeightForRate",
       "description": "Gross weight for which the rate description details apply",
       "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -28,6 +31,7 @@
       "name": "hsCodeForRate",
       "description": "Harmonized Commodity code; refer to hsType used. 6 minimum digits are expected.",
       "type": "CodeListElement",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -35,6 +39,7 @@
       "name": "productionCountryForRate",
       "description": "Production country for the rate described by this Line Item. Refer ISO 3166-2",
       "type": "CodeListElement",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -42,6 +47,7 @@
       "name": "rateCharge",
       "description": "TACT Rate for rate description details",
       "type": "CurrencyValue",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -49,20 +55,23 @@
       "name": "rateClassCode",
       "description": "Rate class code e.g. Q. Refer to CXML Code List 1.4 Rate Class Codes",
       "type": "RateClassCode",
+      "schemaType": "CodeList",
       "array": false,
-      "codelist": true
+      "codelist": false
     },
     {
       "name": "rateClassCodeBasic",
       "description": "Rate Surcharge/Reduction - Basic Rate Class Code",
       "type": "BasicRateClassCode",
+      "schemaType": "CodeList",
       "array": false,
-      "codelist": true
+      "codelist": false
     },
     {
       "name": "ratePercentage",
       "description": "Rate Surcharge/Reduction - Percebtage of  red. / surcharge",
       "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -70,6 +79,7 @@
       "name": "rcp",
       "description": "IATA 3-letter city code of the rate combination point as defined in TACT",
       "type": "CodeListElement",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -77,6 +87,7 @@
       "name": "uldOwnerCode",
       "description": "Information about the ULD owner code described in a ULD specific piece or used for a rate in a Line Item",
       "type": "CodeListElement",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -84,6 +95,7 @@
       "name": "uldRateClassType",
       "description": "ULD Rate information - ULD Rate Class Type",
       "type": "CodeListElement",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -91,6 +103,7 @@
       "name": "uldTareWeightForRate",
       "description": "Information about the ULD tare weight used for the rate descbribed by the Line Item",
       "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -98,6 +111,7 @@
       "name": "uldType",
       "description": "Type of ULD as per IATA ULD Regulation",
       "type": "CodeListElement",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -105,6 +119,7 @@
       "name": "volumetricWeightForRate",
       "description": "Volumetric weight used for the rate described by this line item",
       "type": "VolumetricWeight",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -112,6 +127,7 @@
       "name": "commodityItemNumberForRate",
       "description": "Indicates the specific commodity on which the rate class code is applied",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -119,6 +135,7 @@
       "name": "goodsDescriptionForRate",
       "description": "Goods description used in the rate described by the Line Item",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -126,6 +143,7 @@
       "name": "lineItemNumber",
       "description": "Number of the line item",
       "type": "integer",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -133,6 +151,7 @@
       "name": "pieceCountForRate",
       "description": "Number of pieces for which the rate description details apply",
       "type": "integer",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -140,6 +159,7 @@
       "name": "slacForRate",
       "description": "Slac used for the rate described by the Line item",
       "type": "integer",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -147,6 +167,7 @@
       "name": "uldSerialNumber",
       "description": "Serial number that allows to uniquely identify the ULD",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     }

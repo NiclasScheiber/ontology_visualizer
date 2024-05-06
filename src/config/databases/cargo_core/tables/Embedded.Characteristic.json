@@ -7,6 +7,7 @@
       "name": "characteristicType",
       "description": "Product characteristics code - e.g. CLR - Color. Not restricted to a list.",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -14,6 +15,7 @@
       "name": "textualValue",
       "description": "Textual value filled on use context (eg. characteristic colour; contactDetail mail adress; etc.)",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     }

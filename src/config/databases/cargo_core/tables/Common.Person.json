@@ -1,12 +1,13 @@
 {
   "schema": "Common",
   "name": "Person",
-  "description": "Person details",
+  "description": "Person details - Person details - Person details",
   "columns": [
     {
       "name": "associatedOrganization",
-      "description": "Reference to the Organization the Actor is associated with",
+      "description": "Reference to the Organization the Actor is associated with - Reference to the Organization the Actor is associated with - Reference to the Organization the Actor is associated with",
       "type": "Organization",
+      "schemaType": "Abstract",
       "array": false,
       "codelist": false
     },
@@ -14,13 +15,7 @@
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "events",
-      "description": "Events object",
-      "type": "LogisticsEvent",
+      "schemaType": "Action",
       "array": true,
       "codelist": false
     },
@@ -28,20 +23,7 @@
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "skeletonIndicator",
-      "description": "Indicator whether a logistics object is a skeleton object",
-      "type": "boolean",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "contactDetails",
-      "description": "Information about contactDetails",
-      "type": "ContactDetail",
+      "schemaType": "Common",
       "array": true,
       "codelist": false
     },
@@ -49,13 +31,39 @@
       "name": "contactRole",
       "description": "Contact type - e.g. Emergency contact; Customs contact; Customer contact",
       "type": "ContactRole",
+      "schemaType": "Enum",
       "array": false,
-      "codelist": true
+      "codelist": false
     },
     {
       "name": "documents",
       "description": "Linked documents to the person; e.g. driver's license; ID; etc.",
       "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
+      "schemaType": "Embedded",
       "array": true,
       "codelist": false
     },
@@ -63,6 +71,7 @@
       "name": "department",
       "description": "Department / Division / Unit",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -70,6 +79,7 @@
       "name": "employeeId",
       "description": "Employee ID",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -77,6 +87,7 @@
       "name": "firstName",
       "description": "First name / given name",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -84,6 +95,7 @@
       "name": "jobTitle",
       "description": "Job title / position",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -91,6 +103,7 @@
       "name": "lastName",
       "description": "Last name / family name / surname",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -98,6 +111,7 @@
       "name": "middleName",
       "description": "Middle name/ other name",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -105,6 +119,7 @@
       "name": "salutation",
       "description": "Salutation ",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     }

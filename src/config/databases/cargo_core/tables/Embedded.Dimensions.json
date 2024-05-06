@@ -7,6 +7,7 @@
       "name": "height",
       "description": "Height",
       "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -14,6 +15,7 @@
       "name": "length",
       "description": "Length",
       "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -21,6 +23,7 @@
       "name": "volume",
       "description": "Volume",
       "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -28,6 +31,7 @@
       "name": "width",
       "description": "Width",
       "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     }

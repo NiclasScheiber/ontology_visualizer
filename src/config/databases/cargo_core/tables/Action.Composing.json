@@ -4,86 +4,58 @@
   "description": "Action to describe build-up or break-down of LoadingUnits",
   "columns": [
     {
-      "name": "composedMaterials",
-      "description": "References to the Materials being built-up or broken-down",
-      "type": "LoadingMaterial",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "composedPieces",
-      "description": "References to the Pieces being built-up or broken-down",
-      "type": "Piece",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "compositionType",
-      "description": "Enum stating whether the CompositionAction describes build-up or break-down",
-      "type": "CompositionType",
-      "array": false,
-      "codelist": true
-    },
-    {
       "name": "loadingUnit",
       "description": "Reference to the LoadingUnit composed in the Unit Composition or referenced in Composing actions",
       "type": "LoadingUnit",
+      "schemaType": "Core",
       "array": false,
-      "codelist": false
-    },
-    {
-      "name": "actionTimeType",
-      "description": "Enum stating the type of the Action",
-      "type": "ActionTimeType",
-      "array": false,
-      "codelist": true
-    },
-    {
-      "name": "contactDetails",
-      "description": "Information about contactDetails",
-      "type": "ContactDetail",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
-      "type": "Actor",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "otherIdentifiers",
-      "description": "Details about any other identifier; depending on the context of use",
-      "type": "OtherIdentifier",
-      "array": true,
       "codelist": false
     },
     {
       "name": "performedAt",
       "description": "Reference to the Location the Action was performed at",
       "type": "Location",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "composedMaterials",
+      "description": "References to the Materials being built-up or broken-down",
+      "type": "LoadingMaterial",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "composedPieces",
+      "description": "References to the Pieces being built-up or broken-down - References to the Pieces being built-up or broken-down",
+      "type": "Piece",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "compositionType",
+      "description": "Enum stating whether the CompositionAction describes build-up or break-down - Enum stating whether the CompositionAction describes build-up or break-down",
+      "type": "CompositionType",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "actionTimeType",
+      "description": "Enum stating the type of the Action - Enum stating the type of the Action",
+      "type": "ActionTimeType",
+      "schemaType": "Enum",
       "array": false,
       "codelist": false
     },
     {
       "name": "servedActivity",
-      "description": "Reference to the Activity the Action was performed for",
+      "description": "Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for",
       "type": "LogisticsActivity",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "actionEndTime",
-      "description": "DateTime holding the end time of the Action",
-      "type": "dateTime",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "actionStartTime",
-      "description": "DateTime holding the start time of the Action",
-      "type": "dateTime",
+      "schemaType": "Abstract",
       "array": false,
       "codelist": false
     },
@@ -91,13 +63,7 @@
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "events",
-      "description": "Events object",
-      "type": "LogisticsEvent",
+      "schemaType": "Action",
       "array": true,
       "codelist": false
     },
@@ -105,6 +71,55 @@
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "Actor",
+      "schemaType": "Abstract",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "actionEndTime",
+      "description": "DateTime holding the end time of the Action",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "actionStartTime",
+      "description": "DateTime holding the start time of the Action",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
       "array": true,
       "codelist": false
     },
@@ -112,6 +127,7 @@
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
+      "schemaType": "",
       "array": false,
       "codelist": false
     }

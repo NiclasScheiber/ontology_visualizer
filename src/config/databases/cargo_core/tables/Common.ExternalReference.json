@@ -7,6 +7,7 @@
       "name": "createdAtLocation",
       "description": "Location of the document; e.g. location where the document was emitted",
       "type": "Location",
+      "schemaType": "Common",
       "array": false,
       "codelist": false
     },
@@ -14,83 +15,23 @@
       "name": "originator",
       "description": "Document originator details and contacts",
       "type": "Company",
+      "schemaType": "Common",
       "array": false,
       "codelist": false
     },
     {
       "name": "referenceForObjects",
-      "description": "References to the LogisticsObjects referring to this external reference",
+      "description": "References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference - References to the LogisticsObjects referring to this external reference",
       "type": "LogisticsObject",
+      "schemaType": "Abstract",
       "array": true,
-      "codelist": false
-    },
-    {
-      "name": "checksum",
-      "description": "Checksum of the document to validate its integrity",
-      "type": "string",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "documentIdentifier",
-      "description": "Unique document identifier",
-      "type": "string",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "documentLink",
-      "description": "Link to the document; e.g. URL of the file where it is hosted",
-      "type": "string",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "documentName",
-      "description": "If no DocumentType provided; name of the referenced document ",
-      "type": "string",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "documentType",
-      "description": "Type of the referenced document . Can refer UNEDIFACT 11  e.g. 74 - Air Waybill; but not limited to",
-      "type": "string",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "documentVersion",
-      "description": "Document version number",
-      "type": "string",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "validFrom",
-      "description": "Validity start date based on usage context",
-      "type": "dateTime",
-      "array": false,
-      "codelist": false
-    },
-    {
-      "name": "validUntil",
-      "description": "Validity end date (date of expiry) based on usage context",
-      "type": "dateTime",
-      "array": false,
       "codelist": false
     },
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
       "type": "Check",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "events",
-      "description": "Events object",
-      "type": "LogisticsEvent",
+      "schemaType": "Action",
       "array": true,
       "codelist": false
     },
@@ -98,6 +39,79 @@
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "checksum",
+      "description": "Checksum of the document to validate its integrity",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "documentIdentifier",
+      "description": "Unique document identifier",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "documentLink",
+      "description": "Link to the document; e.g. URL of the file where it is hosted",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "documentName",
+      "description": "If no DocumentType provided; name of the referenced document ",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "documentType",
+      "description": "Type of the referenced document . Can refer UNEDIFACT 11  e.g. 74 - Air Waybill; but not limited to",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "documentVersion",
+      "description": "Document version number",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "validFrom",
+      "description": "Validity start date based on usage context",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "validUntil",
+      "description": "Validity end date (date of expiry) based on usage context",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
       "array": true,
       "codelist": false
     },
@@ -105,6 +119,7 @@
       "name": "skeletonIndicator",
       "description": "Indicator whether a logistics object is a skeleton object",
       "type": "boolean",
+      "schemaType": "",
       "array": false,
       "codelist": false
     }

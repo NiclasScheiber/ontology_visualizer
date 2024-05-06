@@ -4,16 +4,18 @@
   "description": "Transport means details",
   "columns": [
     {
-      "name": "checks",
-      "description": "References to the CheckActions performed on the object",
-      "type": "Check",
-      "array": true,
+      "name": "operatedTransportMovement",
+      "description": "Transport Movement on which the Transport Means is used",
+      "type": "TransportMovement",
+      "schemaType": "Activity",
+      "array": false,
       "codelist": false
     },
     {
-      "name": "events",
-      "description": "Events object",
-      "type": "LogisticsEvent",
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
       "array": true,
       "codelist": false
     },
@@ -21,41 +23,23 @@
       "name": "externalReferences",
       "description": "References to all associated ExternalReferences",
       "type": "ExternalReference",
+      "schemaType": "Common",
       "array": true,
-      "codelist": false
-    },
-    {
-      "name": "skeletonIndicator",
-      "description": "Indicator whether a logistics object is a skeleton object",
-      "type": "boolean",
-      "array": false,
       "codelist": false
     },
     {
       "name": "attachedIotDevices",
       "description": "References to all connected IotDevices",
       "type": "IotDevice",
+      "schemaType": "Common",
       "array": true,
-      "codelist": false
-    },
-    {
-      "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in",
-      "type": "LogisticsAction",
-      "array": true,
-      "codelist": false
-    },
-    {
-      "name": "operatedTransportMovement",
-      "description": "Transport Movement on which the Transport Means is used",
-      "type": "TransportMovement",
-      "array": false,
       "codelist": false
     },
     {
       "name": "transportOrganization",
-      "description": "Company operating the transport means",
+      "description": "Company operating the transport means - Company operating the transport means - Company operating the transport means",
       "type": "Organization",
+      "schemaType": "Abstract",
       "array": false,
       "codelist": false
     },
@@ -63,6 +47,7 @@
       "name": "typicalCo2Coefficient",
       "description": "Required for some CO2 calculations",
       "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -70,6 +55,7 @@
       "name": "typicalFuelConsumption",
       "description": "Typical fuel comsumption (e.g. 2 L / 1 nm)",
       "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
       "codelist": false
     },
@@ -77,13 +63,39 @@
       "name": "vehicleType",
       "description": "Vehicle or container type. Refer UNECE28; e.g. 4.. - Aircraft; type unknown.For Air refer to IATA Standard Schedules Information Manua in section ATA/IATA Aircraft Types",
       "type": "CodeListElement",
+      "schemaType": "Embedded",
       "array": false,
+      "codelist": false
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "type": "LogisticsAction",
+      "schemaType": "Abstract",
+      "array": true,
       "codelist": false
     },
     {
       "name": "vehicleModel",
       "description": "Model or make of the vehicle (e.g. A33-3)",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -91,6 +103,7 @@
       "name": "vehicleRegistration",
       "description": "Vehicle identification - e.g. aircraft registration number",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     },
@@ -98,6 +111,7 @@
       "name": "vehicleSize",
       "description": "Size of the vehicle - free text",
       "type": "string",
+      "schemaType": "",
       "array": false,
       "codelist": false
     }

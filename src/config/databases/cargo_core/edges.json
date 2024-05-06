@@ -31,28 +31,7 @@
       "source": "Action.Composing",
       "sourceKey": "servedActivity",
       "target": "Activity.UnitComposition",
-      "targetKey": "checkActions",
-      "relation": "hasOne"
-    },
-    {
-      "source": "Action.Composing",
-      "sourceKey": "servedActivity",
-      "target": "Activity.UnitComposition",
       "targetKey": "compositionActions",
-      "relation": "hasOne"
-    },
-    {
-      "source": "Action.Composing",
-      "sourceKey": "servedActivity",
-      "target": "Activity.UnitComposition",
-      "targetKey": "loadingActions",
-      "relation": "hasOne"
-    },
-    {
-      "source": "Action.Composing",
-      "sourceKey": "servedActivity",
-      "target": "Activity.TransportMovement",
-      "targetKey": "loadingActions",
       "relation": "hasOne"
     },
     {
@@ -61,6 +40,13 @@
       "target": "Core.Piece",
       "targetKey": "involvedInActions",
       "relation": "hasMany"
+    },
+    {
+      "source": "Action.Composing",
+      "sourceKey": "servedActivity",
+      "target": "Activity.TransportMovement",
+      "targetKey": "",
+      "relation": "hasOne"
     },
     {
       "source": "Core.Item",
@@ -78,16 +64,23 @@
     },
     {
       "source": "Action.Loading",
-      "sourceKey": "loadedUnits",
-      "target": "Core.ULD",
+      "sourceKey": "servedActivity",
+      "target": "Activity.TransportMovement",
+      "targetKey": "loadingActions",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Action.Loading",
+      "sourceKey": "loadedPieces",
+      "target": "Core.Piece",
       "targetKey": "involvedInActions",
       "relation": "hasMany"
     },
     {
       "source": "Action.Loading",
       "sourceKey": "servedActivity",
-      "target": "Activity.TransportMovement",
-      "targetKey": "loadingActions",
+      "target": "Activity.UnitComposition",
+      "targetKey": "",
       "relation": "hasOne"
     },
     {
@@ -98,25 +91,18 @@
       "relation": "hasMany"
     },
     {
-      "source": "Action.Loading",
-      "sourceKey": "loadedPieces",
+      "source": "Core.Piece",
+      "sourceKey": "inPiece",
       "target": "Core.Piece",
-      "targetKey": "involvedInActions",
-      "relation": "hasMany"
+      "targetKey": "containedPieces",
+      "relation": "hasOne"
     },
     {
       "source": "Core.Piece",
-      "sourceKey": "involvedInActions",
-      "target": "Action.Composing",
-      "targetKey": "composedPieces",
-      "relation": "hasMany"
-    },
-    {
-      "source": "Core.Piece",
-      "sourceKey": "involvedInActions",
-      "target": "Action.Loading",
-      "targetKey": "loadedPieces",
-      "relation": "hasMany"
+      "sourceKey": "ofShipment",
+      "target": "Core.Shipment",
+      "targetKey": "pieces",
+      "relation": "hasOne"
     },
     {
       "source": "Core.Piece",
@@ -141,17 +127,17 @@
     },
     {
       "source": "Core.Piece",
-      "sourceKey": "inPiece",
-      "target": "Core.Piece",
-      "targetKey": "containedPieces",
-      "relation": "hasOne"
+      "sourceKey": "involvedInActions",
+      "target": "Action.Composing",
+      "targetKey": "composedPieces",
+      "relation": "hasMany"
     },
     {
       "source": "Core.Piece",
-      "sourceKey": "ofShipment",
-      "target": "Core.Shipment",
-      "targetKey": "pieces",
-      "relation": "hasOne"
+      "sourceKey": "involvedInActions",
+      "target": "Action.Loading",
+      "targetKey": "loadedPieces",
+      "relation": "hasMany"
     },
     {
       "source": "Core.Product",
@@ -176,17 +162,17 @@
     },
     {
       "source": "Core.Shipment",
-      "sourceKey": "pieces",
-      "target": "Core.Piece",
-      "targetKey": "ofShipment",
-      "relation": "hasMany"
-    },
-    {
-      "source": "Core.Shipment",
       "sourceKey": "waybill",
       "target": "Core.Waybill",
       "targetKey": "shipment",
       "relation": "hasOne"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "pieces",
+      "target": "Core.Piece",
+      "targetKey": "ofShipment",
+      "relation": "hasMany"
     },
     {
       "source": "Core.TransportMeans",
@@ -204,16 +190,16 @@
     },
     {
       "source": "Activity.TransportMovement",
-      "sourceKey": "servedServices",
-      "target": "Service.Booking",
-      "targetKey": "",
+      "sourceKey": "loadingActions",
+      "target": "Action.Loading",
+      "targetKey": "servedActivity",
       "relation": "hasMany"
     },
     {
-      "source": "Core.ULD",
-      "sourceKey": "involvedInActions",
-      "target": "Action.Loading",
-      "targetKey": "loadedUnits",
+      "source": "Activity.TransportMovement",
+      "sourceKey": "servedServices",
+      "target": "Service.Booking",
+      "targetKey": "",
       "relation": "hasMany"
     },
     {
@@ -222,6 +208,20 @@
       "target": "Activity.UnitComposition",
       "targetKey": "loadingUnit",
       "relation": "hasOne"
+    },
+    {
+      "source": "Core.ULD",
+      "sourceKey": "involvedInActions",
+      "target": "Action.Composing",
+      "targetKey": "loadingUnit",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.ULD",
+      "sourceKey": "involvedInActions",
+      "target": "Action.Loading",
+      "targetKey": "loadedUnits",
+      "relation": "hasMany"
     },
     {
       "source": "Activity.UnitComposition",
@@ -246,13 +246,6 @@
     },
     {
       "source": "Core.Waybill",
-      "sourceKey": "houseWaybills",
-      "target": "Core.Waybill",
-      "targetKey": "masterWaybill",
-      "relation": "hasMany"
-    },
-    {
-      "source": "Core.Waybill",
       "sourceKey": "masterWaybill",
       "target": "Core.Waybill",
       "targetKey": "houseWaybills",
@@ -271,6 +264,13 @@
       "target": "Core.Shipment",
       "targetKey": "waybill",
       "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "houseWaybills",
+      "target": "Core.Waybill",
+      "targetKey": "masterWaybill",
+      "relation": "hasMany"
     },
     {
       "source": "Core.Waybill",

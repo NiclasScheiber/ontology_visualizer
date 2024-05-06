@@ -29,19 +29,11 @@
   },
   "Common.Location": {
     "x": -1552,
-    "y": 1200
-  },
-  "Common.NonHumanActor": {
-    "x": -1552,
-    "y": 512
+    "y": 1488
   },
   "Common.Person": {
     "x": -1552,
-    "y": 704
-  },
-  "Common.PublicAuthority": {
-    "x": -1264,
-    "y": 512
+    "y": 880
   },
   "Core.Item": {
     "x": -704,
@@ -52,23 +44,23 @@
     "y": 1136
   },
   "Core.Product": {
-    "x": -368,
+    "x": -400,
     "y": 1536
   },
   "Core.Shipment": {
-    "x": 1536,
+    "x": 1584,
     "y": 1264
   },
   "Core.TransportMeans": {
-    "x": 1088,
+    "x": 1136,
     "y": 320
   },
   "Core.ULD": {
-    "x": 64,
+    "x": 80,
     "y": 320
   },
   "Core.Waybill": {
-    "x": 1536,
+    "x": 1568,
     "y": -128
   },
   "Embedded.ActivitySequence": {
@@ -76,8 +68,8 @@
     "y": -128
   },
   "Embedded.Address": {
-    "x": 1264,
-    "y": 1760
+    "x": -1216,
+    "y": 288
   },
   "Embedded.Characteristic": {
     "x": -624,
@@ -88,35 +80,35 @@
     "y": -96
   },
   "Embedded.ContactDetail": {
-    "x": 992,
-    "y": 1760
+    "x": -1536,
+    "y": 544
   },
   "Embedded.CurrencyValue": {
-    "x": 544,
-    "y": 1760
+    "x": -1536,
+    "y": 288
   },
   "Embedded.Dimensions": {
-    "x": 752,
-    "y": 1904
+    "x": -1120,
+    "y": 656
   },
   "Embedded.OtherIdentifier": {
-    "x": 560,
-    "y": 1904
+    "x": -1536,
+    "y": 656
   },
   "Embedded.Party": {
-    "x": 752,
-    "y": 1760
+    "x": -1536,
+    "y": 400
   },
   "Embedded.Value": {
-    "x": 1488,
-    "y": 1760
+    "x": -1200,
+    "y": 544
   },
   "Embedded.WaybillLineItem": {
-    "x": 1904,
+    "x": 1952,
     "y": -128
   },
   "Event.LogisticsEvent": {
-    "x": -1328,
+    "x": -1264,
     "y": -96
   },
   "Service.Booking": {
