@@ -4,6 +4,7 @@ export interface TableColumnConfig {
   type: string;
   schemaType? : string;
   handleType?: string;
+  subTypes?: string;
   array?: boolean;
   codelist?: boolean;
   key?: boolean;
