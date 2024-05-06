@@ -44,8 +44,8 @@
     "y": 512
   },
   "Action.Storing": {
-    "x": -1408,
-    "y": 2560
+    "x": -1360,
+    "y": 2512
   },
   "Activity.Storage": {
     "x": -1696,
@@ -124,12 +124,12 @@
     "y": 112
   },
   "Core.CustomsInformation": {
-    "x": 592,
-    "y": 2224
+    "x": 640,
+    "y": 1536
   },
   "Core.Insurance": {
-    "x": 1600,
-    "y": 1760
+    "x": 1584,
+    "y": 1008
   },
   "Core.Item": {
     "x": -704,
@@ -140,8 +140,8 @@
     "y": -16
   },
   "Core.PackagingType": {
-    "x": 592,
-    "y": 1408
+    "x": 640,
+    "y": 1280
   },
   "Core.Piece": {
     "x": 64,
@@ -152,8 +152,8 @@
     "y": 1536
   },
   "Core.SecurityDeclaration": {
-    "x": 592,
-    "y": 1696
+    "x": 624,
+    "y": 1920
   },
   "Core.Shipment": {
     "x": 1584,
@@ -161,7 +161,7 @@
   },
   "Core.TransportMeans": {
     "x": 1136,
-    "y": 320
+    "y": 176
   },
   "Core.ULD": {
     "x": 80,
@@ -224,8 +224,8 @@
     "y": -272
   },
   "Embedded.Characteristic": {
-    "x": 96,
-    "y": 2784
+    "x": -32,
+    "y": 2240
   },
   "Embedded.CodeListElement": {
     "x": -96,
@@ -257,7 +257,7 @@
   },
   "Embedded.MovementTime": {
     "x": 1136,
-    "y": 112
+    "y": 640
   },
   "Embedded.OtherCharge": {
     "x": 1952,
@@ -280,8 +280,8 @@
     "y": 624
   },
   "Embedded.RegulatedEntity": {
-    "x": 944,
-    "y": 2016
+    "x": 1056,
+    "y": 2000
   },
   "Embedded.StationRemarks": {
     "x": 3888,
