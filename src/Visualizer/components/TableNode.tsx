@@ -85,7 +85,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
                 {column.key && <KeyIcon />}
                 {column.name}
                 {column.array && <ArrayIcon />}
-                {column.codelist && <CodelistIcon />}
+                
               </div>
               <div className="column-name__type" 
               onClick={() => {              
@@ -101,6 +101,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
               }}
               >
                 {column.type}
+                {column.codelist && <CodelistIcon />}
               </div>
 
               <div
