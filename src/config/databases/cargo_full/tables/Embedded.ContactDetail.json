@@ -9,7 +9,7 @@
       "type": "ContactDetailType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {

@@ -72,7 +72,7 @@
       "type": "ChargeCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {
@@ -135,7 +135,7 @@
       "type": "PrepaidCollectIndicator",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {
@@ -144,16 +144,16 @@
       "type": "ServiceCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {
       "name": "waybillType",
-      "description": "Type of the Waybill: House; Direct or Master - Type of the Waybill: House; Direct or Master",
+      "description": "Type of the Waybill: House; Direct or Master",
       "type": "WaybillType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": "WaybillType"
     },
     {
@@ -162,7 +162,7 @@
       "type": "PrepaidCollectIndicator",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {

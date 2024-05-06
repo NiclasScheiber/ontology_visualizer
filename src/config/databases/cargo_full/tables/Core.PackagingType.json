@@ -23,12 +23,12 @@
     },
     {
       "name": "appliedOnPieces",
-      "description": "Piece on which the Packaging type is applicable - Piece on which the Packaging type is applicable",
+      "description": "Piece on which the Packaging type is applicable",
       "type": "Piece",
       "schemaType": "Core",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "PieceLiveAnimals PieceDg"
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "typeCode",

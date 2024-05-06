@@ -1,16 +1,16 @@
 {
   "schema": "Core",
   "name": "CustomsInformation",
-  "description": "Customs information details - Customs information details",
+  "description": "Customs information details",
   "columns": [
     {
       "name": "issuedForPiece",
-      "description": "Reference to the Piece the document was issued for - Reference to the Piece the document was issued for",
+      "description": "Reference to the Piece the document was issued for",
       "type": "Piece",
       "schemaType": "Core",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "PieceLiveAnimals PieceDg"
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "issuedForShipment",

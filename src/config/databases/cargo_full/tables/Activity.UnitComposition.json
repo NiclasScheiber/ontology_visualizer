@@ -23,11 +23,11 @@
     },
     {
       "name": "executionStatus",
-      "description": "Enum stating the status of the Activity - Enum stating the status of the Activity",
+      "description": "Enum stating the status of the Activity",
       "type": "ExecutionStatus",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": "ExecutionStatus"
     },
     {
@@ -68,12 +68,12 @@
     },
     {
       "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Person NonHumanActor"
+      "columnSubTypes": "Person|NonHumanActor"
     },
     {
       "name": "servedServices",

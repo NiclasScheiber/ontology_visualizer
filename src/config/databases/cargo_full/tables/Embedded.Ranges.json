@@ -9,7 +9,7 @@
       "type": "RateClassCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {

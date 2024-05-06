@@ -1,16 +1,16 @@
 {
   "schema": "Core",
   "name": "SecurityDeclaration",
-  "description": "Security declaration details - Security declaration details",
+  "description": "Security declaration details",
   "columns": [
     {
       "name": "issuedForPiece",
-      "description": "Reference to the Piece the document was issued for - Reference to the Piece the document was issued for",
+      "description": "Reference to the Piece the document was issued for",
       "type": "Piece",
       "schemaType": "Core",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "PieceLiveAnimals PieceDg"
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "checks",
@@ -72,7 +72,7 @@
       "type": "SecurityStatus",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {
@@ -99,7 +99,7 @@
       "type": "ScreeningExemption",
       "schemaType": "CodeList",
       "array": true,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {
@@ -117,7 +117,7 @@
       "type": "ScreeningMethod",
       "schemaType": "CodeList",
       "array": true,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {

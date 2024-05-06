@@ -41,12 +41,12 @@
     },
     {
       "name": "transportOrganization",
-      "description": "Company operating the transport means - Company operating the transport means - Company operating the transport means",
+      "description": "Company operating the transport means",
       "type": "Organization",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Carrier Company PublicAuthority"
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
     },
     {
       "name": "typicalCo2Coefficient",
@@ -95,12 +95,12 @@
     },
     {
       "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Check Composing Loading Storing"
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     },
     {
       "name": "vehicleModel",

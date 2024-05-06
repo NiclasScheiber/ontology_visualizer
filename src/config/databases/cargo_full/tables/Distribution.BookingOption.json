@@ -59,11 +59,11 @@
     },
     {
       "name": "statusBookingOption",
-      "description": "Status of the Booking Option - Status of the Booking Option",
+      "description": "Status of the Booking Option",
       "type": "BookingOptionStatus",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": "BookingOptionStatus"
     },
     {

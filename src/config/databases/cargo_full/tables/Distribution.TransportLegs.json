@@ -54,7 +54,7 @@
       "type": "TransportMeansServiceType",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {

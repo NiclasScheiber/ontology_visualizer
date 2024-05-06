@@ -1,16 +1,16 @@
 {
   "schema": "Common",
   "name": "NonHumanActor",
-  "description": "Non-human actors are actors which are not a person; such as robots - Non-human actors are actors which are not a person; such as robots - Non-human actors are actors which are not a person; such as robots",
+  "description": "Non-human actors are actors which are not a person; such as robots",
   "columns": [
     {
       "name": "associatedOrganization",
-      "description": "Reference to the Organization the Actor is associated with - Reference to the Organization the Actor is associated with - Reference to the Organization the Actor is associated with",
+      "description": "Reference to the Organization the Actor is associated with",
       "type": "Organization",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Carrier Company PublicAuthority"
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
     },
     {
       "name": "checks",

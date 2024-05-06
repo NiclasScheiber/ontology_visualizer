@@ -14,12 +14,12 @@
     },
     {
       "name": "eventFor",
-      "description": "Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s) - Refers to the URI of the linked object(s)",
+      "description": "Refers to the URI of the linked object(s)",
       "type": "LogisticsObject",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "LogisticsActivity Answer Actor Piece Location EpermitConsignment Organization IotDevice PhysicalLogisticsObject BillingDetails Booking BookingOption BookingRequest BookingShipment Carrier Person Check CheckTemplate CheckTotalResult CO2Emissions LoadingMaterial Composing Sensor PieceLiveAnimals Item DgProductRadioactive Product CustomsInformation Waybill DgDeclaration ExternalReference LiveAnimalsEpermit BookingOptionRequest Price ProductDg UnitComposition Insurance Shipment LogisticsAction DgRadioactiveIsotope LoadingUnit Loading TransportMeans TransportMovement Company PackagingType LogisticsAgent Question Ratings SecurityDeclaration LogisticsService EpermitSignature Storing TransportLegs PieceDg ItemDg NonHumanActor PublicAuthority Storage ULD"
+      "columnSubTypes": "LogisticsActivity|Answer|Actor|Piece|Location|EpermitConsignment|Organization|IotDevice|PhysicalLogisticsObject|BillingDetails|Booking|BookingOption|BookingRequest|BookingShipment|Carrier|Person|Check|CheckTemplate|CheckTotalResult|CO2Emissions|LoadingMaterial|Composing|Sensor|PieceLiveAnimals|Item|DgProductRadioactive|Product|CustomsInformation|Waybill|DgDeclaration|ExternalReference|LiveAnimalsEpermit|BookingOptionRequest|Price|ProductDg|UnitComposition|Insurance|Shipment|LogisticsAction|DgRadioactiveIsotope|LoadingUnit|Loading|TransportMeans|TransportMovement|Company|PackagingType|LogisticsAgent|Question|Ratings|SecurityDeclaration|LogisticsService|EpermitSignature|Storing|TransportLegs|PieceDg|ItemDg|NonHumanActor|PublicAuthority|Storage|ULD"
     },
     {
       "name": "eventLocation",
@@ -32,30 +32,30 @@
     },
     {
       "name": "eventTimeType",
-      "description": "Indicates type of event e.g.  Scheduled; Estimated; Actual - Indicates type of event e.g.  Scheduled; Estimated; Actual",
+      "description": "Indicates type of event e.g.  Scheduled; Estimated; Actual",
       "type": "EventTimeType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": "EventTimeType"
     },
     {
       "name": "recordingActor",
-      "description": "Reference to the Actor recording the LogisticsEvent - Reference to the Actor recording the LogisticsEvent",
+      "description": "Reference to the Actor recording the LogisticsEvent",
       "type": "Actor",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Person NonHumanActor"
+      "columnSubTypes": "Person|NonHumanActor"
     },
     {
       "name": "recordingOrganization",
-      "description": "Organization recording the LogisticsEvent - Organization recording the LogisticsEvent - Organization recording the LogisticsEvent",
+      "description": "Organization recording the LogisticsEvent",
       "type": "Organization",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Carrier Company PublicAuthority"
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
     },
     {
       "name": "externalReferences",

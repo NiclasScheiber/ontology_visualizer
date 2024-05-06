@@ -9,7 +9,7 @@
       "type": "PrepaidCollectIndicator",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {
@@ -18,7 +18,7 @@
       "type": "EntitlementCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {
@@ -36,7 +36,7 @@
       "type": "OtherChargeCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     }
   ]

@@ -1,16 +1,16 @@
 {
   "schema": "Common",
   "name": "IotDevice",
-  "description": "IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details - IoT Device details",
+  "description": "IoT Device details",
   "columns": [
     {
       "name": "attachedToObject",
-      "description": "Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to - Reference to the PhysicalLogisticsObject the IotDevice is attached to",
+      "description": "Reference to the PhysicalLogisticsObject the IotDevice is attached to",
       "type": "PhysicalLogisticsObject",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Piece Location IotDevice LoadingMaterial Sensor PieceLiveAnimals Item LoadingUnit TransportMeans PieceDg ItemDg ULD"
+      "columnSubTypes": "Piece|Location|IotDevice|LoadingMaterial|Sensor|PieceLiveAnimals|Item|LoadingUnit|TransportMeans|PieceDg|ItemDg|ULD"
     },
     {
       "name": "connectedSensors",
@@ -113,12 +113,12 @@
     },
     {
       "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Check Composing Loading Storing"
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     }
   ]
 }

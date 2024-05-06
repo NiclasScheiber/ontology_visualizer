@@ -1,16 +1,16 @@
 {
   "schema": "Core",
   "name": "Insurance",
-  "description": "Insurance details - Insurance details - Insurance details",
+  "description": "Insurance details",
   "columns": [
     {
       "name": "coveringOrganization",
-      "description": "Party covering the insurance  - Party covering the insurance  - Party covering the insurance ",
+      "description": "Party covering the insurance ",
       "type": "Organization",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Carrier Company PublicAuthority"
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
     },
     {
       "name": "insuredAmount",

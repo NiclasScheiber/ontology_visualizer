@@ -1,16 +1,16 @@
 {
   "schema": "Embedded",
   "name": "RegulatedEntity",
-  "description": "Regulated Entity - Regulated Entity - Regulated Entity",
+  "description": "Regulated Entity",
   "columns": [
     {
       "name": "owningOrganization",
-      "description": "Reference to the Organization for which the RegulatedEntity information is valid - Reference to the Organization for which the RegulatedEntity information is valid - Reference to the Organization for which the RegulatedEntity information is valid",
+      "description": "Reference to the Organization for which the RegulatedEntity information is valid",
       "type": "Organization",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Carrier Company PublicAuthority"
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
     },
     {
       "name": "regulatedEntityCategory",
@@ -18,7 +18,7 @@
       "type": "RegulatedEntityCategoryCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {

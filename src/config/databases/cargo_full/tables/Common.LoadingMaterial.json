@@ -1,16 +1,16 @@
 {
   "schema": "Common",
   "name": "LoadingMaterial",
-  "description": "LoadingMaterial describes transportable; complementary non-Piece objects such as dry ice or nets - LoadingMaterial describes transportable; complementary non-Piece objects such as dry ice or nets - LoadingMaterial describes transportable; complementary non-Piece objects such as dry ice or nets",
+  "description": "LoadingMaterial describes transportable; complementary non-Piece objects such as dry ice or nets",
   "columns": [
     {
       "name": "manufacturer",
-      "description": "Manufacturing company details and contacts - Manufacturing company details and contacts - Manufacturing company details and contacts",
+      "description": "Manufacturing company details and contacts",
       "type": "Organization",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Carrier Company PublicAuthority"
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
     },
     {
       "name": "checks",
@@ -104,12 +104,12 @@
     },
     {
       "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Check Composing Loading Storing"
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     }
   ]
 }

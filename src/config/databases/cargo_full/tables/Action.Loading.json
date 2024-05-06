@@ -32,12 +32,12 @@
     },
     {
       "name": "loadedPieces",
-      "description": "References to Pieces onloaded or offloaded - References to Pieces onloaded or offloaded",
+      "description": "References to Pieces onloaded or offloaded",
       "type": "Piece",
       "schemaType": "Core",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "PieceLiveAnimals PieceDg"
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "loadedUnits",
@@ -50,30 +50,30 @@
     },
     {
       "name": "loadingType",
-      "description": "Enum stating whether the LoadingAction describes onloading or offloading - Enum stating whether the LoadingAction describes onloading or offloading",
+      "description": "Enum stating whether the LoadingAction describes onloading or offloading",
       "type": "LoadingType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": "LoadingType"
     },
     {
       "name": "actionTimeType",
-      "description": "Enum stating the type of the Action - Enum stating the type of the Action",
+      "description": "Enum stating the type of the Action",
       "type": "ActionTimeType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": "ActionTimeType"
     },
     {
       "name": "servedActivity",
-      "description": "Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for",
+      "description": "Reference to the Activity the Action was performed for",
       "type": "LogisticsActivity",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "UnitComposition TransportMovement Storage"
+      "columnSubTypes": "UnitComposition|TransportMovement|Storage"
     },
     {
       "name": "checks",
@@ -113,12 +113,12 @@
     },
     {
       "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Person NonHumanActor"
+      "columnSubTypes": "Person|NonHumanActor"
     },
     {
       "name": "otherIdentifiers",

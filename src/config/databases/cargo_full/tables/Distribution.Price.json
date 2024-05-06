@@ -36,7 +36,7 @@
       "type": "ChargeCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {

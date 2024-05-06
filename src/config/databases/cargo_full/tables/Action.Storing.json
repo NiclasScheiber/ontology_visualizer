@@ -14,21 +14,21 @@
     },
     {
       "name": "actionTimeType",
-      "description": "Enum stating the type of the Action - Enum stating the type of the Action",
+      "description": "Enum stating the type of the Action",
       "type": "ActionTimeType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": "ActionTimeType"
     },
     {
       "name": "servedActivity",
-      "description": "Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for",
+      "description": "Reference to the Activity the Action was performed for",
       "type": "LogisticsActivity",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "UnitComposition TransportMovement Storage"
+      "columnSubTypes": "UnitComposition|TransportMovement|Storage"
     },
     {
       "name": "checks",
@@ -50,20 +50,20 @@
     },
     {
       "name": "storedObjects",
-      "description": "Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out - Reference to the Objects being stored in or stored out",
+      "description": "Reference to the Objects being stored in or stored out",
       "type": "PhysicalLogisticsObject",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Piece Location IotDevice LoadingMaterial Sensor PieceLiveAnimals Item LoadingUnit TransportMeans PieceDg ItemDg ULD"
+      "columnSubTypes": "Piece|Location|IotDevice|LoadingMaterial|Sensor|PieceLiveAnimals|Item|LoadingUnit|TransportMeans|PieceDg|ItemDg|ULD"
     },
     {
       "name": "storingType",
-      "description": "Enum stating whether the StoringAction describes the store-in or the store-out - Enum stating whether the StoringAction describes the store-in or the store-out",
+      "description": "Enum stating whether the StoringAction describes the store-in or the store-out",
       "type": "StoringType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": "StoringType"
     },
     {
@@ -77,12 +77,12 @@
     },
     {
       "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Person NonHumanActor"
+      "columnSubTypes": "Person|NonHumanActor"
     },
     {
       "name": "otherIdentifiers",

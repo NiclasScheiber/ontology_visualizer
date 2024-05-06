@@ -1,16 +1,16 @@
 {
   "schema": "Core",
   "name": "Item",
-  "description": "Item details - Item details",
+  "description": "Item details",
   "columns": [
     {
       "name": "inPiece",
-      "description": "Reference to the Piece this Item or Piece is contained in - Reference to the Piece this Item or Piece is contained in",
+      "description": "Reference to the Piece this Item or Piece is contained in",
       "type": "Piece",
       "schemaType": "Core",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "PieceLiveAnimals PieceDg"
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "ofProduct",
@@ -176,12 +176,12 @@
     },
     {
       "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Check Composing Loading Storing"
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     }
   ]
 }

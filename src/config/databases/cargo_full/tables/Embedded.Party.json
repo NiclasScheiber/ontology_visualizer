@@ -1,16 +1,16 @@
 {
   "schema": "Embedded",
   "name": "Party",
-  "description": "Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party - Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+  "description": "Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
   "columns": [
     {
       "name": "partyDetails",
-      "description": "Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party - Reference to the Agent described by the role of the Party",
+      "description": "Reference to the Agent described by the role of the Party",
       "type": "LogisticsAgent",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Actor Organization Carrier Person Company NonHumanActor PublicAuthority"
+      "columnSubTypes": "Actor|Organization|Carrier|Person|Company|NonHumanActor|PublicAuthority"
     },
     {
       "name": "partyRole",
@@ -18,7 +18,7 @@
       "type": "ParticipantIdentifier",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {

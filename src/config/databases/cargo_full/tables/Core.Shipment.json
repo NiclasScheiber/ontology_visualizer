@@ -59,12 +59,12 @@
     },
     {
       "name": "pieces",
-      "description": "References to the Pieces that are part of this Shipment - References to the Pieces that are part of this Shipment",
+      "description": "References to the Pieces that are part of this Shipment",
       "type": "Piece",
       "schemaType": "Core",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "PieceLiveAnimals PieceDg"
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "totalGrossWeight",

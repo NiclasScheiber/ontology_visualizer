@@ -14,12 +14,12 @@
     },
     {
       "name": "answerActor",
-      "description": "Reference to the Actor giving the Answer - Reference to the Actor giving the Answer",
+      "description": "Reference to the Actor giving the Answer",
       "type": "Actor",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Person NonHumanActor"
+      "columnSubTypes": "Person|NonHumanActor"
     },
     {
       "name": "answerValue",

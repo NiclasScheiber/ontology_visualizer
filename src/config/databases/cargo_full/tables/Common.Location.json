@@ -32,12 +32,12 @@
     },
     {
       "name": "onsiteActions",
-      "description": "References to the Actions happening at the Location - References to the Actions happening at the Location - References to the Actions happening at the Location - References to the Actions happening at the Location",
+      "description": "References to the Actions happening at the Location",
       "type": "LogisticsAction",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Check Composing Loading Storing"
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     },
     {
       "name": "subLocations",
@@ -122,12 +122,12 @@
     },
     {
       "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Check Composing Loading Storing"
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     }
   ]
 }

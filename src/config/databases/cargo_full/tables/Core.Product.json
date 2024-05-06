@@ -32,12 +32,12 @@
     },
     {
       "name": "manufacturer",
-      "description": "Manufacturing company details and contacts - Manufacturing company details and contacts - Manufacturing company details and contacts",
+      "description": "Manufacturing company details and contacts",
       "type": "Organization",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Carrier Company PublicAuthority"
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
     },
     {
       "name": "events",
@@ -59,12 +59,12 @@
     },
     {
       "name": "describedObjects",
-      "description": "Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found. - Reference to the Items or Pieces in which the product can be found.",
+      "description": "Reference to the Items or Pieces in which the product can be found.",
       "type": "PhysicalLogisticsObject",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Piece Location IotDevice LoadingMaterial Sensor PieceLiveAnimals Item LoadingUnit TransportMeans PieceDg ItemDg ULD"
+      "columnSubTypes": "Piece|Location|IotDevice|LoadingMaterial|Sensor|PieceLiveAnimals|Item|LoadingUnit|TransportMeans|PieceDg|ItemDg|ULD"
     },
     {
       "name": "otherCharacteristics",

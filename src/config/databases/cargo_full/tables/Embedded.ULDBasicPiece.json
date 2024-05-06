@@ -27,7 +27,7 @@
       "type": "ULDLoadingIndicator",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {

@@ -18,7 +18,7 @@
       "type": "CommodityCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {
@@ -59,12 +59,12 @@
     },
     {
       "name": "pieceGroups",
-      "description": "Reference to the Piece groups of the shipment - Reference to the Piece groups of the shipment - Reference to the Piece groups of the shipment - Reference to the Piece groups of the shipment",
+      "description": "Reference to the Piece groups of the shipment",
       "type": "PieceGroup",
       "schemaType": "Embedded",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "LoosePiece ULDBasicPiece ULDSpecificPiece VolumePieceGroup"
+      "columnSubTypes": "LoosePiece|ULDBasicPiece|ULDSpecificPiece|VolumePieceGroup"
     },
     {
       "name": "specialHandlingCodes",
@@ -72,7 +72,7 @@
       "type": "SpecialHandlingCode",
       "schemaType": "CodeList",
       "array": true,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {

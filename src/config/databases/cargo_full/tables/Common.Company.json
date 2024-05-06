@@ -1,16 +1,16 @@
 {
   "schema": "Common",
   "name": "Company",
-  "description": "Company details - Company details - Company details",
+  "description": "Company details",
   "columns": [
     {
       "name": "parentOrganization",
-      "description": "Reference to the parent Organization - Reference to the parent Organization - Reference to the parent Organization",
+      "description": "Reference to the parent Organization",
       "type": "Organization",
       "schemaType": "Abstract",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Carrier Company PublicAuthority"
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
     },
     {
       "name": "checks",
@@ -41,21 +41,21 @@
     },
     {
       "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Person NonHumanActor"
+      "columnSubTypes": "Person|NonHumanActor"
     },
     {
       "name": "subOrganization",
-      "description": "References to all sub-Organizations - References to all sub-Organizations - References to all sub-Organizations",
+      "description": "References to all sub-Organizations",
       "type": "Organization",
       "schemaType": "Abstract",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "Carrier Company PublicAuthority"
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
     },
     {
       "name": "iataCargoAgentCode",
