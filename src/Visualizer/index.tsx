@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
+import Select, { SingleValue } from 'react-select'
 import ReactFlow, {
   Node, useNodesState, useEdgesState,
   Controls, ControlButton, Background, useStoreApi, ReactFlowProvider,
   getConnectedEdges, OnSelectionChangeParams, NodeChange, getIncomers,
-  getOutgoers, ReactFlowInstance
+  getOutgoers, ReactFlowInstance, FitViewOptions, useReactFlow
 } from "reactflow";
 
 import { nodeTypes } from "../config/nodeTypes";
@@ -22,6 +23,7 @@ import {
   calculateTargetPosition,
   calculateSourcePosition,
   initializeNodes,
+  initializeSearch,
   moveSVGInFront,
   setHighlightEdgeClassName,
   logTablePositions,
@@ -52,6 +54,8 @@ interface VisualizerProps {
 const Flow: React.FC<FlowProps> = (props: FlowProps) => {
   const currentDatabase = props.currentDatabase;
   const initialNodes = initializeNodes(props.currentDatabase);
+  
+  const reactFlowInstance = useReactFlow();
 
   const store = useStoreApi();
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -285,9 +289,22 @@ const Flow: React.FC<FlowProps> = (props: FlowProps) => {
     }
   }
 
+  
+  const searchOption = initializeSearch(props.currentDatabase);
+  
   // https://stackoverflow.com/questions/16664584/changing-an-svg-markers-color-css
-  return (
+  return (    
     <div className="Flow">
+      <Select className="SearchBox" options={searchOption} placeholder="Search your Logistics Object"  onChange={(event) => {if(event) {
+      window.requestAnimationFrame(() => {
+
+        const fitViewOptions: FitViewOptions = {
+          duration: 500,
+          nodes: [{ id: event.value }]
+        };
+          reactFlowInstance.fitView(fitViewOptions);
+      })
+    }}}/>
       <Markers />
       <ReactFlow
         nodes={nodes}

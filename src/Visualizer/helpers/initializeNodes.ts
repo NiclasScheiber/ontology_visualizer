@@ -1,5 +1,7 @@
 import { fullTableName } from "./fullTableName";
-import { DatabaseConfig, EdgeConfig, Position, TableConfig, TablePositions } from "../types";
+import { DatabaseConfig, EdgeConfig, Position, TableConfig, TablePositions, TableColumnConfig } from "../types";
+
+
 
 const setHandleType = (tableConfigs: TableConfig[], tableName: string, columnName: string, handleType: string) => {
   tableConfigs.forEach(tableConfig => {
@@ -53,4 +55,32 @@ export const initializeNodes = (databaseConfig: DatabaseConfig) => {
   });
 
   return tables;
+};
+
+export const initializeSearch = (databaseConfig: DatabaseConfig) => {
+  let searchEntries: Array<({value:string, label:string})> = [];
+
+
+  Object.entries(databaseConfig.tablePositions).forEach(params => {
+
+    const entry = {
+      value: params[0] , 
+      label: (params[0].includes('.')? params[0].split('.')[1]: params[0])
+    }
+
+    searchEntries.push(entry)
+  });
+
+
+  databaseConfig.tables.forEach((tableConfig: TableConfig) => {
+    tableConfig.columns.forEach((columnConfig: TableColumnConfig) => {
+      const entry = {
+        value: tableConfig.schema + '.' + tableConfig.name , 
+        label: tableConfig.name + '.' + columnConfig.name
+      }
+      searchEntries.push(entry);
+    });    
+  });
+
+  return searchEntries;
 };

@@ -9,3 +9,16 @@
 :not(:root):fullscreen::backdrop {
   background-color: #FFF;
 }
+
+.SearchBox {
+  top: 16px;
+  right: 30px;
+  width: 300px;
+  z-index: 50000;
+  align-self:flex-end;
+  float: right;
+}
+
+.react-flow{
+  top: -40px;
+}

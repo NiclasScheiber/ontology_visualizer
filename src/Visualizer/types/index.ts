@@ -6,3 +6,4 @@ export * from "./PopupProps";
 export * from "./CloseIconProps";
 export * from "./TableConfig";
 export * from "./DatabaseConfig";
+export * from "./TableColumnConfig";
