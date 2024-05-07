@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import Select, { SingleValue } from 'react-select'
+import Select from 'react-select'
 import ReactFlow, {
   Node, useNodesState, useEdgesState,
   Controls, ControlButton, Background, useStoreApi, ReactFlowProvider,
