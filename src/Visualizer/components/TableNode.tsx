@@ -1,7 +1,7 @@
 import { useState, FC, useEffect } from "react";
 import { Handle, Position, NodeProps, FitViewOptions, useReactFlow } from "reactflow";
 import { KeyIcon, ArrayIcon, CodelistIcon } from "../components";
-import { markdown } from "../helpers";
+import { markdownDescription } from "../helpers";
 
 import "@reactflow/node-resizer/dist/style.css";
 
@@ -87,7 +87,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
                 {column.array && <ArrayIcon />}
                 
               </div>
-              <div className="column-name__type" 
+              <div className={column.columnSubTypes ? "column-name__type bold" : "column-name__type" } 
               onClick={() => {              
                 window.requestAnimationFrame(() => {
                   
@@ -100,13 +100,13 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
                 })
               }}
               >
-                {column.type}
+                {column.type}{column.columnSubTypes ? '*' : ''}
                 {column.codelist && <CodelistIcon />}
               </div>
 
               <div
                 className="column-name__description"
-                dangerouslySetInnerHTML={{__html: markdown(column.description || "No description.") }} />
+                dangerouslySetInnerHTML={{__html: markdownDescription(column.description || "No description.") }} />
             </div>
           </div>
         ))}
