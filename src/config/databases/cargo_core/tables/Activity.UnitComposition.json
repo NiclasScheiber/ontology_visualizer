@@ -7,9 +7,10 @@
       "name": "loadingUnit",
       "description": "Reference to the LoadingUnit composed in the Unit Composition or referenced in Composing actions",
       "type": "LoadingUnit",
-      "schemaType": "Core",
+      "schemaType": "Common",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "ULD"
     },
     {
       "name": "checkActions",
@@ -17,15 +18,17 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "executionStatus",
-      "description": "Enum stating the status of the Activity - Enum stating the status of the Activity",
+      "description": "Enum stating the status of the Activity",
       "type": "ExecutionStatus",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -33,7 +36,8 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "externalReferences",
@@ -41,7 +45,8 @@
       "type": "ExternalReference",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "compositionActions",
@@ -49,7 +54,8 @@
       "type": "Composing",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "contactDetails",
@@ -57,15 +63,17 @@
       "type": "ContactDetail",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "Person|NonHumanActor"
     },
     {
       "name": "servedServices",
@@ -73,7 +81,8 @@
       "type": "LogisticsService",
       "schemaType": "Abstract",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "Booking"
     },
     {
       "name": "events",
@@ -81,7 +90,8 @@
       "type": "LogisticsEvent",
       "schemaType": "Event",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "skeletonIndicator",
@@ -89,7 +99,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "compositionIdentifier",
@@ -97,7 +108,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "slac",
@@ -105,7 +117,8 @@
       "type": "integer",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     }
   ]
 }

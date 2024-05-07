@@ -9,7 +9,8 @@
       "type": "TransportMeans",
       "schemaType": "Core",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "checkActions",
@@ -17,15 +18,17 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "executionStatus",
-      "description": "Enum stating the status of the Activity - Enum stating the status of the Activity",
+      "description": "Enum stating the status of the Activity",
       "type": "ExecutionStatus",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -33,7 +36,8 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "externalReferences",
@@ -41,7 +45,8 @@
       "type": "ExternalReference",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "arrivalLocation",
@@ -49,7 +54,8 @@
       "type": "Location",
       "schemaType": "Common",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "co2Emissions",
@@ -57,7 +63,8 @@
       "type": "CO2Emissions",
       "schemaType": "Core",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "departureLocation",
@@ -65,7 +72,8 @@
       "type": "Location",
       "schemaType": "Common",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "distanceCalculated",
@@ -73,7 +81,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "distanceMeasured",
@@ -81,7 +90,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "fuelAmountCalculated",
@@ -89,7 +99,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "fuelAmountMeasured",
@@ -97,7 +108,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "loadingActions",
@@ -105,7 +117,8 @@
       "type": "Loading",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "modeCode",
@@ -113,15 +126,17 @@
       "type": "ModeCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "modeQualifier",
-      "description": "Pre-Carriage; Main-Carriage or On-Carriage - Pre-Carriage; Main-Carriage or On-Carriage",
+      "description": "Pre-Carriage; Main-Carriage or On-Carriage",
       "type": "ModeQualifier",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "contactDetails",
@@ -129,15 +144,17 @@
       "type": "ContactDetail",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "Person|NonHumanActor"
     },
     {
       "name": "servedServices",
@@ -145,7 +162,8 @@
       "type": "LogisticsService",
       "schemaType": "Abstract",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "Booking"
     },
     {
       "name": "events",
@@ -153,7 +171,8 @@
       "type": "LogisticsEvent",
       "schemaType": "Event",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "skeletonIndicator",
@@ -161,7 +180,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "movementTimes",
@@ -169,7 +189,8 @@
       "type": "MovementTime",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "fuelType",
@@ -177,7 +198,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "seal",
@@ -185,7 +207,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "transportIdentifier",
@@ -193,7 +216,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     }
   ]
 }

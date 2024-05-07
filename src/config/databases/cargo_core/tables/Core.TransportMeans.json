@@ -9,7 +9,8 @@
       "type": "TransportMovement",
       "schemaType": "Activity",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -17,7 +18,8 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "externalReferences",
@@ -25,7 +27,8 @@
       "type": "ExternalReference",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "attachedIotDevices",
@@ -33,15 +36,17 @@
       "type": "IotDevice",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "transportOrganization",
-      "description": "Company operating the transport means - Company operating the transport means - Company operating the transport means",
+      "description": "Company operating the transport means",
       "type": "Organization",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
     },
     {
       "name": "typicalCo2Coefficient",
@@ -49,7 +54,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "typicalFuelConsumption",
@@ -57,7 +63,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "vehicleType",
@@ -65,7 +72,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "events",
@@ -73,7 +81,8 @@
       "type": "LogisticsEvent",
       "schemaType": "Event",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "skeletonIndicator",
@@ -81,15 +90,17 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
       "schemaType": "Abstract",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     },
     {
       "name": "vehicleModel",
@@ -97,7 +108,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "vehicleRegistration",
@@ -105,7 +117,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "vehicleSize",
@@ -113,7 +126,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     }
   ]
 }

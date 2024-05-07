@@ -9,7 +9,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "textualValue",
@@ -17,7 +18,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     }
   ]
 }

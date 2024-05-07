@@ -1,15 +1,16 @@
 {
   "schema": "Core",
   "name": "Item",
-  "description": "Item details - Item details",
+  "description": "Item details",
   "columns": [
     {
       "name": "inPiece",
-      "description": "Reference to the Piece this Item or Piece is contained in - Reference to the Piece this Item or Piece is contained in",
+      "description": "Reference to the Piece this Item or Piece is contained in",
       "type": "Piece",
       "schemaType": "Core",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "ofProduct",
@@ -17,7 +18,8 @@
       "type": "Product",
       "schemaType": "Core",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "ProductDg"
     },
     {
       "name": "dimensions",
@@ -25,7 +27,8 @@
       "type": "Dimensions",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "itemQuantity",
@@ -33,7 +36,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "productionCountry",
@@ -41,7 +45,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "targetCountry",
@@ -49,7 +54,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "unitPrice",
@@ -57,7 +63,8 @@
       "type": "CurrencyValue",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "weight",
@@ -65,7 +72,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -73,7 +81,8 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "externalReferences",
@@ -81,7 +90,8 @@
       "type": "ExternalReference",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "attachedIotDevices",
@@ -89,7 +99,8 @@
       "type": "IotDevice",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "otherIdentifiers",
@@ -97,7 +108,8 @@
       "type": "OtherIdentifier",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "batchNumber",
@@ -105,7 +117,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "expiryDate",
@@ -113,7 +126,8 @@
       "type": "dateTime",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "lotNumber",
@@ -121,7 +135,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "productionDate",
@@ -129,7 +144,8 @@
       "type": "dateTime",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "quantityForUnitPrice",
@@ -137,7 +153,8 @@
       "type": "double",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "events",
@@ -145,7 +162,8 @@
       "type": "LogisticsEvent",
       "schemaType": "Event",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "skeletonIndicator",
@@ -153,15 +171,17 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
       "schemaType": "Abstract",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     }
   ]
 }

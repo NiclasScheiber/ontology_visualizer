@@ -1,15 +1,16 @@
 {
   "schema": "Core",
   "name": "Piece",
-  "description": "Individual piece or virtual grouping of pieces - Individual piece or virtual grouping of pieces",
+  "description": "Individual piece or virtual grouping of pieces",
   "columns": [
     {
       "name": "inPiece",
-      "description": "Reference to the Piece this Item or Piece is contained in - Reference to the Piece this Item or Piece is contained in",
+      "description": "Reference to the Piece this Item or Piece is contained in",
       "type": "Piece",
       "schemaType": "Core",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "ofShipment",
@@ -17,7 +18,8 @@
       "type": "Shipment",
       "schemaType": "Core",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "packagingType",
@@ -25,7 +27,8 @@
       "type": "PackagingType",
       "schemaType": "Core",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -33,7 +36,8 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "externalReferences",
@@ -41,7 +45,8 @@
       "type": "ExternalReference",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "attachedIotDevices",
@@ -49,7 +54,8 @@
       "type": "IotDevice",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "containedItems",
@@ -57,15 +63,17 @@
       "type": "Item",
       "schemaType": "Core",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "ItemDg"
     },
     {
       "name": "containedPieces",
-      "description": "Details of contained piece(s) - Details of contained piece(s)",
+      "description": "Details of contained piece(s)",
       "type": "Piece",
       "schemaType": "Core",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "contentProductionCountry",
@@ -73,7 +81,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "contentProducts",
@@ -81,7 +90,8 @@
       "type": "Product",
       "schemaType": "Core",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "ProductDg"
     },
     {
       "name": "customsInformation",
@@ -89,7 +99,8 @@
       "type": "CustomsInformation",
       "schemaType": "Core",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "dimensions",
@@ -97,7 +108,8 @@
       "type": "Dimensions",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "fulfillsUldTypeCode",
@@ -105,7 +117,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "grossWeight",
@@ -113,15 +126,17 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "loadType",
-      "description": "Load type of the shipment or piece (Bulk; ULD; Pallet; Loose) - Load type of the shipment or piece (Bulk; ULD; Pallet; Loose)",
+      "description": "Load type of the shipment or piece (Bulk; ULD; Pallet; Loose)",
       "type": "LoadType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "packageMarkCoded",
@@ -129,7 +144,8 @@
       "type": "PackageMarkCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "securityDeclarations",
@@ -137,7 +153,8 @@
       "type": "SecurityDeclaration",
       "schemaType": "Core",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "temperatureInstructions",
@@ -145,7 +162,8 @@
       "type": "TemperatureInstructions",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "volumetricWeight",
@@ -153,7 +171,8 @@
       "type": "VolumetricWeight",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "events",
@@ -161,7 +180,8 @@
       "type": "LogisticsEvent",
       "schemaType": "Event",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "skeletonIndicator",
@@ -169,15 +189,17 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
       "schemaType": "Abstract",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     },
     {
       "name": "involvedParties",
@@ -185,7 +207,8 @@
       "type": "Party",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "otherIdentifiers",
@@ -193,7 +216,8 @@
       "type": "OtherIdentifier",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "specialHandlingCodes",
@@ -201,7 +225,8 @@
       "type": "SpecialHandlingCode",
       "schemaType": "CodeList",
       "array": true,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "coload",
@@ -209,7 +234,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "goodsDescription",
@@ -217,7 +243,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "nvdForCarriage",
@@ -225,7 +252,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "nvdForCustoms",
@@ -233,7 +261,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "packagedeIdentifier",
@@ -241,7 +270,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "slac",
@@ -249,7 +279,8 @@
       "type": "integer",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "stackable",
@@ -257,7 +288,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "turnable",
@@ -265,7 +297,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "upid",
@@ -273,7 +306,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "shippingMarks",
@@ -281,7 +315,8 @@
       "type": "string",
       "schemaType": "",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "textualHandlingInstructions",
@@ -289,7 +324,8 @@
       "type": "string",
       "schemaType": "",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     }
   ]
 }

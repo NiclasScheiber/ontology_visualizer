@@ -9,7 +9,8 @@
       "type": "UnitComposition",
       "schemaType": "Activity",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "tareWeight",
@@ -17,7 +18,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -25,7 +27,8 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "externalReferences",
@@ -33,7 +36,8 @@
       "type": "ExternalReference",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "attachedIotDevices",
@@ -41,7 +45,8 @@
       "type": "IotDevice",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "demurrageCode",
@@ -49,7 +54,8 @@
       "type": "DemurrageCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "loadingIndicator",
@@ -57,7 +63,8 @@
       "type": "ULDLoadingIndicator",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "odlnCode",
@@ -65,7 +72,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "ownerCode",
@@ -73,7 +81,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "serviceabilityCode",
@@ -81,7 +90,8 @@
       "type": "ULDConditionCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "uldTypeCode",
@@ -89,7 +99,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "remarks",
@@ -97,7 +108,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "events",
@@ -105,7 +117,8 @@
       "type": "LogisticsEvent",
       "schemaType": "Event",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "skeletonIndicator",
@@ -113,15 +126,17 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in - References to the Actions the object is involved in",
+      "description": "References to the Actions the object is involved in",
       "type": "LogisticsAction",
       "schemaType": "Abstract",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     },
     {
       "name": "ataDesignator",
@@ -129,7 +144,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "damageFlag",
@@ -137,7 +153,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "numberOfDoors",
@@ -145,7 +162,8 @@
       "type": "integer",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "numberOfFittings",
@@ -153,7 +171,8 @@
       "type": "integer",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "numberOfNets",
@@ -161,7 +180,8 @@
       "type": "integer",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "numberOfStraps",
@@ -169,7 +189,8 @@
       "type": "integer",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "sealNumber",
@@ -177,7 +198,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "uldSerialNumber",
@@ -185,7 +207,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     }
   ]
 }

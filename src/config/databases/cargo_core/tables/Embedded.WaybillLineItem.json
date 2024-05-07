@@ -9,7 +9,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "dimensionsForRate",
@@ -17,7 +18,8 @@
       "type": "Dimensions",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "grossWeightForRate",
@@ -25,7 +27,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "hsCodeForRate",
@@ -33,7 +36,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "productionCountryForRate",
@@ -41,7 +45,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "rateCharge",
@@ -49,7 +54,8 @@
       "type": "CurrencyValue",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "rateClassCode",
@@ -57,7 +63,8 @@
       "type": "RateClassCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "rateClassCodeBasic",
@@ -65,7 +72,8 @@
       "type": "BasicRateClassCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "ratePercentage",
@@ -73,7 +81,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "rcp",
@@ -81,7 +90,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "uldOwnerCode",
@@ -89,7 +99,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "uldRateClassType",
@@ -97,7 +108,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "uldTareWeightForRate",
@@ -105,7 +117,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "uldType",
@@ -113,7 +126,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "volumetricWeightForRate",
@@ -121,7 +135,8 @@
       "type": "VolumetricWeight",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "commodityItemNumberForRate",
@@ -129,7 +144,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "goodsDescriptionForRate",
@@ -137,7 +153,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "lineItemNumber",
@@ -145,7 +162,8 @@
       "type": "integer",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "pieceCountForRate",
@@ -153,7 +171,8 @@
       "type": "integer",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "slacForRate",
@@ -161,7 +180,8 @@
       "type": "integer",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "uldSerialNumber",
@@ -169,7 +189,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     }
   ]
 }

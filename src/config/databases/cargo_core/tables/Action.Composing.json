@@ -7,9 +7,10 @@
       "name": "loadingUnit",
       "description": "Reference to the LoadingUnit composed in the Unit Composition or referenced in Composing actions",
       "type": "LoadingUnit",
-      "schemaType": "Core",
+      "schemaType": "Common",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "ULD"
     },
     {
       "name": "performedAt",
@@ -17,7 +18,8 @@
       "type": "Location",
       "schemaType": "Common",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "composedMaterials",
@@ -25,39 +27,44 @@
       "type": "LoadingMaterial",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "composedPieces",
-      "description": "References to the Pieces being built-up or broken-down - References to the Pieces being built-up or broken-down",
+      "description": "References to the Pieces being built-up or broken-down",
       "type": "Piece",
       "schemaType": "Core",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "compositionType",
-      "description": "Enum stating whether the CompositionAction describes build-up or break-down - Enum stating whether the CompositionAction describes build-up or break-down",
+      "description": "Enum stating whether the CompositionAction describes build-up or break-down",
       "type": "CompositionType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "actionTimeType",
-      "description": "Enum stating the type of the Action - Enum stating the type of the Action",
+      "description": "Enum stating the type of the Action",
       "type": "ActionTimeType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "servedActivity",
-      "description": "Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for - Reference to the Activity the Action was performed for",
+      "description": "Reference to the Activity the Action was performed for",
       "type": "LogisticsActivity",
       "schemaType": "Abstract",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "UnitComposition|TransportMovement|Storage"
     },
     {
       "name": "checks",
@@ -65,7 +72,8 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "externalReferences",
@@ -73,7 +81,8 @@
       "type": "ExternalReference",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "contactDetails",
@@ -81,15 +90,17 @@
       "type": "ContactDetail",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts - References to Actors (Person; NonHumanActor) acting as contacts",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "Person|NonHumanActor"
     },
     {
       "name": "otherIdentifiers",
@@ -97,7 +108,8 @@
       "type": "OtherIdentifier",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "actionEndTime",
@@ -105,7 +117,8 @@
       "type": "dateTime",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "actionStartTime",
@@ -113,7 +126,8 @@
       "type": "dateTime",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "events",
@@ -121,7 +135,8 @@
       "type": "LogisticsEvent",
       "schemaType": "Event",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "skeletonIndicator",
@@ -129,7 +144,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     }
   ]
 }

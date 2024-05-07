@@ -9,7 +9,8 @@
       "type": "Insurance",
       "schemaType": "Core",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "waybill",
@@ -17,7 +18,8 @@
       "type": "Waybill",
       "schemaType": "Core",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -25,7 +27,8 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "externalReferences",
@@ -33,7 +36,8 @@
       "type": "ExternalReference",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "customsInformation",
@@ -41,7 +45,8 @@
       "type": "CustomsInformation",
       "schemaType": "Core",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "incoterms",
@@ -49,15 +54,17 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "pieces",
-      "description": "References to the Pieces that are part of this Shipment - References to the Pieces that are part of this Shipment",
+      "description": "References to the Pieces that are part of this Shipment",
       "type": "Piece",
       "schemaType": "Core",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": "PieceLiveAnimals|PieceDg"
     },
     {
       "name": "totalGrossWeight",
@@ -65,7 +72,8 @@
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "totalVolumetricWeight",
@@ -73,7 +81,8 @@
       "type": "VolumetricWeight",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "events",
@@ -81,7 +90,8 @@
       "type": "LogisticsEvent",
       "schemaType": "Event",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "skeletonIndicator",
@@ -89,7 +99,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "involvedParties",
@@ -97,7 +108,8 @@
       "type": "Party",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "totalDimensions",
@@ -105,7 +117,8 @@
       "type": "Dimensions",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "goodsDescription",
@@ -113,7 +126,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "textualHandlingInstructions",
@@ -121,7 +135,8 @@
       "type": "string",
       "schemaType": "",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     }
   ]
 }

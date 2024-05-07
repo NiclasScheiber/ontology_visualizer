@@ -9,7 +9,8 @@
       "type": "BillingDetails",
       "schemaType": "BillingSettlement",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "masterWaybill",
@@ -17,7 +18,8 @@
       "type": "Waybill",
       "schemaType": "Core",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "referredBookingOption",
@@ -25,7 +27,8 @@
       "type": "Booking",
       "schemaType": "Service",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "shipment",
@@ -33,7 +36,8 @@
       "type": "Shipment",
       "schemaType": "Core",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -41,7 +45,8 @@
       "type": "Check",
       "schemaType": "Action",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "externalReferences",
@@ -49,7 +54,8 @@
       "type": "ExternalReference",
       "schemaType": "Common",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "arrivalLocation",
@@ -57,7 +63,8 @@
       "type": "Location",
       "schemaType": "Common",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "carrierChargeCode",
@@ -65,7 +72,8 @@
       "type": "ChargeCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "carrierDeclarationPlace",
@@ -73,7 +81,8 @@
       "type": "Location",
       "schemaType": "Common",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "customsOriginCode",
@@ -81,7 +90,8 @@
       "type": "CodeListElement",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "declaredValueForCarriage",
@@ -89,7 +99,8 @@
       "type": "CurrencyValue",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "declaredValueForCustoms",
@@ -97,7 +108,8 @@
       "type": "CurrencyValue",
       "schemaType": "Embedded",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "departureLocation",
@@ -105,7 +117,8 @@
       "type": "Location",
       "schemaType": "Common",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "houseWaybills",
@@ -113,7 +126,8 @@
       "type": "Waybill",
       "schemaType": "Core",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "otherChargesIndicator",
@@ -121,7 +135,8 @@
       "type": "PrepaidCollectIndicator",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "serviceCode",
@@ -129,15 +144,17 @@
       "type": "ServiceCode",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "waybillType",
-      "description": "Type of the Waybill: House; Direct or Master - Type of the Waybill: House; Direct or Master",
+      "description": "Type of the Waybill: House; Direct or Master",
       "type": "WaybillType",
       "schemaType": "Enum",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "weightValuationIndicator",
@@ -145,7 +162,8 @@
       "type": "PrepaidCollectIndicator",
       "schemaType": "CodeList",
       "array": false,
-      "codelist": false
+      "codelist": true,
+      "columnSubTypes": ""
     },
     {
       "name": "events",
@@ -153,7 +171,8 @@
       "type": "LogisticsEvent",
       "schemaType": "Event",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "skeletonIndicator",
@@ -161,7 +180,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "destinationCharges",
@@ -169,7 +189,8 @@
       "type": "CurrencyValue",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "involvedParties",
@@ -177,7 +198,8 @@
       "type": "Party",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "otherCharges",
@@ -185,7 +207,8 @@
       "type": "OtherCharge",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "waybillLineItems",
@@ -193,7 +216,8 @@
       "type": "WaybillLineItem",
       "schemaType": "Embedded",
       "array": true,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "accountingInformation",
@@ -201,7 +225,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "carrierDeclarationDate",
@@ -209,7 +234,8 @@
       "type": "dateTime",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "carrierDeclarationSignature",
@@ -217,7 +243,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "consignorDeclarationSignature",
@@ -225,7 +252,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "destinationCurrencyRate",
@@ -233,7 +261,8 @@
       "type": "double",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "modularCheckNumber",
@@ -241,7 +270,8 @@
       "type": "boolean",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "shippingInfo",
@@ -249,7 +279,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "shippingRefNo",
@@ -257,7 +288,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "waybillNumber",
@@ -265,7 +297,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "waybillPrefix",
@@ -273,7 +306,8 @@
       "type": "string",
       "schemaType": "",
       "array": false,
-      "codelist": false
+      "codelist": false,
+      "columnSubTypes": ""
     }
   ]
 }

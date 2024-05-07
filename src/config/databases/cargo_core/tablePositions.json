@@ -1,118 +1,74 @@
 {
-  "Abstract.Actor": {
-    "x": -1264,
-    "y": 880
-  },
-  "Abstract.Organization": {
-    "x": -1264,
-    "y": 1088
-  },
   "Action.Composing": {
-    "x": -544,
-    "y": 512
+    "x": -528,
+    "y": 48
   },
   "Action.Loading": {
-    "x": 432,
-    "y": 512
-  },
-  "Activity.TransportMovement": {
-    "x": 752,
-    "y": 112
-  },
-  "Activity.UnitComposition": {
-    "x": -240,
+    "x": 448,
     "y": 128
   },
-  "Common.ExternalReference": {
-    "x": -1264,
-    "y": 1456
+  "Activity.TransportMovement": {
+    "x": 768,
+    "y": -48
   },
-  "Common.Location": {
-    "x": -1552,
-    "y": 1200
-  },
-  "Common.Person": {
-    "x": -1552,
-    "y": 704
+  "Activity.UnitComposition": {
+    "x": -208,
+    "y": -112
   },
   "Core.Item": {
     "x": -704,
-    "y": 1136
+    "y": 672
   },
   "Core.Piece": {
     "x": 64,
-    "y": 1136
+    "y": 640
   },
   "Core.Product": {
-    "x": -400,
-    "y": 1536
+    "x": -368,
+    "y": 912
   },
   "Core.Shipment": {
-    "x": 1536,
-    "y": 1264
+    "x": 1616,
+    "y": 656
   },
   "Core.TransportMeans": {
-    "x": 1136,
-    "y": 320
+    "x": 1120,
+    "y": -32
   },
   "Core.ULD": {
-    "x": 80,
-    "y": 320
+    "x": 144,
+    "y": -208
   },
   "Core.Waybill": {
     "x": 1568,
-    "y": -128
+    "y": -480
   },
   "Embedded.ActivitySequence": {
-    "x": 304,
-    "y": -128
-  },
-  "Embedded.Address": {
-    "x": 1264,
-    "y": 1760
+    "x": 128,
+    "y": -512
   },
   "Embedded.Characteristic": {
-    "x": -624,
-    "y": 1904
+    "x": -368,
+    "y": 1392
   },
-  "Embedded.CodeListElement": {
-    "x": -1536,
-    "y": -96
+  "Embedded.MovementTime": {
+    "x": 1136,
+    "y": 432
   },
-  "Embedded.ContactDetail": {
-    "x": 992,
-    "y": 1760
-  },
-  "Embedded.CurrencyValue": {
-    "x": 544,
-    "y": 1760
-  },
-  "Embedded.Dimensions": {
-    "x": 752,
-    "y": 1904
-  },
-  "Embedded.OtherIdentifier": {
-    "x": 560,
-    "y": 1904
-  },
-  "Embedded.Party": {
-    "x": 752,
-    "y": 1760
-  },
-  "Embedded.Value": {
-    "x": 1488,
-    "y": 1760
+  "Embedded.OtherCharge": {
+    "x": 1952,
+    "y": -496
   },
   "Embedded.WaybillLineItem": {
-    "x": 1952,
-    "y": -128
+    "x": 1968,
+    "y": -336
   },
   "Event.LogisticsEvent": {
-    "x": -1328,
-    "y": -96
+    "x": -688,
+    "y": -512
   },
   "Service.Booking": {
     "x": 1088,
-    "y": -272
+    "y": -448
   }
 }
