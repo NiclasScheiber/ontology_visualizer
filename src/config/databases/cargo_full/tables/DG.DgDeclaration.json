@@ -1,16 +1,16 @@
 {
-  "schema": "Common",
-  "name": "LoadingMaterial",
-  "description": "LoadingMaterial describes transportable; complementary non-Piece objects such as dry ice or nets",
+  "schema": "DG",
+  "name": "DgDeclaration",
+  "description": "Dangerous goods declaration",
   "columns": [
     {
-      "name": "manufacturer",
-      "description": "Manufacturing company details and contacts",
-      "type": "Organization",
-      "schemaType": "Agent",
+      "name": "issuedForPiece",
+      "description": "Reference to the Piece the document was issued for",
+      "type": "PieceDg",
+      "schemaType": "DG",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "Carrier|Company|PublicAuthority"
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -31,26 +31,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "attachedIotDevices",
-      "description": "References to all connected IotDevices",
-      "type": "IotDevice",
-      "schemaType": "Common",
-      "array": true,
-      "codelist": false,
-      "columnSubTypes": ""
-    },
-    {
-      "name": "otherIdentifiers",
-      "description": "Details about any other identifier; depending on the context of use",
-      "type": "OtherIdentifier",
-      "schemaType": "Embedded",
-      "array": true,
-      "codelist": false,
-      "columnSubTypes": ""
-    },
-    {
-      "name": "description",
-      "description": "Natural language description if required",
+      "name": "aircraftLimitationInformation",
+      "description": "Contains the Special Handling Code related to the prescribed limitation. Hardcoded to PASSENGER AND CARGO AIRCRAFT or CARGO AIRCRAFT ONLY. This field is mandatory for air (Air) ",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -58,8 +40,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "materialModel",
-      "description": "Model of the LoadingMaterial if any",
+      "name": "complianceDeclarationText",
+      "description": "Contains the warning message complying with the regulations text note. This field is mandatory for air (Air) ",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -67,8 +49,17 @@
       "columnSubTypes": ""
     },
     {
-      "name": "materialType",
-      "description": "Type of the LoadingMaterial",
+      "name": "exclusiveUseIndicator",
+      "description": "Indicates an exclusive use shipment",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "handlingInformation",
+      "description": "Free text. This may include items such as Control temperature for substances stabilized by temperature control; name and telephone number of a responsible person for infectious substances. ",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -76,8 +67,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "serialNumber",
-      "description": "Serial number that allows to uniquely identify the object",
+      "name": "shipperDeclarationText",
+      "description": "Contains the shipper's declaration to comply with the regulations text note. Free text . This field is mandatory for air (Air)",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -101,15 +92,6 @@
       "array": false,
       "codelist": false,
       "columnSubTypes": ""
-    },
-    {
-      "name": "involvedInActions",
-      "description": "References to the Actions the object is involved in",
-      "type": "LogisticsAction",
-      "schemaType": "Abstract",
-      "array": true,
-      "codelist": false,
-      "columnSubTypes": "Check|Composing|Loading|Storing"
     }
   ]
 }

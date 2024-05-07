@@ -154,7 +154,7 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "WaybillType"
+      "columnSubTypes": ""
     },
     {
       "name": "weightValuationIndicator",

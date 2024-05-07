@@ -1,8 +1,17 @@
 {
-  "schema": "Abstract",
-  "name": "LogisticsService",
-  "description": "Superclass: LogisticsService is a sequence of Activities provided by one Party to another",
+  "schema": "Agent",
+  "name": "NonHumanActor",
+  "description": "Non-human actors are actors which are not a person; such as robots",
   "columns": [
+    {
+      "name": "associatedOrganization",
+      "description": "Reference to the Organization the Actor is associated with",
+      "type": "Organization",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
+    },
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
@@ -38,33 +47,6 @@
       "array": false,
       "codelist": false,
       "columnSubTypes": ""
-    },
-    {
-      "name": "activitySequences",
-      "description": "Information about the Activities that are part of the Service and their sequence",
-      "type": "ActivitySequence",
-      "schemaType": "Embedded",
-      "array": true,
-      "codelist": false,
-      "columnSubTypes": ""
-    },
-    {
-      "name": "contactDetails",
-      "description": "Information about contactDetails",
-      "type": "ContactDetail",
-      "schemaType": "Embedded",
-      "array": true,
-      "codelist": false,
-      "columnSubTypes": ""
-    },
-    {
-      "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
-      "type": "Actor",
-      "schemaType": "Agent",
-      "array": true,
-      "codelist": false,
-      "columnSubTypes": "Person|NonHumanActor"
     }
   ]
 }

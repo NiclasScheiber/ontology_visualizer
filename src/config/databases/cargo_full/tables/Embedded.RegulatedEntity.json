@@ -7,7 +7,7 @@
       "name": "owningOrganization",
       "description": "Reference to the Organization for which the RegulatedEntity information is valid",
       "type": "Organization",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": false,
       "codelist": false,
       "columnSubTypes": "Carrier|Company|PublicAuthority"

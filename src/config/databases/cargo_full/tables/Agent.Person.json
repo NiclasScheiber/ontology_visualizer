@@ -1,8 +1,17 @@
 {
-  "schema": "Core",
-  "name": "Product",
-  "description": "Product details",
+  "schema": "Agent",
+  "name": "Person",
+  "description": "Person details",
   "columns": [
+    {
+      "name": "associatedOrganization",
+      "description": "Reference to the Organization the Actor is associated with",
+      "type": "Organization",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Carrier|Company|PublicAuthority"
+    },
     {
       "name": "checks",
       "description": "References to the CheckActions performed on the object",
@@ -22,22 +31,22 @@
       "columnSubTypes": ""
     },
     {
-      "name": "hsCode",
-      "description": "Harmonized Commodity code; refer to hsType used. 6 minimum digits are expected.",
-      "type": "CodeListElement",
-      "schemaType": "Embedded",
+      "name": "contactRole",
+      "description": "Contact type - e.g. Emergency contact; Customs contact; Customer contact",
+      "type": "ContactRole",
+      "schemaType": "Enum",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {
-      "name": "manufacturer",
-      "description": "Manufacturing company details and contacts",
-      "type": "Organization",
-      "schemaType": "Agent",
-      "array": false,
+      "name": "documents",
+      "description": "Linked documents to the person; e.g. driver's license; ID; etc.",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
       "codelist": false,
-      "columnSubTypes": "Carrier|Company|PublicAuthority"
+      "columnSubTypes": ""
     },
     {
       "name": "events",
@@ -58,35 +67,17 @@
       "columnSubTypes": ""
     },
     {
-      "name": "describedObjects",
-      "description": "Reference to the Items or Pieces in which the product can be found.",
-      "type": "PhysicalLogisticsObject",
-      "schemaType": "Abstract",
-      "array": true,
-      "codelist": false,
-      "columnSubTypes": "Piece|Location|IotDevice|LoadingMaterial|Sensor|PieceLiveAnimals|Item|LoadingUnit|TransportMeans|PieceDg|ItemDg|ULD"
-    },
-    {
-      "name": "otherCharacteristics",
-      "description": "Charateristics of the product",
-      "type": "Characteristic",
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
       "schemaType": "Embedded",
       "array": true,
       "codelist": false,
       "columnSubTypes": ""
     },
     {
-      "name": "otherIdentifiers",
-      "description": "Details about any other identifier; depending on the context of use",
-      "type": "OtherIdentifier",
-      "schemaType": "Embedded",
-      "array": true,
-      "codelist": false,
-      "columnSubTypes": ""
-    },
-    {
-      "name": "commodityItemNumber",
-      "description": "Indicates the specific commodity on which the rate class code is applied",
+      "name": "department",
+      "description": "Department / Division / Unit",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -94,8 +85,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "description",
-      "description": "Natural language description if required",
+      "name": "employeeId",
+      "description": "Employee ID",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -103,8 +94,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "hsCommodityDescription",
-      "description": "Commodity description",
+      "name": "firstName",
+      "description": "First name / given name",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -112,8 +103,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "hsCommodityName",
-      "description": "If no Code provided; name of commodity",
+      "name": "jobTitle",
+      "description": "Job title / position",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -121,8 +112,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "hsType",
-      "description": "Reference identifying the type of standard code to be used for the Commodity Classification (Brussels Tariff Nomenclature; EU Harmonized System Code; UN Standard International Trade Classification). Mandatory if the commodity code is more than 6 digits",
+      "name": "lastName",
+      "description": "Last name / family name / surname",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -130,8 +121,17 @@
       "columnSubTypes": ""
     },
     {
-      "name": "uniqueIdentifier",
-      "description": "Manufacturer's unique product identifier",
+      "name": "middleName",
+      "description": "Middle name/ other name",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "salutation",
+      "description": "Salutation ",
       "type": "string",
       "schemaType": "",
       "array": false,

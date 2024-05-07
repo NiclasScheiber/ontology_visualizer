@@ -1,29 +1,29 @@
 {
-  "schema": "Common",
-  "name": "CheckTotalResult",
-  "description": "Result of a Check",
+  "schema": "LiveAnimals",
+  "name": "EpermitConsignment",
+  "description": "Details of the pieces (Live animals) of the permit and specific information such as quantity measured and used to date quota",
   "columns": [
     {
-      "name": "resultOfCheck",
-      "description": "",
-      "type": "Check",
-      "schemaType": "Action",
+      "name": "consignmentItems",
+      "description": "Reference to te pieces (Live Animals) of the permit",
+      "type": "PieceLiveAnimals",
+      "schemaType": "LiveAnimals",
       "array": false,
       "codelist": false,
       "columnSubTypes": ""
     },
     {
-      "name": "certifiedByActor",
-      "description": "Reference to the Actor certifying the result of the Check if required",
-      "type": "Person",
-      "schemaType": "Agent",
+      "name": "epermit",
+      "description": "Reference to the Epermit of the consignment",
+      "type": "LiveAnimalsEpermit",
+      "schemaType": "LiveAnimals",
       "array": false,
       "codelist": false,
       "columnSubTypes": ""
     },
     {
-      "name": "resultValue",
-      "description": "Information about a result Value of any kind of the Check",
+      "name": "examiningQuantity",
+      "description": "Quatity measured by the examining authority (box 14)",
       "type": "Value",
       "schemaType": "Embedded",
       "array": false,
@@ -49,18 +49,9 @@
       "columnSubTypes": ""
     },
     {
-      "name": "checkRemark",
-      "description": "Free text remarks to the check result",
-      "type": "string",
-      "schemaType": "",
-      "array": false,
-      "codelist": false,
-      "columnSubTypes": ""
-    },
-    {
-      "name": "passed",
-      "description": "Boolean indicating whether the Check was passed",
-      "type": "boolean",
+      "name": "usedToDateQuotaQuantity",
+      "description": "total number of specimens exported in the current calendar year and the current annuela quota for the species concerned (box 11a)",
+      "type": "integer",
       "schemaType": "",
       "array": false,
       "codelist": false,

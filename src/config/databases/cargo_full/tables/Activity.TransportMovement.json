@@ -28,7 +28,7 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "ExecutionStatus"
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -136,7 +136,7 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "ModeQualifier"
+      "columnSubTypes": ""
     },
     {
       "name": "contactDetails",
@@ -151,7 +151,7 @@
       "name": "contactPersons",
       "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": true,
       "codelist": false,
       "columnSubTypes": "Person|NonHumanActor"

@@ -1,24 +1,24 @@
 {
-  "schema": "Abstract",
-  "name": "LogisticsActivity",
-  "description": "Superclass: LogisticsActivity is a scheduled set of tasks that is executed as part of one or more Services",
+  "schema": "Common",
+  "name": "LoadingUnit",
+  "description": "Common loading unit/container details",
   "columns": [
     {
-      "name": "checkActions",
-      "description": "References to CheckActions performed for the Activity",
-      "type": "Check",
-      "schemaType": "Action",
-      "array": true,
+      "name": "inUnitComposition",
+      "description": "",
+      "type": "UnitComposition",
+      "schemaType": "Activity",
+      "array": false,
       "codelist": false,
       "columnSubTypes": ""
     },
     {
-      "name": "executionStatus",
-      "description": "Enum stating the status of the Activity",
-      "type": "ExecutionStatus",
-      "schemaType": "Enum",
+      "name": "tareWeight",
+      "description": "Tare weight of the empty ULD",
+      "type": "Value",
+      "schemaType": "Embedded",
       "array": false,
-      "codelist": true,
+      "codelist": false,
       "columnSubTypes": ""
     },
     {
@@ -40,31 +40,22 @@
       "columnSubTypes": ""
     },
     {
-      "name": "contactDetails",
-      "description": "Information about contactDetails",
-      "type": "ContactDetail",
-      "schemaType": "Embedded",
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice",
+      "schemaType": "Common",
       "array": true,
       "codelist": false,
       "columnSubTypes": ""
     },
     {
-      "name": "contactPersons",
-      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
-      "type": "Actor",
-      "schemaType": "Agent",
-      "array": true,
+      "name": "remarks",
+      "description": "Remarks or Supplement Information",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
       "codelist": false,
-      "columnSubTypes": "Person|NonHumanActor"
-    },
-    {
-      "name": "servedServices",
-      "description": "Reference to Services this Activity is executed for",
-      "type": "LogisticsService",
-      "schemaType": "Abstract",
-      "array": true,
-      "codelist": false,
-      "columnSubTypes": "Booking"
+      "columnSubTypes": ""
     },
     {
       "name": "events",
@@ -83,6 +74,15 @@
       "array": false,
       "codelist": false,
       "columnSubTypes": ""
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in",
+      "type": "LogisticsAction",
+      "schemaType": "Abstract",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Check|Composing|Loading|Storing"
     }
   ]
 }

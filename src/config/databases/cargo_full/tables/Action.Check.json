@@ -52,7 +52,7 @@
       "name": "checker",
       "description": "Reference to the Actor performing the Check",
       "type": "Actor",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": false,
       "codelist": false,
       "columnSubTypes": "Person|NonHumanActor"
@@ -64,7 +64,7 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "ActionTimeType"
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -97,7 +97,7 @@
       "name": "contactPersons",
       "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": true,
       "codelist": false,
       "columnSubTypes": "Person|NonHumanActor"
