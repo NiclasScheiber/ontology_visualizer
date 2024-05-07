@@ -34,7 +34,7 @@
       "name": "issuedBy",
       "description": "Name of person (or employee ID) who issued the security status",
       "type": "Person",
-      "schemaType": "Common",
+      "schemaType": "Agent",
       "array": false,
       "codelist": false,
       "columnSubTypes": ""

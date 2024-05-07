@@ -1,8 +1,4 @@
 {
-  "Abstract.Actor": {
-    "x": -1984,
-    "y": 528
-  },
   "Abstract.LogisticsAction": {
     "x": -832,
     "y": -416
@@ -23,17 +19,13 @@
     "x": -1408,
     "y": -416
   },
-  "Abstract.Organization": {
-    "x": -1984,
-    "y": -16
-  },
   "Abstract.PhysicalLogisticsObject": {
     "x": -1984,
     "y": -416
   },
   "Action.Check": {
-    "x": -1408,
-    "y": 1728
+    "x": -1984,
+    "y": 1760
   },
   "Action.Composing": {
     "x": -544,
@@ -44,119 +36,127 @@
     "y": 512
   },
   "Action.Storing": {
-    "x": -1360,
-    "y": 2512
+    "x": -1984,
+    "y": 2560
   },
   "Activity.Storage": {
-    "x": -1696,
-    "y": 2560
+    "x": -1680,
+    "y": 2496
   },
   "Activity.TransportMovement": {
     "x": 752,
-    "y": 112
+    "y": 96
   },
   "Activity.UnitComposition": {
     "x": -240,
     "y": 128
+  },
+  "Agent.Actor": {
+    "x": -1984,
+    "y": 528
+  },
+  "Agent.Carrier": {
+    "x": -1120,
+    "y": -16
+  },
+  "Agent.Company": {
+    "x": -1408,
+    "y": -16
+  },
+  "Agent.NonHumanActor": {
+    "x": -1408,
+    "y": 528
+  },
+  "Agent.Organization": {
+    "x": -1984,
+    "y": -16
+  },
+  "Agent.Person": {
+    "x": -1696,
+    "y": 528
+  },
+  "Agent.PublicAuthority": {
+    "x": -1696,
+    "y": -16
   },
   "BillingSettlement.BillingDetails": {
     "x": 2272,
     "y": -128
   },
   "Common.Answer": {
-    "x": -1984,
+    "x": -1360,
     "y": 2144
-  },
-  "Common.Carrier": {
-    "x": -1120,
-    "y": -16
   },
   "Common.CheckTemplate": {
-    "x": -1696,
-    "y": 1728
+    "x": -1680,
+    "y": 1760
   },
   "Common.CheckTotalResult": {
-    "x": -1696,
+    "x": -1664,
     "y": 2144
-  },
-  "Common.Company": {
-    "x": -1408,
-    "y": -16
   },
   "Common.ExternalReference": {
     "x": -1984,
     "y": 1168
   },
   "Common.IotDevice": {
-    "x": -928,
-    "y": 2560
+    "x": -1984,
+    "y": 3072
   },
   "Common.LoadingMaterial": {
     "x": -1696,
+    "y": 1168
+  },
+  "Common.LoadingUnit": {
+    "x": -2272,
     "y": 1168
   },
   "Common.Location": {
     "x": -1408,
     "y": 1168
   },
-  "Common.NonHumanActor": {
-    "x": -1408,
-    "y": 528
-  },
-  "Common.Person": {
-    "x": -1696,
-    "y": 528
-  },
-  "Common.PublicAuthority": {
-    "x": -1696,
-    "y": -16
-  },
   "Common.Question": {
-    "x": -1984,
-    "y": 1728
+    "x": -1360,
+    "y": 1760
   },
   "Common.Sensor": {
-    "x": -624,
-    "y": 2560
+    "x": -1664,
+    "y": 3072
   },
   "Core.CO2Emissions": {
-    "x": 432,
-    "y": 112
+    "x": 208,
+    "y": 0
   },
   "Core.CustomsInformation": {
     "x": 640,
-    "y": 1536
+    "y": 1472
   },
   "Core.Insurance": {
-    "x": 1584,
-    "y": 1008
+    "x": 1472,
+    "y": 992
   },
   "Core.Item": {
     "x": -704,
     "y": 1136
   },
-  "Core.LoadingUnit": {
-    "x": -2288,
-    "y": -16
-  },
   "Core.PackagingType": {
     "x": 640,
-    "y": 1280
+    "y": 1200
   },
   "Core.Piece": {
     "x": 64,
-    "y": 1136
+    "y": 1056
   },
   "Core.Product": {
     "x": -400,
-    "y": 1536
+    "y": 1568
   },
   "Core.SecurityDeclaration": {
     "x": 624,
     "y": 1920
   },
   "Core.Shipment": {
-    "x": 1584,
+    "x": 1472,
     "y": 1264
   },
   "Core.TransportMeans": {
@@ -171,6 +171,30 @@
     "x": 1568,
     "y": -128
   },
+  "DG.DgDeclaration": {
+    "x": 432,
+    "y": 3520
+  },
+  "DG.DgProductRadioactive": {
+    "x": -832,
+    "y": 3376
+  },
+  "DG.DgRadioactiveIsotope": {
+    "x": -880,
+    "y": 3712
+  },
+  "DG.ItemDg": {
+    "x": -816,
+    "y": 2592
+  },
+  "DG.PieceDg": {
+    "x": 64,
+    "y": 2592
+  },
+  "DG.ProductDg": {
+    "x": -464,
+    "y": 2928
+  },
   "Distribution.BookingOption": {
     "x": 3520,
     "y": -592
@@ -180,8 +204,8 @@
     "y": -448
   },
   "Distribution.BookingRequest": {
-    "x": 1568,
-    "y": -448
+    "x": 1584,
+    "y": -656
   },
   "Distribution.BookingShipment": {
     "x": 2736,
@@ -196,64 +220,64 @@
     "y": 288
   },
   "Distribution.TransportLegs": {
-    "x": 3088,
-    "y": -128
+    "x": 3904,
+    "y": -208
   },
   "Embedded.ActivitySequence": {
     "x": 304,
     "y": -128
   },
   "Embedded.Address": {
-    "x": 288,
-    "y": 2800
+    "x": -1632,
+    "y": 3920
   },
   "Embedded.Adjustments": {
     "x": 2272,
     "y": 464
   },
   "Embedded.BookingPreferences": {
-    "x": 3104,
-    "y": -496
+    "x": 2752,
+    "y": 0
   },
   "Embedded.BookingTimes": {
     "x": 3136,
-    "y": -704
+    "y": -128
   },
   "Embedded.CarrierProduct": {
-    "x": 3136,
-    "y": -272
+    "x": 3120,
+    "y": -304
   },
   "Embedded.Characteristic": {
-    "x": -32,
-    "y": 2240
+    "x": -608,
+    "y": 1904
   },
   "Embedded.CodeListElement": {
-    "x": -96,
-    "y": 2560
+    "x": -2016,
+    "y": 3680
   },
   "Embedded.ContactDetail": {
-    "x": -96,
-    "y": 3024
+    "x": -2016,
+    "y": 4144
   },
   "Embedded.CurrencyValue": {
-    "x": 288,
-    "y": 2560
+    "x": -1632,
+    "y": 3680
   },
   "Embedded.Dimensions": {
-    "x": 160,
-    "y": 2896
+    "x": -1760,
+    "y": 4016
   },
   "Embedded.Geolocation": {
-    "x": 288,
-    "y": 2672
+    "x": -1632,
+    "y": 3792
   },
   "Embedded.LoosePiece": {
     "x": 2736,
     "y": 912
   },
   "Embedded.Measurement": {
-    "x": -624,
-    "y": 2960
+    "x": -1664,
+    "y": 3472
   },
   "Embedded.MovementTime": {
     "x": 1136,
@@ -261,15 +285,15 @@
   },
   "Embedded.OtherCharge": {
     "x": 1952,
-    "y": 704
+    "y": -32
   },
   "Embedded.OtherIdentifier": {
-    "x": 96,
-    "y": 2672
+    "x": -1824,
+    "y": 3792
   },
   "Embedded.Party": {
-    "x": -96,
-    "y": 2896
+    "x": -2016,
+    "y": 4016
   },
   "Embedded.PieceGroup": {
     "x": 2736,
@@ -284,12 +308,12 @@
     "y": 2000
   },
   "Embedded.StationRemarks": {
-    "x": 3888,
-    "y": -112
+    "x": 3920,
+    "y": -400
   },
   "Embedded.TemperatureInstructions": {
-    "x": -96,
-    "y": 2784
+    "x": -2016,
+    "y": 3904
   },
   "Embedded.ULDBasicPiece": {
     "x": 2736,
@@ -300,28 +324,44 @@
     "y": 1696
   },
   "Embedded.UnitsPreference": {
-    "x": 3136,
-    "y": 288
+    "x": 3120,
+    "y": 64
   },
   "Embedded.Value": {
-    "x": 288,
-    "y": 3040
+    "x": -1632,
+    "y": 4160
   },
   "Embedded.VolumePieceGroup": {
     "x": 2736,
     "y": 1248
   },
   "Embedded.VolumetricWeight": {
-    "x": 96,
-    "y": 2560
+    "x": -1824,
+    "y": 3680
   },
   "Embedded.WaybillLineItem": {
-    "x": 1952,
-    "y": 48
+    "x": 1968,
+    "y": 560
   },
   "Event.LogisticsEvent": {
     "x": -2288,
     "y": -592
+  },
+  "LiveAnimals.EpermitConsignment": {
+    "x": 1120,
+    "y": 2560
+  },
+  "LiveAnimals.EpermitSignature": {
+    "x": 1120,
+    "y": 2864
+  },
+  "LiveAnimals.LiveAnimalsEpermit": {
+    "x": 1424,
+    "y": 2560
+  },
+  "LiveAnimals.PieceLiveAnimals": {
+    "x": 720,
+    "y": 2576
   },
   "Service.Booking": {
     "x": 1088,

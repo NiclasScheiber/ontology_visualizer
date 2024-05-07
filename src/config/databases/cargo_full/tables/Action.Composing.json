@@ -7,7 +7,7 @@
       "name": "loadingUnit",
       "description": "Reference to the LoadingUnit composed in the Unit Composition or referenced in Composing actions",
       "type": "LoadingUnit",
-      "schemaType": "Core",
+      "schemaType": "Common",
       "array": false,
       "codelist": false,
       "columnSubTypes": "ULD"
@@ -46,7 +46,7 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "CompositionType"
+      "columnSubTypes": ""
     },
     {
       "name": "actionTimeType",
@@ -55,7 +55,7 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "ActionTimeType"
+      "columnSubTypes": ""
     },
     {
       "name": "servedActivity",
@@ -97,7 +97,7 @@
       "name": "contactPersons",
       "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": true,
       "codelist": false,
       "columnSubTypes": "Person|NonHumanActor"

@@ -43,7 +43,7 @@
       "name": "carrier",
       "description": "Reference to the operating carrier",
       "type": "Carrier",
-      "schemaType": "Common",
+      "schemaType": "Agent",
       "array": false,
       "codelist": false,
       "columnSubTypes": ""
@@ -64,7 +64,7 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "BookingOptionStatus"
+      "columnSubTypes": ""
     },
     {
       "name": "unitsPreference",

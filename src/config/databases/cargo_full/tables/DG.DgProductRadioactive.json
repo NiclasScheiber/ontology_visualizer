@@ -1,32 +1,32 @@
 {
-  "schema": "Common",
-  "name": "CheckTotalResult",
-  "description": "Result of a Check",
+  "schema": "DG",
+  "name": "DgProductRadioactive",
+  "description": "Details of the radioactive products ",
   "columns": [
     {
-      "name": "resultOfCheck",
-      "description": "",
-      "type": "Check",
-      "schemaType": "Action",
+      "name": "forProductDg",
+      "description": "Reference to the ProductDg this DgProductRadiosctive details",
+      "type": "ProductDg",
+      "schemaType": "DG",
       "array": false,
       "codelist": false,
       "columnSubTypes": ""
     },
     {
-      "name": "certifiedByActor",
-      "description": "Reference to the Actor certifying the result of the Check if required",
-      "type": "Person",
-      "schemaType": "Agent",
+      "name": "dgRaTypeCode",
+      "description": "The category of the package or all packed in one. Complete text to be transmitted: I-White; II-Yellow; III-Yellow instead of I; II; III",
+      "type": "RaTypeCode",
+      "schemaType": "CodeList",
       "array": false,
-      "codelist": false,
+      "codelist": true,
       "columnSubTypes": ""
     },
     {
-      "name": "resultValue",
-      "description": "Information about a result Value of any kind of the Check",
-      "type": "Value",
-      "schemaType": "Embedded",
-      "array": false,
+      "name": "isotopes",
+      "description": "DgRadioactiveIsotope.",
+      "type": "DgRadioactiveIsotope",
+      "schemaType": "DG",
+      "array": true,
       "codelist": false,
       "columnSubTypes": ""
     },
@@ -49,8 +49,17 @@
       "columnSubTypes": ""
     },
     {
-      "name": "checkRemark",
-      "description": "Free text remarks to the check result",
+      "name": "fissileExceptionIndicator",
+      "description": "Indicates if Fissile is excepted",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "fissileExceptionReference",
+      "description": "Fissile exception reference; mandatory if Fissile Exception Indicator is true.",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -58,9 +67,9 @@
       "columnSubTypes": ""
     },
     {
-      "name": "passed",
-      "description": "Boolean indicating whether the Check was passed",
-      "type": "boolean",
+      "name": "transportIndexNumeric",
+      "description": "Radioactive Transport-Index value of the package or all packed in one. Conditionally mandator and applies to categories II-Yellow and III-Yellow only",
+      "type": "integer",
       "schemaType": "",
       "array": false,
       "codelist": false,

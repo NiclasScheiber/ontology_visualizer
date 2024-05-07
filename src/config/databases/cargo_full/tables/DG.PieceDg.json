@@ -1,7 +1,7 @@
 {
-  "schema": "Core",
-  "name": "Piece",
-  "description": "Individual piece or virtual grouping of pieces",
+  "schema": "DG",
+  "name": "PieceDg",
+  "description": "Dangerous Goods subtype of Piece",
   "columns": [
     {
       "name": "inPiece",
@@ -26,6 +26,15 @@
       "description": "Packaging details ",
       "type": "PackagingType",
       "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "dgDeclaration",
+      "description": "Reference to the Dangerous Goods declaration",
+      "type": "DgDeclaration",
+      "schemaType": "DG",
       "array": false,
       "codelist": false,
       "columnSubTypes": ""
@@ -175,6 +184,15 @@
       "columnSubTypes": ""
     },
     {
+      "name": "overpackTypeCode",
+      "description": "Identifies the Logistic Unit package type. UN Recommendation on Transport of Dangerous Goods; Model Regulations ",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
@@ -304,6 +322,51 @@
       "name": "upid",
       "description": "Unique Piece Identifier (UPID) of the piece. Refer IATA Recommended Practice 1689",
       "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "allPackedInOneIndicator",
+      "description": "A statement identifying that the dangerous goods listed above are all contained in the same outer packaging. Takes the form All packed in one aaaa (description of packaging type) x nn (number of packages). Applies to air transport only. (Air) ",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "overpackCriticalitySafetyIndexNumeric",
+      "description": "Applies to fissile material only; other than fissile excepted. A numeric value expressed to one decimal place preceded by the letters CSI. ",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "overpackIndicator",
+      "description": "Overpack indicator ",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "overpackT1",
+      "description": "A single number assigned to a package; overpack or freight container to provide control over radiation exposure. ",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "qValueNumeric",
+      "description": "Most instances of all packed in one will require the addition of the Q value which  1. Applies to air transport only. (Air)  ",
+      "type": "double",
       "schemaType": "",
       "array": false,
       "codelist": false,

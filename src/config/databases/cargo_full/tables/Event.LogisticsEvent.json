@@ -37,13 +37,13 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "EventTimeType"
+      "columnSubTypes": ""
     },
     {
       "name": "recordingActor",
       "description": "Reference to the Actor recording the LogisticsEvent",
       "type": "Actor",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": false,
       "codelist": false,
       "columnSubTypes": "Person|NonHumanActor"
@@ -52,7 +52,7 @@
       "name": "recordingOrganization",
       "description": "Organization recording the LogisticsEvent",
       "type": "Organization",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": false,
       "codelist": false,
       "columnSubTypes": "Carrier|Company|PublicAuthority"

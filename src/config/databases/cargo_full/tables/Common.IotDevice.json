@@ -25,7 +25,7 @@
       "name": "manufacturer",
       "description": "Manufacturing company details and contacts",
       "type": "Company",
-      "schemaType": "Common",
+      "schemaType": "Agent",
       "array": false,
       "codelist": false,
       "columnSubTypes": "Carrier"

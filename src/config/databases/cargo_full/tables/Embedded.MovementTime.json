@@ -10,7 +10,7 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "DirectionType"
+      "columnSubTypes": ""
     },
     {
       "name": "movementMilestone",
@@ -28,7 +28,7 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "MovementTimeType"
+      "columnSubTypes": ""
     },
     {
       "name": "movementTimestamp",

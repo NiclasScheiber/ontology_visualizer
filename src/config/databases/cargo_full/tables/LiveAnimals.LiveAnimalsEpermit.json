@@ -1,20 +1,11 @@
 {
-  "schema": "Common",
-  "name": "ExternalReference",
-  "description": "Reference documents details",
+  "schema": "LiveAnimals",
+  "name": "LiveAnimalsEpermit",
+  "description": "Epermit for Live Animals details",
   "columns": [
     {
-      "name": "createdAtLocation",
-      "description": "Location of the document; e.g. location where the document was emitted",
-      "type": "Location",
-      "schemaType": "Common",
-      "array": false,
-      "codelist": false,
-      "columnSubTypes": ""
-    },
-    {
-      "name": "originator",
-      "description": "Document originator details and contacts",
+      "name": "consignee",
+      "description": "Reference to the Organization that fulfills the role of the consignee; for a LiveAnimalsEpermit it has to include complete name and address (box 3)",
       "type": "Company",
       "schemaType": "Agent",
       "array": false,
@@ -22,13 +13,49 @@
       "columnSubTypes": "Carrier"
     },
     {
-      "name": "referenceForObjects",
-      "description": "References to the LogisticsObjects referring to this external reference",
-      "type": "LogisticsObject",
-      "schemaType": "Abstract",
+      "name": "consignments",
+      "description": "Reference to the pieces and properties linked to the Permit (box 7 to 12)",
+      "type": "EpermitConsignment",
+      "schemaType": "LiveAnimals",
       "array": true,
       "codelist": false,
-      "columnSubTypes": "LogisticsActivity|Answer|Actor|Piece|Location|EpermitConsignment|Organization|IotDevice|PhysicalLogisticsObject|BillingDetails|Booking|BookingOption|BookingRequest|BookingShipment|Carrier|Person|Check|CheckTemplate|CheckTotalResult|CO2Emissions|LoadingMaterial|Composing|Sensor|PieceLiveAnimals|Item|DgProductRadioactive|Product|CustomsInformation|Waybill|DgDeclaration|ExternalReference|LiveAnimalsEpermit|BookingOptionRequest|Price|ProductDg|UnitComposition|Insurance|Shipment|LogisticsAction|DgRadioactiveIsotope|LoadingUnit|Loading|TransportMeans|TransportMovement|Company|PackagingType|LogisticsAgent|Question|Ratings|SecurityDeclaration|LogisticsService|EpermitSignature|Storing|TransportLegs|PieceDg|ItemDg|NonHumanActor|PublicAuthority|Storage|ULD"
+      "columnSubTypes": ""
+    },
+    {
+      "name": "permitTypeCode",
+      "description": "Code specifying the document name. (box 1)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "signatures",
+      "description": "List of all the signatures of the Epermit (applicant box 4; issuing authority box 6; issuer box 13 and examining authority box 14)",
+      "type": "EpermitSignature",
+      "schemaType": "LiveAnimals",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "transactionPurposeCode",
+      "description": "Code indicating the purpose of the transaction (box 5a)",
+      "type": "TransactionPurposeCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "transportContractTypeCode",
+      "description": "Code specifying the transport document name (box 15)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
     },
     {
       "name": "checks",
@@ -49,8 +76,17 @@
       "columnSubTypes": ""
     },
     {
-      "name": "checksum",
-      "description": "Checksum of the document to validate its integrity",
+      "name": "copyIndicator",
+      "description": "Indicates if the permit is a copy (true) or an original (false) (box 1)",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "epermitNumber",
+      "description": "The original number is a unique number allocated to each document by the relevant Management Authority. (box 1)",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -58,8 +94,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "documentIdentifier",
-      "description": "Unique document identifier",
+      "name": "permitTypeOtherDescription",
+      "description": "Description if TypeCode is Other (box 1)",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -67,8 +103,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "documentLink",
-      "description": "Link to the document; e.g. URL of the file where it is hosted",
+      "name": "specialConditions",
+      "description": "Special conditions (box 5)",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -76,8 +112,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "documentName",
-      "description": "If no DocumentType provided; name of the referenced document ",
+      "name": "transactionPurpose",
+      "description": "Purpose of the transaction in free text (box 5a)",
       "type": "string",
       "schemaType": "",
       "array": false,
@@ -85,17 +121,8 @@
       "columnSubTypes": ""
     },
     {
-      "name": "documentType",
-      "description": "Type of the referenced document . Can refer UNEDIFACT 11  e.g. 74 - Air Waybill; but not limited to",
-      "type": "string",
-      "schemaType": "",
-      "array": false,
-      "codelist": false,
-      "columnSubTypes": ""
-    },
-    {
-      "name": "documentVersion",
-      "description": "Document version number",
+      "name": "transportContractId",
+      "description": "Reference to the Air Waybill or other transport contract document (box 15)",
       "type": "string",
       "schemaType": "",
       "array": false,

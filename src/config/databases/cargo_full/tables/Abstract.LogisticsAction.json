@@ -19,7 +19,7 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": "ActionTimeType"
+      "columnSubTypes": ""
     },
     {
       "name": "servedActivity",
@@ -61,7 +61,7 @@
       "name": "contactPersons",
       "description": "References to Actors (Person; NonHumanActor) acting as contacts",
       "type": "Actor",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": true,
       "codelist": false,
       "columnSubTypes": "Person|NonHumanActor"

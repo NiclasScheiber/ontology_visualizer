@@ -46,7 +46,7 @@
       "schemaType": "",
       "array": false,
       "codelist": false,
-      "columnSubTypes": "duration"
+      "columnSubTypes": ""
     }
   ]
 }

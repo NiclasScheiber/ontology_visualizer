@@ -16,7 +16,7 @@
       "name": "answerActor",
       "description": "Reference to the Actor giving the Answer",
       "type": "Actor",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": false,
       "codelist": false,
       "columnSubTypes": "Person|NonHumanActor"

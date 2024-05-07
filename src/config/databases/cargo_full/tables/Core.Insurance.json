@@ -7,7 +7,7 @@
       "name": "coveringOrganization",
       "description": "Party covering the insurance ",
       "type": "Organization",
-      "schemaType": "Abstract",
+      "schemaType": "Agent",
       "array": false,
       "codelist": false,
       "columnSubTypes": "Carrier|Company|PublicAuthority"

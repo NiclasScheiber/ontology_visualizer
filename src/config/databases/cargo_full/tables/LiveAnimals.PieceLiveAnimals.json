@@ -1,7 +1,7 @@
 {
-  "schema": "Core",
-  "name": "Piece",
-  "description": "Individual piece or virtual grouping of pieces",
+  "schema": "LiveAnimals",
+  "name": "PieceLiveAnimals",
+  "description": "LiveAnimals subclass of Piece",
   "columns": [
     {
       "name": "inPiece",
@@ -26,6 +26,15 @@
       "description": "Packaging details ",
       "type": "PackagingType",
       "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "associatedEpermit",
+      "description": "Reference to the permits associated with the Live Animals",
+      "type": "EpermitConsignment",
+      "schemaType": "LiveAnimals",
       "array": false,
       "codelist": false,
       "columnSubTypes": ""
@@ -175,6 +184,60 @@
       "columnSubTypes": ""
     },
     {
+      "name": "exportTradeCountry",
+      "description": "Country of last re-export (box 12a). Refer ISO 3166-2",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "goodsTypeCode",
+      "description": "Appendix number of the convention (I; II or III) (box 1)",
+      "type": "GoodsTypeCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "goodsTypeExtensionCode",
+      "description": "Appendix number of the convention (I; II or III) (box 1)",
+      "type": "GoodsTypeExtensionCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "originReferencePermitTypeCode",
+      "description": "Document type code of origin reference permit or re-export reference Certificate (box 12/12a)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "originTradeCountry",
+      "description": "country of origin (box 12). Refer ISO 3166-2",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "specimenTypeCode",
+      "description": "Description of specimens; CITES type code (box 9)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
       "name": "events",
       "description": "Events object",
       "type": "LogisticsEvent",
@@ -310,6 +373,60 @@
       "columnSubTypes": ""
     },
     {
+      "name": "acquisitionDateTime",
+      "description": "Defined in Resolution Conf. 13.6 and is required for pre-Convention specimens (box 12b)",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "annualQuotaQuantity",
+      "description": "total number of specimens exported in the current calendar year and the current annuela quota for the species concerned (box 11a)",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "originReferencePermitDateTime",
+      "description": "Issuing date for Origin reference permit or re-export reference Certificate (box 12)",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "originReferencePermitId",
+      "description": "identifier of Origin reference permit or re-export reference Certificate (box 12/12a)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "quantityAnimals",
+      "description": "Quantity including units (box 11)",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "specimenDescription",
+      "description": "Description of specimens; including age and sex if LA (box 9)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
       "name": "shippingMarks",
       "description": "Shipping marks",
       "type": "string",
@@ -321,6 +438,33 @@
     {
       "name": "textualHandlingInstructions",
       "description": "Strings to provide free text handling instructions such as SSR and OSI",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "categoryCode",
+      "description": "Operations code ID. Refers to the number of the registered captive-breeding or artifical propagation operation (box 12b)",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "speciesCommonName",
+      "description": "Species common name (box 8)",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "speciesScientificName",
+      "description": "Species scientific name (box 7)",
       "type": "string",
       "schemaType": "",
       "array": true,

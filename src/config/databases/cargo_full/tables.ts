@@ -1,7 +1,7 @@
 import { TableConfig } from "../../../Visualizer/types";
 
 import embeddedActivitySequenceTable from "./tables/Embedded.ActivitySequence.json";
-import abstractActorTable from "./tables/Abstract.Actor.json";
+import agentActorTable from "./tables/Agent.Actor.json";
 import embeddedAddressTable from "./tables/Embedded.Address.json";
 import embeddedAdjustmentsTable from "./tables/Embedded.Adjustments.json";
 import commonAnswerTable from "./tables/Common.Answer.json";
@@ -14,27 +14,34 @@ import distributionBookingRequestTable from "./tables/Distribution.BookingReques
 import distributionBookingShipmentTable from "./tables/Distribution.BookingShipment.json";
 import embeddedBookingTimesTable from "./tables/Embedded.BookingTimes.json";
 import coreCO2EmissionsTable from "./tables/Core.CO2Emissions.json";
-import commonCarrierTable from "./tables/Common.Carrier.json";
+import agentCarrierTable from "./tables/Agent.Carrier.json";
 import embeddedCarrierProductTable from "./tables/Embedded.CarrierProduct.json";
 import embeddedCharacteristicTable from "./tables/Embedded.Characteristic.json";
 import actionCheckTable from "./tables/Action.Check.json";
 import commonCheckTemplateTable from "./tables/Common.CheckTemplate.json";
 import commonCheckTotalResultTable from "./tables/Common.CheckTotalResult.json";
 import embeddedCodeListElementTable from "./tables/Embedded.CodeListElement.json";
-import commonCompanyTable from "./tables/Common.Company.json";
+import agentCompanyTable from "./tables/Agent.Company.json";
 import actionComposingTable from "./tables/Action.Composing.json";
 import embeddedContactDetailTable from "./tables/Embedded.ContactDetail.json";
 import embeddedCurrencyValueTable from "./tables/Embedded.CurrencyValue.json";
 import coreCustomsInformationTable from "./tables/Core.CustomsInformation.json";
+import dGDgDeclarationTable from "./tables/DG.DgDeclaration.json";
+import dGDgProductRadioactiveTable from "./tables/DG.DgProductRadioactive.json";
+import dGDgRadioactiveIsotopeTable from "./tables/DG.DgRadioactiveIsotope.json";
 import embeddedDimensionsTable from "./tables/Embedded.Dimensions.json";
+import liveAnimalsEpermitConsignmentTable from "./tables/LiveAnimals.EpermitConsignment.json";
+import liveAnimalsEpermitSignatureTable from "./tables/LiveAnimals.EpermitSignature.json";
 import commonExternalReferenceTable from "./tables/Common.ExternalReference.json";
 import embeddedGeolocationTable from "./tables/Embedded.Geolocation.json";
 import coreInsuranceTable from "./tables/Core.Insurance.json";
 import commonIotDeviceTable from "./tables/Common.IotDevice.json";
 import coreItemTable from "./tables/Core.Item.json";
+import dGItemDgTable from "./tables/DG.ItemDg.json";
+import liveAnimalsLiveAnimalsEpermitTable from "./tables/LiveAnimals.LiveAnimalsEpermit.json";
 import actionLoadingTable from "./tables/Action.Loading.json";
 import commonLoadingMaterialTable from "./tables/Common.LoadingMaterial.json";
-import coreLoadingUnitTable from "./tables/Core.LoadingUnit.json";
+import commonLoadingUnitTable from "./tables/Common.LoadingUnit.json";
 import commonLocationTable from "./tables/Common.Location.json";
 import abstractLogisticsActionTable from "./tables/Abstract.LogisticsAction.json";
 import abstractLogisticsActivityTable from "./tables/Abstract.LogisticsActivity.json";
@@ -45,19 +52,22 @@ import abstractLogisticsServiceTable from "./tables/Abstract.LogisticsService.js
 import embeddedLoosePieceTable from "./tables/Embedded.LoosePiece.json";
 import embeddedMeasurementTable from "./tables/Embedded.Measurement.json";
 import embeddedMovementTimeTable from "./tables/Embedded.MovementTime.json";
-import commonNonHumanActorTable from "./tables/Common.NonHumanActor.json";
-import abstractOrganizationTable from "./tables/Abstract.Organization.json";
+import agentNonHumanActorTable from "./tables/Agent.NonHumanActor.json";
+import agentOrganizationTable from "./tables/Agent.Organization.json";
 import embeddedOtherChargeTable from "./tables/Embedded.OtherCharge.json";
 import embeddedOtherIdentifierTable from "./tables/Embedded.OtherIdentifier.json";
 import corePackagingTypeTable from "./tables/Core.PackagingType.json";
 import embeddedPartyTable from "./tables/Embedded.Party.json";
-import commonPersonTable from "./tables/Common.Person.json";
+import agentPersonTable from "./tables/Agent.Person.json";
 import abstractPhysicalLogisticsObjectTable from "./tables/Abstract.PhysicalLogisticsObject.json";
 import corePieceTable from "./tables/Core.Piece.json";
+import dGPieceDgTable from "./tables/DG.PieceDg.json";
 import embeddedPieceGroupTable from "./tables/Embedded.PieceGroup.json";
+import liveAnimalsPieceLiveAnimalsTable from "./tables/LiveAnimals.PieceLiveAnimals.json";
 import distributionPriceTable from "./tables/Distribution.Price.json";
 import coreProductTable from "./tables/Core.Product.json";
-import commonPublicAuthorityTable from "./tables/Common.PublicAuthority.json";
+import dGProductDgTable from "./tables/DG.ProductDg.json";
+import agentPublicAuthorityTable from "./tables/Agent.PublicAuthority.json";
 import commonQuestionTable from "./tables/Common.Question.json";
 import embeddedRangesTable from "./tables/Embedded.Ranges.json";
 import distributionRatingsTable from "./tables/Distribution.Ratings.json";
@@ -85,7 +95,7 @@ import embeddedWaybillLineItemTable from "./tables/Embedded.WaybillLineItem.json
 
 const tables: TableConfig[] = [
   embeddedActivitySequenceTable,
-  abstractActorTable,
+  agentActorTable,
   embeddedAddressTable,
   embeddedAdjustmentsTable,
   commonAnswerTable,
@@ -98,27 +108,34 @@ const tables: TableConfig[] = [
   distributionBookingShipmentTable,
   embeddedBookingTimesTable,
   coreCO2EmissionsTable,
-  commonCarrierTable,
+  agentCarrierTable,
   embeddedCarrierProductTable,
   embeddedCharacteristicTable,
   actionCheckTable,
   commonCheckTemplateTable,
   commonCheckTotalResultTable,
   embeddedCodeListElementTable,
-  commonCompanyTable,
+  agentCompanyTable,
   actionComposingTable,
   embeddedContactDetailTable,
   embeddedCurrencyValueTable,
   coreCustomsInformationTable,
+  dGDgDeclarationTable,
+  dGDgProductRadioactiveTable,
+  dGDgRadioactiveIsotopeTable,
   embeddedDimensionsTable,
+  liveAnimalsEpermitConsignmentTable,
+  liveAnimalsEpermitSignatureTable,
   commonExternalReferenceTable,
   embeddedGeolocationTable,
   coreInsuranceTable,
   commonIotDeviceTable,
   coreItemTable,
+  dGItemDgTable,
+  liveAnimalsLiveAnimalsEpermitTable,
   actionLoadingTable,
   commonLoadingMaterialTable,
-  coreLoadingUnitTable,
+  commonLoadingUnitTable,
   commonLocationTable,
   abstractLogisticsActionTable,
   abstractLogisticsActivityTable,
@@ -129,19 +146,22 @@ const tables: TableConfig[] = [
   embeddedLoosePieceTable,
   embeddedMeasurementTable,
   embeddedMovementTimeTable,
-  commonNonHumanActorTable,
-  abstractOrganizationTable,
+  agentNonHumanActorTable,
+  agentOrganizationTable,
   embeddedOtherChargeTable,
   embeddedOtherIdentifierTable,
   corePackagingTypeTable,
   embeddedPartyTable,
-  commonPersonTable,
+  agentPersonTable,
   abstractPhysicalLogisticsObjectTable,
   corePieceTable,
+  dGPieceDgTable,
   embeddedPieceGroupTable,
+  liveAnimalsPieceLiveAnimalsTable,
   distributionPriceTable,
   coreProductTable,
-  commonPublicAuthorityTable,
+  dGProductDgTable,
+  agentPublicAuthorityTable,
   commonQuestionTable,
   embeddedRangesTable,
   distributionRatingsTable,
