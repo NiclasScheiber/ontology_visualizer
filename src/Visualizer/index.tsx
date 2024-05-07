@@ -295,7 +295,7 @@ const Flow: React.FC<FlowProps> = (props: FlowProps) => {
   // https://stackoverflow.com/questions/16664584/changing-an-svg-markers-color-css
   return (    
     <div className="Flow">
-      <Select className="SearchBox" options={searchOption} placeholder="Search your Logistics Object"  onChange={(event) => {if(event) {
+      <Select className="SearchBox" options={searchOption} placeholder="Search..."  onChange={(event) => {if(event) {
       window.requestAnimationFrame(() => {
 
         const fitViewOptions: FitViewOptions = {
