@@ -29,10 +29,10 @@ export const markdown = (text: string) => {
 export const markdownDescription = (description: string, subtypes: string) => {
   let textPopUp = '';
   if (description){
-    textPopUp = textPopUp + md.renderInline(description)
+    textPopUp = md.renderInline(description)
   }
   if (subtypes){
-    textPopUp = md.render('**Subtypes**: ' + subtypes.replaceAll('|', ', '))
+    textPopUp = textPopUp + md.render('**Subtypes**: ' + subtypes.replaceAll('|', ', '))
   }
   return (textPopUp? textPopUp: 'No Description');
 };
