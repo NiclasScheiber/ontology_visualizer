@@ -26,6 +26,13 @@ export const markdown = (text: string) => {
   return md.renderInline(text);
 };
 
-export const markdownDescription = (text: string) => {
-  return "test" + md.renderInline(text);
+export const markdownDescription = (description: string, subtypes: string) => {
+  let textPopUp = '';
+  if (subtypes){
+    textPopUp = md.render('**Subtypes: ' + subtypes.replaceAll('|', ','))
+  }
+  if (description){
+    textPopUp = textPopUp + md.renderInline(description)
+  }
+  return (textPopUp? textPopUp: 'No Description');
 };

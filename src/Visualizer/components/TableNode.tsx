@@ -1,7 +1,7 @@
 import { useState, FC, useEffect } from "react";
 import { Handle, Position, NodeProps, FitViewOptions, useReactFlow } from "reactflow";
 import { KeyIcon, ArrayIcon, CodelistIcon } from "../components";
-import { markdownDescription } from "../helpers";
+import { markdown, markdownDescription } from "../helpers";
 
 import "@reactflow/node-resizer/dist/style.css";
 
@@ -40,7 +40,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
 
         <div
           className={showDescription ? "table__description table__description--active" : "table__description"}
-          dangerouslySetInnerHTML={{__html: markdownDescription(data.description || "No description.") }} />
+          dangerouslySetInnerHTML={{__html: markdown(data.description || "No description.") }} />
             {"target" && <Handle
               type="target"
               position={Position.Right}
@@ -87,7 +87,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
                 {column.array && <ArrayIcon />}
                 
               </div>
-              <div className={column.columnSubTypes ? "column-name__type bold" : "column-name__type" } 
+              <div className={column.columnSubTypes ? "column-name__type subType" : "column-name__type" } 
               onClick={() => {              
                 window.requestAnimationFrame(() => {
                   
@@ -106,7 +106,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
 
               <div
                 className="column-name__description"
-                dangerouslySetInnerHTML={{__html: markdownDescription(column.description || "No description.") }} />
+                dangerouslySetInnerHTML={{__html: markdownDescription(column.description, column.columnSubTypes) }} />
             </div>
           </div>
         ))}
