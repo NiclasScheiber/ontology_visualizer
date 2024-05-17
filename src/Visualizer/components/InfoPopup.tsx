@@ -27,18 +27,56 @@ export function InfoPopup(props: PopupProps) {
             <strong>SHIFT + hover</strong> over a table node or a column name to see the description.
           </p>
 
-          <p>
-            <strong>CMD + click on an edge</strong> to select and highlight it.
-          </p>
-
-          <p>
-            <strong>CTRL + P</strong> shortcut prints all table node positions to the console and copies them to the clipboard. You can then paste these positions to the <a target="_blank" rel="noreferrer" href="https://github.com/sqlhabit/sql_schema_visualizer/blob/main/src/config/tablePositions.json"><i>TablePositions.json</i></a> file.
-          </p>
-
           <p className="mb-32">
             <strong>Hover over a table node</strong> to highlight all incoming and outgoing edges.
           </p>
 
+          <h2>Legend</h2>
+          <table border="1" width="200px">
+            <tr>
+              <th>Scope colors</th>
+            </tr>
+            <tr>
+              <td bgcolor="#D0D0D0">Embedded</td>
+            </tr>
+            <tr>
+              <td bgcolor="#BCCEF5">Core</td>
+            </tr>
+            <tr>
+              <td bgcolor="#F8D8C3">Abstract</td>
+            </tr>
+            <tr>
+              <td bgcolor="#FBE187">Service</td>
+            </tr>
+            <tr>
+              <td bgcolor="#DCD9F8">Common</td>
+            </tr>
+            <tr>
+              <td bgcolor="#A9E6E3">Activity</td>
+            </tr>
+            <tr>
+              <td bgcolor="#C19694">Event</td>
+            </tr>
+            <tr>
+              <td bgcolor="#A2EDCD">Action</td>
+            </tr>
+            <tr>
+              <td bgcolor="#C5D084">Billing & Settlement</td>
+            </tr>
+            <tr>
+              <td bgcolor="#78A471">Distribution</td>
+            </tr>
+            <tr>
+              <td bgcolor="#E6BEDD">Agent</td>
+            </tr>
+            <tr>
+              <td bgcolor="#FFA8B8">Dangerous Goods</td>
+            </tr>
+            <tr>
+              <td bgcolor="#D2C897">Live Animals</td>
+            </tr>
+        </table>
+          
           <p dangerouslySetInnerHTML={{__html: markdown("Made with :heart: by [Anatoli Makarevich](https://twitter.com/makaroni4).") }} />
         </div>
       </div>
