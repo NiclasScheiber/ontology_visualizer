@@ -37,43 +37,43 @@ export function InfoPopup(props: PopupProps) {
               <th>Scope colors</th>
             </tr>
             <tr>
-              <td bgcolor="#D0D0D0">Embedded</td>
+              <td style={{ backgroundColor: "#D0D0D0" }}>Embedded</td>
             </tr>
             <tr>
-              <td bgcolor="#BCCEF5">Core</td>
+              <td style={{ backgroundColor: "#BCCEF5" }}>Core</td>
             </tr>
             <tr>
-              <td bgcolor="#F8D8C3">Abstract</td>
+              <td style={{ backgroundColor: "#F8D8C3" }}>Abstract</td>
             </tr>
             <tr>
-              <td bgcolor="#FBE187">Service</td>
+              <td style={{ backgroundColor: "#FBE187" }}>Service</td>
             </tr>
             <tr>
-              <td bgcolor="#DCD9F8">Common</td>
+              <td style={{ backgroundColor: "#DCD9F8" }}>Common</td>
             </tr>
             <tr>
-              <td bgcolor="#A9E6E3">Activity</td>
+              <td style={{ backgroundColor: "#A9E6E3" }}>Activity</td>
             </tr>
             <tr>
-              <td bgcolor="#C19694">Event</td>
+              <td style={{ backgroundColor: "#C19694" }}>Event</td>
             </tr>
             <tr>
-              <td bgcolor="#A2EDCD">Action</td>
+              <td style={{ backgroundColor: "#A2EDCD" }}>Action</td>
             </tr>
             <tr>
-              <td bgcolor="#C5D084">Billing & Settlement</td>
+              <td style={{ backgroundColor: "#C5D084" }}>Billing & Settlement</td>
             </tr>
             <tr>
-              <td bgcolor="#78A471">Distribution</td>
+              <td style={{ backgroundColor: "#78A471" }}>Distribution</td>
             </tr>
             <tr>
-              <td bgcolor="#E6BEDD">Agent</td>
+              <td style={{ backgroundColor: "#E6BEDD" }}>Agent</td>
             </tr>
             <tr>
-              <td bgcolor="#FFA8B8">Dangerous Goods</td>
+              <td style={{ backgroundColor: "#FFA8B8" }}>Dangerous Goods</td>
             </tr>
             <tr>
-              <td bgcolor="#D2C897">Live Animals</td>
+              <td style={{ backgroundColor: "#D2C897" }}>Live Animals</td>
             </tr>
         </table>
           
