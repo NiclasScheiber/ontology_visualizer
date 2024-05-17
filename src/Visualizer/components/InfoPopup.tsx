@@ -32,7 +32,7 @@ export function InfoPopup(props: PopupProps) {
           </p>
 
           <h2>Legend</h2>
-          <table>
+          <table className="info-popup__table">
             <tr>
               <th>Scope colors</th>
             </tr>
