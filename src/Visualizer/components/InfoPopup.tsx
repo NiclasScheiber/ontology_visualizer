@@ -20,19 +20,19 @@ export function InfoPopup(props: PopupProps) {
         <div className="info-popup__body">
           <h2>Legend</h2>
 
-          <div className="tag"><span className="arrow">Embedded</span></div>
-          <div className="tag"><span className="arrow">Core</span></div>
-          <div className="tag"><span className="arrow">Abstract</span></div>
-          <div className="tag"><span className="arrow">Service</span></div>
-          <div className="tag"><span className="arrow">Common</span></div>
-          <div className="tag"><span className="arrow">Activity</span></div>
-          <div className="tag"><span className="arrow">Event</span></div>
-          <div className="tag"><span className="arrow">Action</span></div>
-          <div className="tag"><span className="arrow">Billing & Settlement</span></div>
-          <div className="tag"><span className="arrow">Distribution</span></div>
-          <div className="tag"><span className="arrow">Agent</span></div>
-          <div className="tag"><span className="arrow">Dangerous Goods</span></div>
-          <div className="tag"><span className="arrow">Live Animals</span></div>
+          <p><div className="tag">Embedded</div></p>
+          <p><div className="tag">Core</div></p>
+          <p><div className="tag">Abstract</div></p>
+          <p><div className="tag">Service</div></p>
+          <p><div className="tag">Common</div></p>
+          <p><div className="tag">Activity</div></p>
+          <p><div className="tag">Event</div></p>
+          <p><div className="tag">Action</div></p>
+          <p><div className="tag">Billing & Settlement</div></p>
+          <p><div className="tag">Distribution</div></p>
+          <p><div className="tag">Agent</div></p>
+          <p><div className="tag">Dangerous Goods</div></p>
+          <p><div className="tag">Live Animals</div></p>
 
           <h2>Shortcuts</h2>
 
