@@ -18,7 +18,12 @@ export function InfoPopup(props: PopupProps) {
 
         <div className="info-popup__body">
           <h2>Legend</h2>
-          <p dangerouslySetInnerHTML={{__html: markdown("| Month    | Savings || -------- | ------- || January  | $250    || February | $80     || March    | $420    |") }} />
+          <p dangerouslySetInnerHTML={{__html: markdown("
+                                                        | Month    | Savings |
+                                                        | -------- | ------- |
+                                                        | January  | $250    |
+                                                        | February | $80     |
+                                                        | March    | $420    |") }} />
           <h2>Shortcuts</h2>
 
           <p>
