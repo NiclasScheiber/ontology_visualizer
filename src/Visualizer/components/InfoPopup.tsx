@@ -19,56 +19,56 @@ export function InfoPopup(props: PopupProps) {
 
         <div className="info-popup__body">
           <h2>Legend</h2>
-
+          <p>
           <div className="flex">
             <div className="tag embedded">Embedded</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag core">Core</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag service">Abstract</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag common">Common</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag abstract">Abstract</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag activity">Activity</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag event">Event</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag billing">Billing & Settlement</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag distribution">Distribution</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag agent">Agent</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag dangerGoods">Dangerous Goods</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
           <div className="flex">
             <div className="tag animals">Live Animals</div>
-            <div> Add description here</div>
+            <div className="tagDescription"> Add description here</div>
           </div>
-
+          </p>
           <h2>Shortcuts</h2>
 
           <p>
@@ -78,53 +78,6 @@ export function InfoPopup(props: PopupProps) {
           <p className="mb-32">
             <strong>Hover over a table node</strong> to highlight all incoming and outgoing edges.
           </p>
-
-          <h2>Legend</h2>
-          <table className="info-popup__table">
-            <tr>
-              <th>Scope colors</th>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#D0D0D0" }}>Embedded</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#BCCEF5" }}>Core</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#F8D8C3" }}>Abstract</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#FBE187" }}>Service</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#DCD9F8" }}>Common</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#A9E6E3" }}>Activity</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#C19694" }}>Event</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#A2EDCD" }}>Action</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#C5D084" }}>Billing & Settlement</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#78A471" }}>Distribution</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#E6BEDD" }}>Agent</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#FFA8B8" }}>Dangerous Goods</td>
-            </tr>
-            <tr>
-              <td style={{ backgroundColor: "#D2C897" }}>Live Animals</td>
-            </tr>
-        </table>
-          
         </div>
       </div>
     </div>
