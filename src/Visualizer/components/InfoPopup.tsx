@@ -20,7 +20,19 @@ export function InfoPopup(props: PopupProps) {
         <div className="info-popup__body">
           <h2>Legend</h2>
 
-          <div className="tag"><span class="arrow">Experiment</span></div>
+          <div className="tag"><span className="arrow">Embedded</span></div>
+          <div className="tag"><span className="arrow">Core</span></div>
+          <div className="tag"><span className="arrow">Abstract</span></div>
+          <div className="tag"><span className="arrow">Service</span></div>
+          <div className="tag"><span className="arrow">Common</span></div>
+          <div className="tag"><span className="arrow">Activity</span></div>
+          <div className="tag"><span className="arrow">Event</span></div>
+          <div className="tag"><span className="arrow">Action</span></div>
+          <div className="tag"><span className="arrow">Billing & Settlement</span></div>
+          <div className="tag"><span className="arrow">Distribution</span></div>
+          <div className="tag"><span className="arrow">Agent</span></div>
+          <div className="tag"><span className="arrow">Dangerous Goods</span></div>
+          <div className="tag"><span className="arrow">Live Animals</span></div>
 
           <h2>Shortcuts</h2>
 
