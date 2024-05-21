@@ -1,4 +1,3 @@
-import { markdown } from "../helpers";
 import { CloseIcon } from "../components";
 import { PopupProps } from "../types";
 
