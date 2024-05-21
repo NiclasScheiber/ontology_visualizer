@@ -5,9 +5,9 @@ import { markdownRender } from "../helpers";
 export function InfoPopup(props: PopupProps) {
 
       const legendTable =
-         "| Month    | Savings | \n" +
+         "| Scope    | Description | \n" +
          "| -------- | ------- | \n" +
-         "| January  | $250    | \n" +
+         "| :red[January]  | $250    | \n" +
          "| February | $80     | \n" +
          "| March    | $420    |";
   return (
