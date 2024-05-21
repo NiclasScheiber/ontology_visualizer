@@ -22,15 +22,15 @@ export function InfoPopup(props: PopupProps) {
           <p>
           <div className="flex">
             <div className="tag embedded">Embedded</div>
-            <div className="tagDescription"> Objects that are usually embedded into Logistic Objects</div>
+            <div className="tagDescription"> Objects usually embedded into Logistic Objects</div>
           </div>
           <div className="flex">
             <div className="tag core">Core</div>
             <div className="tagDescription"> Objects essential for the transportation supply chain</div>
           </div>
           <div className="flex">
-            <div className="tag service">Abstract</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tag service">Service</div>
+            <div className="tagDescription"> Objects subtypes of LogisticsService</div>
           </div>
           <div className="flex">
             <div className="tag common">Common</div>
@@ -38,7 +38,7 @@ export function InfoPopup(props: PopupProps) {
           </div>
           <div className="flex">
             <div className="tag abstract">Abstract</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> Superclass not used as such, e.g. LogisticsObject</div>
           </div>
           <div className="flex">
             <div className="tag activity">Activity</div>
@@ -58,7 +58,7 @@ export function InfoPopup(props: PopupProps) {
           </div>
           <div className="flex">
             <div className="tag agent">Agent</div>
-            <div className="tagDescription"> LogisticsAgent</div>
+            <div className="tagDescription"> Objects part of LogisticsAgent superclass</div>
           </div>
           <div className="flex">
             <div className="tag dangerGoods">Dangerous Goods</div>
