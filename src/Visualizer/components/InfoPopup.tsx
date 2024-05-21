@@ -1,15 +1,9 @@
 import { CloseIcon } from "../components";
 import { PopupProps } from "../types";
-import { markdownRender } from "../helpers";
 
 export function InfoPopup(props: PopupProps) {
 
-      const legendTable =
-         "| Scope    | Description | \n" +
-         "| -------- | ------- | \n" +
-         "| :red[January]  | $250    | \n" +
-         "| February | $80     | \n" +
-         "| March    | $420    |";
+
   return (
     <div
       className="info-popup">
@@ -25,7 +19,9 @@ export function InfoPopup(props: PopupProps) {
 
         <div className="info-popup__body">
           <h2>Legend</h2>
-          <p dangerouslySetInnerHTML={{__html: markdownRender(legendTable) }} />
+
+          <div className="tag"> Experiment </div>
+          
           <h2>Shortcuts</h2>
 
           <p>
