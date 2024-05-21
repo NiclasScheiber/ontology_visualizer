@@ -3,6 +3,13 @@ import { PopupProps } from "../types";
 import { markdown } from "../helpers";
 
 export function InfoPopup(props: PopupProps) {
+
+      const legendTable =
+         "| Month    | Savings | \n" +
+         "| -------- | ------- | \n" +
+         "| January  | $250    | \n" +
+         "| February | $80     | \n" +
+         "| March    | $420    |";
   return (
     <div
       className="info-popup">
@@ -18,12 +25,7 @@ export function InfoPopup(props: PopupProps) {
 
         <div className="info-popup__body">
           <h2>Legend</h2>
-          <p dangerouslySetInnerHTML={{__html: markdown("
-                                                        | Month    | Savings |
-                                                        | -------- | ------- |
-                                                        | January  | $250    |
-                                                        | February | $80     |
-                                                        | March    | $420    |") }} />
+          <p dangerouslySetInnerHTML={{__html: markdown(legendTable) }} />
           <h2>Shortcuts</h2>
 
           <p>
