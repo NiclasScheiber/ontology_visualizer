@@ -22,11 +22,11 @@ export function InfoPopup(props: PopupProps) {
           <p>
           <div className="flex">
             <div className="tag embedded">Embedded</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> Objects that are usually embedded into Logistic Objects</div>
           </div>
           <div className="flex">
             <div className="tag core">Core</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> Objects essential for the transportation supply chain</div>
           </div>
           <div className="flex">
             <div className="tag service">Abstract</div>
@@ -34,7 +34,7 @@ export function InfoPopup(props: PopupProps) {
           </div>
           <div className="flex">
             <div className="tag common">Common</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> Common objects that are usually used linked to other Logistic Objects</div>
           </div>
           <div className="flex">
             <div className="tag abstract">Abstract</div>
@@ -42,31 +42,31 @@ export function InfoPopup(props: PopupProps) {
           </div>
           <div className="flex">
             <div className="tag activity">Activity</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> Objects belonging to LogisticsActivity superclass</div>
           </div>
           <div className="flex">
             <div className="tag event">Event</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> LogisticsEvents</div>
           </div>
           <div className="flex">
             <div className="tag billing">Billing & Settlement</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> Objects specifically used for Billing& Settlement purposes</div>
           </div>
           <div className="flex">
             <div className="tag distribution">Distribution</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> Objects designed and used mostly for Distribution </div>
           </div>
           <div className="flex">
             <div className="tag agent">Agent</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> LogisticsAgent</div>
           </div>
           <div className="flex">
             <div className="tag dangerGoods">Dangerous Goods</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> Objects specifically used for transportation of Dangerous Goods as per the DGR</div>
           </div>
           <div className="flex">
             <div className="tag animals">Live Animals</div>
-            <div className="tagDescription"> Add description here</div>
+            <div className="tagDescription"> Objects specifically used for transportation of Live Animals as per the LAR</div>
           </div>
           </p>
           <h2>Shortcuts</h2>
