@@ -1,6 +1,6 @@
 import { CloseIcon } from "../components";
 import { PopupProps } from "../types";
-import { markdown } from "../helpers";
+import { markdownRender } from "../helpers";
 
 export function InfoPopup(props: PopupProps) {
 
@@ -25,7 +25,7 @@ export function InfoPopup(props: PopupProps) {
 
         <div className="info-popup__body">
           <h2>Legend</h2>
-          <p dangerouslySetInnerHTML={{__html: markdown(legendTable) }} />
+          <p dangerouslySetInnerHTML={{__html: markdownRender(legendTable) }} />
           <h2>Shortcuts</h2>
 
           <p>
