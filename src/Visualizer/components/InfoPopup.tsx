@@ -20,51 +20,51 @@ export function InfoPopup(props: PopupProps) {
         <div className="info-popup__body">
           <h2>Legend</h2>
 
-          <div>
+          <div className="flex">
             <div className="tag embedded">Embedded</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag core">Core</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag service">Abstract</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag common">Common</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag abstract">Abstract</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag activity">Activity</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag event">Event</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag billing">Billing & Settlement</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag distribution">Distribution</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag agent">Agent</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag dangerGoods">Dangerous Goods</div>
             <div> Add description here</div>
           </div>
-          <div>
+          <div className="flex">
             <div className="tag animals">Live Animals</div>
             <div> Add description here</div>
           </div>
