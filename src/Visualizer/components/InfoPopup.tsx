@@ -20,19 +20,54 @@ export function InfoPopup(props: PopupProps) {
         <div className="info-popup__body">
           <h2>Legend</h2>
 
-          <p><div className="tag">Embedded</div></p>
-          <p><div className="tag">Core</div></p>
-          <p><div className="tag">Abstract</div></p>
-          <p><div className="tag">Service</div></p>
-          <p><div className="tag">Common</div></p>
-          <p><div className="tag">Activity</div></p>
-          <p><div className="tag">Event</div></p>
-          <p><div className="tag">Action</div></p>
-          <p><div className="tag">Billing & Settlement</div></p>
-          <p><div className="tag">Distribution</div></p>
-          <p><div className="tag">Agent</div></p>
-          <p><div className="tag">Dangerous Goods</div></p>
-          <p><div className="tag">Live Animals</div></p>
+          <div>
+            <div className="tag embedded">Embedded</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag core">Core</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag service">Abstract</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag common">Common</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag abstract">Abstract</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag activity">Activity</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag event">Event</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag billing">Billing & Settlement</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag distribution">Distribution</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag agent">Agent</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag dangerGoods">Dangerous Goods</div>
+            <div> Add description here</div>
+          </div>
+          <div>
+            <div className="tag animals">Live Animals</div>
+            <div> Add description here</div>
+          </div>
 
           <h2>Shortcuts</h2>
 
