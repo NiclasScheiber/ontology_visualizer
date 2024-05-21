@@ -13,14 +13,10 @@ export function InfoPopup(props: PopupProps) {
 
         <h1
           className="info-popup__headline">
-          SQL Schema Visualizer
+          ONE Record Data Model Visualizer
         </h1>
 
         <div className="info-popup__body">
-          <p dangerouslySetInnerHTML={{__html: markdown("Hey :wave: The SQL Schema Visualiser is an open source project, it is built with [React Flow](https://reactflow.dev/). I bet in 20 minutes you can visualize your own schema! :boom: Check out [the README file on Github](https://github.com/sqlhabit/sql_schema_visualisation#readme) for instructions how to do it.") }} />
-
-          <p dangerouslySetInnerHTML={{__html: markdown("The schema you're looking at belongs to a fictional startup called Bindle and featured in [the SQL Habit course](https://www.sqlhabit.com).") }} />
-
           <h2>Shortcuts</h2>
 
           <p>
@@ -77,7 +73,6 @@ export function InfoPopup(props: PopupProps) {
             </tr>
         </table>
           
-          <p dangerouslySetInnerHTML={{__html: markdown("Made with :heart: by [Anatoli Makarevich](https://twitter.com/makaroni4).") }} />
         </div>
       </div>
     </div>
