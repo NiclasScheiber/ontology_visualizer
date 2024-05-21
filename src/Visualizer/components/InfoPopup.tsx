@@ -20,8 +20,8 @@ export function InfoPopup(props: PopupProps) {
         <div className="info-popup__body">
           <h2>Legend</h2>
 
-          <div className="tag"> Experiment </div>
-          
+          <div className="tag"><span class="arrow">Experiment</span></div>
+
           <h2>Shortcuts</h2>
 
           <p>
