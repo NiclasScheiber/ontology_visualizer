@@ -62,7 +62,7 @@
 
 .tag {
   font-family: Helvetica, Arial, sans-serif;
-  display: inline-block;
+  display: flex;
   color: #484343;
   position: relative;
   padding: 4px 4px 4px 4px;
@@ -78,11 +78,14 @@
   background: #d63838;
   text-align: center;
   width: 150px;
+  justify-content: center;
+  align-items: center;
 }
 
 .tagDescription {
-  margin-top: 4px;
+  padding-bottom: 8px;
   width: 400px;
+  align-content: center;
 }
 .embedded {
   background-color: #D0D0D0;
