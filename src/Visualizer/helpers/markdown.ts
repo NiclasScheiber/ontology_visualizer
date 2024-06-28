@@ -26,6 +26,10 @@ export const markdown = (text: string) => {
   return md.renderInline(text);
 };
 
+export const markdownRender = (text: string) => {
+  return md.render(text);
+};
+
 export const markdownDescription = (description: string, subtypes: string) => {
   let textPopUp = '';
   if (description){

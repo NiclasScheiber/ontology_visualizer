@@ -1,8 +1,9 @@
-import { markdown } from "../helpers";
 import { CloseIcon } from "../components";
 import { PopupProps } from "../types";
 
 export function InfoPopup(props: PopupProps) {
+
+
   return (
     <div
       className="info-popup">
@@ -13,33 +14,70 @@ export function InfoPopup(props: PopupProps) {
 
         <h1
           className="info-popup__headline">
-          SQL Schema Visualizer
+          ONE Record Data Model Visualizer
         </h1>
 
         <div className="info-popup__body">
-          <p dangerouslySetInnerHTML={{__html: markdown("Hey :wave: The SQL Schema Visualiser is an open source project, it is built with [React Flow](https://reactflow.dev/). I bet in 20 minutes you can visualize your own schema! :boom: Check out [the README file on Github](https://github.com/sqlhabit/sql_schema_visualisation#readme) for instructions how to do it.") }} />
-
-          <p dangerouslySetInnerHTML={{__html: markdown("The schema you're looking at belongs to a fictional startup called Bindle and featured in [the SQL Habit course](https://www.sqlhabit.com).") }} />
-
+          <h2>Legend</h2>
+          <p>
+          <div className="flex">
+            <div className="tag embedded">Embedded</div>
+            <div className="tagDescription"> Objects usually embedded into Logistic Objects</div>
+          </div>
+          <div className="flex">
+            <div className="tag core">Core</div>
+            <div className="tagDescription"> Objects essential for the transportation supply chain</div>
+          </div>
+          <div className="flex">
+            <div className="tag service">Service</div>
+            <div className="tagDescription"> Objects subtypes of LogisticsService</div>
+          </div>
+          <div className="flex">
+            <div className="tag common">Common</div>
+            <div className="tagDescription"> Common objects that are usually used linked to other Logistic Objects</div>
+          </div>
+          <div className="flex">
+            <div className="tag abstract">Abstract</div>
+            <div className="tagDescription"> Superclass not used as such, e.g. LogisticsObject</div>
+          </div>
+          <div className="flex">
+            <div className="tag activity">Activity</div>
+            <div className="tagDescription"> Objects belonging to LogisticsActivity superclass</div>
+          </div>
+          <div className="flex">
+            <div className="tag event">Event</div>
+            <div className="tagDescription"> LogisticsEvents</div>
+          </div>
+          <div className="flex">
+            <div className="tag billing">Billing & Settlement</div>
+            <div className="tagDescription"> Objects specifically used for Billing& Settlement purposes</div>
+          </div>
+          <div className="flex">
+            <div className="tag distribution">Distribution</div>
+            <div className="tagDescription"> Objects designed and used mostly for Distribution </div>
+          </div>
+          <div className="flex">
+            <div className="tag agent">Agent</div>
+            <div className="tagDescription"> Objects part of LogisticsAgent superclass</div>
+          </div>
+          <div className="flex">
+            <div className="tag dangerGoods">Dangerous Goods</div>
+            <div className="tagDescription"> Objects specifically used for transportation of Dangerous Goods as per the DGR</div>
+          </div>
+          <div className="flex">
+            <div className="tag animals">Live Animals</div>
+            <div className="tagDescription"> Objects specifically used for transportation of Live Animals as per the LAR</div>
+          </div>
+          </p>
           <h2>Shortcuts</h2>
 
           <p>
             <strong>SHIFT + hover</strong> over a table node or a column name to see the description.
           </p>
 
-          <p>
-            <strong>CMD + click on an edge</strong> to select and highlight it.
-          </p>
-
-          <p>
-            <strong>CTRL + P</strong> shortcut prints all table node positions to the console and copies them to the clipboard. You can then paste these positions to the <a target="_blank" rel="noreferrer" href="https://github.com/sqlhabit/sql_schema_visualizer/blob/main/src/config/tablePositions.json"><i>TablePositions.json</i></a> file.
-          </p>
-
           <p className="mb-32">
             <strong>Hover over a table node</strong> to highlight all incoming and outgoing edges.
           </p>
-
-          <p dangerouslySetInnerHTML={{__html: markdown("Made with :heart: by [Anatoli Makarevich](https://twitter.com/makaroni4).") }} />
         </div>
       </div>
     </div>
