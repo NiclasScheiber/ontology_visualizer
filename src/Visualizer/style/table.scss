@@ -13,6 +13,16 @@
     text-align: center;
 
   }
+  
+  &__name:hover {
+    color:rgb(12, 81, 230);
+    fill:rgb(12, 81, 230);
+  }
+
+  &__name:active {
+    color:rgb(230, 12, 12);
+    fill:rgb(230, 12, 12);
+  }
 
   &__columns {
     border: 1px solid #CBD2D9;
