@@ -9,6 +9,7 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
   const [selectedColumn, setSelectedColumn] = useState("");
   const [showDescription, setshowDescription] = useState(false);
   const [descriptionOnHoverActive, setDescriptionOnHoverActive] = useState(false);
+  const [copyOnClickActive, setCopyOnClickActive] = useState(false);
   const reactFlowInstance = useReactFlow();
 
   useEffect(() => {
@@ -16,22 +17,32 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
       if (e.code === "ShiftLeft" || e.code === "ShiftRight") {
         setDescriptionOnHoverActive(true)
       }
+      if (e.code === "ControlLeft" || e.code === "ControlRight") {
+        setCopyOnClickActive(true)
+      }
     }, false);
 
     document.addEventListener("keyup", (e: KeyboardEvent) => {
       if (e.code === "ShiftLeft" || e.code === "ShiftRight") {
         setDescriptionOnHoverActive(false)
       }
+      if (e.code === "ControlLeft" || e.code === "ControlRight") {
+        setCopyOnClickActive(false)
+      }
     }, false);
+
+    
   }, []);
 
   return (
     <div className="table">
       <div
         style={{ backgroundColor: data.schemaColor }}
-        className="table__name"
+        className={copyOnClickActive ? "table__name table__nameHover" : "table__name"}
         onClick={() => {
-          navigator.clipboard.writeText(data.name)
+          if(copyOnClickActive){
+            navigator.clipboard.writeText(data.name)
+          }
         }}
         onMouseEnter={() => {
           if (descriptionOnHoverActive) {
@@ -84,9 +95,11 @@ export const TableNode: FC<NodeProps> = ({ data }) => {
             />}
 
             <div className="column-name__inner">
-              <div className="column-name__name"
+              <div className={copyOnClickActive ? "column-name__name column-name__nameHover" : "column-name__name"}
                 onClick={() => {
-                  navigator.clipboard.writeText(column.name) 
+                  if(copyOnClickActive){
+                    navigator.clipboard.writeText(column.name) 
+                  }
                 }}
               >
                 {column.key && <KeyIcon />}

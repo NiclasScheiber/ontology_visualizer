@@ -14,7 +14,6 @@
   &__name {
     margin-right: 16px;
     display: flex;
-    cursor: pointer;
   }
 
   &__type {
@@ -29,16 +28,17 @@
     fill:rgb(12, 81, 230);
   }
 
-  &__name:hover {
+  &__nameHover:hover {
     color:rgb(12, 81, 230);
     fill:rgb(12, 81, 230);
+    cursor: pointer;
   }
 
-  &__name:active {
+  &__nameHover:active {
     color:rgb(230, 12, 12);
     fill:rgb(230, 12, 12);
+    cursor: pointer;
   }
-
 
   &__description {
     display: none;

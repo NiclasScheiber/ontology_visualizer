@@ -13,17 +13,19 @@
     text-align: center;
 
   }
-  
-  &__name:hover {
+
+  &__nameHover:hover {
     color:rgb(12, 81, 230);
     fill:rgb(12, 81, 230);
+    cursor: pointer;
   }
 
-  &__name:active {
+  &__nameHover:active {
     color:rgb(230, 12, 12);
     fill:rgb(230, 12, 12);
+    cursor: pointer;
   }
-
+  
   &__columns {
     border: 1px solid #CBD2D9;
     border-top: 0;
