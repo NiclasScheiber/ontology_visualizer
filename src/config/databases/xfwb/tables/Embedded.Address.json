@@ -1,0 +1,70 @@
+{
+  "schema": "Embedded",
+  "name": "Address",
+  "description": "Address details",
+  "columns": [
+    {
+      "name": "addressCode",
+      "description": "Address identifier using special coding systems e.g. US CBP FIRMS code",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "cityCode",
+      "description": "UN/LOCODE city code (5 letter) or IATA city code (3 letter)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "country",
+      "description": "Country details. Refer ISO 3166-2",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "postalCode",
+      "description": "Postal / ZIP code",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "regionCode",
+      "description": "Region/ State / Department. Refer ISO 3166-2",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "postOfficeBox",
+      "description": "Post Office box number / code",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "streetAddressLines",
+      "description": "Street address including street name; street number; building number; apartment etc",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

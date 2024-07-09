@@ -6,5 +6,9 @@
   "cargo_core": {
     "name": "ONE Record Conceptual Datamodel",
     "description": "Prototype reduced visualization of the classes of the conceptual ONE Record Data Model 3.0.1"
+  },
+  "xfwb": {
+    "name": "xFWB",
+    "description": ""
   }
 }
