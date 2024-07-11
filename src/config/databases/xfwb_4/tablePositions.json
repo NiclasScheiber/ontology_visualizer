@@ -1,0 +1,314 @@
+{
+  "Core.Waybill": {
+    "x": 0,
+    "y": 0
+  },
+  "Distribution.BookingShipment": {
+    "x": 300,
+    "y": 0
+  },
+  "Common.Location_sig": {
+    "x": 600,
+    "y": 0
+  },
+  "Common.ExternalReference_FF_ID": {
+    "x": 900,
+    "y": 0
+  },
+  "Common.ExternalReference_ASSOC_REF_ID": {
+    "x": 1200,
+    "y": 0
+  },
+  "Core.Shipment": {
+    "x": 1500,
+    "y": 0
+  },
+  "Service.Booking": {
+    "x": 1800,
+    "y": 0
+  },
+  "Common.Location_AWB_ORG": {
+    "x": 2100,
+    "y": 0
+  },
+  "Common.Location_AWB_DES": {
+    "x": 2400,
+    "y": 0
+  },
+  "Common.ExternalReference_ASSOCIATED_DOC": {
+    "x": 0,
+    "y": 450
+  },
+  "Embedded.OtherCharge": {
+    "x": 300,
+    "y": 450
+  },
+  "Embedded.WaybillLineItem": {
+    "x": 600,
+    "y": 450
+  },
+  "Core.Insurance": {
+    "x": 900,
+    "y": 450
+  },
+  "Embedded.Dimensions_Gross": {
+    "x": 1200,
+    "y": 450
+  },
+  "Core.Piece": {
+    "x": 1500,
+    "y": 450
+  },
+  "Distribution.BookingRequest": {
+    "x": 1800,
+    "y": 450
+  },
+  "Embedded.Party_SHP": {
+    "x": 2100,
+    "y": 450
+  },
+  "Embedded.Party_CNE": {
+    "x": 2400,
+    "y": 450
+  },
+  "Embedded.Party_FFW": {
+    "x": 0,
+    "y": 900
+  },
+  "Embedded.Party_OTH": {
+    "x": 300,
+    "y": 900
+  },
+  "Core.CustomsInformation": {
+    "x": 600,
+    "y": 900
+  },
+  "Embedded.Dimensions_RATE": {
+    "x": 900,
+    "y": 900
+  },
+  "Embedded.VolumetricWeight": {
+    "x": 1200,
+    "y": 900
+  },
+  "Distribution.BookingOption": {
+    "x": 1500,
+    "y": 900
+  },
+  "Embedded.OtherIdentifier_SHP_1": {
+    "x": 1800,
+    "y": 900
+  },
+  "Embedded.OtherIdentifier_SHP_2": {
+    "x": 2100,
+    "y": 900
+  },
+  "Agent.Company_SHP": {
+    "x": 2400,
+    "y": 900
+  },
+  "Embedded.OtherIdentifier_SHP_3": {
+    "x": 0,
+    "y": 1350
+  },
+  "Embedded.OtherIdentifier_CNE_1": {
+    "x": 300,
+    "y": 1350
+  },
+  "Embedded.OtherIdentifier_CNE_2": {
+    "x": 600,
+    "y": 1350
+  },
+  "Agent.Company_CNE": {
+    "x": 900,
+    "y": 1350
+  },
+  "Embedded.OtherIdentifier_CNE_3": {
+    "x": 1200,
+    "y": 1350
+  },
+  "Embedded.OtherIdentifier_FFW_1": {
+    "x": 1500,
+    "y": 1350
+  },
+  "Embedded.OtherIdentifier_FFW_2": {
+    "x": 1800,
+    "y": 1350
+  },
+  "Agent.Company_FFW": {
+    "x": 2100,
+    "y": 1350
+  },
+  "Embedded.OtherIdentifier_FFW_3": {
+    "x": 2400,
+    "y": 1350
+  },
+  "Embedded.OtherIdentifier_OTH": {
+    "x": 0,
+    "y": 1800
+  },
+  "Agent.Company_OTH": {
+    "x": 300,
+    "y": 1800
+  },
+  "Action.Loading": {
+    "x": 600,
+    "y": 1800
+  },
+  "Embedded.CarrierProduct": {
+    "x": 900,
+    "y": 1800
+  },
+  "Common.Location_SHP": {
+    "x": 1200,
+    "y": 1800
+  },
+  "Agent.Person_SHP": {
+    "x": 1500,
+    "y": 1800
+  },
+  "Common.Location_CNE": {
+    "x": 1800,
+    "y": 1800
+  },
+  "Agent.Person_CNE": {
+    "x": 2100,
+    "y": 1800
+  },
+  "Common.Location_FFW": {
+    "x": 2400,
+    "y": 1800
+  },
+  "Agent.Person_FFW": {
+    "x": 0,
+    "y": 2250
+  },
+  "Common.Location_OTH": {
+    "x": 300,
+    "y": 2250
+  },
+  "Agent.Person_OTH": {
+    "x": 600,
+    "y": 2250
+  },
+  "Activity.TransportMovement": {
+    "x": 900,
+    "y": 2250
+  },
+  "Embedded.Address_SHP": {
+    "x": 1200,
+    "y": 2250
+  },
+  "Embedded.ContactDetail_SHP_PHONE": {
+    "x": 1500,
+    "y": 2250
+  },
+  "Embedded.ContactDetail_SHP_FAX_NUMBER": {
+    "x": 1800,
+    "y": 2250
+  },
+  "Embedded.ContactDetail_SHP_MAIL": {
+    "x": 2100,
+    "y": 2250
+  },
+  "Embedded.ContactDetail_SHP_TELEX": {
+    "x": 2400,
+    "y": 2250
+  },
+  "Embedded.Address_CNE": {
+    "x": 0,
+    "y": 2700
+  },
+  "Embedded.ContactDetail_CNE_PHONE": {
+    "x": 300,
+    "y": 2700
+  },
+  "Embedded.ContactDetail_CNE_FAX_NUMBER": {
+    "x": 600,
+    "y": 2700
+  },
+  "Embedded.ContactDetail_CNE_MAIL": {
+    "x": 900,
+    "y": 2700
+  },
+  "Embedded.ContactDetail_CNE_TELEX": {
+    "x": 1200,
+    "y": 2700
+  },
+  "Embedded.Address_FFW": {
+    "x": 1500,
+    "y": 2700
+  },
+  "Embedded.ContactDetail_FFW_PHONE": {
+    "x": 1800,
+    "y": 2700
+  },
+  "Embedded.ContactDetail_FFW_FAX_NUMBER": {
+    "x": 2100,
+    "y": 2700
+  },
+  "Embedded.ContactDetail_FFW_MAIL": {
+    "x": 2400,
+    "y": 2700
+  },
+  "Embedded.ContactDetail_FFW_TELEX": {
+    "x": 0,
+    "y": 3150
+  },
+  "Embedded.Address_OTH": {
+    "x": 300,
+    "y": 3150
+  },
+  "Embedded.ContactDetail_OTH_PHONE": {
+    "x": 600,
+    "y": 3150
+  },
+  "Embedded.ContactDetail_OTH_FAX_NUMBER": {
+    "x": 900,
+    "y": 3150
+  },
+  "Embedded.ContactDetail_OTH_MAIL": {
+    "x": 1200,
+    "y": 3150
+  },
+  "Embedded.ContactDetail_OTH_TELEX": {
+    "x": 1500,
+    "y": 3150
+  },
+  "Embedded.MovementTime_SA": {
+    "x": 1800,
+    "y": 3150
+  },
+  "Common.Location_ARR": {
+    "x": 2100,
+    "y": 3150
+  },
+  "Embedded.MovementTime_SD": {
+    "x": 2400,
+    "y": 3150
+  },
+  "Common.Location_DEP": {
+    "x": 0,
+    "y": 3600
+  },
+  "Core.TransportMeans": {
+    "x": 300,
+    "y": 3600
+  },
+  "Agent.Carrier": {
+    "x": 600,
+    "y": 3600
+  },
+  "Embedded.ContactDetail": {
+    "x": 900,
+    "y": 3600
+  },
+  "Embedded.Party": {
+    "x": 1200,
+    "y": 3600
+  },
+  "Embedded.OtherIdentifier_FFW": {
+    "x": 1500,
+    "y": 3600
+  }
+}

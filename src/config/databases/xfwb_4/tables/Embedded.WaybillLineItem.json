@@ -1,0 +1,187 @@
+{
+  "schema": "Embedded",
+  "name": "WaybillLineItem",
+  "description": "Information from AWB Rate Description section as per bullet point 18 - data elements 22A - 22Z from AWB",
+  "columns": [
+    {
+      "name": "lineItemNumber",
+      "description": "",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 299"
+    },
+    {
+      "name": "hsCodeForRate",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 300"
+    },
+    {
+      "name": "grossWeightForRate",
+      "description": "",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 301"
+    },
+    {
+      "name": "dimensionsForRate",
+      "description": "",
+      "type": "Dimensions",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "slacForRate",
+      "description": "",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 303"
+    },
+    {
+      "name": "pieceCountForRate",
+      "description": "",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 304"
+    },
+    {
+      "name": "volumetricWeightForRate",
+      "description": "",
+      "type": "VolumetricWeight",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "goodsDescriptionForRate",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 308"
+    },
+    {
+      "name": "productionCountryForRate",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 311"
+    },
+    {
+      "name": "uldSerialNumber",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 314"
+    },
+    {
+      "name": "uldTareWeightForRate",
+      "description": "",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 315"
+    },
+    {
+      "name": "uldType",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 317"
+    },
+    {
+      "name": "uldOwnerCode",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 319"
+    },
+    {
+      "name": "rateClassCode",
+      "description": "",
+      "type": "RateClassCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "Row 332"
+    },
+    {
+      "name": "commodityItemNumberForRate",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 333"
+    },
+    {
+      "name": "rateCharge",
+      "description": "",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 335"
+    },
+    {
+      "name": "rcp",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 339"
+    },
+    {
+      "name": "uldRateClassType",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 342"
+    },
+    {
+      "name": "rateClassCodeBasic",
+      "description": "",
+      "type": "BasicRateClassCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "Row 343"
+    },
+    {
+      "name": "ratePercentage",
+      "description": "",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 344"
+    }
+  ]
+}

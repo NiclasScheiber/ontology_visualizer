@@ -1,0 +1,106 @@
+{
+  "schema": "Activity",
+  "name": "TransportMovement",
+  "description": "Activity to describe transports; replaces the TransportSegment in v1.1 and above",
+  "columns": [
+    {
+      "name": "modeQualifier",
+      "description": "",
+      "type": "ModeQualifier",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "modeCode",
+      "description": "",
+      "type": "ModeCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "transportIdentifier",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "operatingTransportMeans",
+      "description": "",
+      "type": "TransportMeans",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "movementTimes",
+      "description": "",
+      "type": "MovementTime_SA",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "arrivalLocation",
+      "description": "",
+      "type": "Location_ARR",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "departureLocation",
+      "description": "",
+      "type": "Location_DEP",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "seal",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "transportOrganization",
+      "description": "",
+      "type": "Carrier",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "loadingActions",
+      "description": "",
+      "type": "Loading",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "movementTimes",
+      "description": "",
+      "type": "MovementTime_SD",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

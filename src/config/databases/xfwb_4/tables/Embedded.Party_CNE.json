@@ -1,0 +1,43 @@
+{
+  "schema": "Embedded",
+  "name": "Party_CNE",
+  "description": "Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+  "columns": [
+    {
+      "name": "partyRole",
+      "description": "",
+      "type": "CNE",
+      "schemaType": "",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "Row 86"
+    },
+    {
+      "name": "OtherIdentifers",
+      "description": "",
+      "type": "None",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "partyDetails",
+      "description": "",
+      "type": "LogisticsAgent",
+      "schemaType": "Abstract",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "Party_CNEDetails",
+      "description": "",
+      "type": "None",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

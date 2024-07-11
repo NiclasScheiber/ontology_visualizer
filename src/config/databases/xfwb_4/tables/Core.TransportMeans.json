@@ -1,0 +1,43 @@
+{
+  "schema": "Core",
+  "name": "TransportMeans",
+  "description": "Transport means details",
+  "columns": [
+    {
+      "name": "vehicleRegistration",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 230"
+    },
+    {
+      "name": "vehicleType",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 231"
+    },
+    {
+      "name": "vehicleSize",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 232"
+    },
+    {
+      "name": "operatedTransportMovement",
+      "description": "",
+      "type": "operatingTransportMeans",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

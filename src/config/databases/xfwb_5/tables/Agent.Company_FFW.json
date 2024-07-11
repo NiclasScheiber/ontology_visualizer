@@ -1,0 +1,52 @@
+{
+  "schema": "Agent",
+  "name": "Company_FFW",
+  "description": "Company details",
+  "columns": [
+    {
+      "name": "name",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "iataCargoAgentCode",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "basedAtLocation",
+      "description": "",
+      "type": "Location_FFW",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "iataCargoAgentLocationIdentifier",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactPersons",
+      "description": "",
+      "type": "Person_FFW",
+      "schemaType": "Agent",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

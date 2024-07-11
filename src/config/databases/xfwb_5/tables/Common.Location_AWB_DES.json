@@ -1,0 +1,16 @@
+{
+  "schema": "Common",
+  "name": "Location_AWB_DES",
+  "description": "Location describes a physical location; e.g. an airport; a warehouse or a truck deck",
+  "columns": [
+    {
+      "name": "locationCodes",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

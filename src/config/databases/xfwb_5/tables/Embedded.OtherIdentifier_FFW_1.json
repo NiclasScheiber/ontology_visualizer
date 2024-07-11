@@ -1,0 +1,16 @@
+{
+  "schema": "Embedded",
+  "name": "OtherIdentifier_FFW_1",
+  "description": "Other identifiers",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

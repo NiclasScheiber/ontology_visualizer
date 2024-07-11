@@ -1,0 +1,1255 @@
+[
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "waybillPrefix",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "waybillType",
+      "target": "Enum.WaybillType",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "consignorDeclarationSignature",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "carrierDeclarationDate",
+      "target": ".dateTime",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "carrierDeclarationSignature",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "carrierDeclarationPlace",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "shippingRefNo",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "shippingInfo",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "externalReferences",
+      "target": "Common.ExternalReference",
+      "targetKey": "referenceForObjects",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "shipment",
+      "target": "Core.Shipment",
+      "targetKey": "waybill",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "weightValuationIndicator",
+      "target": "CodeList.PrepaidCollectIndicator",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "chargePaymentType",
+      "target": "CodeList.PrepaidCollectIndicator",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "referredBookingOption",
+      "target": "Service.Booking",
+      "targetKey": "issuedForWaybill",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "departureLocation",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "arrivalLocation",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "accountingInformation",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "destinationCurrencyRate",
+      "target": ".double",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "otherCharges",
+      "target": "Embedded.OtherCharge",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "waybillLineItems",
+      "target": "Embedded.WaybillLineItem",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Waybill",
+      "sourceKey": "waybillNumber",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.Location_sig",
+      "sourceKey": "locationName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.ExternalReference_FF_ID",
+      "sourceKey": "documentIdentifier",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.ExternalReference_ASSOC_REF_ID",
+      "sourceKey": "documentIdentifier",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "insurance",
+      "target": "Core.Insurance",
+      "targetKey": "insuredShipments",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "totalDimensions",
+      "target": "Embedded.Dimensions",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "pieces",
+      "target": "Core.Piece",
+      "targetKey": "ofShipment",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Service.Booking",
+      "sourceKey": "forBookingRequest",
+      "target": "Distribution.BookingRequest",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "involvedParties",
+      "target": "Embedded.Party",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "customsInformation",
+      "target": "Core.CustomsInformation",
+      "targetKey": "issuedForShipment",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Common.ExternalReference_ASSOCIATED_DOC",
+      "sourceKey": "documentIdentifier",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.ExternalReference_ASSOCIATED_DOC",
+      "sourceKey": "validFrom",
+      "target": ".dateTime",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.ExternalReference_ASSOCIATED_DOC",
+      "sourceKey": "documentType",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.ExternalReference_ASSOCIATED_DOC",
+      "sourceKey": "documentName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherCharge",
+      "sourceKey": "otherChargeCode",
+      "target": "CodeList.OtherChargeCode",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherCharge",
+      "sourceKey": "chargePaymentType",
+      "target": "CodeList.PrepaidCollectIndicator",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherCharge",
+      "sourceKey": "entitlement",
+      "target": "CodeList.EntitlementCode",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherCharge",
+      "sourceKey": "quantity",
+      "target": ".double",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.WaybillLineItem",
+      "sourceKey": "lineItemNumber",
+      "target": ".integer",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.WaybillLineItem",
+      "sourceKey": "dimensionsForRate",
+      "target": "Embedded.Dimensions",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.WaybillLineItem",
+      "sourceKey": "slacForRate",
+      "target": ".integer",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.WaybillLineItem",
+      "sourceKey": "pieceCountForRate",
+      "target": ".integer",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.WaybillLineItem",
+      "sourceKey": "volumetricWeightForRate",
+      "target": "Embedded.VolumetricWeight",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.WaybillLineItem",
+      "sourceKey": "goodsDescriptionForRate",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.WaybillLineItem",
+      "sourceKey": "uldSerialNumber",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.WaybillLineItem",
+      "sourceKey": "rateClassCode",
+      "target": "CodeList.RateClassCode",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.WaybillLineItem",
+      "sourceKey": "commodityItemNumberForRate",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.WaybillLineItem",
+      "sourceKey": "rateClassCodeBasic",
+      "target": "CodeList.BasicRateClassCode",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "slac",
+      "target": ".integer",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Party_SHP",
+      "sourceKey": "partyRole",
+      "target": ".SHP",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Party_SHP",
+      "sourceKey": "partyDetails",
+      "target": "Abstract.LogisticsAgent",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Party_CNE",
+      "sourceKey": "partyRole",
+      "target": ".CNE",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Party_CNE",
+      "sourceKey": "partyDetails",
+      "target": "Abstract.LogisticsAgent",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Party_FFW",
+      "sourceKey": "PartyRole",
+      "target": "CodeList.ParticipantIdentifier",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Party_OTH",
+      "sourceKey": "partyRole",
+      "target": "CodeList.ParticipantIdentifier",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Party_OTH",
+      "sourceKey": "partyDetails",
+      "target": "Abstract.LogisticsAgent",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "involvedInActions",
+      "target": "Action.Loading",
+      "targetKey": "loadedPieces",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "specialHandlingCodes",
+      "target": "CodeList.SpecialHandlingCode",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "textualHandlingInstructions",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.CustomsInformation",
+      "sourceKey": "note",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.VolumetricWeight",
+      "sourceKey": "conversionFactor",
+      "target": ".double",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Distribution.BookingOption",
+      "sourceKey": "carrierProduct",
+      "target": "Embedded.CarrierProduct",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_SHP_1",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_SHP_2",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_SHP",
+      "sourceKey": "name",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_SHP_3",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_SHP",
+      "sourceKey": "basedAtLocation",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_SHP",
+      "sourceKey": "contactPersons",
+      "target": ".Person_SHP",
+      "targetKey": "associatedOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_CNE_1",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_CNE_2",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_CNE",
+      "sourceKey": "name",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_CNE_3",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_CNE",
+      "sourceKey": "basedAtLocation",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_CNE",
+      "sourceKey": "contactPersons",
+      "target": ".Person_CNE",
+      "targetKey": "associatedOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_FFW_1",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_FFW_2",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_FFW",
+      "sourceKey": "name",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_FFW_3",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_FFW",
+      "sourceKey": "iataCargoAgentCode",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_FFW",
+      "sourceKey": "basedAtLocation",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_FFW",
+      "sourceKey": "iataCargoAgentLocationIdentifier",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_FFW",
+      "sourceKey": "contactPersons",
+      "target": ".Person_FFW",
+      "targetKey": "associatedOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_OTH",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_OTH",
+      "sourceKey": "name",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_OTH",
+      "sourceKey": "iataCargoAgentCode",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_OTH",
+      "sourceKey": "basedAtLocation",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Company_OTH",
+      "sourceKey": "contactPersons",
+      "target": ".Person_OTH",
+      "targetKey": "associatedOrganization",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Action.Loading",
+      "sourceKey": "servedActivity",
+      "target": "Activity.TransportMovement",
+      "targetKey": "loadingActions",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Common.Location_SHP",
+      "sourceKey": "address",
+      "target": "Embedded.Address",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_SHP",
+      "sourceKey": "firstName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_SHP",
+      "sourceKey": "department",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_SHP",
+      "sourceKey": "contactDetails",
+      "target": "Embedded.ContactDetail",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Common.Location_CNE",
+      "sourceKey": "address",
+      "target": "Embedded.Address",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_CNE",
+      "sourceKey": "firstName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_CNE",
+      "sourceKey": "department",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_CNE",
+      "sourceKey": "contactDetails",
+      "target": "Embedded.ContactDetail",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Common.Location_FFW",
+      "sourceKey": "address",
+      "target": "Embedded.Address",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_FFW",
+      "sourceKey": "firstName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_FFW",
+      "sourceKey": "department",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_FFW",
+      "sourceKey": "contactDetails",
+      "target": "Embedded.ContactDetail",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Common.Location_OTH",
+      "sourceKey": "address",
+      "target": "Embedded.Address",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.Location_OTH",
+      "sourceKey": "locationName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.Location_OTH",
+      "sourceKey": "locationType",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_OTH",
+      "sourceKey": "firstName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_OTH",
+      "sourceKey": "department",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_OTH",
+      "sourceKey": "contactDetails",
+      "target": "Embedded.ContactDetail",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "modeQualifier",
+      "target": "Enum.ModeQualifier",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "modeCode",
+      "target": "CodeList.ModeCode",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "transportIdentifier",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "operatingTransportMeans",
+      "target": "Core.TransportMeans",
+      "targetKey": "operatedTransportMovement",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "movementTimes",
+      "target": "Embedded.MovementTime",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "arrivalLocation",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "departureLocation",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "seal",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Address_SHP",
+      "sourceKey": "streetAddressLines",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Embedded.Address_SHP",
+      "sourceKey": "postOfficeBox",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_SHP",
+      "sourceKey": "lastName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_SHP_PHONE",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_SHP_FAX_NUMBER",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_SHP_MAIL",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_SHP_TELEX",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Address_CNE",
+      "sourceKey": "streetAddressLines",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Embedded.Address_CNE",
+      "sourceKey": "postOfficeBox",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_CNE",
+      "sourceKey": "lastName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_CNE_PHONE",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_CNE_FAX_NUMBER",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_CNE_MAIL",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_CNE_TELEX",
+      "sourceKey": "textualValue",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Address_FFW",
+      "sourceKey": "streetAddressLines",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Embedded.Address_FFW",
+      "sourceKey": "postOfficeBox",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_FFW",
+      "sourceKey": "lastName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_FFW_PHONE",
+      "sourceKey": "textualValue",
+      "target": ".PHONE_NUMBER",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_FFW_FAX_NUMBER",
+      "sourceKey": "textualValue",
+      "target": ".FAX_NUMBER",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_FFW_MAIL",
+      "sourceKey": "textualValue",
+      "target": ".EMAIL_ADDRESS",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_FFW_TELEX",
+      "sourceKey": "textualValue",
+      "target": ".TELEX",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Address_OTH",
+      "sourceKey": "streetAddressLines",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Embedded.Address_OTH",
+      "sourceKey": "postOfficeBox",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_OTH",
+      "sourceKey": "lastName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_OTH_PHONE",
+      "sourceKey": "textualValue",
+      "target": ".PHONE_NUMBER",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_OTH_FAX_NUMBER",
+      "sourceKey": "textualValue",
+      "target": ".FAX_NUMBER",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_OTH_MAIL",
+      "sourceKey": "textualValue",
+      "target": ".EMAIL_ADDRESS",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail_OTH_TELEX",
+      "sourceKey": "textualValue",
+      "target": ".TELEX",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "transportOrganization",
+      "target": "Agent.Organization",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.MovementTime_SA",
+      "sourceKey": "movementTimestamp",
+      "target": ".dateTime",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.Location_ARR",
+      "sourceKey": "locationName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.Location_ARR",
+      "sourceKey": "locationType",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.MovementTime_SD",
+      "sourceKey": "movementTimestamp",
+      "target": ".dateTime",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.Location_DEP",
+      "sourceKey": "locationName",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.Location_DEP",
+      "sourceKey": "locationType",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.TransportMeans",
+      "sourceKey": "vehicleRegistration",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.TransportMeans",
+      "sourceKey": "vehicleSize",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Carrier",
+      "sourceKey": "airlineCode",
+      "target": ".string",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.ExternalReference_FF_ID",
+      "sourceKey": "documentType",
+      "target": ".FF Assigned ID",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.ExternalReference_ASSOC_REF_ID",
+      "sourceKey": "documentType",
+      "target": ".Associated Reference ID",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_SHP_1",
+      "sourceKey": "otherIdentifierType",
+      "target": ".Consignor Internal ID",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_SHP_2",
+      "sourceKey": "otherIdentifierType",
+      "target": ".Consignor Standard ID",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_SHP_3",
+      "sourceKey": "otherIdentifierType",
+      "target": ".Consignor Account number",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.ContactDetail",
+      "sourceKey": "contactDetailType",
+      "target": ".PHONE_NUMBER",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_CNE_1",
+      "sourceKey": "otherIdentifierType",
+      "target": ".Consignee Internal ID",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_CNE_2",
+      "sourceKey": "otherIdentifierType",
+      "target": ".Consignee Standard ID",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_CNE_3",
+      "sourceKey": "otherIdentifierType",
+      "target": ".Consignee Account number",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.Party",
+      "sourceKey": "partyRole",
+      "target": ".FFW",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.OtherIdentifier_FFW",
+      "sourceKey": "OtherIdentifierType",
+      "target": ".Freight Forwarder Internal ID",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.MovementTime_SA",
+      "sourceKey": "movementTimeType",
+      "target": ".SCHEDULED",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Embedded.MovementTime_SD",
+      "sourceKey": "movementTimeType",
+      "target": ".SCHEDULED",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.ExternalReference_FF_ID",
+      "sourceKey": "referenceForObjects",
+      "target": "Core.Waybill",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Common.ExternalReference_ASSOC_REF_ID",
+      "sourceKey": "referenceForObjects",
+      "target": "Core.Waybill",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Common.ExternalReference_ASSOCIATED_DOC",
+      "sourceKey": "referenceForObjects",
+      "target": "Core.Waybill",
+      "targetKey": "externalReferences",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "waybill",
+      "target": "Core.Waybill",
+      "targetKey": "shipment",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Service.Booking",
+      "sourceKey": "issuedForWaybill",
+      "target": "Core.Waybill",
+      "targetKey": "referredBookingOption",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Insurance",
+      "sourceKey": "insuredShipments",
+      "target": "Core.insurance",
+      "targetKey": "Shipment",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "ofShipment",
+      "target": ".pieces",
+      "targetKey": "Shipment",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.CustomsInformation",
+      "sourceKey": "issuedForShipment",
+      "target": "Core.customsInformation",
+      "targetKey": "Shipment",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Action.Loading",
+      "sourceKey": "loadedPieces",
+      "target": ".involvedInActions",
+      "targetKey": "Piece",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "loadingActions",
+      "target": ".servedActivity",
+      "targetKey": "Loading",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.TransportMeans",
+      "sourceKey": "operatedTransportMovement",
+      "target": ".operatingTransportMeans",
+      "targetKey": "TransportMovement",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_SHP",
+      "sourceKey": "associatedOrganization",
+      "target": ".Company_SHP",
+      "targetKey": "contactPersons",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_CNE",
+      "sourceKey": "associatedOrganization",
+      "target": ".Company_CNE",
+      "targetKey": "contactPersons",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_FFW",
+      "sourceKey": "associatedOrganization",
+      "target": ".Company_FFW",
+      "targetKey": "contactPersons",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Agent.Person_OTH",
+      "sourceKey": "associatedOrganization",
+      "target": ".Company_OTH",
+      "targetKey": "contactPersons",
+      "relation": "hasOne"
+    }
+   ]

@@ -1,0 +1,25 @@
+{
+  "schema": "Action",
+  "name": "Loading",
+  "description": "Action to describe onloading or offloading TransportMeans",
+  "columns": [
+    {
+      "name": "servedActivity",
+      "description": "",
+      "type": "TransportMovement",
+      "schemaType": "Activity",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "loadedPieces",
+      "description": "",
+      "type": "involvedInActions",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "Embedded",
+  "name": "ContactDetail_OTH_TELEX",
+  "description": "Contact details",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "",
+      "type": "TELEX",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

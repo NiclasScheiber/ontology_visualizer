@@ -1,0 +1,25 @@
+{
+  "schema": "Embedded",
+  "name": "OtherIdentifier_SHP_3",
+  "description": "Other identifiers",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 57"
+    },
+    {
+      "name": "otherIdentifierType",
+      "description": "",
+      "type": "Consignor Account number",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

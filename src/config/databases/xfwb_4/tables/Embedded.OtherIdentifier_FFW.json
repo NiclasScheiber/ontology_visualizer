@@ -1,0 +1,16 @@
+{
+  "schema": "Embedded",
+  "name": "OtherIdentifier_FFW",
+  "description": "Other identifiers",
+  "columns": [
+    {
+      "name": "OtherIdentifierType",
+      "description": "",
+      "type": "Freight Forwarder Internal ID",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "Embedded",
+  "name": "ContactDetail_FFW_PHONE",
+  "description": "Contact details",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "",
+      "type": "PHONE_NUMBER",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

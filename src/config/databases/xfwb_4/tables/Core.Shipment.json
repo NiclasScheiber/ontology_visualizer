@@ -1,0 +1,70 @@
+{
+  "schema": "Core",
+  "name": "Shipment",
+  "description": "Shipment details",
+  "columns": [
+    {
+      "name": "insurance",
+      "description": "",
+      "type": "Insurance",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "totalGrossWeight",
+      "description": "",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 47"
+    },
+    {
+      "name": "totalDimensions",
+      "description": "",
+      "type": "Dimensions",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "pieces",
+      "description": "",
+      "type": "Piece",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Row 51"
+    },
+    {
+      "name": "involvedParties",
+      "description": "",
+      "type": "Party",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "customsInformation",
+      "description": "",
+      "type": "CustomsInformation",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "waybill",
+      "description": "",
+      "type": "Waybill",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

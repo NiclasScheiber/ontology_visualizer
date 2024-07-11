@@ -1,0 +1,52 @@
+{
+  "schema": "Common",
+  "name": "ExternalReference_ASSOCIATED_DOC",
+  "description": "Reference documents details",
+  "columns": [
+    {
+      "name": "documentIdentifier",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 260"
+    },
+    {
+      "name": "validFrom",
+      "description": "",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 261"
+    },
+    {
+      "name": "documentType",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 262"
+    },
+    {
+      "name": "documentName",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 263"
+    },
+    {
+      "name": "referenceForObjects",
+      "description": "",
+      "type": "Waybill",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

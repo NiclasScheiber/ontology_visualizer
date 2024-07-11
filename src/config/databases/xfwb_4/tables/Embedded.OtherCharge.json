@@ -1,0 +1,70 @@
+{
+  "schema": "Embedded",
+  "name": "OtherCharge",
+  "description": "Other Charge details from AWB as per bullet point 19 - data element 23 from AWB",
+  "columns": [
+    {
+      "name": "otherChargeCode",
+      "description": "",
+      "type": "OtherChargeCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "Row 281"
+    },
+    {
+      "name": "chargePaymentType",
+      "description": "",
+      "type": "PrepaidCollectIndicator",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "Row 283"
+    },
+    {
+      "name": "locationIndicator",
+      "description": "",
+      "type": "None",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 284"
+    },
+    {
+      "name": "reasonDescription",
+      "description": "",
+      "type": "None",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 285"
+    },
+    {
+      "name": "entitlement",
+      "description": "",
+      "type": "EntitlementCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "Row 286"
+    },
+    {
+      "name": "otherChargeAmount",
+      "description": "",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 287"
+    },
+    {
+      "name": "quantity",
+      "description": "",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 288"
+    }
+  ]
+}

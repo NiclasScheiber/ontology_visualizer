@@ -1,0 +1,61 @@
+{
+  "schema": "Embedded",
+  "name": "Address_OTH",
+  "description": "Address details",
+  "columns": [
+    {
+      "name": "postalCode",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 163"
+    },
+    {
+      "name": "streetAddressLines",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Row 164"
+    },
+    {
+      "name": "cityCode",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 165"
+    },
+    {
+      "name": "country",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 166"
+    },
+    {
+      "name": "regionCode",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 168"
+    },
+    {
+      "name": "postOfficeBox",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 169"
+    }
+  ]
+}

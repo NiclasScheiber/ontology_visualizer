@@ -1,0 +1,61 @@
+{
+  "schema": "Embedded",
+  "name": "Address_SHP",
+  "description": "Address details",
+  "columns": [
+    {
+      "name": "postalCode",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 59"
+    },
+    {
+      "name": "streetAddressLines",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Row 60"
+    },
+    {
+      "name": "cityCode",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 61"
+    },
+    {
+      "name": "country",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 62"
+    },
+    {
+      "name": "regionCode",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 64"
+    },
+    {
+      "name": "postOfficeBox",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 65"
+    }
+  ]
+}

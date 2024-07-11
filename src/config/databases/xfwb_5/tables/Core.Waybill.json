@@ -1,0 +1,223 @@
+{
+  "schema": "Core",
+  "name": "Waybill",
+  "description": "Waybill details",
+  "columns": [
+    {
+      "name": "waybillPrefix",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "waybillType",
+      "description": "",
+      "type": "WaybillType",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "consignorDeclarationSignature",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "carrierDeclarationDate",
+      "description": "",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "carrierDeclarationSignature",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "carrierDeclarationPlace",
+      "description": "",
+      "type": "Location_sig",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "shippingRefNo",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "shippingInfo",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "declaredValueForCarriage",
+      "description": "",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "declaredValueForCustoms",
+      "description": "",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "shipment",
+      "description": "",
+      "type": "Shipment",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "weightValuationIndicator",
+      "description": "",
+      "type": "PrepaidCollectIndicator",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "chargePaymentType",
+      "description": "",
+      "type": "PrepaidCollectIndicator",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "referredBookingOption",
+      "description": "",
+      "type": "Booking",
+      "schemaType": "Service",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "departureLocation",
+      "description": "",
+      "type": "Location_AWB_ORG",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "arrivalLocation",
+      "description": "",
+      "type": "Location_AWB_DES",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "accountingInformation",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "customsOriginCode",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "destinationCurrencyRate",
+      "description": "",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "otherCharges",
+      "description": "",
+      "type": "OtherCharge",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "waybillLineItems",
+      "description": "",
+      "type": "WaybillLineItem",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "destinationCharges",
+      "description": "",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "waybillNumber",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

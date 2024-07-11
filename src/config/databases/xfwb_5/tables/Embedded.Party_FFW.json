@@ -1,0 +1,52 @@
+{
+  "schema": "Embedded",
+  "name": "Party_FFW",
+  "description": "Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+  "columns": [
+    {
+      "name": "partyRole",
+      "description": "",
+      "type": "FFW",
+      "schemaType": "",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "otherIdentifers",
+      "description": "",
+      "type": "OtherIdentifier_FFW_1",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "partyDetails",
+      "description": "",
+      "type": "Company_FFW",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "otherIdentifers",
+      "description": "",
+      "type": "OtherIdentifier_FFW_2",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "otherIdentifers",
+      "description": "",
+      "type": "OtherIdentifier_FFW_3",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

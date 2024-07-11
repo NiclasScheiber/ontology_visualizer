@@ -1,0 +1,16 @@
+{
+  "schema": "Embedded",
+  "name": "ContactDetail_SHP_TELEX",
+  "description": "Contact details",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 82"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "Core",
+  "name": "Piece",
+  "description": "Individual piece or virtual grouping of pieces",
+  "columns": [
+    {
+      "name": "slac",
+      "description": "",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "involvedInActions",
+      "description": "",
+      "type": "Loading",
+      "schemaType": "Action",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "specialHandlingCodes",
+      "description": "",
+      "type": "SpecialHandlingCode",
+      "schemaType": "CodeList",
+      "array": true,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "textualHandlingInstructions",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "ofShipment",
+      "description": "",
+      "type": "Shipment",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

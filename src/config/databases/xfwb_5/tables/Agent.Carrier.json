@@ -1,0 +1,16 @@
+{
+  "schema": "Agent",
+  "name": "Carrier",
+  "description": "Company details of carriers",
+  "columns": [
+    {
+      "name": "airlineCode",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

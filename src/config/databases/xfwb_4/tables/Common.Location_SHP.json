@@ -1,0 +1,16 @@
+{
+  "schema": "Common",
+  "name": "Location_SHP",
+  "description": "Location describes a physical location; e.g. an airport; a warehouse or a truck deck",
+  "columns": [
+    {
+      "name": "address",
+      "description": "",
+      "type": "Address",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "Agent",
+  "name": "Person_OTH",
+  "description": "Person details",
+  "columns": [
+    {
+      "name": "firstName",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "department",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 180"
+    },
+    {
+      "name": "contactDetails",
+      "description": "",
+      "type": "ContactDetail",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "lastName",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 179"
+    },
+    {
+      "name": "associatedOrganization",
+      "description": "",
+      "type": "Company_OTH",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

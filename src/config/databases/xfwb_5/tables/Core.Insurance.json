@@ -1,0 +1,25 @@
+{
+  "schema": "Core",
+  "name": "Insurance",
+  "description": "Insurance details",
+  "columns": [
+    {
+      "name": "insuredAmount",
+      "description": "",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "insuredShipments",
+      "description": "",
+      "type": "Shipment",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "Common",
+  "name": "Location_ARR",
+  "description": "Location describes a physical location; e.g. an airport; a warehouse or a truck deck",
+  "columns": [
+    {
+      "name": "locationCodes",
+      "description": "",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Row 215"
+    },
+    {
+      "name": "locationName",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 216"
+    },
+    {
+      "name": "locationType",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 217"
+    }
+  ]
+}

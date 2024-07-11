@@ -1,0 +1,25 @@
+{
+  "schema": "Embedded",
+  "name": "OtherIdentifier_CNE_3",
+  "description": "Other identifiers",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Row 90"
+    },
+    {
+      "name": "otherIdentifierType",
+      "description": "",
+      "type": "Consignee Account number",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

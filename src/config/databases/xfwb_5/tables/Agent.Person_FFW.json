@@ -1,0 +1,79 @@
+{
+  "schema": "Agent",
+  "name": "Person_FFW",
+  "description": "Person details",
+  "columns": [
+    {
+      "name": "firstName",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "department",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactDetails",
+      "description": "",
+      "type": "ContactDetail_FFW_FAX_NUMBER",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "lastName",
+      "description": "",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "associatedOrganization",
+      "description": "",
+      "type": "Company_FFW",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactDetails",
+      "description": "",
+      "type": "ContactDetail_FFW_MAIL",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactDetails",
+      "description": "",
+      "type": "ContactDetail_FFW_PHONE",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactDetails",
+      "description": "",
+      "type": "ContactDetail_FFW_TELEX",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}
