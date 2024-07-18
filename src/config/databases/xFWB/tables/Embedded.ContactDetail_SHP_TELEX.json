@@ -1,0 +1,16 @@
+{
+  "schema": "Embedded",
+  "name": "ContactDetail_SHP_TELEX",
+  "description": "Contact details",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "Telex",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:CompleteNumber > (83)"
+    }
+  ]
+}

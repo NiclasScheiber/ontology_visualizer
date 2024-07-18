@@ -1,0 +1,16 @@
+{
+  "schema": "Embedded",
+  "name": "OtherIdentifier_OTH",
+  "description": "Other identifiers",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": " (box 21)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:AssociatedParty > (157)"
+    }
+  ]
+}

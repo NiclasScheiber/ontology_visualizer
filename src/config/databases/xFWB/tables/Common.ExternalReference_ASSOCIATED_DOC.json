@@ -1,0 +1,52 @@
+{
+  "schema": "Common",
+  "name": "ExternalReference_ASSOCIATED_DOC",
+  "description": "Reference documents details",
+  "columns": [
+    {
+      "name": "documentIdentifier",
+      "description": "Document Reference Number",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ID > (261)"
+    },
+    {
+      "name": "validFrom",
+      "description": "Document Issue Date",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:IssueDateTime > (262)"
+    },
+    {
+      "name": "documentType",
+      "description": "Document Type",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:TypeCode > (263)"
+    },
+    {
+      "name": "documentName",
+      "description": "Document Name",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:Name > (264)"
+    },
+    {
+      "name": "referenceForObjects",
+      "description": "Structural",
+      "type": "Waybill",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "Core",
+  "name": "Piece",
+  "description": "Individual piece or virtual grouping of pieces",
+  "columns": [
+    {
+      "name": "slac",
+      "description": "Total Shipper's Load and Count",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:PackageQuantity > (51)"
+    },
+    {
+      "name": "involvedInActions",
+      "description": "Structural",
+      "type": "Loading",
+      "schemaType": "Action",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "specialHandlingCodes",
+      "description": "Service Type Code (box 21)",
+      "type": "SpecialHandlingCode",
+      "schemaType": "CodeList",
+      "array": true,
+      "codelist": true,
+      "columnSubTypes": "<ram:DescriptionCode > (240)"
+    },
+    {
+      "name": "textualHandlingInstructions",
+      "description": "Service Type Text (box 21)",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "<ram:Description > (243)"
+    },
+    {
+      "name": "ofShipment",
+      "description": "Structural",
+      "type": "Shipment",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

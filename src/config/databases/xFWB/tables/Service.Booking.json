@@ -1,0 +1,25 @@
+{
+  "schema": "Service",
+  "name": "Booking",
+  "description": "Booking object refers to a confirmed booking",
+  "columns": [
+    {
+      "name": "forBookingRequest",
+      "description": "Structural",
+      "type": "BookingRequest",
+      "schemaType": "Distribution",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "issuedForWaybill",
+      "description": "Structural",
+      "type": "Waybill",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

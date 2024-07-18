@@ -7,12 +7,8 @@
     "name": "ONE Record Conceptual Datamodel",
     "description": "Prototype reduced visualization of the classes of the conceptual ONE Record Data Model 3.0.1"
   },
-  "xfwb_4": {
-    "name": "xfwb_4",
-    "description": ""
-  },
-  "xfwb_5": {
-    "name": "xfwb_5",
-    "description": ""
+  "xFWB": {
+    "name": "ONE Record xFWB Mapping 1.1",
+    "description": "Prototype visualization of the xFWB message mapped to ONE Record"
   }
 }

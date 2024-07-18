@@ -1,0 +1,16 @@
+{
+  "schema": "Common",
+  "name": "Location_AWB_ORG",
+  "description": "Location describes a physical location; e.g. an airport; a warehouse or a truck deck",
+  "columns": [
+    {
+      "name": "locationCodes",
+      "description": "Origin Location Code (box 1 / 9)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "<ram:ID > (197)"
+    }
+  ]
+}

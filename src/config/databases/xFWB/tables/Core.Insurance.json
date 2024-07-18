@@ -1,0 +1,25 @@
+{
+  "schema": "Core",
+  "name": "Insurance",
+  "description": "Insurance details",
+  "columns": [
+    {
+      "name": "insuredAmount",
+      "description": "No Value Declared For Insurance (box 20)",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:NilInsuranceValueIndicator > (44)"
+    },
+    {
+      "name": "insuredShipments",
+      "description": "Structural",
+      "type": "Shipment",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

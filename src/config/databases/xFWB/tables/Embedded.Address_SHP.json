@@ -1,0 +1,61 @@
+{
+  "schema": "Embedded",
+  "name": "Address_SHP",
+  "description": "Address details",
+  "columns": [
+    {
+      "name": "postalCode",
+      "description": "Zip/Postal code",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:PostcodeCode > (60)"
+    },
+    {
+      "name": "streetAddressLines",
+      "description": "Street",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "<ram:StreetName > (61)"
+    },
+    {
+      "name": "cityCode",
+      "description": "City Name",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:CityName > (62)"
+    },
+    {
+      "name": "country",
+      "description": "Country Code",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:CountryID > (63)"
+    },
+    {
+      "name": "regionCode",
+      "description": "Region Code",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:CountrySubDivisionName > (65)"
+    },
+    {
+      "name": "postOfficeBox",
+      "description": "PO Box",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:PostOfficeBox > (66)"
+    }
+  ]
+}

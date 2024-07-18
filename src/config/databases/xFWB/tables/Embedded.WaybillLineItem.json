@@ -1,0 +1,187 @@
+{
+  "schema": "Embedded",
+  "name": "WaybillLineItem",
+  "description": "Information from AWB Rate Description section as per bullet point 18 - data elements 22A - 22Z from AWB",
+  "columns": [
+    {
+      "name": "lineItemNumber",
+      "description": "Line-Item Number",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:SequenceNumeric > (300)"
+    },
+    {
+      "name": "hsCodeForRate",
+      "description": "Harmonized Commodity Code (box 22I)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:TypeCode listAgencyID=1 > (301)"
+    },
+    {
+      "name": "grossWeightForRate",
+      "description": "Gross Weight (box 22B)",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:GrossWeightMeasure unitCode=KGM > (302)"
+    },
+    {
+      "name": "dimensionsForRate",
+      "description": "Structural",
+      "type": "Dimensions_RATE",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "slacForRate",
+      "description": "Shipper's Load and Count (box 22I)",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:PackageQuantity > (304)"
+    },
+    {
+      "name": "pieceCountForRate",
+      "description": "Number of Pieces (box 22A)",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:PieceQuantity > (305)"
+    },
+    {
+      "name": "volumetricWeightForRate",
+      "description": "Structural",
+      "type": "VolumetricWeight",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "goodsDescriptionForRate",
+      "description": "Item Description (box 22I)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:Identification > (309)"
+    },
+    {
+      "name": "productionCountryForRate",
+      "description": "Country of Origin of Goods (box 22I)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ID > (312)"
+    },
+    {
+      "name": "uldSerialNumber",
+      "description": "ULD Serial Number (box 22I)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ID > (315)"
+    },
+    {
+      "name": "uldTareWeightForRate",
+      "description": "Tare Weight",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:TareWeightMeasure unitCode=KGM > (316)"
+    },
+    {
+      "name": "uldType",
+      "description": "ULD Type (box 22I)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:CharacteristicCode > (318)"
+    },
+    {
+      "name": "uldOwnerCode",
+      "description": "ULD Owner Code (box 22I)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:PrimaryID schemeAgencyID=1 > (320)"
+    },
+    {
+      "name": "rateClassCode",
+      "description": "Rate Class Code (box 22D)",
+      "type": "RateClassCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "<ram:CategoryCode > (333)"
+    },
+    {
+      "name": "commodityItemNumberForRate",
+      "description": "Commodity Item Number (box 22E)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:CommodityItemID > (334)"
+    },
+    {
+      "name": "rateCharge",
+      "description": "Rate or Charge or Discount Amount (box 22G)",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:AppliedRate > (336)"
+    },
+    {
+      "name": "rcp",
+      "description": "RCP (box 22A)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ID > (340)"
+    },
+    {
+      "name": "uldRateClassType",
+      "description": "ULD Rate Class Type (box 22E)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:TypeCode > (343)"
+    },
+    {
+      "name": "rateClassCodeBasic",
+      "description": "Rate Class Code Basis (box 22E)",
+      "type": "BasicRateClassCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "<ram:BasisCode > (344)"
+    },
+    {
+      "name": "ratePercentage",
+      "description": "Class Rating Percentage (box 22E)",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:AppliedPercent > (345)"
+    }
+  ]
+}

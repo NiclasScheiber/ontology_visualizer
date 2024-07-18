@@ -1,0 +1,16 @@
+{
+  "schema": "Distribution",
+  "name": "BookingRequest",
+  "description": "A party; usually the freight forwarder; creates the BookingRequest in order to confirm the booking to the Carrier",
+  "columns": [
+    {
+      "name": "bookingOption",
+      "description": "Structural",
+      "type": "BookingOption",
+      "schemaType": "Distribution",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

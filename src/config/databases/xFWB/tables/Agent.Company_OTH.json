@@ -1,0 +1,43 @@
+{
+  "schema": "Agent",
+  "name": "Company_OTH",
+  "description": "Company details",
+  "columns": [
+    {
+      "name": "name",
+      "description": "Other Party Standard ID",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:AdditionalID > (159)"
+    },
+    {
+      "name": "iataCargoAgentCode",
+      "description": "Party Type Code",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:RoleCode > (161)"
+    },
+    {
+      "name": "basedAtLocation",
+      "description": "Structural",
+      "type": "Location_OTH",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactPersons",
+      "description": "Structural",
+      "type": "Person_OTH",
+      "schemaType": "Agent",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

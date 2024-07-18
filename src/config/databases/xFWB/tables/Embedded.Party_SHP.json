@@ -1,0 +1,52 @@
+{
+  "schema": "Embedded",
+  "name": "Party_SHP",
+  "description": "Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+  "columns": [
+    {
+      "name": "partyRole",
+      "description": " (box 2 / 3)",
+      "type": "SHP",
+      "schemaType": "",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "<ram:ConsignorParty > (54)"
+    },
+    {
+      "name": "otherIdentifers",
+      "description": "Structural",
+      "type": "OtherIdentifier_SHP_1",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "partyDetails",
+      "description": "Structural",
+      "type": "Company_SHP",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "otherIdentifers",
+      "description": "Structural",
+      "type": "OtherIdentifier_SHP_2",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "otherIdentifers",
+      "description": "Structural",
+      "type": "OtherIdentifier_SHP_3",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "Agent",
+  "name": "Company_CNE",
+  "description": "Company details",
+  "columns": [
+    {
+      "name": "name",
+      "description": "Consignee Name",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:Name > (90)"
+    },
+    {
+      "name": "basedAtLocation",
+      "description": "Structural",
+      "type": "Location_CNE",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactPersons",
+      "description": "Structural",
+      "type": "Person_CNE",
+      "schemaType": "Agent",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

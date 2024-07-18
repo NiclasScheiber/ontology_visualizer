@@ -1,0 +1,16 @@
+{
+  "schema": "Embedded",
+  "name": "OtherIdentifier_FFW_3",
+  "description": "Other identifiers",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "Freight Forwarder Standard ID",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:AccountID > (124)"
+    }
+  ]
+}

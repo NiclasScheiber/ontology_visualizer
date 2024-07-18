@@ -1,0 +1,25 @@
+{
+  "schema": "Embedded",
+  "name": "OtherIdentifier_CNE_1",
+  "description": "Other identifiers",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "Consignee Internal ID",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:PrimaryID schemeAgencyID=X > (88)"
+    },
+    {
+      "name": "otherIdentifierType",
+      "description": "Structural",
+      "type": "Consignee Internal ID",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "Embedded",
+  "name": "CarrierProduct",
+  "description": "Carrier product details",
+  "columns": [
+    {
+      "name": "productCode",
+      "description": "Product Identifier",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ProductID > (53)"
+    }
+  ]
+}

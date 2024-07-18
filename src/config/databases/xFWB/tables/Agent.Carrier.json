@@ -1,0 +1,16 @@
+{
+  "schema": "Agent",
+  "name": "Carrier",
+  "description": "Company details of carriers",
+  "columns": [
+    {
+      "name": "airlineCode",
+      "description": "Means of Transport Name (box 19A)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:Name > (211)"
+    }
+  ]
+}

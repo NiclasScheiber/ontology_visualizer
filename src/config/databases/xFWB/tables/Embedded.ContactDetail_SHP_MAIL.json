@@ -1,0 +1,16 @@
+{
+  "schema": "Embedded",
+  "name": "ContactDetail_SHP_MAIL",
+  "description": "Contact details",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "Email Address",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:URIID > (80)"
+    }
+  ]
+}

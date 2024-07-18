@@ -1,0 +1,34 @@
+{
+  "schema": "Embedded",
+  "name": "MovementTime_SA",
+  "description": "Times refering to Transport Movements; used to describe specfic times such as Actual Departure time; etc.",
+  "columns": [
+    {
+      "name": "movementIndicator",
+      "description": "",
+      "type": "SA",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ArrivalEvent > (213)"
+    },
+    {
+      "name": "movementTimestamp",
+      "description": "Scheduled Arrival Date/Time (box 19A / 19B)",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ScheduledOccurrenceDateTime > (214)"
+    },
+    {
+      "name": "movementTimeType",
+      "description": "Structural",
+      "type": "SCHEDULED",
+      "schemaType": "",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "Embedded",
+  "name": "Party_OTH",
+  "description": "Refers to a Company and its role in a specific context; e.g Company A as shipper. Cargo-XML Code List 1.15 can be used as a reference with the addition of Notify Party",
+  "columns": [
+    {
+      "name": "partyRole",
+      "description": "",
+      "type": "ParticipantIdentifier",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "</ram:FreightForwarderParty > (156)"
+    },
+    {
+      "name": "otherIdentifers",
+      "description": "Structural",
+      "type": "OtherIdentifier_OTH",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "partyRole",
+      "description": "Structural",
+      "type": "Company_OTH",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    }
+  ]
+}

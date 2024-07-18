@@ -1,0 +1,52 @@
+{
+  "schema": "Core",
+  "name": "CustomsInformation",
+  "description": "Customs information details",
+  "columns": [
+    {
+      "name": "contentCode",
+      "description": "Customs  Security and Regulatory Control Information Identifier (box 21)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ContentCode > (255)"
+    },
+    {
+      "name": "note",
+      "description": "Supplementary Customs  Security and Regulatory Control Information (box 21)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:Content > (256)"
+    },
+    {
+      "name": "subjectCode",
+      "description": "Information Identifier (box 21)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:SubjectCode > (257)"
+    },
+    {
+      "name": "country",
+      "description": "Country Code (box 21)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:CountryID > (258)"
+    },
+    {
+      "name": "issuedForShipment",
+      "description": "Structural",
+      "type": "Shipment",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

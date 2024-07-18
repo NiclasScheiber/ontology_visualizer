@@ -1,0 +1,34 @@
+{
+  "schema": "Common",
+  "name": "Location_ARR",
+  "description": "Location describes a physical location; e.g. an airport; a warehouse or a truck deck",
+  "columns": [
+    {
+      "name": "locationCodes",
+      "description": "Scheduled Arrival Location Code (box 11A 11C)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "<ram:ID > (216)"
+    },
+    {
+      "name": "locationName",
+      "description": "Scheduled Arrival Location Name",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:Name > (217)"
+    },
+    {
+      "name": "locationType",
+      "description": "Scheduled Arrival Location Type",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:TypeCode > (218)"
+    }
+  ]
+}

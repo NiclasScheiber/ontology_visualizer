@@ -1,0 +1,25 @@
+{
+  "schema": "Embedded",
+  "name": "OtherIdentifier_SHP_2",
+  "description": "Other identifiers",
+  "columns": [
+    {
+      "name": "textualValue",
+      "description": "Consignor Standard ID",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:AdditionalID > (56)"
+    },
+    {
+      "name": "otherIdentifierType",
+      "description": "Structural",
+      "type": "Consignor Standard ID",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

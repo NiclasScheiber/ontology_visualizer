@@ -1,0 +1,25 @@
+{
+  "schema": "Embedded",
+  "name": "VolumetricWeight",
+  "description": "Volumetric weight details",
+  "columns": [
+    {
+      "name": "conversionFactor",
+      "description": "Conversion factor",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:VolumetricFactor > (306)"
+    },
+    {
+      "name": "chargeableWeight",
+      "description": "Chargeable Weight (box 22F)",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ChargeableWeightMeasure unitCode=KGM > (335)"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "Agent",
+  "name": "Person_OTH",
+  "description": "Person details",
+  "columns": [
+    {
+      "name": "firstName",
+      "description": "Structural",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "department",
+      "description": "Department",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:DepartmentName > (181)"
+    },
+    {
+      "name": "contactDetails",
+      "description": "Structural",
+      "type": "ContactDetail_OTH_FAX_NUMBER",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "lastName",
+      "description": "Other Party Contact Name",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:PersonName > (180)"
+    },
+    {
+      "name": "associatedOrganization",
+      "description": "Structural",
+      "type": "Company_OTH",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactDetails",
+      "description": "Structural",
+      "type": "ContactDetail_OTH_MAIL",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactDetails",
+      "description": "Structural",
+      "type": "ContactDetail_OTH_PHONE",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactDetails",
+      "description": "Structural",
+      "type": "ContactDetail_OTH_TELEX",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "Activity",
+  "name": "TransportMovement",
+  "description": "Activity to describe transports; replaces the TransportSegment in v1.1 and above",
+  "columns": [
+    {
+      "name": "modeQualifier",
+      "description": "Mode of Transport Qualifier",
+      "type": "ModeQualifier",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "<ram:StageCode > (205)"
+    },
+    {
+      "name": "modeCode",
+      "description": "Mode of Transport Code",
+      "type": "ModeCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "<ram:ModeCode > (206)"
+    },
+    {
+      "name": "transportIdentifier",
+      "description": "Means of Transport ID (box 19A)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ID > (208)"
+    },
+    {
+      "name": "operatingTransportMeans",
+      "description": "Structural",
+      "type": "TransportMeans",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "movementTimes",
+      "description": "Structural",
+      "type": "MovementTime_SA",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "arrivalLocation",
+      "description": "Structural",
+      "type": "Location_ARR",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "departureLocation",
+      "description": "Structural",
+      "type": "Location_DEP",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "seal",
+      "description": "Seal Number",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:ID > (235)"
+    },
+    {
+      "name": "transportOrganization",
+      "description": "Structural",
+      "type": "Carrier",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "loadingActions",
+      "description": "Structural",
+      "type": "Loading",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "movementTimes",
+      "description": "Structural",
+      "type": "MovementTime_SD",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "Common",
+  "name": "ExternalReference_ASSOC_REF_ID",
+  "description": "Reference documents details",
+  "columns": [
+    {
+      "name": "documentIdentifier",
+      "description": "Other Party Reference",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:AssociatedReferenceID > (39)"
+    },
+    {
+      "name": "documentType",
+      "description": "Structural",
+      "type": "Associated Reference ID",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "referenceForObjects",
+      "description": "Structural",
+      "type": "Waybill",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

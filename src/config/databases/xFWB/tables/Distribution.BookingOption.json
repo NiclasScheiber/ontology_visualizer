@@ -1,0 +1,16 @@
+{
+  "schema": "Distribution",
+  "name": "BookingOption",
+  "description": "Booking details",
+  "columns": [
+    {
+      "name": "carrierProduct",
+      "description": "Structural",
+      "type": "CarrierProduct",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

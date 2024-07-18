@@ -1,0 +1,16 @@
+{
+  "schema": "Distribution",
+  "name": "BookingShipment",
+  "description": "Simplified shipment object that is to be used only for the distribution scope where only a subset of data is known priori to operational phase.",
+  "columns": [
+    {
+      "name": "densityGroupCode",
+      "description": "Density Group",
+      "type": "None",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "<ram:DensityGroupCode > (50)"
+    }
+  ]
+}
