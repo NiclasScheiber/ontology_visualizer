@@ -1,0 +1,19 @@
+{
+  "schema": "Abstract",
+  "name": "LogisticsAgent",
+  "description": "Superclass: LogisticsAgents describe acting entities in the logistics supply chain such as persons and organizations",
+  "columns": [
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#LogisticsAgent",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#skeletonIndicator",
+      "valueIRI": "http://www.w3.org/2001/XMLSchema#boolean"
+    }
+  ]
+}

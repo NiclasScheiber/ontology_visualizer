@@ -10,16 +10,22 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": ""
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#MovementTime",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#direction",
+      "valueIRI": "https://onerecord.iata.org/ns/cargo#DirectionType"
     },
     {
       "name": "movementMilestone",
       "description": "The milestone list still needs to be defined; it includes elements from CXML Code List 1.92 but is not limited to those values; e.g. block-on and block-off times might be added as a comparison to wheels off and touchdown.",
-      "type": "MovementIndicator",
+      "type": "ccodes:MovementIndicator",
       "schemaType": "CodeList",
       "array": false,
       "codelist": true,
-      "columnSubTypes": ""
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#MovementTime",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#movementMilestone",
+      "valueIRI": "https://onerecord.iata.org/ns/coreCodeLists#MovementIndicator"
     },
     {
       "name": "movementTimeType",
@@ -28,16 +34,10 @@
       "schemaType": "Enum",
       "array": false,
       "codelist": true,
-      "columnSubTypes": ""
-    },
-    {
-      "name": "movementTimestamp",
-      "description": "Timestamp (date and time) of the movement time. If the movement time is recorded asynchronously; the timestamp should reflect the actual time; not when the data was created.",
-      "type": "dateTime",
-      "schemaType": "",
-      "array": false,
-      "codelist": false,
-      "columnSubTypes": ""
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#MovementTime",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#movementTimeType",
+      "valueIRI": "https://onerecord.iata.org/ns/cargo#MovementTimeType"
     }
   ]
 }
