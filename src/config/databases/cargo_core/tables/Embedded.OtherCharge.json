@@ -38,6 +38,18 @@
       "classIRI": "https://onerecord.iata.org/ns/cargo#OtherCharge",
       "propertyIRI": "https://onerecord.iata.org/ns/cargo#otherChargeAmount",
       "valueIRI": "https://onerecord.iata.org/ns/cargo#CurrencyValue"
+    },
+    {
+      "name": "otherChargeCode",
+      "description": "Refer to CargoXML Code List 1.2 for Other Charges",
+      "type": "ccodes:OtherChargeCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#OtherCharge",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#otherChargeCode",
+      "valueIRI": "https://onerecord.iata.org/ns/coreCodeLists#OtherChargeCode"
     }
   ]
 }

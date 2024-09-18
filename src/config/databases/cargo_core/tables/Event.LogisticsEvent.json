@@ -122,6 +122,18 @@
       "classIRI": "https://onerecord.iata.org/ns/cargo#LogisticsEvent",
       "propertyIRI": "https://onerecord.iata.org/ns/cargo#eventName",
       "valueIRI": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    {
+      "name": "partialEventIndicator",
+      "description": "Boolean indicating that the LogisticsEvent is only applicable for parts of the LogisticObject it was recorded for; for example for some Pieces of a Shipment",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#LogisticsEvent",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#partialEventIndicator",
+      "valueIRI": "http://www.w3.org/2001/XMLSchema#boolean"
     }
   ]
 }

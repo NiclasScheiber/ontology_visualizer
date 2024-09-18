@@ -38,6 +38,18 @@
       "classIRI": "https://onerecord.iata.org/ns/cargo#Dimensions",
       "propertyIRI": "https://onerecord.iata.org/ns/cargo#volume",
       "valueIRI": "https://onerecord.iata.org/ns/cargo#Value"
+    },
+    {
+      "name": "width",
+      "description": "Width",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#Dimensions",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#width",
+      "valueIRI": "https://onerecord.iata.org/ns/cargo#Value"
     }
   ]
 }

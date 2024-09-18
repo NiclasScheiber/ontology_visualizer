@@ -170,6 +170,18 @@
       "classIRI": "https://onerecord.iata.org/ns/cargo#Shipment",
       "propertyIRI": "https://onerecord.iata.org/ns/cargo#goodsDescription",
       "valueIRI": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    {
+      "name": "textualHandlingInstructions",
+      "description": "Strings to provide free text handling instructions such as SSR and OSI",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#Shipment",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#textualHandlingInstructions",
+      "valueIRI": "http://www.w3.org/2001/XMLSchema#string"
     }
   ]
 }

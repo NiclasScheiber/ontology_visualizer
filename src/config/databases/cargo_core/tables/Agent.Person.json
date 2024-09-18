@@ -170,6 +170,18 @@
       "classIRI": "https://onerecord.iata.org/ns/cargo#Person",
       "propertyIRI": "https://onerecord.iata.org/ns/cargo#middleName",
       "valueIRI": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    {
+      "name": "salutation",
+      "description": "Salutation ",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#Person",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#salutation",
+      "valueIRI": "http://www.w3.org/2001/XMLSchema#string"
     }
   ]
 }
