@@ -1,0 +1,50 @@
+{
+  "Abstract.LogisticsService": {
+    "x": -320,
+    "y": 288
+  },
+  "Activity.TransportMovement": {
+    "x": -32,
+    "y": 432
+  },
+  "Agent.Organization": {
+    "x": 320,
+    "y": -144
+  },
+  "Common.ExternalReference": {
+    "x": -752,
+    "y": 160
+  },
+  "Common.Location": {
+    "x": 256,
+    "y": 432
+  },
+  "Core.Shipment": {
+    "x": -320,
+    "y": -144
+  },
+  "Embedded.ActivitySequence": {
+    "x": -320,
+    "y": 432
+  },
+  "Embedded.Address": {
+    "x": 560,
+    "y": 416
+  },
+  "Embedded.Dimensions": {
+    "x": 48,
+    "y": 32
+  },
+  "Embedded.Party": {
+    "x": 0,
+    "y": -144
+  },
+  "Embedded.Value": {
+    "x": -752,
+    "y": 544
+  },
+  "Event.LogisticsEvent": {
+    "x": -752,
+    "y": -144
+  }
+}

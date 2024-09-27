@@ -1,0 +1,58 @@
+[
+    {
+      "source": "Abstract.LogisticsService",
+      "sourceKey": "activitySequences",
+      "target": "Embedded.ActivitySequence",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Embedded.ActivitySequence",
+      "sourceKey": "activity",
+      "target": "Activity.TransportMovement",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "involvedParties",
+      "target": "Embedded.Party",
+      "targetKey": "",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Embedded.Party",
+      "sourceKey": "partyDetails",
+      "target": "Agent.Organization",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "totalDimensions",
+      "target": "Embedded.Dimensions",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Common.Location",
+      "sourceKey": "address",
+      "target": "Embedded.Address",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "arrivalLocation",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    },
+    {
+      "source": "Activity.TransportMovement",
+      "sourceKey": "departureLocation",
+      "target": "Common.Location",
+      "targetKey": "",
+      "relation": "hasOne"
+    }
+  ]
