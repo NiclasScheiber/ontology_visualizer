@@ -10,5 +10,9 @@
   "xFWB": {
     "name": "ONE Record xFWB Mapping 1.1",
     "description": "Prototype visualization of the xFWB message mapped to ONE Record"
+  },
+  "moving_pilot": {
+    "name": "moving_pilot",
+    "description": ""
   }
 }
