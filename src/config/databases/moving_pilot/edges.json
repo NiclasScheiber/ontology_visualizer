@@ -54,5 +54,19 @@
       "target": "Common.Location",
       "targetKey": "",
       "relation": "hasOne"
+    },
+    {
+      "source": "Core.Shipment",
+      "sourceKey": "pieces",
+      "target": "Core.Piece",
+      "targetKey": "ofShipment",
+      "relation": "hasMany"
+    },
+    {
+      "source": "Core.Piece",
+      "sourceKey": "ofShipment",
+      "target": "Core.Shipment",
+      "targetKey": "pieces",
+      "relation": "hasOne"
     }
   ]
