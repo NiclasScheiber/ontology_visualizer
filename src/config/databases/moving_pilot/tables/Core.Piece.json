@@ -1,0 +1,67 @@
+{
+  "schema": "Core",
+  "name": "Piece",
+  "description": "Individual piece or virtual grouping of pieces",
+  "columns": [
+    {
+      "name": "ofShipment",
+      "description": "Reference to the Shipment the Piece is assigned to",
+      "type": "Shipment",
+      "schemaType": "Core",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#Piece",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#ofShipment",
+      "valueIRI": "https://onerecord.iata.org/ns/cargo#Shipment"
+    },
+    {
+      "name": "dimensions",
+      "description": "Dimensions details",
+      "type": "Dimensions",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#Piece",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#dimensions",
+      "valueIRI": "https://onerecord.iata.org/ns/cargo#Dimensions"
+    },
+    {
+      "name": "grossWeight",
+      "description": "Weight details",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#Piece",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#grossWeight",
+      "valueIRI": "https://onerecord.iata.org/ns/cargo#Value"
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#Piece",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#skeletonIndicator",
+      "valueIRI": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    {
+      "name": "textualHandlingInstructions",
+      "description": "Strings to provide free text handling instructions such as SSR and OSI",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "",
+      "classIRI": "https://onerecord.iata.org/ns/cargo#Piece",
+      "propertyIRI": "https://onerecord.iata.org/ns/cargo#textualHandlingInstructions",
+      "valueIRI": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  ]
+}

@@ -12,7 +12,6 @@ import embeddedPartyTable from "./tables/Embedded.Party.json";
 import coreShipmentTable from "./tables/Core.Shipment.json";
 import activityTransportMovementTable from "./tables/Activity.TransportMovement.json";
 import embeddedValueTable from "./tables/Embedded.Value.json";
-import corePieceTable from "./tables/Core.Piece.json";
 
 const tables: TableConfig[] = [
   embeddedActivitySequenceTable,
@@ -26,8 +25,7 @@ const tables: TableConfig[] = [
   embeddedPartyTable,
   coreShipmentTable,
   activityTransportMovementTable,
-  embeddedValueTable,
-  corePieceTable
+  embeddedValueTable
 ];
 
 export default tables;
