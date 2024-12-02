@@ -1,0 +1,34 @@
+{
+  "schema": "Embedded",
+  "name": "Geolocation",
+  "description": "Geolocation details - e.g. for drones; automated vehicles",
+  "columns": [
+    {
+      "name": "elevation",
+      "description": "Elevation from sea level - Change of data type to Value as of ontology v1.1",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "latitude",
+      "description": "Location latitude decimal",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "longitude",
+      "description": "Location longitude decimal",
+      "type": "double",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

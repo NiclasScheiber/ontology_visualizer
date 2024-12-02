@@ -1,0 +1,79 @@
+{
+  "schema": "LiveAnimals",
+  "name": "EpermitConsignment",
+  "description": "Details of the pieces (Live animals) of the permit and specific information such as quantity measured and used to date quota",
+  "columns": [
+    {
+      "name": "consignmentItems",
+      "description": "Reference to te pieces (Live Animals) of the permit",
+      "type": "PieceLiveAnimals",
+      "schemaType": "LiveAnimals",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "epermit",
+      "description": "Reference to the Epermit of the consignment",
+      "type": "LiveAnimalsEpermit",
+      "schemaType": "LiveAnimals",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "examiningQuantity",
+      "description": "Quantity measured by the examining authority (box 14)",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "usedToDateQuotaQuantity",
+      "description": "total number of specimens exported in the current calendar year and the current annual quota for the species concerned (box 11a)",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

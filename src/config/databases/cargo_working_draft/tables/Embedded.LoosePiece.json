@@ -1,0 +1,97 @@
+{
+  "schema": "Embedded",
+  "name": "LoosePiece",
+  "description": "LoosePiece details",
+  "columns": [
+    {
+      "name": "pieceHeight",
+      "description": "Height of a single piece",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "pieceLength",
+      "description": "Length of a single piece",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "pieceWeight",
+      "description": "Weight of a single piece",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "pieceWidth",
+      "description": "Width of a single piece",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "dryIceWeight",
+      "description": "Weight of dry ice",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "pieceGroupGrossWeight",
+      "description": "Total gross weight of the piece group",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "stackable",
+      "description": "Stackable indicator for the pieces (boolean)",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "turnable",
+      "description": "Turnable indicator for the pieces (boolean)",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "pieceGroupCount",
+      "description": "Number of pieces in the piece group",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "pieceGroupId",
+      "description": "Identifier of the piece group; increasing integers",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "schema": "LiveAnimals",
+  "name": "LiveAnimalsEpermit",
+  "description": "Epermit for Live Animals details",
+  "columns": [
+    {
+      "name": "consignee",
+      "description": "Reference to the Organization that fulfills the role of the consignee; for a LiveAnimalsEpermit it has to include complete name and address (box 3)",
+      "type": "Company",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Carrier"
+    },
+    {
+      "name": "consignments",
+      "description": "Reference to the pieces and properties linked to the Permit (box 7 to 12)",
+      "type": "EpermitConsignment",
+      "schemaType": "LiveAnimals",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "permitTypeCode",
+      "description": "Code specifying the document name. (box 1)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "signatures",
+      "description": "List of all the signatures of the Epermit (applicant box 4; issuing authority box 6; issuer box 13 and examining authority box 14)",
+      "type": "EpermitSignature",
+      "schemaType": "LiveAnimals",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "transactionPurposeCode",
+      "description": "Code indicating the purpose of the transaction (box 5a)",
+      "type": "TransactionPurposeCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "transportContractTypeCode",
+      "description": "Code specifying the transport document name (box 15)",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "copyIndicator",
+      "description": "Indicates if the permit is a copy (true) or an original (false) (box 1)",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "epermitNumber",
+      "description": "The original number is a unique number allocated to each document by the relevant Management Authority. (box 1)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "permitTypeOtherDescription",
+      "description": "Description if TypeCode is Other (box 1)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "specialConditions",
+      "description": "Special conditions (box 5)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "transactionPurpose",
+      "description": "Purpose of the transaction in free text (box 5a)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "transportContractId",
+      "description": "Reference to the Air Waybill or other transport contract document (box 15)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "validFrom",
+      "description": "Validity start date based on usage context",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "validUntil",
+      "description": "Validity end date (date of expiry) based on usage context",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

@@ -1,18 +1,26 @@
 {
+  "cargo_working_draft": {
+    "name": "ONE Record Full Datamodel 3.1",
+    "description": "Visualization of the full ONE Record Data Model 3.1 Release Candidate"
+  },
   "cargo_full": {
-    "name": "ONE Record Full Datamodel",
-    "description": "Prototype  visualization of the classes of the full ONE Record Data Model 3.0.1"
+    "name": "ONE Record Full Datamodel 3.0",
+    "description": "Visualization of the classes of the full ONE Record Data Model 3.0.1"
   },
   "cargo_core": {
-    "name": "ONE Record Conceptual Datamodel",
-    "description": "Prototype reduced visualization of the classes of the conceptual ONE Record Data Model 3.0.1"
+    "name": "ONE Record Conceptual Datamodel 3.0",
+    "description": "Reduced visualization of the classes of the conceptual ONE Record Data Model 3.0.1"
   },
   "xFWB": {
-    "name": "ONE Record xFWB Mapping 1.1",
+    "name": "ONE Record xFWB Mapping 1.2",
     "description": "Prototype visualization of the xFWB message mapped to ONE Record"
   },
   "moving_pilot": {
     "name": "Moving Pilot",
     "description": "Vizualisation of the classes and properties used in the Moving Industry Pilot"
+  },
+  "cargo_working_draft": {
+    "name": "ONE Record Full Datamodel 3.1",
+    "description": "Visualization of the full ONE Record Data Model 3.1 Release Candidate"
   }
 }

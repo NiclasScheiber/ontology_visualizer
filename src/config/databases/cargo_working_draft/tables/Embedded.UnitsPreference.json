@@ -1,0 +1,52 @@
+{
+  "schema": "Embedded",
+  "name": "UnitsPreference",
+  "description": "UnitsPreference details",
+  "columns": [
+    {
+      "name": "currency",
+      "description": "Preferred unit for currency",
+      "type": "CurrencyCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "dimensionsUnit",
+      "description": "Preferred unit for measurement and dimensions",
+      "type": "DimensionsUnitCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "temperatureUnit",
+      "description": "Preferred unit for temperature",
+      "type": "TemperatureUnitCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "volumeUnit",
+      "description": "Preferred unit for volume",
+      "type": "VolumeUnitCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "weightUnit",
+      "description": "Preferred unit for weight",
+      "type": "WeightUnitCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    }
+  ]
+}

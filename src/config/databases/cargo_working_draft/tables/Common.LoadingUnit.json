@@ -1,0 +1,88 @@
+{
+  "schema": "Common",
+  "name": "LoadingUnit",
+  "description": "Common loading unit/container details",
+  "columns": [
+    {
+      "name": "inUnitComposition",
+      "description": "Reference to the UnitComposition the LoadingUnit is used in",
+      "type": "UnitComposition",
+      "schemaType": "Activity",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "tareWeight",
+      "description": "Tare weight of the empty ULD",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "attachedIotDevices",
+      "description": "References to all connected IotDevices",
+      "type": "IotDevice",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "remarks",
+      "description": "Remarks or Supplement Information",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "involvedInActions",
+      "description": "References to the Actions the object is involved in",
+      "type": "LogisticsAction",
+      "schemaType": "Abstract",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Check|Composing|Loading|Storing"
+    }
+  ]
+}

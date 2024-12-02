@@ -1,0 +1,25 @@
+{
+  "schema": "Embedded",
+  "name": "AccountingNote",
+  "description": "Embedded object used for AWB mapping (box 10)",
+  "columns": [
+    {
+      "name": "accountingNoteIdentifier",
+      "description": "String holding accounting information (AWB box 10)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "accountingNoteText",
+      "description": "String holding the identifier in an accounting note (AWB box 10)",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

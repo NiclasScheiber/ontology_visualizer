@@ -1,0 +1,88 @@
+{
+  "schema": "Embedded",
+  "name": "WaybillLineItem",
+  "description": "Information from AWB Rate Description section as per bullet point 18 - data elements 22A - 22Z from AWB. Data describing Piece and Package parameters to be transmitted per Piece object using pieceReferences",
+  "columns": [
+    {
+      "name": "rateCharge",
+      "description": "TACT Rate for rate description details",
+      "type": "CurrencyValue",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "rateClassCode",
+      "description": "Rate Surcharge/Reduction - Basic Rate Class Code",
+      "type": "RateClassCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "rateClassCodeBasic",
+      "description": "Rate Surcharge/Reduction - Basic Rate Class Code",
+      "type": "BasicRateClassCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "ratePercentage",
+      "description": "Rate Surcharge/Reduction - Percentage of  red. / surcharge",
+      "type": "Value",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "rcp",
+      "description": "IATA 3-letter city code of the rate combination point as defined in TACT",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "uldRateClassType",
+      "description": "ULD Rate information - ULD Rate Class Type",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "pieceReferences",
+      "description": "References to Pieces for which a rate applies",
+      "type": "Piece",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "uldReferences",
+      "description": "References to ULDs for which the rate applies",
+      "type": "ULD",
+      "schemaType": "Core",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "lineItemNumber",
+      "description": "Number of the line item",
+      "type": "integer",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

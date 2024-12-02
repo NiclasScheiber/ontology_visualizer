@@ -1,0 +1,151 @@
+{
+  "schema": "Action",
+  "name": "Check",
+  "description": "Action to describe a check",
+  "columns": [
+    {
+      "name": "checkTotalResult",
+      "description": "Reference to the result of the Check",
+      "type": "CheckTotalResult",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "checkedObject",
+      "description": "Reference to the checked Object",
+      "type": "LogisticsObject",
+      "schemaType": "Abstract",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "LogisticsActivity|Answer|Actor|Piece|Location|EpermitConsignment|Organization|IotDevice|PhysicalLogisticsObject|BillingDetails|Booking|BookingOption|BookingRequest|BookingShipment|Carrier|Person|Check|CheckTemplate|CheckTotalResult|CO2Emissions|LoadingMaterial|Composing|Sensor|PieceLiveAnimals|Item|DgProductRadioactive|Product|CustomsInformation|Waybill|DgDeclaration|ExternalReference|LiveAnimalsEpermit|BookingOptionRequest|Price|ProductDg|UnitComposition|Insurance|Shipment|LogisticsAction|DgRadioactiveIsotope|LoadingUnit|Loading|TransportMeans|TransportMovement|Company|PackagingType|LogisticsAgent|Question|Ratings|SecurityDeclaration|LogisticsService|EpermitSignature|Storing|TransportLegs|PieceDg|ItemDg|NonHumanActor|PublicAuthority|Storage|ULD"
+    },
+    {
+      "name": "usedTemplate",
+      "description": "Reference to the Template used in the Check",
+      "type": "CheckTemplate",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "performedAt",
+      "description": "Reference to the Location the Action was performed at",
+      "type": "Location",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "servedActivity",
+      "description": "Reference to the Activity the Action was performed for",
+      "type": "LogisticsActivity",
+      "schemaType": "Abstract",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "UnitComposition|TransportMovement|Storage"
+    },
+    {
+      "name": "checker",
+      "description": "Reference to the Actor performing the Check",
+      "type": "Actor",
+      "schemaType": "Agent",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": "Person|NonHumanActor"
+    },
+    {
+      "name": "actionTimeType",
+      "description": "Enum stating the type of the Action",
+      "type": "ActionTimeType",
+      "schemaType": "Enum",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactDetails",
+      "description": "Information about contactDetails",
+      "type": "ContactDetail",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "contactPersons",
+      "description": "References to Actors (Person; NonHumanActor) acting as contacts",
+      "type": "Actor",
+      "schemaType": "Agent",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "Person|NonHumanActor"
+    },
+    {
+      "name": "otherIdentifiers",
+      "description": "Details about any other identifier; depending on the context of use",
+      "type": "OtherIdentifier",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "actionEndTime",
+      "description": "DateTime holding the end time of the Action",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "actionStartTime",
+      "description": "DateTime holding the start time of the Action",
+      "type": "dateTime",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

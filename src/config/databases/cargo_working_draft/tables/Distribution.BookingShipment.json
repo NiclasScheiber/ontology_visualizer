@@ -1,0 +1,133 @@
+{
+  "schema": "Distribution",
+  "name": "BookingShipment",
+  "description": "Simplified shipment object that is to be used only for the distribution scope where only a subset of data is known priori to operational phase.",
+  "columns": [
+    {
+      "name": "forBookingOptionRequest",
+      "description": "Reference to the BookingOptionRequest the information of the LogisticsObject is detailing",
+      "type": "BookingOptionRequest",
+      "schemaType": "Distribution",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "densityGroupCode",
+      "description": "Density Group Code as defined in cXML code list 2",
+      "type": "DensityGroupCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "expectedCommodity",
+      "description": "Expected commodity of the shipment as per Commodity Code list. Either this or expected HS code required",
+      "type": "CommodityCode",
+      "schemaType": "CodeList",
+      "array": false,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "expectedHScode",
+      "description": "Expected commodity of the shipment as per HS code (at least 6 digits). Either this or expectedCommodityCode required",
+      "type": "CodeListElement",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "temperatureInstructions",
+      "description": "Temperature instructions if a specific range",
+      "type": "TemperatureInstructions",
+      "schemaType": "Embedded",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "checks",
+      "description": "References to the CheckActions performed on the object",
+      "type": "Check",
+      "schemaType": "Action",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "externalReferences",
+      "description": "References to all associated ExternalReferences",
+      "type": "ExternalReference",
+      "schemaType": "Common",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "pieceGroups",
+      "description": "Reference to the Piece groups of the shipment",
+      "type": "PieceGroup",
+      "schemaType": "Embedded",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": "LoosePiece|ULDBasicPiece|ULDSpecificPiece|VolumePieceGroup"
+    },
+    {
+      "name": "specialHandlingCodes",
+      "description": "Three-letter special handling code (SPH)",
+      "type": "SpecialHandlingCode",
+      "schemaType": "CodeList",
+      "array": true,
+      "codelist": true,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "consolidationIndicator",
+      "description": "Indication if the shipment is a consolidation",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "events",
+      "description": "Events object",
+      "type": "LogisticsEvent",
+      "schemaType": "Event",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "skeletonIndicator",
+      "description": "Indicator whether a logistics object is a skeleton object",
+      "type": "boolean",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "specialServiceRequests",
+      "description": "Special service requests",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "textualHandlingInstructions",
+      "description": "Strings to provide free text handling instructions such as SSR and OSI",
+      "type": "string",
+      "schemaType": "",
+      "array": true,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}

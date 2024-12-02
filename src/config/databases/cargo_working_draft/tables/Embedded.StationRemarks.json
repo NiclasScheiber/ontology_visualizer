@@ -1,0 +1,25 @@
+{
+  "schema": "Embedded",
+  "name": "StationRemarks",
+  "description": "StationRemarks details",
+  "columns": [
+    {
+      "name": "station",
+      "description": "Reference to the station (Airport); mandatory ",
+      "type": "Location",
+      "schemaType": "Common",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    },
+    {
+      "name": "remarksText",
+      "description": "Details of the remarks; mandatory",
+      "type": "string",
+      "schemaType": "",
+      "array": false,
+      "codelist": false,
+      "columnSubTypes": ""
+    }
+  ]
+}
