@@ -1,6 +1,6 @@
 {
   "cargo_working_draft": {
-    "name": "ONE Record Full Datamodel 3.1",
+    "name": "ONE Record Full Datamodel 3.1 RC",
     "description": "Visualization of the full ONE Record Data Model 3.1 Release Candidate"
   },
   "cargo_full": {
@@ -18,5 +18,9 @@
   "moving_pilot": {
     "name": "Moving Pilot",
     "description": "Vizualisation of the classes and properties used in the Moving Industry Pilot"
+  },
+  "cargo_full_3_1": {
+    "name": "ONE Record Full Datamodel 3.1",
+    "description": "Visualization of the full ONE Record Data Model 3.1"
   }
 }
